@@ -12,6 +12,7 @@ import {
 export default function SubmitPage() {
   const [formData, setFormData] = useState({
     name: '',
+    website: '',
     trustCenter: '',
     description: '',
     iconUrl: ''
@@ -52,6 +53,7 @@ export default function SubmitPage() {
   const generateCode = () => {
     const code = `export default ${JSON.stringify({
       name: formData.name,
+      website: formData.website,
       trustCenter: formData.trustCenter,
       description: formData.description,
       iconUrl: formData.iconUrl
@@ -63,6 +65,7 @@ export default function SubmitPage() {
 
   const isFormValid = () => {
     return formData.name && 
+           formData.website &&
            formData.trustCenter && 
            formData.description;
   };
@@ -125,7 +128,7 @@ export default function SubmitPage() {
                   Submit a Trust Center
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Help the community by adding your company's trust center to our directory. 
+                  Help the community by adding your company's trust center to our curated directory. 
                   We review all submissions to ensure quality and accuracy.
                 </p>
               </div>
@@ -215,6 +218,19 @@ export default function SubmitPage() {
                       onChange={(e) => handleInputChange('name', e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                       placeholder="e.g., Stripe"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Company Website *
+                    </label>
+                    <input
+                      type="url"
+                      value={formData.website}
+                      onChange={(e) => handleInputChange('website', e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      placeholder="https://stripe.com"
                     />
                   </div>
                   

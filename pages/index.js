@@ -7,6 +7,7 @@ export default function Home({ trustCenters, stats }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [includeSmallCompanies, setIncludeSmallCompanies] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [openMenuId, setOpenMenuId] = useState(null);
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -24,8 +25,39 @@ export default function Home({ trustCenters, stats }) {
     }
   }, [darkMode]);
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.dropdown-menu')) {
+        setOpenMenuId(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const toggleMenu = (companyId) => {
+    setOpenMenuId(openMenuId === companyId ? null : companyId);
+  };
+
+  const copyToClipboard = async (text, type) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      alert(`${type} copied to clipboard!`);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const reportIssue = (companyName) => {
+    const subject = encodeURIComponent(`Issue with ${companyName} on TrustList`);
+    const body = encodeURIComponent(`Please describe the issue with ${companyName}'s listing:\n\n`);
+    window.open(`mailto:?subject=${subject}&body=${body}`, '_blank');
   };
 
   const filteredTrustCenters = useMemo(() => {
@@ -55,9 +87,9 @@ export default function Home({ trustCenters, stats }) {
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Helping users connect to trusted companies
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  TrustList is a list of company trust centers. Users can use the information to connect their wallets and Web3 middleware providers to the appropriate Company ID and Trust Center to connect to the correct company.
-                </p>
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                      TrustList is a curated directory of company trust centers and compliance documentation. Easily discover and access security, privacy, and compliance information from trusted organizations.
+                    </p>
               </div>
 
               {/* Action Buttons */}
@@ -168,11 +200,57 @@ export default function Home({ trustCenters, stats }) {
                           </div>
                           <h3 className="text-xl font-bold text-gray-900 dark:text-white">{company.name}</h3>
                         </div>
-                    <button className="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
+                        <div className="relative dropdown-menu">
+                          <button 
+                            onClick={() => toggleMenu(company.name + index)}
+                            className="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 p-1"
+                          >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                          </button>
+                          
+                          {openMenuId === company.name + index && (
+                            <div className="absolute right-0 top-8 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
+                              <button
+                                onClick={() => {
+                                  window.open(company.website, '_blank');
+                                  setOpenMenuId(null);
+                                }}
+                                className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 flex items-center"
+                              >
+                                <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                Visit Website
+                              </button>
+                              <button
+                                onClick={() => {
+                                  copyToClipboard(company.trustCenter, 'Trust Center URL');
+                                  setOpenMenuId(null);
+                                }}
+                                className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 flex items-center"
+                              >
+                                <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                </svg>
+                                Copy Trust Center URL
+                              </button>
+                              <button
+                                onClick={() => {
+                                  reportIssue(company.name);
+                                  setOpenMenuId(null);
+                                }}
+                                className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 flex items-center"
+                              >
+                                <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.34 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                                </svg>
+                                Report Issue
+                              </button>
+                            </div>
+                          )}
+                        </div>
                   </div>
 
                   {/* Company Info */}
