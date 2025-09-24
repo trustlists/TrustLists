@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '../components/Header';
 import TrustCenterCard from '../components/TrustCenterCard';
 import FilterSidebar from '../components/FilterSidebar';
@@ -138,8 +139,8 @@ export default function Home({ trustCenters, stats }) {
                 </div>
               </div>
               <div className="flex items-center space-x-6 text-sm text-gray-500">
-                <a href="/api" className="hover:text-primary-600 transition-colors">API</a>
-                <a href="/submit" className="hover:text-primary-600 transition-colors">Submit</a>
+                <Link href="/api" className="hover:text-primary-600 transition-colors">API</Link>
+                <Link href="/submit" className="hover:text-primary-600 transition-colors">Submit</Link>
                 <a href="https://github.com/FelixMichaels/trustlists" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">
                   GitHub
                 </a>
