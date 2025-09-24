@@ -40,9 +40,9 @@ export default function Home({ trustCenters, stats }) {
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div className="flex">
+        <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
-          <div className="w-96 bg-white dark:bg-gray-800 min-h-screen shadow-sm">
+          <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
             <div className="p-8">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -95,8 +95,9 @@ export default function Home({ trustCenters, stats }) {
             </div>
           </div>
 
-          {/* Right Content Area */}
-          <div className="flex-1 p-8">
+          {/* Right Content Area - Scrollable */}
+          <div className="flex-1 overflow-y-auto">
+            <div className="p-8">
             {/* Search Bar */}
             <div className="mb-8">
               <div className="mb-4">
@@ -200,6 +201,7 @@ export default function Home({ trustCenters, stats }) {
                 <p className="text-gray-500 dark:text-gray-400">Try adjusting your search terms or include small companies.</p>
               </div>
             )}
+            </div>
           </div>
         </div>
       </div>

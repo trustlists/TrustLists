@@ -83,9 +83,9 @@ export default function SubmitPage() {
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-        <div className="flex">
-          {/* Left Sidebar - Same as main page */}
-          <div className="w-96 bg-white dark:bg-gray-800 min-h-screen shadow-sm">
+        <div className="flex h-screen overflow-hidden">
+          {/* Left Sidebar - Fixed */}
+          <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
             <div className="p-8">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -139,8 +139,9 @@ export default function SubmitPage() {
             </div>
           </div>
 
-          {/* Right Content Area */}
-          <div className="flex-1 p-8">
+          {/* Right Content Area - Scrollable */}
+          <div className="flex-1 overflow-y-auto">
+            <div className="p-8">
             {/* Header */}
             <div className="text-center mb-8">
               <PlusIcon className="w-16 h-16 text-blue-600 mx-auto mb-4" />
@@ -340,6 +341,7 @@ export default function SubmitPage() {
               </div>
             </div>
             )}
+            </div>
           </div>
         </div>
       </div>
