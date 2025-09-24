@@ -68,9 +68,9 @@ export default function Home({ trustCenters, stats }) {
 
           {/* Company List */}
           <div className="space-y-4">
-            {filteredTrustCenters.map((company) => (
+            {filteredTrustCenters.map((company, index) => (
               <div
-                key={company.slug}
+                key={company.name + index}
                 className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center justify-between">
@@ -82,11 +82,9 @@ export default function Home({ trustCenters, stats }) {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">{company.name}</h3>
-                      <div className="flex items-center space-x-4 text-sm text-gray-600 mt-1">
-                        <span>Industry: {company.industry}</span>
-                        <span>|</span>
-                        <span>Employees: {company.employees}</span>
-                      </div>
+                      <p className="text-sm text-gray-600 mt-1 max-w-md">
+                        {company.description}
+                      </p>
                     </div>
                   </div>
 
@@ -99,23 +97,6 @@ export default function Home({ trustCenters, stats }) {
                     >
                       Trust Center
                     </a>
-                    <a
-                      href={company.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm"
-                    >
-                      Website
-                    </a>
-                    <div className="text-right">
-                      <div className="text-sm font-medium text-gray-900">
-                        {company.certifications.length} Certifications
-                      </div>
-                      <div className="text-xs text-gray-500">
-                        {company.certifications.slice(0, 2).join(', ')}
-                        {company.certifications.length > 2 && '...'}
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
