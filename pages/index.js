@@ -5,7 +5,6 @@ import { getAllTrustCenters, searchTrustCenters, getStats } from '../utils/trust
 
 export default function Home({ trustCenters, stats }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [includeSmallCompanies, setIncludeSmallCompanies] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [openMenuId, setOpenMenuId] = useState(null);
   const [notification, setNotification] = useState(null);
@@ -209,17 +208,6 @@ Add any other context about the problem here.`);
                 </div>
               </div>
               
-              <div className="flex items-center">
-                <label className="flex items-center space-x-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={includeSmallCompanies}
-                    onChange={(e) => setIncludeSmallCompanies(e.target.checked)}
-                    className="rounded text-blue-600 focus:ring-blue-500"
-                  />
-                  <span className="text-gray-700 dark:text-gray-300 text-lg">Include Small Companies</span>
-                </label>
-              </div>
             </div>
 
             {/* Company Grid */}
@@ -332,13 +320,13 @@ Add any other context about the problem here.`);
               ))}
             </div>
 
-            {filteredTrustCenters.length === 0 && (
-              <div className="text-center py-20">
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No companies found</h3>
-                <p className="text-gray-500 dark:text-gray-400">Try adjusting your search terms or include small companies.</p>
-              </div>
-            )}
+                {filteredTrustCenters.length === 0 && (
+                  <div className="text-center py-20">
+                    <div className="text-6xl mb-4">🔍</div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No companies found</h3>
+                    <p className="text-gray-500 dark:text-gray-400">Try adjusting your search terms.</p>
+                  </div>
+                )}
             </div>
           </div>
         </div>
