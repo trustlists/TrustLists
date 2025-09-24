@@ -183,7 +183,7 @@ export default function APIPage() {
               Have questions about the API or want to report an issue?
             </p>
             <a
-              href="https://github.com/FelixMichaels/trustlists/issues"
+              href="https://github.com/FelixMichaels/TrustLists/issues"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"

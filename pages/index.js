@@ -74,7 +74,7 @@ export default function Home({ trustCenters, stats }) {
               {/* Links */}
               <div className="space-y-4">
                 <a 
-                  href="https://github.com/FelixMichaels/trustlists" 
+                  href="https://github.com/FelixMichaels/TrustLists" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg"

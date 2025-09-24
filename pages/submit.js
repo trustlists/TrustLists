@@ -118,7 +118,7 @@ export default function SubmitPage() {
               {/* Links */}
               <div className="space-y-4">
                 <a 
-                  href="https://github.com/FelixMichaels/trustlists" 
+                  href="https://github.com/FelixMichaels/TrustLists" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg"
@@ -270,7 +270,7 @@ export default function SubmitPage() {
                         <h3 className="font-semibold text-gray-900 dark:text-white">Fork the Repository</h3>
                         <p className="text-gray-600 dark:text-gray-300">Fork the TrustList repository on GitHub to your account.</p>
                         <a 
-                          href="https://github.com/FelixMichaels/trustlists/fork" 
+                          href="https://github.com/FelixMichaels/TrustLists/fork" 
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-block mt-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
@@ -330,7 +330,7 @@ export default function SubmitPage() {
                   </button>
                   
                   <a
-                    href="https://github.com/FelixMichaels/trustlists/compare"
+                    href="https://github.com/FelixMichaels/TrustLists/compare"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"

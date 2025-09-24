@@ -42,10 +42,10 @@
     "governance",
     "certifications"
   ],
-  "homepage": "https://felixmichaels.github.io/trustlists",
+  "homepage": "https://felixmichaels.github.io/TrustLists",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FelixMichaels/trustlists.git"
+    "url": "https://github.com/FelixMichaels/TrustLists.git"
   },
   "license": "GPL-3.0"
 }
