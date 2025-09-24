@@ -8,6 +8,7 @@ export default function Home({ trustCenters, stats }) {
   const [includeSmallCompanies, setIncludeSmallCompanies] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [openMenuId, setOpenMenuId] = useState(null);
+  const [notification, setNotification] = useState(null);
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -45,19 +46,43 @@ export default function Home({ trustCenters, stats }) {
     setOpenMenuId(openMenuId === companyId ? null : companyId);
   };
 
+  const showNotification = (message, type = 'success') => {
+    setNotification({ message, type });
+    setTimeout(() => {
+      setNotification(null);
+    }, 3000);
+  };
+
   const copyToClipboard = async (text, type) => {
     try {
       await navigator.clipboard.writeText(text);
-      alert(`${type} copied to clipboard!`);
+      showNotification(`${type} copied to clipboard!`, 'success');
     } catch (err) {
       console.error('Failed to copy:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      showNotification(`${type} copied to clipboard!`, 'success');
     }
   };
 
   const reportIssue = (companyName) => {
-    const subject = encodeURIComponent(`Issue with ${companyName} on TrustList`);
-    const body = encodeURIComponent(`Please describe the issue with ${companyName}'s listing:\n\n`);
-    window.open(`mailto:?subject=${subject}&body=${body}`, '_blank');
+    const title = encodeURIComponent(`Issue with ${companyName} listing`);
+    const body = encodeURIComponent(`**Company**: ${companyName}
+
+**Issue Description**:
+Please describe the issue with this company's listing (e.g., broken link, outdated information, incorrect details, etc.)
+
+**Additional Context**:
+Add any other context about the problem here.`);
+    
+    const githubUrl = `https://github.com/FelixMichaels/TrustLists/issues/new?title=${title}&body=${body}&labels=bug,company-listing`;
+    window.open(githubUrl, '_blank');
+    showNotification('Issue report opened on GitHub!', 'info');
   };
 
   const filteredTrustCenters = useMemo(() => {
@@ -72,6 +97,33 @@ export default function Home({ trustCenters, stats }) {
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+        {/* In-App Notification */}
+        {notification && (
+          <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out ${
+            notification.type === 'success' ? 'bg-green-500 text-white' :
+            notification.type === 'info' ? 'bg-blue-500 text-white' :
+            notification.type === 'error' ? 'bg-red-500 text-white' :
+            'bg-gray-500 text-white'
+          }`}>
+            {notification.type === 'success' && (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            )}
+            {notification.type === 'info' && (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            )}
+            {notification.type === 'error' && (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            )}
+            <span className="font-medium">{notification.message}</span>
+          </div>
+        )}
+
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
