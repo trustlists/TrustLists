@@ -167,8 +167,9 @@ export default function SubmitPage() {
             </div>
 
             {step === 1 ? (
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 max-w-2xl">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Company Information</h2>
+              <div className="flex justify-center">
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 max-w-2xl w-full">
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Company Information</h2>
                 
                 <div className="space-y-6">
                   <div>
@@ -235,8 +236,10 @@ export default function SubmitPage() {
                   </div>
                 </div>
               </div>
+            </div>
             ) : (
-              <div className="space-y-8 max-w-4xl">
+              <div className="flex justify-center">
+                <div className="space-y-8 max-w-4xl w-full">
                 {/* Generated Code */}
                 <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
                   <div className="flex items-center justify-between mb-4">
@@ -337,6 +340,7 @@ export default function SubmitPage() {
                   </a>
                 </div>
               </div>
+            </div>
             )}
           </div>
         </div>
