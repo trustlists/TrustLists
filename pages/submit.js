@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
+import Link from 'next/link';
 import { 
   PlusIcon, 
   DocumentTextIcon, 
@@ -8,7 +8,6 @@ import {
   ExclamationTriangleIcon,
   InformationCircleIcon
 } from '@heroicons/react/24/outline';
-import { INDUSTRIES, CERTIFICATIONS, FRAMEWORKS, COMPANY_SIZES } from '../constants/industries';
 
 export default function SubmitPage() {
   const [formData, setFormData] = useState({
@@ -20,6 +19,27 @@ export default function SubmitPage() {
 
   const [step, setStep] = useState(1);
   const [generatedCode, setGeneratedCode] = useState('');
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Load dark mode preference from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem('darkMode');
+    setDarkMode(saved === 'true');
+  }, []);
+
+  // Save dark mode preference and apply to document
+  useEffect(() => {
+    localStorage.setItem('darkMode', darkMode.toString());
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
@@ -64,205 +84,259 @@ export default function SubmitPage() {
         <meta name="description" content="Submit your company's trust center to TrustList. Help others discover your security and compliance information." />
       </Head>
 
-      <div className="min-h-screen bg-gray-50">
-        <Header />
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <PlusIcon className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Submit a Trust Center</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Help the community by adding your company's trust center to our directory. 
-              We review all submissions to ensure quality and accuracy.
-            </p>
-          </div>
-
-          {/* Progress Steps */}
-          <div className="flex items-center justify-center mb-8">
-            <div className="flex items-center space-x-4">
-              <div className={`flex items-center justify-center w-8 h-8 rounded-full ${step >= 1 ? 'bg-primary-600 text-white' : 'bg-gray-300 text-gray-600'}`}>
-                1
-              </div>
-              <div className={`w-16 h-1 ${step >= 2 ? 'bg-primary-600' : 'bg-gray-300'}`}></div>
-              <div className={`flex items-center justify-center w-8 h-8 rounded-full ${step >= 2 ? 'bg-primary-600 text-white' : 'bg-gray-300 text-gray-600'}`}>
-                2
-              </div>
-            </div>
-          </div>
-
-          {step === 1 ? (
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Company Information</h2>
-              
-              <div className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Company Name *
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => handleInputChange('name', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="e.g., Stripe"
-                  />
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+        <div className="flex">
+          {/* Left Sidebar - Same as main page */}
+          <div className="w-96 bg-white dark:bg-gray-800 min-h-screen shadow-sm">
+            <div className="p-8">
+              {/* Logo and Title */}
+              <div className="mb-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-xl">T</span>
+                  </div>
+                  <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
                 </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Trust Center URL *
-                  </label>
-                  <input
-                    type="url"
-                    value={formData.trustCenter}
-                    onChange={(e) => handleInputChange('trustCenter', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="https://stripe.com/privacy-center/legal"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Company Description *
-                  </label>
-                  <textarea
-                    value={formData.description}
-                    onChange={(e) => handleInputChange('description', e.target.value)}
-                    rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Brief description of the company and its services..."
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Icon Name
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.icon}
-                    onChange={(e) => handleInputChange('icon', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="e.g., stripe (auto-generated from name)"
-                  />
-                  <p className="text-xs text-gray-500 mt-1">Used for visual identification</p>
-                </div>
-
-                <div className="flex justify-end pt-6">
-                  <button
-                    onClick={generateCode}
-                    disabled={!isFormValid()}
-                    className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
-                  >
-                    Generate Code
-                  </button>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="space-y-8">
-              {/* Generated Code */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
-                <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-2xl font-bold text-gray-900">Generated Code</h2>
-                  <button
-                    onClick={copyToClipboard}
-                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors text-sm"
-                  >
-                    Copy to Clipboard
-                  </button>
-                </div>
-                
-                <div className="bg-gray-900 rounded-lg p-4 overflow-x-auto">
-                  <pre className="text-green-400 text-sm">{generatedCode}</pre>
-                </div>
-              </div>
-
-              {/* Instructions */}
-              <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <DocumentTextIcon className="w-8 h-8 mr-3 text-primary-600" />
-                  Submission Instructions
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                  Submit a Trust Center
                 </h2>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Help the community by adding your company's trust center to our directory. 
+                  We review all submissions to ensure quality and accuracy.
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="mb-8">
+                <Link 
+                  href="/" 
+                  className="w-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-4 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 flex items-center justify-center font-medium text-lg"
+                >
+                  <span className="mr-2 text-xl">←</span>
+                  Back to Companies
+                </Link>
+              </div>
+
+              {/* Links */}
+              <div className="space-y-4">
+                <a 
+                  href="https://github.com/FelixMichaels/trustlists" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg"
+                >
+                  <span className="mr-3 text-xl">📄</span>
+                  View Code
+                </a>
+                <button 
+                  onClick={toggleDarkMode}
+                  className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg"
+                >
+                  <span className="mr-3 text-xl">{darkMode ? '☀️' : '🌙'}</span>
+                  Toggle Theme
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content Area */}
+          <div className="flex-1 p-8">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <PlusIcon className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+              <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Submit a Trust Center</h1>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Help the community by adding your company's trust center to our directory. 
+                We review all submissions to ensure quality and accuracy.
+              </p>
+            </div>
+
+            {/* Progress Steps */}
+            <div className="flex items-center justify-center mb-8">
+              <div className="flex items-center space-x-4">
+                <div className={`flex items-center justify-center w-8 h-8 rounded-full ${step >= 1 ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400'}`}>
+                  1
+                </div>
+                <div className={`w-16 h-1 ${step >= 2 ? 'bg-blue-600' : 'bg-gray-300 dark:bg-gray-600'}`}></div>
+                <div className={`flex items-center justify-center w-8 h-8 rounded-full ${step >= 2 ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400'}`}>
+                  2
+                </div>
+              </div>
+            </div>
+
+            {step === 1 ? (
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 max-w-2xl">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Company Information</h2>
                 
                 <div className="space-y-6">
-                  <div className="flex items-start space-x-3">
-                    <span className="flex items-center justify-center w-6 h-6 bg-primary-600 text-white rounded-full text-sm font-medium">1</span>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">Fork the Repository</h3>
-                      <p className="text-gray-600">Fork the TrustList repository on GitHub to your account.</p>
-                      <a 
-                        href="https://github.com/FelixMichaels/trustlists/fork" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-2 text-primary-600 hover:text-primary-700"
-                      >
-                        Fork Repository →
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <span className="flex items-center justify-center w-6 h-6 bg-primary-600 text-white rounded-full text-sm font-medium">2</span>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">Create the File</h3>
-                      <p className="text-gray-600">
-                        Create a new file in the <code className="bg-gray-100 px-2 py-1 rounded">constants/trustCenterRegistry/</code> folder 
-                        named <code className="bg-gray-100 px-2 py-1 rounded">{formData.icon}.js</code> and paste the generated code.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <span className="flex items-center justify-center w-6 h-6 bg-primary-600 text-white rounded-full text-sm font-medium">3</span>
-                    <div>
-                      <h3 className="font-semibold text-gray-900">Submit Pull Request</h3>
-                      <p className="text-gray-600">
-                        Commit your changes and create a pull request with the title: 
-                        <code className="bg-gray-100 px-2 py-1 rounded">Add {formData.name} trust center</code>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Guidelines */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <div className="flex items-start space-x-3">
-                  <InformationCircleIcon className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-semibold text-blue-900 mb-2">Submission Guidelines</h3>
-                    <ul className="text-blue-800 space-y-1 text-sm">
-                      <li>• Ensure all URLs are publicly accessible</li>
-                      <li>• Only submit companies you represent or have permission to add</li>
-                      <li>• Provide accurate and up-to-date information</li>
-                      <li>• Follow the naming conventions for consistency</li>
-                      <li>• Include relevant certifications and compliance frameworks</li>
-                    </ul>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Company Name *
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) => handleInputChange('name', e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      placeholder="e.g., Stripe"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Trust Center URL *
+                    </label>
+                    <input
+                      type="url"
+                      value={formData.trustCenter}
+                      onChange={(e) => handleInputChange('trustCenter', e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      placeholder="https://stripe.com/privacy-center/legal"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Company Description *
+                    </label>
+                    <textarea
+                      value={formData.description}
+                      onChange={(e) => handleInputChange('description', e.target.value)}
+                      rows={3}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      placeholder="Brief description of the company and its services..."
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      Icon Name
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.icon}
+                      onChange={(e) => handleInputChange('icon', e.target.value)}
+                      className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+                      placeholder="e.g., stripe (auto-generated from name)"
+                    />
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Used for visual identification</p>
+                  </div>
+
+                  <div className="flex justify-end pt-6">
+                    <button
+                      onClick={generateCode}
+                      disabled={!isFormValid()}
+                      className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
+                    >
+                      Generate Code
+                    </button>
                   </div>
                 </div>
               </div>
+            ) : (
+              <div className="space-y-8 max-w-4xl">
+                {/* Generated Code */}
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Generated Code</h2>
+                    <button
+                      onClick={copyToClipboard}
+                      className="px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors text-sm"
+                    >
+                      Copy to Clipboard
+                    </button>
+                  </div>
+                  
+                  <div className="bg-gray-900 dark:bg-gray-950 rounded-lg p-4 overflow-x-auto">
+                    <pre className="text-green-400 text-sm">{generatedCode}</pre>
+                  </div>
+                </div>
 
-              <div className="flex justify-between">
-                <button
-                  onClick={() => setStep(1)}
-                  className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
-                >
-                  Back to Form
-                </button>
+                {/* Instructions */}
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                    <DocumentTextIcon className="w-8 h-8 mr-3 text-blue-600" />
+                    Submission Instructions
+                  </h2>
                 
-                <a
-                  href="https://github.com/FelixMichaels/trustlists/compare"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 bg-trust-600 text-white rounded-lg hover:bg-trust-700 transition-colors"
-                >
-                  Create Pull Request
-                </a>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-3">
+                      <span className="flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-sm font-medium">1</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 dark:text-white">Fork the Repository</h3>
+                        <p className="text-gray-600 dark:text-gray-300">Fork the TrustList repository on GitHub to your account.</p>
+                        <a 
+                          href="https://github.com/FelixMichaels/trustlists/fork" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block mt-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+                        >
+                          Fork Repository →
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <span className="flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-sm font-medium">2</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 dark:text-white">Create the File</h3>
+                        <p className="text-gray-600 dark:text-gray-300">
+                          Create a new file in the <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">constants/trustCenterRegistry/</code> folder 
+                          named <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">{formData.icon}.js</code> and paste the generated code.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3">
+                      <span className="flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-sm font-medium">3</span>
+                      <div>
+                        <h3 className="font-semibold text-gray-900 dark:text-white">Submit Pull Request</h3>
+                        <p className="text-gray-600 dark:text-gray-300">
+                          Commit your changes and create a pull request with the title: 
+                          <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">Add {formData.name} trust center</code>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Guidelines */}
+                <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+                  <div className="flex items-start space-x-3">
+                    <InformationCircleIcon className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Submission Guidelines</h3>
+                      <ul className="text-blue-800 dark:text-blue-200 space-y-1 text-sm">
+                        <li>• Ensure all URLs are publicly accessible</li>
+                        <li>• Only submit companies you represent or have permission to add</li>
+                        <li>• Provide accurate and up-to-date information</li>
+                        <li>• Follow the naming conventions for consistency</li>
+                        <li>• Keep it simple - only 4 fields required</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex justify-between">
+                  <button
+                    onClick={() => setStep(1)}
+                    className="px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                  >
+                    Back to Form
+                  </button>
+                  
+                  <a
+                    href="https://github.com/FelixMichaels/trustlists/compare"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    Create Pull Request
+                  </a>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </>
