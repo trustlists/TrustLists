@@ -1,153 +1,133 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Header from '../components/Header';
-import TrustCenterCard from '../components/TrustCenterCard';
-import FilterSidebar from '../components/FilterSidebar';
 import { getAllTrustCenters, searchTrustCenters, getStats } from '../utils/trustCenters';
-import { 
-  ShieldCheckIcon, 
-  BuildingOfficeIcon, 
-  UserGroupIcon,
-  ChartBarIcon,
-  FunnelIcon
-} from '@heroicons/react/24/outline';
 
 export default function Home({ trustCenters, stats }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filters, setFilters] = useState({
-    industry: 'all',
-    certification: 'all',
-    framework: 'all',
-    companySize: 'all'
-  });
-  const [showFilters, setShowFilters] = useState(false);
+  const [includeTestnets, setIncludeTestnets] = useState(false);
 
   const filteredTrustCenters = useMemo(() => {
-    return searchTrustCenters(searchQuery, filters);
-  }, [searchQuery, filters]);
+    return searchTrustCenters(searchQuery, {});
+  }, [searchQuery]);
 
   return (
     <>
       <Head>
-        <title>TrustList - Company Trust Centers Directory</title>
-        <meta name="description" content={`Browse ${stats.totalCompanies} company trust centers across ${stats.totalIndustries} industries. Find security, privacy, and compliance information.`} />
+        <title>TrustList</title>
+        <meta name="description" content="TrustList is a list of company trust centers. Users can use the information to connect to trusted companies and their compliance documentation." />
       </Head>
 
-      <div className="min-h-screen bg-gray-50">
-        <Header onSearch={setSearchQuery} searchQuery={searchQuery} />
-        
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-primary-600 to-trust-600 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Discover Trusted Companies
-              </h1>
-              <p className="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
-                A curated directory of company trust centers, security practices, and compliance documentation.
-              </p>
+      <div className="min-h-screen bg-gray-100">
+        {/* Header */}
+        <header className="bg-white shadow-sm">
+          <div className="max-w-6xl mx-auto px-4 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <h1 className="text-2xl font-bold text-gray-900">TrustList</h1>
+                <p className="text-gray-600 hidden md:block">Helping users connect to trusted companies</p>
+              </div>
               
-              {/* Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <BuildingOfficeIcon className="w-8 h-8 mr-2" />
-                    <span className="text-3xl font-bold">{stats.totalCompanies}</span>
-                  </div>
-                  <p className="text-primary-100">Companies</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <ChartBarIcon className="w-8 h-8 mr-2" />
-                    <span className="text-3xl font-bold">{stats.totalIndustries}</span>
-                  </div>
-                  <p className="text-primary-100">Industries</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center mb-2">
-                    <ShieldCheckIcon className="w-8 h-8 mr-2" />
-                    <span className="text-3xl font-bold">{stats.totalCertifications}</span>
-                  </div>
-                  <p className="text-primary-100">Certifications</p>
-                </div>
+              <div className="flex items-center space-x-4">
+                <Link href="/submit" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                  Submit Trust Center
+                </Link>
+                <Link href="/api" className="text-gray-600 hover:text-blue-600">API</Link>
               </div>
             </div>
           </div>
-        </div>
+        </header>
 
-        {/* Main Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Mobile Filter Toggle */}
-            <div className="lg:hidden">
-              <button
-                onClick={() => setShowFilters(!showFilters)}
-                className="flex items-center px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
-              >
-                <FunnelIcon className="w-5 h-5 mr-2" />
-                Filters
-                {Object.values(filters).some(f => f !== 'all') && (
-                  <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-100 text-primary-800">
-                    Active
-                  </span>
-                )}
-              </button>
-            </div>
+        {/* Main Header Text */}
+        <div className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-lg text-gray-700 mb-8">
+            <strong>TrustList is a list of company trust centers.</strong> Users can use the information to connect to trusted companies and access their security, privacy, and compliance documentation.
+          </h2>
 
-            {/* Sidebar */}
-            <aside className={`lg:block ${showFilters ? 'block' : 'hidden'}`}>
-              <FilterSidebar
-                filters={filters}
-                onFilterChange={setFilters}
-                resultCount={filteredTrustCenters.length}
+          {/* Search and Controls */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
+            <div className="flex items-center space-x-4">
+              <input
+                type="text"
+                placeholder="Search Companies"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-64"
               />
-            </aside>
-
-            {/* Company Grid */}
-            <main className="flex-1">
-              {filteredTrustCenters.length === 0 ? (
-                <div className="text-center py-16">
-                  <UserGroupIcon className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-lg font-medium text-gray-900 mb-2">No companies found</h3>
-                  <p className="text-gray-500">
-                    Try adjusting your search terms or filters to find what you're looking for.
-                  </p>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {filteredTrustCenters.map((trustCenter) => (
-                    <TrustCenterCard key={trustCenter.slug} trustCenter={trustCenter} />
-                  ))}
-                </div>
-              )}
-            </main>
-          </div>
-        </div>
-
-        {/* Footer */}
-        <footer className="bg-white border-t border-gray-200 mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="flex items-center space-x-3 mb-4 md:mb-0">
-                <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-trust-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">T</span>
-                </div>
-                <div>
-                  <p className="text-gray-900 font-semibold">TrustList</p>
-                  <p className="text-xs text-gray-500">Company Trust Centers</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-6 text-sm text-gray-500">
-                <Link href="/api" className="hover:text-primary-600 transition-colors">API</Link>
-                <Link href="/submit" className="hover:text-primary-600 transition-colors">Submit</Link>
-                <a href="https://github.com/FelixMichaels/trustlists" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">
-                  GitHub
-                </a>
-              </div>
+              <label className="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  checked={includeTestnets}
+                  onChange={(e) => setIncludeTestnets(e.target.checked)}
+                  className="rounded text-blue-600"
+                />
+                <span className="text-gray-600">Include Small Companies</span>
+              </label>
             </div>
           </div>
-        </footer>
+
+          {/* Company List */}
+          <div className="space-y-4">
+            {filteredTrustCenters.map((company) => (
+              <div
+                key={company.slug}
+                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">
+                        {company.name.charAt(0)}
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-900">{company.name}</h3>
+                      <div className="flex items-center space-x-4 text-sm text-gray-600 mt-1">
+                        <span>Industry: {company.industry}</span>
+                        <span>|</span>
+                        <span>Employees: {company.employees}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3">
+                    <a
+                      href={company.trustCenter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                    >
+                      Trust Center
+                    </a>
+                    <a
+                      href={company.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm"
+                    >
+                      Website
+                    </a>
+                    <div className="text-right">
+                      <div className="text-sm font-medium text-gray-900">
+                        {company.certifications.length} Certifications
+                      </div>
+                      <div className="text-xs text-gray-500">
+                        {company.certifications.slice(0, 2).join(', ')}
+                        {company.certifications.length > 2 && '...'}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {filteredTrustCenters.length === 0 && (
+            <div className="text-center py-16">
+              <p className="text-gray-500">No companies found. Try adjusting your search.</p>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
