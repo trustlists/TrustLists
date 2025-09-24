@@ -2,5 +2,5 @@ export default {
   "name": "Stripe",
   "trustCenter": "https://stripe.com/privacy-center/legal",
   "description": "Online payment processing platform with comprehensive security and compliance programs",
-  "icon": "stripe"
+  "iconUrl": "https://stripe.com/img/v3/home/social.png"
 }

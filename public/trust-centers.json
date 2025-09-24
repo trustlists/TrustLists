@@ -4,24 +4,24 @@
       "name": "GitHub",
       "trustCenter": "https://github.com/security",
       "description": "World's leading software development platform with enterprise-grade security",
-      "icon": "github"
+      "iconUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
     },
     {
       "name": "Salesforce",
       "trustCenter": "https://trust.salesforce.com",
       "description": "Leading CRM platform with comprehensive trust and compliance programs",
-      "icon": "salesforce"
+      "iconUrl": "https://www.salesforce.com/content/dam/web/en_us/www/images/nav/salesforce-cloud-logo-v2.png"
     },
     {
       "name": "Stripe",
       "trustCenter": "https://stripe.com/privacy-center/legal",
       "description": "Online payment processing platform with comprehensive security and compliance programs",
-      "icon": "stripe"
+      "iconUrl": "https://stripe.com/img/v3/home/social.png"
     }
   ],
   "meta": {
     "total": 3,
-    "generated": "2025-09-24T20:46:08.645Z",
+    "generated": "2025-09-24T20:51:01.050Z",
     "version": "1.0.0"
   }
 }

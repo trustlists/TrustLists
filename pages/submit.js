@@ -14,7 +14,7 @@ export default function SubmitPage() {
     name: '',
     trustCenter: '',
     description: '',
-    icon: ''
+    iconUrl: ''
   });
 
   const [step, setStep] = useState(1);
@@ -44,9 +44,7 @@ export default function SubmitPage() {
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
       ...prev,
-      [field]: value,
-      // Auto-generate icon from name
-      ...(field === 'name' && { icon: value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') })
+      [field]: value
     }));
   };
 
@@ -55,7 +53,7 @@ export default function SubmitPage() {
       name: formData.name,
       trustCenter: formData.trustCenter,
       description: formData.description,
-      icon: formData.icon
+      iconUrl: formData.iconUrl
     }, null, 2)};`;
 
     setGeneratedCode(code);
@@ -213,16 +211,16 @@ export default function SubmitPage() {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Icon Name
+                      Company Logo URL
                     </label>
                     <input
-                      type="text"
-                      value={formData.icon}
-                      onChange={(e) => handleInputChange('icon', e.target.value)}
+                      type="url"
+                      value={formData.iconUrl}
+                      onChange={(e) => handleInputChange('iconUrl', e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-                      placeholder="e.g., stripe (auto-generated from name)"
+                      placeholder="https://stripe.com/img/logos/logo-stripe.png"
                     />
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Used for visual identification</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Direct URL to your company's logo (PNG, JPG, or SVG)</p>
                   </div>
 
                   <div className="flex justify-end pt-6">
@@ -287,7 +285,7 @@ export default function SubmitPage() {
                         <h3 className="font-semibold text-gray-900 dark:text-white">Create the File</h3>
                         <p className="text-gray-600 dark:text-gray-300">
                           Create a new file in the <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">constants/trustCenterRegistry/</code> folder 
-                          named <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">{formData.icon}.js</code> and paste the generated code.
+                          named <code className="bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded text-gray-900 dark:text-gray-100">{formData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.js</code> and paste the generated code.
                         </p>
                       </div>
                     </div>
