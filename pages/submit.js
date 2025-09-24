@@ -20,6 +20,7 @@ export default function SubmitPage() {
   const [step, setStep] = useState(1);
   const [generatedCode, setGeneratedCode] = useState('');
   const [darkMode, setDarkMode] = useState(false);
+  const [showCopySuccess, setShowCopySuccess] = useState(false);
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -69,9 +70,24 @@ export default function SubmitPage() {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(generatedCode);
-      alert('Code copied to clipboard!');
+      setShowCopySuccess(true);
+      // Hide notification after 3 seconds
+      setTimeout(() => {
+        setShowCopySuccess(false);
+      }, 3000);
     } catch (err) {
       console.error('Failed to copy:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = generatedCode;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setShowCopySuccess(true);
+      setTimeout(() => {
+        setShowCopySuccess(false);
+      }, 3000);
     }
   };
 
@@ -83,6 +99,16 @@ export default function SubmitPage() {
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+        {/* Custom Copy Success Notification */}
+        {showCopySuccess && (
+          <div className="fixed top-4 right-4 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="font-medium">Code copied to clipboard!</span>
+          </div>
+        )}
+
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
