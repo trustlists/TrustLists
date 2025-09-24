@@ -140,7 +140,7 @@ export default function Home({ trustCenters, stats }) {
               <div className="flex items-center space-x-6 text-sm text-gray-500">
                 <a href="/api" className="hover:text-primary-600 transition-colors">API</a>
                 <a href="/submit" className="hover:text-primary-600 transition-colors">Submit</a>
-                <a href="https://github.com/username/trustlist" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">
+                <a href="https://github.com/FelixMichaels/trustlists" target="_blank" rel="noopener noreferrer" className="hover:text-primary-600 transition-colors">
                   GitHub
                 </a>
               </div>

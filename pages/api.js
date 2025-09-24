@@ -76,18 +76,18 @@ export default function APIPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Quick Start</h2>
             <div className="bg-gray-900 rounded-lg p-4 text-green-400 font-mono text-sm overflow-x-auto">
               <div className="mb-2"># Get all trust centers</div>
-              <div className="text-white">curl https://trustlist.org/api/trust-centers</div>
+              <div className="text-white">curl https://felixmichaels.github.io/trustlists/api/trust-centers</div>
               <div className="mt-4 mb-2"># Search for companies</div>
-              <div className="text-white">curl "https://trustlist.org/api/trust-centers?search=stripe"</div>
+              <div className="text-white">curl "https://felixmichaels.github.io/trustlists/api/trust-centers?search=stripe"</div>
               <div className="mt-4 mb-2"># Filter by industry</div>
-              <div className="text-white">curl "https://trustlist.org/api/trust-centers?industry=Financial%20Technology"</div>
+              <div className="text-white">curl "https://felixmichaels.github.io/trustlists/api/trust-centers?industry=Financial%20Technology"</div>
             </div>
           </div>
 
           {/* Base URL */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
             <h3 className="text-lg font-semibold text-blue-900 mb-2">Base URL</h3>
-            <code className="text-blue-800 font-mono">https://trustlist.org/api</code>
+            <code className="text-blue-800 font-mono">https://felixmichaels.github.io/trustlists/api</code>
           </div>
 
           {/* Endpoints */}
@@ -183,7 +183,7 @@ export default function APIPage() {
               Have questions about the API or want to report an issue?
             </p>
             <a
-              href="https://github.com/username/trustlist/issues"
+              href="https://github.com/FelixMichaels/trustlists/issues"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"

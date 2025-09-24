@@ -372,7 +372,7 @@ export default function SubmitPage() {
                       <h3 className="font-semibold text-gray-900">Fork the Repository</h3>
                       <p className="text-gray-600">Fork the TrustList repository on GitHub to your account.</p>
                       <a 
-                        href="https://github.com/username/trustlist/fork" 
+                        href="https://github.com/FelixMichaels/trustlists/fork" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-2 text-primary-600 hover:text-primary-700"
@@ -432,7 +432,7 @@ export default function SubmitPage() {
                 </button>
                 
                 <a
-                  href="https://github.com/username/trustlist/compare"
+                  href="https://github.com/FelixMichaels/trustlists/compare"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-trust-600 text-white rounded-lg hover:bg-trust-700 transition-colors"
