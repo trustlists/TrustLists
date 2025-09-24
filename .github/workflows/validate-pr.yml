@@ -1,0 +1,60 @@
+name: Validate Pull Request
+
+on:
+  pull_request:
+    paths:
+      - 'constants/trustCenterRegistry/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Validate trust center files
+      run: |
+        echo "Validating trust center data files..."
+        
+        # Check if new files follow naming convention
+        for file in $(git diff --name-only origin/main...HEAD | grep "constants/trustCenterRegistry/.*\.js$"); do
+          echo "Validating $file"
+          
+          # Check if file is valid JavaScript
+          node -c "$file" || exit 1
+          
+          # Check if file exports default object
+          node -e "
+            const data = require('./$file').default || require('./$file');
+            if (!data.name || !data.slug || !data.website || !data.trustCenter) {
+              console.error('Missing required fields in $file');
+              process.exit(1);
+            }
+            console.log('✅ $file is valid');
+          " || exit 1
+        done
+        
+    - name: Build application
+      run: npm run build
+      
+    - name: Comment on PR
+      uses: actions/github-script@v7
+      if: success()
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ All trust center data files are valid and the build succeeded!'
+          })
