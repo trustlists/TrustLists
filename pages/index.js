@@ -133,7 +133,8 @@ Add any other context about the problem here.`);
                   <img 
                     src="/trustlist-logo.png" 
                     alt="TrustList" 
-                    className="h-24 w-auto" 
+                    className="w-auto max-w-full" 
+                    style={{ height: '120px' }}
                     onError={(e) => {
                       console.error('Logo failed to load:', e);
                       e.target.style.display = 'none';
