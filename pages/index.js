@@ -8,6 +8,7 @@ export default function Home({ trustCenters, stats }) {
   const [darkMode, setDarkMode] = useState(false);
   const [openMenuId, setOpenMenuId] = useState(null);
   const [notification, setNotification] = useState(null);
+  const [displayCount, setDisplayCount] = useState(12); // Show 12 initially
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -84,8 +85,27 @@ Add any other context about the problem here.`);
     showNotification('Issue report opened on GitHub!', 'info');
   };
 
-  const filteredTrustCenters = useMemo(() => {
+  const allFilteredTrustCenters = useMemo(() => {
     return searchTrustCenters(searchQuery);
+  }, [searchQuery]);
+
+  const displayedTrustCenters = useMemo(() => {
+    return allFilteredTrustCenters.slice(0, displayCount);
+  }, [allFilteredTrustCenters, displayCount]);
+
+  const hasMore = allFilteredTrustCenters.length > displayCount;
+
+  const showMore = () => {
+    setDisplayCount(prev => prev + 12); // Show 12 more each time
+  };
+
+  const showAll = () => {
+    setDisplayCount(allFilteredTrustCenters.length);
+  };
+
+  // Reset display count when search changes
+  useEffect(() => {
+    setDisplayCount(12);
   }, [searchQuery]);
 
   return (
@@ -223,7 +243,7 @@ Add any other context about the problem here.`);
 
             {/* Company Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-6">
-              {filteredTrustCenters.map((company, index) => (
+              {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
                   className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-all duration-200"
@@ -328,10 +348,35 @@ Add any other context about the problem here.`);
                     </a>
                   </div>
                 </div>
-              ))}
-            </div>
+                ))}
+                </div>
 
-                {filteredTrustCenters.length === 0 && (
+                {/* Show More / Show All Buttons */}
+                {hasMore && (
+                  <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center items-center">
+                    <button
+                      onClick={showMore}
+                      className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    >
+                      Show {Math.min(12, allFilteredTrustCenters.length - displayCount)} More Companies
+                    </button>
+                    <button
+                      onClick={showAll}
+                      className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors font-medium"
+                    >
+                      Show All ({allFilteredTrustCenters.length})
+                    </button>
+                  </div>
+                )}
+
+                {/* Results count */}
+                {allFilteredTrustCenters.length > 0 && (
+                  <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+                    Showing {displayedTrustCenters.length} of {allFilteredTrustCenters.length} companies
+                  </div>
+                )}
+
+                {allFilteredTrustCenters.length === 0 && (
                   <div className="text-center py-20">
                     <div className="text-6xl mb-4">🔍</div>
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No companies found</h3>
