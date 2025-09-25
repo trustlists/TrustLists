@@ -6,7 +6,9 @@ import {
   DocumentTextIcon, 
   CheckCircleIcon,
   ExclamationTriangleIcon,
-  InformationCircleIcon
+  InformationCircleIcon,
+  BoltIcon,
+  CodeBracketIcon
 } from '@heroicons/react/24/outline';
 
 export default function SubmitPage() {
@@ -19,9 +21,12 @@ export default function SubmitPage() {
   });
 
   const [step, setStep] = useState(1);
+  const [submissionMethod, setSubmissionMethod] = useState(null); // 'auto' or 'manual'
   const [generatedCode, setGeneratedCode] = useState('');
   const [darkMode, setDarkMode] = useState(false);
   const [showCopySuccess, setShowCopySuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState(null);
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -43,11 +48,64 @@ export default function SubmitPage() {
     setDarkMode(!darkMode);
   };
 
+  const showNotification = (message, type = 'success') => {
+    setNotification({ message, type });
+    setTimeout(() => {
+      setNotification(null);
+    }, 5000);
+  };
+
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
     }));
+  };
+
+  const validateFormData = () => {
+    const errors = [];
+    
+    if (!formData.name.trim()) errors.push('Company name is required');
+    if (!formData.website.trim()) errors.push('Website URL is required');
+    if (!formData.trustCenter.trim()) errors.push('Trust Center URL is required');
+    if (!formData.description.trim()) errors.push('Description is required');
+    
+    // Validate URLs
+    try {
+      if (formData.website && !formData.website.startsWith('http')) {
+        errors.push('Website URL must start with http:// or https://');
+      }
+      if (formData.trustCenter && !formData.trustCenter.startsWith('http')) {
+        errors.push('Trust Center URL must start with http:// or https://');
+      }
+      if (formData.iconUrl && formData.iconUrl.trim() && !formData.iconUrl.startsWith('http')) {
+        errors.push('Logo URL must start with http:// or https://');
+      }
+    } catch (e) {
+      errors.push('Invalid URL format');
+    }
+    
+    // Check for reasonable length limits
+    if (formData.name.length > 100) errors.push('Company name too long (max 100 characters)');
+    if (formData.description.length > 500) errors.push('Description too long (max 500 characters)');
+    
+    return errors;
+  };
+
+  const handleSubmissionChoice = (method) => {
+    const errors = validateFormData();
+    if (errors.length > 0) {
+      showNotification(`Please fix the following: ${errors.join(', ')}`, 'error');
+      return;
+    }
+    
+    setSubmissionMethod(method);
+    
+    if (method === 'manual') {
+      generateCode();
+    } else if (method === 'auto') {
+      handleAutoSubmission();
+    }
   };
 
   const generateCode = () => {
@@ -61,6 +119,51 @@ export default function SubmitPage() {
 
     setGeneratedCode(code);
     setStep(2);
+  };
+
+  const handleAutoSubmission = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      // Trigger GitHub Actions workflow via repository_dispatch
+      const response = await fetch('https://api.github.com/repos/FelixMichaels/TrustLists/dispatches', {
+        method: 'POST',
+        headers: {
+          'Authorization': `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          event_type: 'trust-center-submission',
+          client_payload: {
+            company: formData
+          }
+        })
+      });
+
+      if (response.ok) {
+        showNotification('🚀 Submission successful! A pull request will be created automatically. Check your email for updates.', 'success');
+        // Reset form
+        setFormData({
+          name: '',
+          website: '',
+          trustCenter: '',
+          description: '',
+          iconUrl: ''
+        });
+        setStep(3); // Success step
+      } else {
+        throw new Error(`HTTP ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Auto-submission error:', error);
+      showNotification(`Auto-submission failed. Please try the manual method or try again later. Error: ${error.message}`, 'error');
+      // Fallback to manual method
+      setSubmissionMethod('manual');
+      generateCode();
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const isFormValid = () => {
@@ -102,13 +205,33 @@ export default function SubmitPage() {
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
-        {/* Custom Copy Success Notification */}
-        {showCopySuccess && (
-          <div className="fixed top-4 right-4 z-50 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-            <span className="font-medium">Code copied to clipboard!</span>
+        {/* Notification System */}
+        {(showCopySuccess || notification) && (
+          <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out max-w-md ${
+            showCopySuccess ? 'bg-green-500 text-white' :
+            notification?.type === 'success' ? 'bg-green-500 text-white' :
+            notification?.type === 'info' ? 'bg-blue-500 text-white' :
+            notification?.type === 'error' ? 'bg-red-500 text-white' :
+            'bg-gray-500 text-white'
+          }`}>
+            {(showCopySuccess || notification?.type === 'success') && (
+              <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+            )}
+            {notification?.type === 'info' && (
+              <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            )}
+            {notification?.type === 'error' && (
+              <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            )}
+            <span className="font-medium text-sm">
+              {showCopySuccess ? 'Code copied to clipboard!' : notification?.message}
+            </span>
           </div>
         )}
 
@@ -210,6 +333,14 @@ export default function SubmitPage() {
                 <div className={`flex items-center justify-center w-8 h-8 rounded-full ${step >= 2 ? 'bg-blue-600 text-white' : 'bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400'}`}>
                   2
                 </div>
+                {step === 3 && (
+                  <>
+                    <div className="w-16 h-1 bg-blue-600"></div>
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white">
+                      ✓
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 
@@ -285,19 +416,66 @@ export default function SubmitPage() {
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Direct URL to your company's logo (PNG, JPG, or SVG)</p>
                   </div>
 
-                  <div className="flex justify-end pt-6">
-                    <button
-                      onClick={generateCode}
-                      disabled={!isFormValid()}
-                      className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300 dark:disabled:bg-gray-600 disabled:cursor-not-allowed transition-colors"
-                    >
-                      Generate Code
-                    </button>
+                  {/* Submission Method Choice */}
+                  <div className="pt-6 border-t border-gray-200 dark:border-gray-600">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Choose Submission Method</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Auto Submission */}
+                      <button
+                        onClick={() => handleSubmissionChoice('auto')}
+                        disabled={!isFormValid() || isSubmitting}
+                        className="group relative p-6 bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-gray-300 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:to-gray-700 disabled:cursor-not-allowed text-white rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl"
+                      >
+                        <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-lg mb-4 mx-auto">
+                          <BoltIcon className="w-6 h-6" />
+                        </div>
+                        <h4 className="text-lg font-semibold mb-2">Auto Submit 🚀</h4>
+                        <p className="text-sm text-blue-100 mb-3">One-click submission! We'll create the PR for you automatically.</p>
+                        <div className="text-xs text-blue-200 space-y-1">
+                          <div>✅ Instant submission</div>
+                          <div>✅ No GitHub knowledge needed</div>
+                          <div>✅ Automatic PR creation</div>
+                        </div>
+                        {isSubmitting && (
+                          <div className="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
+                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
+                          </div>
+                        )}
+                      </button>
+
+                      {/* Manual Submission */}
+                      <button
+                        onClick={() => handleSubmissionChoice('manual')}
+                        disabled={!isFormValid() || isSubmitting}
+                        className="group p-6 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 disabled:bg-gray-100 dark:disabled:bg-gray-800 disabled:cursor-not-allowed border-2 border-gray-200 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-500 rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100"
+                      >
+                        <div className="flex items-center justify-center w-12 h-12 bg-gray-100 dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-600 rounded-lg mb-4 mx-auto transition-colors">
+                          <CodeBracketIcon className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-300" />
+                        </div>
+                        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Manual Submit 🛠️</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Traditional method. Generate code and create PR yourself.</p>
+                        <div className="text-xs text-gray-500 dark:text-gray-400 space-y-1">
+                          <div>✅ Full control</div>
+                          <div>✅ Review before submission</div>
+                          <div>✅ Learn Git workflow</div>
+                        </div>
+                      </button>
+                    </div>
+                    
+                    <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                      <div className="flex items-start space-x-3">
+                        <InformationCircleIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+                        <div className="text-sm text-blue-800 dark:text-blue-200">
+                          <p className="font-medium mb-1">🆕 New Auto-Submit Feature!</p>
+                          <p>Try our new one-click submission! If it doesn't work, we'll automatically fall back to the manual method.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            ) : (
+            ) : step === 2 ? (
               <div className="flex justify-center">
                 <div className="space-y-8 max-w-4xl w-full">
                 {/* Generated Code */}
@@ -401,6 +579,73 @@ export default function SubmitPage() {
                 </div>
               </div>
             </div>
+            ) : (
+              // Step 3: Success (Auto-submission)
+              <div className="flex justify-center">
+                <div className="max-w-2xl w-full text-center">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                    <div className="w-20 h-20 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <CheckCircleIcon className="w-12 h-12 text-green-600 dark:text-green-400" />
+                    </div>
+                    
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                      🎉 Submission Successful!
+                    </h2>
+                    
+                    <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                      Your trust center submission has been received and a pull request is being created automatically.
+                    </p>
+                    
+                    <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
+                      <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-3">What happens next?</h3>
+                      <ul className="text-left text-blue-800 dark:text-blue-200 space-y-2 text-sm">
+                        <li className="flex items-start space-x-2">
+                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                          <span>A pull request will be created on GitHub automatically</span>
+                        </li>
+                        <li className="flex items-start space-x-2">
+                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                          <span>Our team will review your submission (usually within 24-48 hours)</span>
+                        </li>
+                        <li className="flex items-start space-x-2">
+                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                          <span>Once approved, your company will appear on TrustList automatically</span>
+                        </li>
+                        <li className="flex items-start space-x-2">
+                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                          <span>You'll receive email notifications about the status</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <button
+                        onClick={() => {
+                          setStep(1);
+                          setSubmissionMethod(null);
+                          setFormData({
+                            name: '',
+                            website: '',
+                            trustCenter: '',
+                            description: '',
+                            iconUrl: ''
+                          });
+                        }}
+                        className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                      >
+                        Submit Another Company
+                      </button>
+                      
+                      <Link
+                        href="/"
+                        className="block w-full px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors font-medium text-center"
+                      >
+                        Back to TrustList
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
             </div>
           </div>

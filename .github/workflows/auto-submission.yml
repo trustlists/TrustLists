@@ -1,0 +1,113 @@
+name: Auto Trust Center Submission
+
+on:
+  repository_dispatch:
+    types: [trust-center-submission]
+
+jobs:
+  create-submission-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create branch for submission
+        run: |
+          BRANCH_NAME="submission/$(echo '${{ github.event.client_payload.company.name }}' | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')-$(date +%s)"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          git checkout -b "$BRANCH_NAME"
+
+      - name: Create company file
+        run: |
+          COMPANY_NAME="${{ github.event.client_payload.company.name }}"
+          FILE_NAME="$(echo "$COMPANY_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g').js"
+          
+          cat > "constants/trustCenterRegistry/$FILE_NAME" << 'EOF'
+          export default {
+            "name": "${{ github.event.client_payload.company.name }}",
+            "website": "${{ github.event.client_payload.company.website }}",
+            "trustCenter": "${{ github.event.client_payload.company.trustCenter }}",
+            "description": "${{ github.event.client_payload.company.description }}",
+            "iconUrl": "${{ github.event.client_payload.company.iconUrl }}"
+          };
+          EOF
+          
+          echo "COMPANY_FILE=$FILE_NAME" >> $GITHUB_ENV
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add "constants/trustCenterRegistry/$COMPANY_FILE"
+          git commit -m "Add ${{ github.event.client_payload.company.name }} trust center
+
+          Submitted via web form:
+          - Website: ${{ github.event.client_payload.company.website }}
+          - Trust Center: ${{ github.event.client_payload.company.trustCenter }}
+          - Description: ${{ github.event.client_payload.company.description }}
+          
+          Auto-generated submission from TrustList web form."
+
+      - name: Push branch
+        run: |
+          git push origin "$BRANCH_NAME"
+
+      - name: Create Pull Request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Add ${{ github.event.client_payload.company.name }} trust center`,
+              head: process.env.BRANCH_NAME,
+              base: 'main',
+              body: `## New Trust Center Submission
+
+            **Company:** ${{ github.event.client_payload.company.name }}
+            **Website:** ${{ github.event.client_payload.company.website }}
+            **Trust Center:** ${{ github.event.client_payload.company.trustCenter }}
+            **Description:** ${{ github.event.client_payload.company.description }}
+            **Logo URL:** ${{ github.event.client_payload.company.iconUrl }}
+
+            ---
+
+            ### Review Checklist
+            - [ ] Company name is accurate and properly formatted
+            - [ ] Website URL is valid and accessible
+            - [ ] Trust center URL is valid and accessible
+            - [ ] Description is appropriate and informative
+            - [ ] Logo URL is valid (if provided)
+            - [ ] No duplicate company entries
+            - [ ] Company meets inclusion criteria
+
+            ---
+            
+            *This PR was automatically created from a web form submission.*
+            *File: \`constants/trustCenterRegistry/${{ github.event.client_payload.company.name }}.js\`*
+
+            **Next Steps:**
+            1. Review the company information above
+            2. Check all URLs are accessible
+            3. Ensure no duplicates exist
+            4. Approve and merge if everything looks good
+
+            The new company will appear on the site automatically after merge! 🚀`,
+              draft: false
+            });
+            
+            // Add labels
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              labels: ['auto-submission', 'needs-review', 'trust-center']
+            });
+            
+            console.log(`Created PR #${pr.number}: ${pr.html_url}`);
+            
+            // Set output for potential use in other steps
+            core.setOutput('pr-number', pr.number);
+            core.setOutput('pr-url', pr.html_url);
