@@ -1,11 +1,81 @@
 {
   "data": [
     {
+      "name": "Amazon Web Services",
+      "website": "https://aws.amazon.com",
+      "trustCenter": "https://aws.amazon.com/trust-center",
+      "description": "Amazon Web Services (AWS) is Amazon's cloud computing platform that provides on-demand IT services, like servers, storage, and databases, over the internet on a pay-as-you-go basis",
+      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+    },
+    {
+      "name": "Betterment",
+      "website": "https://betterment.com/",
+      "trustCenter": "https://trust.betterment.com/",
+      "description": "Betterment is an internet-based advisory services are designed to assist clients in achieving discrete financial goals.",
+      "iconUrl": "https://api.conveyor.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6TWpSaVpUaGtaaTB6TWpVMExUUmhNVEV0T1RWaU1pMW1PVEF6TVRCaVlqVTROVEFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--c3b6135fd1eb931d98d304dae8cc4cabb91c4a6d/betterment.png"
+    },
+    {
+      "name": "Code Rabbit",
+      "website": "https://coderabbit.ai/",
+      "trustCenter": "https://trust.coderabbit.ai/",
+      "description": "CodeRabbit is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews.",
+      "iconUrl": "https://trust.coderabbit.ai/viewFile/eyJvcmdQayI6IjU3OWFkY2Y0LWUzMjMtNDcxYy04OTM2LTEwYjBlMWY1YzJjMiIsInZpZXdGaWxlVHlwZSI6Ik9yZ0xvZ28iLCJzM0tleSI6Ik9yZ0xvZ28vNTc5YWRjZjQtZTMyMy00NzFjLTg5MzYtMTBiMGUxZjVjMmMyL2FiMWVlMDUyLWY4MjEtNGU4MS05NmJkLTE0ZDIwMjkxNTc4ZC9BZG9iZSBFeHByZXNzIC0gZmlsZS5wbmciLCJzaWduYXR1cmUiOiI2MGE1MGI2MzYyNjJkYWU4ZmQ1ZjlkMjZjMTc4ZTUxZjc4MjI3ZTUxOGVjNWJjYTkxNTdiNWFhMTZjNWZiZTcwIn0%3D"
+    },
+    {
+      "name": "Cursor",
+      "website": "https://cursor.com/",
+      "trustCenter": "https://trust.cursor.com/",
+      "description": "Cursor AI is a proprietary, AI-native code editor built on top of the open-source codebase.",
+      "iconUrl": "https://trust.cursor.com/doc?s=8oae3i9p56u0y9k26580m4"
+    },
+    {
+      "name": "Delve",
+      "website": "https://delve.co/",
+      "trustCenter": "https://trust.delve.co/",
+      "description": "Delve is in compliance with security best practices, has implemented and is monitoring comprehensive controls, and maintains policies to outline its security procedures.",
+      "iconUrl": "https://mma.prnewswire.com/media/2735501/DelveBlackLogo__002_Logo.jpg?p=facebook"
+    },
+    {
+      "name": "Drata",
+      "website": "https://drata.com/",
+      "trustCenter": "https://trust.drata.com/",
+      "description": "Drata is a security and compliance automation platform that helps companies streamline compliance, manage risk, and build trust.",
+      "iconUrl": "https://drata.com/images/favicon-256x256.png"
+    },
+    {
+      "name": "Eudia",
+      "website": "https://eudia.com/",
+      "trustCenter": "https://trust.eudia.com/",
+      "description": "Eudia is an legal technology company that provides an augmented intelligence platform and legal services to corporate legal departments",
+      "iconUrl": "https://trust.eudia.com/api/share/12e2a8c9-ab2f-4d0e-bbba-098ca561c1a1/logo.png?version=20"
+    },
+    {
+      "name": "Figma",
+      "website": "https://figma.com/",
+      "trustCenter": "https://compliance.figma.com/",
+      "description": "Figma is a cloud-based collaborative interface design tool used to create digital products like websites, mobile apps, and other experiences.",
+      "iconUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format"
+    },
+    {
       "name": "GitHub",
       "website": "https://github.com",
-      "trustCenter": "https://github.com/security",
+      "trustCenter": "https://github.com/trust-center",
       "description": "World's leading software development platform with enterprise-grade security",
       "iconUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+    },
+    {
+      "name": "Gitlab",
+      "website": "https://gitlab.com/",
+      "trustCenter": "https://trust.gitlab.com/",
+      "description": "GitLab is an AI-powered, unified DevSecOps platform that helps teams manage the entire software development lifecycle, from planning and source code management to automated CI/CD, security testing, and deployment.",
+      "iconUrl": "https://trust.gitlab.com/api/share/e3f22038-1c1b-4cd0-8ebe-7e95017bec60/logo.png?version=35"
+    },
+    {
+      "name": "Hubspot",
+      "website": "https://hubspot.com/",
+      "trustCenter": "https://trust.hubspot.com/",
+      "description": "HubSpot is an AI-powered customer platform offering an all-in-one solution for marketing, sales, and customer service to help businesses find, attract, and grow customer relationships.",
+      "iconUrl": "https://trust.hubspot.com/api/share/81b68795-ec24-4799-b5eb-a26ed0b05259/logo.png?version=21"
     },
     {
       "name": "Jones IT",
@@ -15,23 +85,93 @@
       "iconUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQEp2kxPvIoVpw/company-logo_200_200/B4DZVc8ZcIHIAM-/0/1741021092166/jonesitsf_logo?e=2147483647&v=beta&t=cET56rxxtzrKbMD2uXwWGuITiJRoknZGDtuAsJYFTJM"
     },
     {
+      "name": "Kandji",
+      "website": "https://www.kandji.io",
+      "trustCenter": "https://trust.kandji.io",
+      "description": "Kandji is a cloud-based Apple device management and security platform designed to centralize and automate the configuration, management, and security of Mac, iPhone, iPad, and Apple TV devices within an organization",
+      "iconUrl": "https://images.credly.com/images/e248567c-552c-4c58-abc7-fb9ef1157f1a/blob.png"
+    },
+    {
+      "name": "Lovable",
+      "website": "https://lovable.dev",
+      "trustCenter": "https://trust.delve.co/lovable",
+      "description": "Lovable is an AI-powered platform for building full-stack web applications and websites using natural language prompts instead of coding.",
+      "iconUrl": "https://lovable.dev/img/logo/lovable-logo-bg-light.png"
+    },
+    {
+      "name": "Postman",
+      "website": "https://postman.com/",
+      "trustCenter": "https://security.postman.com/",
+      "description": "Postman is an all-in-one API platform that streamlines the entire API lifecycle by providing a comprehensive set of tools for design, testing, and collaboration.",
+      "iconUrl": "https://security.postman.com/api/share/3299ad14-25cc-4065-acdf-0e01a16a852d/logo.png?version=33"
+    },
+    {
+      "name": "Safebase",
+      "website": "https://safebase.io/",
+      "trustCenter": "https://trust.safebase.io/",
+      "description": "SafeBase automates security reviews and transforms how you communicate your security and trust posture. Build customer trust through transparency.",
+      "iconUrl": "https://pbs.twimg.com/profile_images/1371557872039985153/1FOMWpp9_400x400.png"
+    },
+    {
       "name": "Salesforce",
       "website": "https://salesforce.com",
       "trustCenter": "https://trust.salesforce.com",
       "description": "Leading CRM platform with comprehensive trust and compliance programs",
-      "iconUrl": "https://www.salesforce.com/content/dam/web/en_us/www/images/nav/salesforce-cloud-logo-v2.png"
+      "iconUrl": "https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg?w=2048&h=1152"
+    },
+    {
+      "name": "Slack",
+      "website": "https://slack.com/",
+      "trustCenter": "https://slack.com/trust",
+      "description": "BSlack is a work operating system and collaboration platform that functions as a central hub for team communication, file sharing, and project management.",
+      "iconUrl": "https://1000logos.net/wp-content/uploads/2021/06/Slack-logo.png"
     },
     {
       "name": "Stripe",
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
       "description": "Online payment processing platform with comprehensive security and compliance programs",
-      "iconUrl": "https://stripe.com/img/v3/home/social.png"
+      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s"
+    },
+    {
+      "name": "Superhuman",
+      "website": "https://superhuman.com",
+      "trustCenter": "https://trust.superhuman.com",
+      "description": "Superhuman is the most productive email app ever made. Collaborate faster and get more done with AI-native email.",
+      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50G52axTpCjQ9vhdS8epCr7uIQ7nEXgb0OA&s"
+    },
+    {
+      "name": "Vanta",
+      "website": "https://vanta.com",
+      "trustCenter": "https://trust.vanta.com",
+      "description": "Vanta is an automated trust management and compliance platform that helps companies of all sizes simplify, centralize, and automate security and compliance workflows.",
+      "iconUrl": "https://cdn.prod.website-files.com/64009032676f24f376f002fc/6418277d5d75a8809671fda3_FTR_Vanta_logo.png"
+    },
+    {
+      "name": "Vercel",
+      "website": "https://vercel.com/",
+      "trustCenter": "https://security.vercel.com/",
+      "description": "Vercel is a cloud platform for frontend developers that simplifies the deployment, hosting, and scaling of modern web applications.",
+      "iconUrl": "https://security.vercel.com/api/share/045f15d5-2260-44d8-aa72-de6a8a3dbff8/logo.png?version=128"
+    },
+    {
+      "name": "Wiz",
+      "website": "https://trust.wiz.io/",
+      "trustCenter": "https://wiz.io/",
+      "description": "Wiz connects to every cloud environment, scans every layer, and covers every aspect of your cloud security.",
+      "iconUrl": "https://trust.wiz.io/api/share/04eb804b-5a47-43be-a332-d3270cc573e4/logo.png?version=7"
+    },
+    {
+      "name": "Zoom",
+      "website": "https://zoom.com/",
+      "trustCenter": "https://trust.zoom.com/",
+      "description": "Zoom is a cloud-based video and audio conferencing platform that allows for virtual meetings, remote collaboration, and instant messaging, supporting features like screen sharing, recording, and chat.",
+      "iconUrl": "https://trust.zoom.com/api/share/c4db4dfe-8238-405d-bc7f-e4adee68e0a6/logo.png?version=20"
     }
   ],
   "meta": {
-    "total": 4,
-    "generated": "2025-09-25T01:35:15.383Z",
+    "total": 24,
+    "generated": "2025-09-25T05:26:38.640Z",
     "version": "1.0.0"
   }
 }

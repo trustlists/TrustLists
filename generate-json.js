@@ -11,11 +11,17 @@ function generateTrustCentersJSON() {
     
     files.forEach(file => {
       if (file.endsWith('.js')) {
-        const filePath = path.join(registryDir, file);
-        delete require.cache[require.resolve(filePath)];
-        const data = require(filePath);
-        const trustCenter = data.default || data;
-        trustCenters.push(trustCenter);
+        try {
+          const filePath = path.join(registryDir, file);
+          delete require.cache[require.resolve(filePath)];
+          const data = require(filePath);
+          const trustCenter = data.default || data;
+          trustCenters.push(trustCenter);
+          console.log(`✅ Loaded ${file}`);
+        } catch (error) {
+          console.error(`❌ Error loading ${file}:`, error.message);
+          throw error;
+        }
       }
     });
 
