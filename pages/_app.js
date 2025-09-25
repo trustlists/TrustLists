@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
         <title>TrustList - Company Trust Centers Directory</title>
         <meta name="description" content="A curated list of company trust centers and compliance documentation. Find security, privacy, and compliance information for leading companies." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta property="og:title" content="TrustList - Company Trust Centers Directory" />
         <meta property="og:description" content="A curated list of company trust centers and compliance documentation." />
         <meta property="og:type" content="website" />
