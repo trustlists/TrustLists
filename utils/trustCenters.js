@@ -1,14 +1,15 @@
-// Import all trust center data
-import stripe from '../constants/trustCenterRegistry/stripe.js';
+// Auto-generated imports - DO NOT EDIT MANUALLY
+// This file is automatically updated by generate-utils.js
 import github from '../constants/trustCenterRegistry/github.js';
+import jonesit from '../constants/trustCenterRegistry/jones-it.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
-import jonesIt from '../constants/trustCenterRegistry/jones-it.js';
+import stripe from '../constants/trustCenterRegistry/stripe.js';
 
 const trustCenterData = [
-  stripe,
-  github, 
+  github,
+  jonesit,
   salesforce,
-  jonesIt
+  stripe
 ];
 
 export function getAllTrustCenters() {
