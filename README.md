@@ -27,7 +27,7 @@ A curated directory of company trust centers and compliance documentation. Trust
 
 We use a **simplified submission process** to keep TrustList clean and focused. You can either:
 
-1. **Use our submission form**: Visit [trustlists.github.io/submit](https://felixmichaels.github.io/TrustLists/submit/) for a guided experience
+1. **Use our submission form**: Visit [trustlists.org/submit](https://trustlists.org/submit/) for a guided experience
 2. **Submit directly**: Add a new file to `constants/trustCenterRegistry/` folder
 
 **File Structure** (only 5 fields required):
@@ -59,10 +59,10 @@ Found a problem with a company listing? Use the **Report Issue** button on any c
 
 ```bash
 # All trust centers (live data)
-GET https://felixmichaels.github.io/TrustLists/trust-centers.json
+GET https://trustlists.org/trust-centers.json
 
 # Statistics
-GET https://felixmichaels.github.io/TrustLists/api/stats
+GET https://trustlists.org/api/stats
 ```
 
 ### Example Response
@@ -81,7 +81,7 @@ GET https://felixmichaels.github.io/TrustLists/api/stats
 ### Usage Examples
 ```javascript
 // Fetch all companies
-const companies = await fetch('https://felixmichaels.github.io/TrustLists/trust-centers.json')
+const companies = await fetch('https://trustlists.org/trust-centers.json')
   .then(res => res.json());
 
 // Find specific company

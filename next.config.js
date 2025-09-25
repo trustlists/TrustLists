@@ -9,8 +9,8 @@ const nextConfig = {
   },
   // GitHub Pages configuration
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/TrustLists' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/TrustLists/' : '',
+  basePath: '',
+  assetPrefix: '',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md$/,

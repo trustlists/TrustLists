@@ -158,7 +158,7 @@ export default function SubmitPage() {
                   View Code
                 </a>
                 <a 
-                  href="https://felixmichaels.github.io/TrustLists/trust-centers.json" 
+                  href="https://trustlists.org/trust-centers.json" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg"

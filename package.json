@@ -42,7 +42,7 @@
     "governance",
     "certifications"
   ],
-  "homepage": "https://felixmichaels.github.io/TrustLists",
+  "homepage": "https://trustlists.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/FelixMichaels/TrustLists.git"
