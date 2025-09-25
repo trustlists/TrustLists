@@ -3,5 +3,5 @@ export default {
   "website": "https://checkr.com/",
   "trustCenter": "https://security.checkr.com/",
   "description": "Checkr is an technology platform for background checks that helps companies and individuals streamline employment screenings and access public records",
-  "iconUrl": "https://security.checkr.com/api/share/85bfddea-ddb4-4498-872f-51817932f6a4/logo.png?version=24"
+  "iconUrl": "https://a-us.storyblok.com/f/1017672/2309x542/aafeafa3d6/checkr_logo_wordmark_aqua3.png"
 }
