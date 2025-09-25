@@ -126,19 +126,15 @@ Add any other context about the problem here.`);
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-0 m-0">
+            <div className="p-8">
               {/* Logo and Title */}
-              <div className="m-0 p-0">
-                <img 
-                  src="/trustlist-logo.png" 
-                  alt="TrustList" 
-                  className="w-full object-contain" 
-                  style={{ height: '600px', width: '100%', display: 'block', margin: '0', padding: '0' }}
-                  onError={(e) => {
-                    console.error('Logo failed to load:', e);
-                    e.target.style.display = 'none';
-                  }}
-                />
+              <div className="mb-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white font-bold text-xl">T</span>
+                  </div>
+                  <h1 className="text-3xl font-bold text-gray-900 dark:text-white">TrustList</h1>
+                </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Helping users connect to trusted companies
                 </h2>
