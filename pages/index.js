@@ -128,13 +128,13 @@ Add any other context about the problem here.`);
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
             <div className="p-8">
               {/* Logo and Title */}
-              <div className="mb-6">
-                <div className="flex items-center mb-3">
+              <div className="mb-4">
+                <div className="flex items-center mb-2">
                   <img 
                     src="/trustlist-logo.png" 
                     alt="TrustList" 
                     className="w-auto max-w-full" 
-                    style={{ height: '400px', maxWidth: '350px', display: 'block' }}
+                    style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0' }}
                     onError={(e) => {
                       console.error('Logo failed to load:', e);
                       e.target.style.display = 'none';
