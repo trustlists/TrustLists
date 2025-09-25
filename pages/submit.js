@@ -119,8 +119,9 @@ export default function SubmitPage() {
               {/* Logo and Title */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
-                  <img src="/trustlist-logo.png" alt="TrustList" className="w-12 h-12 mr-3" />
-                  <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
+                  <Link href="/">
+                    <img src="/trustlist-logo.png" alt="TrustList" className="h-12 hover:opacity-80 transition-opacity" />
+                  </Link>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Submit a Trust Center

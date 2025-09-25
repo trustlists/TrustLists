@@ -130,8 +130,7 @@ Add any other context about the problem here.`);
               {/* Logo and Title */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
-                  <img src="/trustlist-logo.png" alt="TrustList" className="w-12 h-12 mr-3" />
-                  <h1 className="text-3xl font-bold text-gray-900 dark:text-white">TrustList</h1>
+                  <img src="/trustlist-logo.png" alt="TrustList" className="h-12" />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Helping users connect to trusted companies
