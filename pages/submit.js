@@ -120,7 +120,15 @@ export default function SubmitPage() {
               <div className="mb-8">
                 <div className="flex items-center mb-4">
                   <Link href="/">
-                    <img src="/trustlist-logo.png" alt="TrustList" className="h-12 hover:opacity-80 transition-opacity" />
+                    <img 
+                      src="/trustlist-logo.png" 
+                      alt="TrustList" 
+                      className="h-16 w-auto hover:opacity-80 transition-opacity" 
+                      onError={(e) => {
+                        console.error('Logo failed to load:', e);
+                        e.target.style.display = 'none';
+                      }}
+                    />
                   </Link>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
