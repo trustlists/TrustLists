@@ -112,10 +112,10 @@ export default function SubmitPage() {
           </div>
         )}
 
-        <div className="flex h-screen overflow-hidden">
-          {/* Left Sidebar - Fixed */}
-          <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-8">
+        <div className="lg:flex h-screen overflow-hidden">
+          {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
+          <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
+            <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
@@ -188,13 +188,13 @@ export default function SubmitPage() {
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 overflow-y-auto">
-            <div className="p-8">
+          <div className="flex-1 overflow-y-auto lg:h-screen">
+            <div className="p-4 sm:p-6 lg:p-8">
             {/* Header */}
             <div className="text-center mb-8">
               <PlusIcon className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-              <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Submit a Trust Center</h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">Submit a Trust Center</h1>
+              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Help the community by adding your company's trust center to our directory. 
                 We review all submissions to ensure quality and accuracy.
               </p>

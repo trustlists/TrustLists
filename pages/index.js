@@ -123,10 +123,10 @@ Add any other context about the problem here.`);
           </div>
         )}
 
-        <div className="flex h-screen overflow-hidden">
-          {/* Left Sidebar - Fixed */}
-          <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-8">
+        <div className="lg:flex h-screen overflow-hidden">
+          {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
+          <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
+            <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
@@ -198,12 +198,12 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 overflow-y-auto">
-            <div className="p-8">
+          <div className="flex-1 overflow-y-auto lg:h-screen">
+            <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
               <div className="mb-4">
-                <div className="relative max-w-lg">
+                <div className="relative w-full max-w-2xl">
                   <input
                     type="text"
                     placeholder="Search Companies   Stripe, GitHub, Salesforce..."
@@ -222,11 +222,11 @@ Add any other context about the problem here.`);
             </div>
 
             {/* Company Grid */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-6">
               {filteredTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
-                  className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition-all duration-200"
+                  className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-all duration-200"
                 >
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
