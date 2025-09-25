@@ -119,9 +119,7 @@ export default function SubmitPage() {
               {/* Logo and Title */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
-                    <span className="text-white font-bold text-xl">T</span>
-                  </div>
+                  <img src="/trustlist-logo.png" alt="TrustList" className="w-12 h-12 mr-3" />
                   <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
