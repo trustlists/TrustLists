@@ -117,14 +117,14 @@ export default function SubmitPage() {
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
             <div className="p-8">
               {/* Logo and Title */}
-              <div className="mb-8">
-                <div className="flex items-center mb-4">
+              <div className="mb-6">
+                <div className="flex items-center mb-3">
                   <Link href="/">
                     <img 
                       src="/trustlist-logo.png" 
                       alt="TrustList" 
                       className="w-auto max-w-full hover:opacity-80 transition-opacity" 
-                      style={{ height: '200px', maxWidth: '300px' }}
+                      style={{ height: '400px', maxWidth: '350px', display: 'block' }}
                       onError={(e) => {
                         console.error('Logo failed to load:', e);
                         e.target.style.display = 'none';
