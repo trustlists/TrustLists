@@ -43,7 +43,7 @@ export function getTrustCenterByName(name) {
   return trustCenters.find(tc => tc.name === name);
 }
 
-export function searchTrustCenters(query, filters = {}) {
+export function searchTrustCenters(query) {
   let trustCenters = getAllTrustCenters();
 
   // Apply search query
@@ -62,11 +62,7 @@ export function getStats() {
   const trustCenters = getAllTrustCenters();
   
   return {
-    totalCompanies: trustCenters.length,
-    totalIndustries: 0,
-    totalCertifications: 0,
-    topIndustries: [],
-    topCertifications: []
+    totalCompanies: trustCenters.length
   };
 }
 `;

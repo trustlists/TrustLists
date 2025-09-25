@@ -2,12 +2,14 @@
 // This file is automatically updated by generate-utils.js
 import github from '../constants/trustCenterRegistry/github.js';
 import jonesit from '../constants/trustCenterRegistry/jones-it.js';
+import kandji from '../constants/trustCenterRegistry/kandji.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
 import stripe from '../constants/trustCenterRegistry/stripe.js';
 
 const trustCenterData = [
   github,
   jonesit,
+  kandji,
   salesforce,
   stripe
 ];
@@ -22,7 +24,7 @@ export function getTrustCenterByName(name) {
   return trustCenters.find(tc => tc.name === name);
 }
 
-export function searchTrustCenters(query, filters = {}) {
+export function searchTrustCenters(query) {
   let trustCenters = getAllTrustCenters();
 
   // Apply search query
@@ -41,10 +43,6 @@ export function getStats() {
   const trustCenters = getAllTrustCenters();
   
   return {
-    totalCompanies: trustCenters.length,
-    totalIndustries: 0,
-    totalCertifications: 0,
-    topIndustries: [],
-    topCertifications: []
+    totalCompanies: trustCenters.length
   };
 }

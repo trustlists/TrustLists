@@ -17,20 +17,13 @@ export default function handler(req, res) {
   }
 
   try {
-    const { search, industry, certification, framework, companySize } = req.query;
+    const { search } = req.query;
 
     let trustCenters;
 
-    if (search || industry || certification || framework || companySize) {
-      // Apply search and filters
-      const filters = {
-        industry: industry || 'all',
-        certification: certification || 'all',
-        framework: framework || 'all',
-        companySize: companySize || 'all'
-      };
-      
-      trustCenters = searchTrustCenters(search || '', filters);
+    if (search) {
+      // Apply search query
+      trustCenters = searchTrustCenters(search);
     } else {
       // Return all trust centers
       trustCenters = getAllTrustCenters();

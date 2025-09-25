@@ -85,7 +85,7 @@ Add any other context about the problem here.`);
   };
 
   const filteredTrustCenters = useMemo(() => {
-    return searchTrustCenters(searchQuery, {});
+    return searchTrustCenters(searchQuery);
   }, [searchQuery]);
 
   return (
