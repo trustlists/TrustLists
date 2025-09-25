@@ -123,7 +123,7 @@ export default function SubmitPage() {
                     <img 
                       src="/trustlist-logo.png" 
                       alt="TrustList" 
-                      className="h-16 w-auto hover:opacity-80 transition-opacity" 
+                      className="h-24 w-auto hover:opacity-80 transition-opacity" 
                       onError={(e) => {
                         console.error('Logo failed to load:', e);
                         e.target.style.display = 'none';

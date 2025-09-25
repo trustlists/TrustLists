@@ -133,7 +133,7 @@ Add any other context about the problem here.`);
                   <img 
                     src="/trustlist-logo.png" 
                     alt="TrustList" 
-                    className="h-16 w-auto" 
+                    className="h-24 w-auto" 
                     onError={(e) => {
                       console.error('Logo failed to load:', e);
                       e.target.style.display = 'none';
