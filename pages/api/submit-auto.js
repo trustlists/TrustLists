@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     }
 
     // Get GitHub token from environment
-    const githubToken = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+    const githubToken = process.env.PERSONAL_ACCESS_TOKEN || process.env.NEXT_PUBLIC_GITHUB_TOKEN;
     if (!githubToken) {
       console.error('GitHub token not found in environment');
       res.status(500).json({ error: 'Server configuration error' });
