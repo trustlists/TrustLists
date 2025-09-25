@@ -2,11 +2,13 @@
 import stripe from '../constants/trustCenterRegistry/stripe.js';
 import github from '../constants/trustCenterRegistry/github.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
+import jonesIt from '../constants/trustCenterRegistry/jones-it.js';
 
 const trustCenterData = [
   stripe,
   github, 
-  salesforce
+  salesforce,
+  jonesIt
 ];
 
 export function getAllTrustCenters() {
