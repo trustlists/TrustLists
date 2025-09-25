@@ -125,23 +125,20 @@ export default function SubmitPage() {
     setIsSubmitting(true);
     
     try {
-      // Trigger GitHub Actions workflow via repository_dispatch
-      const response = await fetch('https://api.github.com/repos/FelixMichaels/TrustLists/dispatches', {
+      // Call our server-side API route
+      const response = await fetch('/api/submit-auto', {
         method: 'POST',
         headers: {
-          'Authorization': `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          event_type: 'trust-center-submission',
-          client_payload: {
-            company: formData
-          }
+          company: formData
         })
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (response.ok && result.success) {
         showNotification('🚀 Submission successful! A pull request will be created automatically. Check your email for updates.', 'success');
         // Reset form
         setFormData({
@@ -153,11 +150,11 @@ export default function SubmitPage() {
         });
         setStep(3); // Success step
       } else {
-        throw new Error(`HTTP ${response.status}`);
+        throw new Error(result.error || result.message || `HTTP ${response.status}`);
       }
     } catch (error) {
       console.error('Auto-submission error:', error);
-      showNotification(`Auto-submission failed. Please try the manual method or try again later. Error: ${error.message}`, 'error');
+      showNotification(`Auto-submission failed: ${error.message}. Switching to manual method.`, 'error');
       // Fallback to manual method
       setSubmissionMethod('manual');
       generateCode();
