@@ -112,7 +112,7 @@ export default function SubmitPage() {
           </div>
         )}
 
-        <div className="lg:flex h-screen overflow-hidden">
+        <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
           <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
@@ -188,7 +188,7 @@ export default function SubmitPage() {
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 overflow-y-auto lg:h-screen">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Header */}
             <div className="text-center mb-8">

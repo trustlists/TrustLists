@@ -123,7 +123,7 @@ Add any other context about the problem here.`);
           </div>
         )}
 
-        <div className="lg:flex h-screen overflow-hidden">
+        <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
           <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
@@ -198,7 +198,7 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 overflow-y-auto lg:h-screen">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
@@ -209,7 +209,7 @@ Add any other context about the problem here.`);
                     placeholder="Search Companies   Stripe, GitHub, Salesforce..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
+                        className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
                   />
                   <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
