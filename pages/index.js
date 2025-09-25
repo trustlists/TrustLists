@@ -126,15 +126,15 @@ Add any other context about the problem here.`);
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-8">
+            <div className="p-4 pt-2">
               {/* Logo and Title */}
-              <div className="mb-4">
-                <div className="flex items-center mb-2">
+              <div className="mb-2">
+                <div className="flex items-center mb-1">
                   <img 
                     src="/trustlist-logo.png" 
                     alt="TrustList" 
                     className="w-auto max-w-full" 
-                    style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0' }}
+                    style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0', padding: '0' }}
                     onError={(e) => {
                       console.error('Logo failed to load:', e);
                       e.target.style.display = 'none';
