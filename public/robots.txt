@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://trustlists.org/sitemap.xml
+
+# Allow search engines to crawl everything
+Crawl-delay: 1
+
+# Specific paths
+Allow: /submit
+Allow: /api
+Allow: /trust-centers.json
+
+# Block nothing - we want everything indexed

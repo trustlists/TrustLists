@@ -111,8 +111,39 @@ Add any other context about the problem here.`);
   return (
     <>
       <Head>
-        <title>TrustList</title>
-        <meta name="description" content="TrustList is a list of company trust centers. Users can use the information to connect to trusted companies and their compliance documentation." />
+        <title>TrustList - Find Company Trust Centers & Compliance Documentation</title>
+        <meta name="description" content="Discover trust centers and compliance documentation from 24+ leading companies. Find SOC2, ISO27001, GDPR, and security information from Stripe, GitHub, Salesforce, and more." />
+        <link rel="canonical" href="https://trustlists.org" />
+        
+        {/* Page-specific Open Graph */}
+        <meta property="og:title" content="TrustList - Find Company Trust Centers & Compliance Documentation" />
+        <meta property="og:description" content="Discover trust centers and compliance documentation from 24+ leading companies. Find SOC2, ISO27001, GDPR, and security information." />
+        <meta property="og:url" content="https://trustlists.org" />
+        
+        {/* Structured Data for Organization List */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Company Trust Centers Directory",
+              "description": "A curated list of company trust centers and compliance documentation",
+              "numberOfItems": stats.totalCompanies,
+              "itemListElement": trustCenters.slice(0, 12).map((company, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "item": {
+                  "@type": "Organization",
+                  "name": company.name,
+                  "description": company.description,
+                  "url": company.website,
+                  "sameAs": company.trustCenter
+                }
+              }))
+            })
+          }}
+        />
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
