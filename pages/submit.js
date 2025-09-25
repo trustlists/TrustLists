@@ -115,23 +115,21 @@ export default function SubmitPage() {
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-4 pt-2">
+            <div className="px-2 py-1">
               {/* Logo and Title */}
-              <div className="mb-2">
-                <div className="flex items-center mb-1">
-                  <Link href="/">
-                    <img 
-                      src="/trustlist-logo.png" 
-                      alt="TrustList" 
-                      className="w-auto max-w-full hover:opacity-80 transition-opacity" 
-                      style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0', padding: '0' }}
-                      onError={(e) => {
-                        console.error('Logo failed to load:', e);
-                        e.target.style.display = 'none';
-                      }}
-                    />
-                  </Link>
-                </div>
+              <div className="mb-1">
+                <Link href="/">
+                  <img 
+                    src="/trustlist-logo.png" 
+                    alt="TrustList" 
+                    className="w-auto max-w-full hover:opacity-80 transition-opacity" 
+                    style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0', padding: '0' }}
+                    onError={(e) => {
+                      console.error('Logo failed to load:', e);
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                </Link>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Submit a Trust Center
                 </h2>

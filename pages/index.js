@@ -126,21 +126,19 @@ Add any other context about the problem here.`);
         <div className="flex h-screen overflow-hidden">
           {/* Left Sidebar - Fixed */}
           <div className="w-96 bg-white dark:bg-gray-800 shadow-sm flex-shrink-0">
-            <div className="p-4 pt-2">
+            <div className="px-2 py-1">
               {/* Logo and Title */}
-              <div className="mb-2">
-                <div className="flex items-center mb-1">
-                  <img 
-                    src="/trustlist-logo.png" 
-                    alt="TrustList" 
-                    className="w-auto max-w-full" 
-                    style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0', padding: '0' }}
-                    onError={(e) => {
-                      console.error('Logo failed to load:', e);
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                </div>
+              <div className="mb-1">
+                <img 
+                  src="/trustlist-logo.png" 
+                  alt="TrustList" 
+                  className="w-auto max-w-full" 
+                  style={{ height: '400px', maxWidth: '350px', display: 'block', margin: '0', padding: '0' }}
+                  onError={(e) => {
+                    console.error('Logo failed to load:', e);
+                    e.target.style.display = 'none';
+                  }}
+                />
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Helping users connect to trusted companies
                 </h2>
