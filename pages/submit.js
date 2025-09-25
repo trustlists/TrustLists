@@ -429,13 +429,8 @@ export default function SubmitPage() {
                         <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-lg mb-4 mx-auto">
                           <BoltIcon className="w-6 h-6" />
                         </div>
-                        <h4 className="text-lg font-semibold mb-2">Auto Submit 🚀</h4>
-                        <p className="text-sm text-blue-100 mb-3">One-click submission! We'll create the PR for you automatically.</p>
-                        <div className="text-xs text-blue-200 space-y-1">
-                          <div>✅ Instant submission</div>
-                          <div>✅ No GitHub knowledge needed</div>
-                          <div>✅ Automatic PR creation</div>
-                        </div>
+                        <h4 className="text-lg font-semibold mb-2">Auto Submit</h4>
+                        <p className="text-sm text-blue-100">One-click submission! We'll create the PR for you automatically.</p>
                         {isSubmitting && (
                           <div className="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
                             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
@@ -452,13 +447,8 @@ export default function SubmitPage() {
                         <div className="flex items-center justify-center w-12 h-12 bg-gray-100 dark:bg-gray-600 group-hover:bg-blue-100 dark:group-hover:bg-blue-600 rounded-lg mb-4 mx-auto transition-colors">
                           <CodeBracketIcon className="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-300" />
                         </div>
-                        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Manual Submit 🛠️</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">Traditional method. Generate code and create PR yourself.</p>
-                        <div className="text-xs text-gray-500 dark:text-gray-400 space-y-1">
-                          <div>✅ Full control</div>
-                          <div>✅ Review before submission</div>
-                          <div>✅ Learn Git workflow</div>
-                        </div>
+                        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Manual Submit</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-300">Traditional method. Generate code and create PR yourself.</p>
                       </button>
                     </div>
                     
