@@ -124,7 +124,7 @@ export default function SubmitPage() {
                       src="/trustlist-logo.png" 
                       alt="TrustList" 
                       className="w-auto max-w-full hover:opacity-80 transition-opacity" 
-                      style={{ height: '120px' }}
+                      style={{ height: '200px', maxWidth: '300px' }}
                       onError={(e) => {
                         console.error('Logo failed to load:', e);
                         e.target.style.display = 'none';
