@@ -1,0 +1,100 @@
+name: Auto Platform Detection
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'constants/trustCenterRegistry/**.js'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  detect-platforms:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Detect changed files
+        id: changes
+        run: |
+          # Get list of changed registry files
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD | grep 'constants/trustCenterRegistry/.*\.js$' || true)
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "Files to process:"
+            echo "$CHANGED_FILES"
+          else
+            echo "No registry files changed"
+          fi
+
+      - name: Run platform detection
+        if: steps.changes.outputs.changed_files != ''
+        run: |
+          echo "Running platform detection on changed files..."
+          for file in ${{ steps.changes.outputs.changed_files }}; do
+            if [ -f "$file" ]; then
+              echo "Processing: $file"
+              node scripts/add-platform-tags.js "$file"
+            fi
+          done
+
+      - name: Regenerate JSON
+        if: steps.changes.outputs.changed_files != ''
+        run: |
+          npm run generate
+
+      - name: Check for changes
+        id: git-changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No platform tags to add"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Platform tags were added"
+          fi
+
+      - name: Commit platform tags
+        if: steps.git-changes.outputs.has_changes == 'true'
+        run: |
+          git add constants/trustCenterRegistry/ public/trust-centers.json utils/trustCenters.js
+          git commit -m "🤖 Auto-detect hosting platforms for new companies"
+          git push
+
+      - name: Comment on PR
+        if: steps.git-changes.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `🤖 **Platform Detection Complete**
+            
+            I've automatically detected hosting platforms for the new companies in this PR and updated the files accordingly.
+            
+            **Changes made:**
+            - Added \`platform\` field to company registry files
+            - Regenerated JSON API data
+            - Updated utility imports
+            
+            The PR is now ready for review! 🚀`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: body
+            });
