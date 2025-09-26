@@ -1,0 +1,75 @@
+name: Manual Platform Tagging
+
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: 'Specific files to process (leave empty for all files)'
+        required: false
+        type: string
+        default: ''
+      dry_run:
+        description: 'Dry run (preview only, no changes)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  tag-platforms:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run platform detection
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            echo "🔍 DRY RUN MODE - No changes will be made"
+            DRY_RUN_FLAG="--dry-run"
+          else
+            echo "🚀 LIVE MODE - Changes will be committed"
+            DRY_RUN_FLAG=""
+          fi
+          
+          if [ -n "${{ github.event.inputs.files }}" ]; then
+            echo "Processing specific files: ${{ github.event.inputs.files }}"
+            node scripts/add-platform-tags.js $DRY_RUN_FLAG ${{ github.event.inputs.files }}
+          else
+            echo "Processing all registry files"
+            node scripts/add-platform-tags.js $DRY_RUN_FLAG
+          fi
+
+      - name: Regenerate JSON (if not dry run)
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          npm run generate
+
+      - name: Commit changes (if not dry run)
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if git diff --quiet; then
+            echo "✅ No changes to commit"
+          else
+            echo "📝 Committing platform tag updates"
+            git add constants/trustCenterRegistry/ public/trust-centers.json utils/trustCenters.js
+            git commit -m "🤖 Manual platform detection update
+            
+            - Updated platform tags via GitHub Actions
+            - Regenerated JSON and utils
+            - Triggered by: ${{ github.actor }}"
+            git push
+            echo "✅ Changes committed and pushed"
+          fi

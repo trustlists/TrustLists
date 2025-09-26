@@ -1,0 +1,83 @@
+name: Auto Tag Platforms on Push
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'constants/trustCenterRegistry/**.js'
+
+permissions:
+  contents: write
+
+jobs:
+  auto-detect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Detect changed files
+        id: changes
+        run: |
+          # Get files changed in the last commit
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep 'constants/trustCenterRegistry/.*\.js$' || true)
+          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "Registry files changed in last commit:"
+            echo "$CHANGED_FILES"
+          else
+            echo "No registry files changed"
+          fi
+
+      - name: Check if platform tags missing
+        id: missing-tags
+        if: steps.changes.outputs.changed_files != ''
+        run: |
+          NEEDS_TAGGING=""
+          for file in ${{ steps.changes.outputs.changed_files }}; do
+            if [ -f "$file" ] && ! grep -q '"platform"' "$file"; then
+              NEEDS_TAGGING="$NEEDS_TAGGING $file"
+            fi
+          done
+          echo "needs_tagging=$NEEDS_TAGGING" >> $GITHUB_OUTPUT
+          if [ -n "$NEEDS_TAGGING" ]; then
+            echo "Files needing platform tags: $NEEDS_TAGGING"
+          else
+            echo "All changed files already have platform tags"
+          fi
+
+      - name: Run platform detection
+        if: steps.missing-tags.outputs.needs_tagging != ''
+        run: |
+          echo "Adding platform tags to: ${{ steps.missing-tags.outputs.needs_tagging }}"
+          node scripts/add-platform-tags.js ${{ steps.missing-tags.outputs.needs_tagging }}
+
+      - name: Regenerate JSON
+        if: steps.missing-tags.outputs.needs_tagging != ''
+        run: |
+          npm run generate
+
+      - name: Commit platform tags
+        if: steps.missing-tags.outputs.needs_tagging != ''
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add constants/trustCenterRegistry/ public/trust-centers.json utils/trustCenters.js
+            git commit -m "🤖 Auto-add platform tags for new companies
+            
+            Files updated: ${{ steps.missing-tags.outputs.needs_tagging }}
+            Triggered by commit: ${{ github.sha }}"
+            git push
+            echo "✅ Platform tags added automatically"
+          fi
