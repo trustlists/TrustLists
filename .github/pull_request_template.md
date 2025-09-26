@@ -11,7 +11,7 @@
 
 ## Checklist *(Please check all boxes before submitting)*
 - [ ] Trust center URL is publicly accessible
-- [ ] Company logo URL is direct link to image (PNG, JPG, or SVG)
+- [ ] Company logo URL is direct link to image (PNG, JPG, or SVG) **(required)**
 - [ ] Information is accurate and up-to-date
 - [ ] File placed in `constants/trustCenterRegistry/[company-name].js`
 - [ ] File follows the required structure (5 fields only)

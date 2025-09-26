@@ -68,6 +68,7 @@ export default function SubmitPage() {
     if (!formData.website.trim()) errors.push('Website URL is required');
     if (!formData.trustCenter.trim()) errors.push('Trust Center URL is required');
     if (!formData.description.trim()) errors.push('Description is required');
+    if (!formData.iconUrl.trim()) errors.push('Company logo URL is required');
     
     // Validate URLs
     try {
@@ -160,12 +161,12 @@ export default {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You'll need to get this from web3forms.com
+          access_key: 'f76ed063-ae8a-42f4-8f58-d27124f1898f',
           name: `TrustList Submission: ${formData.name}`,
           email: 'noreply@trustlists.org', // From email
           subject: `New Trust Center Submission: ${formData.name}`,
           message: emailContent,
-          to: 'your-email@example.com' // Replace with your actual email
+          to: 'noreplys@trustlists.org'
         })
       });
 
@@ -201,7 +202,8 @@ export default {
     return formData.name && 
            formData.website &&
            formData.trustCenter && 
-           formData.description;
+           formData.description &&
+           formData.iconUrl;
   };
 
   const copyToClipboard = async () => {
@@ -435,7 +437,7 @@ export default {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                      Company Logo URL
+                      Company Logo URL *
                     </label>
                     <input
                       type="url"
