@@ -7,9 +7,9 @@ Sitemap: https://trustlists.org/sitemap.xml
 # Allow search engines to crawl everything
 Crawl-delay: 1
 
-# Specific paths
-Allow: /submit
+# Block submit page from indexing to consolidate search results
+Disallow: /submit
+
+# Allow API and JSON endpoints
 Allow: /api
 Allow: /trust-centers.json
-
-# Block nothing - we want everything indexed

@@ -144,6 +144,24 @@ Add any other context about the problem here.`);
             })
           }}
         />
+        
+        {/* Organization Structured Data for Logo */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "TrustList",
+              "url": "https://trustlists.org",
+              "logo": "https://trustlists.org/logo.svg",
+              "description": "A curated directory of company trust centers and compliance documentation",
+              "sameAs": [
+                "https://github.com/FelixMichaels/TrustLists"
+              ]
+            })
+          }}
+        />
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">

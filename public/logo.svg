@@ -1,0 +1,11 @@
+<svg width="112" height="112" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="56" cy="56" r="56" fill="#2563EB"/>
+  
+  <!-- Letter T -->
+  <text x="56" y="75" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">T</text>
+  
+  <!-- Trust badge -->
+  <circle cx="85" cy="27" r="12" fill="#10B981"/>
+  <path d="M80 27L83 30L90 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

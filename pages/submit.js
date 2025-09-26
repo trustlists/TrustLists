@@ -275,6 +275,8 @@ export default {
       <Head>
         <title>Submit Trust Center - TrustList</title>
         <meta name="description" content="Submit your company's trust center to TrustList. Help others discover your security and compliance information." />
+        <link rel="canonical" href="https://trustlists.org/submit" />
+        <meta name="robots" content="noindex, follow" />
       </Head>
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
