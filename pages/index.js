@@ -422,7 +422,6 @@ Add any other context about the problem here.`);
                           onClick={() => {
                             setPlatformFilter(platform.id);
                             setShowPlatformPanel(false);
-                            showNotification(`Filtered by ${platform.label}`, 'info');
                           }}
                           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
                             platformFilter === platform.id
