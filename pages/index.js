@@ -413,6 +413,7 @@ Add any other context about the problem here.`);
                         { id: 'Whistic', label: 'Whistic' },
                         { id: 'Contentsquare', label: 'Contentsquare' },
                         { id: 'Sprinto', label: 'Sprinto' },
+                        { id: 'Anecdotes', label: 'Anecdotes' },
                         { id: 'Self-hosted', label: 'Self-hosted' },
                         { id: 'Other', label: 'Other' }
                       ].map((platform) => (
