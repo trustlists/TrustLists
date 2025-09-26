@@ -156,38 +156,30 @@ export default {
 
 **Auto-generated from TrustList submission form**`;
 
-      // Use GitHub Issues API directly
-      const response = await fetch('https://api.github.com/repos/FelixMichaels/TrustLists/issues', {
-        method: 'POST',
-        headers: {
-          'Authorization': `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: issueTitle,
-          body: issueBody,
-          labels: ['auto-submission', 'trust-center', 'needs-review']
-        })
+      // For GitHub Pages, we'll redirect to create an issue with pre-filled content
+      // This avoids the need for tokens in the client-side code
+      const githubIssueUrl = new URL('https://github.com/FelixMichaels/TrustLists/issues/new');
+      githubIssueUrl.searchParams.set('title', issueTitle);
+      githubIssueUrl.searchParams.set('body', issueBody);
+      githubIssueUrl.searchParams.set('labels', 'auto-submission,trust-center,needs-review');
+      
+      // Open GitHub issue creation page in new tab
+      window.open(githubIssueUrl.toString(), '_blank');
+      
+      // Show success message
+      showNotification('🚀 GitHub issue page opened! Please click "Submit new issue" to complete your submission.', 'success');
+      
+      // Reset form and go to success step
+      setFormData({
+        name: '',
+        website: '',
+        trustCenter: '',
+        description: '',
+        iconUrl: ''
       });
-
-      if (response.ok) {
-        const issue = await response.json();
-        showNotification(`🚀 Submission successful! Created issue #${issue.number}. You'll be notified when it's processed.`, 'success');
-        
-        // Reset form
-        setFormData({
-          name: '',
-          website: '',
-          trustCenter: '',
-          description: '',
-          iconUrl: ''
-        });
-        setStep(3); // Success step
-      } else {
-        const errorData = await response.json();
-        throw new Error(`GitHub API error: ${errorData.message || response.status}`);
-      }
+      setStep(3); // Success step
+      
+      // No need for additional processing since we're redirecting to GitHub
     } catch (error) {
       console.error('Auto-submission error:', error);
       showNotification(`Auto-submission failed: ${error.message}. Switching to manual method.`, 'error');
@@ -616,7 +608,7 @@ export default {
                     </h2>
                     
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                      Your trust center submission has been received and a GitHub issue has been created for review.
+                      A GitHub issue page has been opened with your submission details pre-filled. Please complete the submission by clicking "Submit new issue" on the GitHub page.
                     </p>
                     
                     <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
@@ -624,7 +616,7 @@ export default {
                       <ul className="text-left text-blue-800 dark:text-blue-200 space-y-2 text-sm">
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>A GitHub issue has been created with your submission details</span>
+                          <span>Click "Submit new issue" on the GitHub page that opened</span>
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
