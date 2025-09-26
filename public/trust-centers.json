@@ -15,13 +15,6 @@
       "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
     },
     {
-      "name": "Atlassian",
-      "website": "https://www.atlassian.com/",
-      "trustCenter": "https://www.atlassian.com/trust/compliance/resources/soc2",
-      "description": "Software company that develops products for software development, project management, and content management including Jira, Confluence, and Trello.",
-      "iconUrl": "https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon-32x32.png"
-    },
-    {
       "name": "Betterment",
       "website": "https://betterment.com/",
       "trustCenter": "https://trust.betterment.com/",
@@ -43,32 +36,11 @@
       "iconUrl": "https://chargeflow.io/wp-content/uploads/2023/10/chargeflow-logo.svg"
     },
     {
-      "name": "ChartMogul",
-      "website": "https://chartmogul.com/",
-      "trustCenter": "https://chartmogul.com/security/",
-      "description": "Subscription analytics platform that helps SaaS businesses measure, understand, and grow their recurring revenue with comprehensive metrics.",
-      "iconUrl": "https://chartmogul.com/assets/img/chartmogul-logo.svg"
-    },
-    {
       "name": "Checkr",
       "website": "https://checkr.com/",
       "trustCenter": "https://security.checkr.com/",
       "description": "Checkr is an technology platform for background checks that helps companies and individuals streamline employment screenings and access public records",
       "iconUrl": "https://a-us.storyblok.com/f/1017672/2309x542/aafeafa3d6/checkr_logo_wordmark_aqua3.png"
-    },
-    {
-      "name": "Clockwise",
-      "website": "https://www.getclockwise.com/",
-      "trustCenter": "https://www.getclockwise.com/contact/security",
-      "description": "AI-powered scheduling tool that automatically finds and protects focus time in your calendar to help you get more deep work done.",
-      "iconUrl": "https://assets.getclockwise.com/logos/clockwise-logo-symbol-color.svg"
-    },
-    {
-      "name": "Cloudflare",
-      "website": "https://www.cloudflare.com/",
-      "trustCenter": "https://dash.cloudflare.com/?to=/:account/compliance-docs",
-      "description": "Web infrastructure and website security company that provides content delivery network, DDoS mitigation, and internet security services.",
-      "iconUrl": "https://www.cloudflare.com/img/logo-cloudflare-dark.svg"
     },
     {
       "name": "Cluely",
@@ -134,13 +106,6 @@
       "iconUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format"
     },
     {
-      "name": "Ghost",
-      "website": "https://ghost.org/",
-      "trustCenter": "https://ghost.org/docs/security/",
-      "description": "Modern publishing platform designed for creators and publishers to build and grow their audience with newsletters, memberships, and subscriptions.",
-      "iconUrl": "https://ghost.org/images/logos/ghost-logo-dark.png"
-    },
-    {
       "name": "GitHub",
       "website": "https://github.com",
       "trustCenter": "https://github.com/trust-center",
@@ -197,13 +162,6 @@
       "iconUrl": "https://trust.hubspot.com/api/share/81b68795-ec24-4799-b5eb-a26ed0b05259/logo.png?version=21"
     },
     {
-      "name": "Hugging Face",
-      "website": "https://huggingface.co/",
-      "trustCenter": "https://huggingface.co/docs/hub/security",
-      "description": "Open-source platform for machine learning that provides tools, models, and datasets for natural language processing and AI development.",
-      "iconUrl": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
-    },
-    {
       "name": "Jones IT",
       "website": "https://itjones.com",
       "trustCenter": "https://trust.itjones.com",
@@ -230,13 +188,6 @@
       "trustCenter": "https://trustcenter.linear.app/",
       "description": "Issue tracking and project management tool designed for modern software development teams with a focus on speed and user experience.",
       "iconUrl": "https://linear.app/static/favicons/favicon-96x96.png"
-    },
-    {
-      "name": "Loom",
-      "website": "https://www.loom.com/",
-      "trustCenter": "https://www.atlassian.com/trust/compliance/resources/soc2",
-      "description": "Video messaging tool that allows you to quickly record and share videos of your screen, camera, or both for async communication.",
-      "iconUrl": "https://cdn.loom.com/assets/logos/loom-logo-purple.svg"
     },
     {
       "name": "Lovable",
@@ -267,25 +218,11 @@
       "iconUrl": "https://mixpanel.com/wp-content/uploads/2021/12/mixpanel-logo-dark.svg"
     },
     {
-      "name": "Modal",
-      "website": "https://modal.com/",
-      "trustCenter": "https://modal.com/docs/guide/security",
-      "description": "Cloud platform for running generative AI models, batch jobs, and distributed computing workloads with simple Python-based deployment.",
-      "iconUrl": "https://modal.com/favicon.ico"
-    },
-    {
       "name": "MongoDB",
       "website": "https://mongodb.com/",
       "trustCenter": "https://trust.mongodb.com/",
       "description": "Document-oriented NoSQL database platform that provides high performance, high availability, and easy scalability for modern applications.",
       "iconUrl": "https://www.mongodb.com/assets/images/global/favicon.ico"
-    },
-    {
-      "name": "MotherDuck",
-      "website": "https://motherduck.com/",
-      "trustCenter": "https://motherduck.com/trust-and-security/#Compliance",
-      "description": "Serverless DuckDB-in-the-cloud platform that combines the simplicity of DuckDB with the scalability and collaboration features of the cloud.",
-      "iconUrl": "https://motherduck.com/favicon.ico"
     },
     {
       "name": "Notion",
@@ -302,25 +239,11 @@
       "iconUrl": "https://www.okta.com/sites/default/files/Okta_Logo_BrightBlue_Medium-thumbnail.png"
     },
     {
-      "name": "PagerDuty",
-      "website": "https://www.pagerduty.com/",
-      "trustCenter": "https://www.pagerduty.com/security/",
-      "description": "Digital operations management platform that helps teams prevent and resolve business-impacting incidents through intelligent incident response.",
-      "iconUrl": "https://www.pagerduty.com/wp-content/uploads/2023/01/PagerDuty-icon-green.svg"
-    },
-    {
       "name": "Parasail",
       "website": "https://parasail.io/",
       "trustCenter": "https://trust.parasail.io/",
       "description": "Customer success platform that helps B2B companies reduce churn and grow revenue by providing insights into customer health and behavior.",
       "iconUrl": "https://parasail.io/favicon.ico"
-    },
-    {
-      "name": "Pave",
-      "website": "https://www.pave.com/",
-      "trustCenter": "https://www.pave.com/security-and-privacy",
-      "description": "Compensation management platform that helps companies design, communicate, and manage fair and competitive compensation programs.",
-      "iconUrl": "https://www.pave.com/favicon.ico"
     },
     {
       "name": "Postman",
@@ -349,13 +272,6 @@
       "trustCenter": "https://trust.rewardful.com/",
       "description": "Affiliate and referral marketing platform that helps SaaS companies create and manage affiliate programs to drive customer acquisition.",
       "iconUrl": "https://www.rewardful.com/favicon.ico"
-    },
-    {
-      "name": "Rippling",
-      "website": "https://www.rippling.com/",
-      "trustCenter": "https://www.rippling.com/security",
-      "description": "Workforce management platform that combines HR, IT, and Finance functions to help companies manage their employees and systems.",
-      "iconUrl": "https://www.rippling.com/static/rippling-logo.svg"
     },
     {
       "name": "Safebase",
@@ -435,13 +351,6 @@
       "iconUrl": "https://webflow.com/favicon.ico"
     },
     {
-      "name": "Weights & Biases",
-      "website": "https://wandb.ai/",
-      "trustCenter": "https://wandb.ai/site/security/",
-      "description": "Machine learning platform for experiment tracking, model versioning, and collaboration to help ML teams build better models faster.",
-      "iconUrl": "https://wandb.ai/favicon.ico"
-    },
-    {
       "name": "Wispr Flow",
       "website": "https://wisprflow.ai/",
       "trustCenter": "https://app.delve.co/wispr-flow",
@@ -471,8 +380,8 @@
     }
   ],
   "meta": {
-    "total": 67,
-    "generated": "2025-09-26T04:17:32.146Z",
+    "total": 54,
+    "generated": "2025-09-26T04:21:34.375Z",
     "version": "1.0.0"
   }
 }
