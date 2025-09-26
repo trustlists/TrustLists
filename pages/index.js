@@ -412,6 +412,7 @@ Add any other context about the problem here.`);
                         { id: 'Secureframe', label: 'Secureframe' },
                         { id: 'Whistic', label: 'Whistic' },
                         { id: 'Contentsquare', label: 'Contentsquare' },
+                        { id: 'Sprinto', label: 'Sprinto' },
                         { id: 'Self-hosted', label: 'Self-hosted' },
                         { id: 'Other', label: 'Other' }
                       ].map((platform) => (

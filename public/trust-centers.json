@@ -61,7 +61,7 @@
       "website": "https://coderabbit.ai/",
       "trustCenter": "https://trust.coderabbit.ai/",
       "description": "CodeRabbit is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews.",
-      "platform": "Self-hosted",
+      "platform": "Sprinto",
       "iconUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=128"
     },
     {
@@ -451,7 +451,7 @@
   ],
   "meta": {
     "total": 56,
-    "generated": "2025-09-26T21:27:08.167Z",
+    "generated": "2025-09-26T21:37:31.002Z",
     "version": "1.0.0"
   }
 }
