@@ -26,6 +26,7 @@ function mapPlatformFromHints({ host, cname, urlPath }) {
   if (h.includes('whistic.com') || c.includes('whistic.com')) return 'Whistic';
   if (h.includes('contentsquare.com') || c.includes('contentsquare.com')) return 'Contentsquare';
   if (c.includes('cloudfront.net') && (h.startsWith('trust.') || h.includes('.trust.'))) return 'Sprinto';
+  if (c.includes('secureframetrust.com')) return 'Secureframe';
 
   // Heuristic: common subdomains
   if (h.startsWith('trust.') || h.includes('.trust.')) return 'Self-hosted';
