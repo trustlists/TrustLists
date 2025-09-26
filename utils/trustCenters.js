@@ -12,10 +12,10 @@ import clockwise from '../constants/trustCenterRegistry/clockwise.js';
 import cloudflare from '../constants/trustCenterRegistry/cloudflare.js';
 import cluely from '../constants/trustCenterRegistry/cluely.js';
 import coderabbit from '../constants/trustCenterRegistry/coderabbit.js';
+import cognition from '../constants/trustCenterRegistry/cognition.js';
 import contentsquare from '../constants/trustCenterRegistry/contentsquare.js';
 import cursor from '../constants/trustCenterRegistry/cursor.js';
 import delve from '../constants/trustCenterRegistry/delve.js';
-import devin from '../constants/trustCenterRegistry/devin.js';
 import drata from '../constants/trustCenterRegistry/drata.js';
 import eudia from '../constants/trustCenterRegistry/eudia.js';
 import figma from '../constants/trustCenterRegistry/figma.js';
@@ -81,10 +81,10 @@ const trustCenterData = [
   cloudflare,
   cluely,
   coderabbit,
+  cognition,
   contentsquare,
   cursor,
   delve,
-  devin,
   drata,
   eudia,
   figma,

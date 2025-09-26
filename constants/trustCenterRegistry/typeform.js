@@ -3,5 +3,5 @@ export default {
   "website": "https://www.typeform.com/",
   "trustCenter": "https://trust.typeform.com/",
   "description": "Online form builder that creates engaging, conversational forms and surveys to collect data and insights from your audience.",
-  "iconUrl": "https://logo.clearbit.com/typeform.com"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=typeform.com&sz=128"
 };

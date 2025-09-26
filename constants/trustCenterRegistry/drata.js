@@ -3,5 +3,5 @@ export default {
   "website": "https://drata.com/",
   "trustCenter": "https://trust.drata.com/",
   "description": "Drata is a security and compliance automation platform that helps companies streamline compliance, manage risk, and build trust.",
-  "iconUrl": "https://logo.clearbit.com/drata.com"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=drata.com&sz=128"
 };

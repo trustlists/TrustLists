@@ -3,5 +3,5 @@ export default {
   "website": "https://salesforce.com",
   "trustCenter": "https://trust.salesforce.com",
   "description": "Leading CRM platform with comprehensive trust and compliance programs",
-  "iconUrl": "https://logo.clearbit.com/salesforce.com"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"
 };

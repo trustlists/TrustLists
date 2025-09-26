@@ -3,5 +3,5 @@ export default {
   "website": "https://ramp.com/",
   "trustCenter": "https://trust.ramp.com/",
   "description": "Corporate card and spend management platform that helps businesses control expenses, automate accounting, and earn rewards on purchases.",
-  "iconUrl": "https://logo.clearbit.com/ramp.com"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=ramp.com&sz=128"
 };
