@@ -9,6 +9,33 @@ export default function Home({ trustCenters, stats }) {
   const [openMenuId, setOpenMenuId] = useState(null);
   const [notification, setNotification] = useState(null);
   const [displayCount, setDisplayCount] = useState(12); // Show 12 initially
+  const [platformFilter, setPlatformFilter] = useState('all');
+
+  // Preview flag: enable with ?platformPreview=1 (no impact by default)
+  const platformPreviewEnabled = typeof window !== 'undefined' &&
+    new URLSearchParams(window.location.search).get('platformPreview') === '1';
+
+  // Map a trust center URL to a hosting platform label
+  const getPlatformFromUrl = (url) => {
+    if (!url) return 'Other';
+    try {
+      const host = new URL(url).hostname.toLowerCase();
+      if (host.includes('safebase.io')) return 'SafeBase';
+      if (host.includes('app.conveyor.com') || host.includes('conveyor.com')) return 'Conveyor';
+      if (host.includes('delve.co')) return 'Delve';
+      if (host.includes('trust.vanta.com') || host.includes('vanta.com')) return 'Vanta';
+      if (host.includes('drata.com')) return 'Drata';
+      if (host.includes('trustarc.com')) return 'TrustArc';
+      if (host.includes('onetrust.com')) return 'OneTrust';
+      if (host.includes('secureframe.com')) return 'Secureframe';
+      if (host.includes('whistic.com')) return 'Whistic';
+      if (host.includes('contentsquare.com')) return 'Contentsquare';
+      if (host.startsWith('trust.') || host.includes('.trust.') || host.startsWith('security.') || host.includes('.security.')) return 'Self-hosted';
+      return 'Other';
+    } catch {
+      return 'Other';
+    }
+  };
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -86,8 +113,10 @@ Add any other context about the problem here.`);
   };
 
   const allFilteredTrustCenters = useMemo(() => {
-    return searchTrustCenters(searchQuery);
-  }, [searchQuery]);
+    const results = searchTrustCenters(searchQuery);
+    if (!platformPreviewEnabled || platformFilter === 'all') return results;
+    return results.filter(c => getPlatformFromUrl(c.trustCenter) === platformFilter);
+  }, [searchQuery, platformFilter, platformPreviewEnabled]);
 
   const displayedTrustCenters = useMemo(() => {
     return allFilteredTrustCenters.slice(0, displayCount);
@@ -273,6 +302,31 @@ Add any other context about the problem here.`);
           {/* Right Content Area - Scrollable */}
           <div className="flex-1 lg:overflow-y-auto lg:h-screen">
             <div className="p-4 sm:p-6 lg:p-8">
+            {platformPreviewEnabled && (
+              <div className="mb-6 flex items-center gap-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-3 rounded-lg">
+                <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Platform filter (preview):</span>
+                <select
+                  className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1 text-gray-800 dark:text-gray-100"
+                  value={platformFilter}
+                  onChange={(e) => setPlatformFilter(e.target.value)}
+                >
+                  <option value="all">All platforms</option>
+                  <option>SafeBase</option>
+                  <option>Conveyor</option>
+                  <option>Delve</option>
+                  <option>Vanta</option>
+                  <option>Drata</option>
+                  <option>TrustArc</option>
+                  <option>OneTrust</option>
+                  <option>Secureframe</option>
+                  <option>Whistic</option>
+                  <option>Contentsquare</option>
+                  <option>Self-hosted</option>
+                  <option>Other</option>
+                </select>
+                <span className="ml-auto text-xs text-blue-700 dark:text-blue-300">Add ?platformPreview=1 to the URL to toggle</span>
+              </div>
+            )}
             {/* Search Bar */}
             <div className="mb-8">
               <div className="mb-4">
@@ -322,7 +376,14 @@ Add any other context about the problem here.`);
                               </span>
                             </div>
                           </div>
-                          <h3 className="text-xl font-bold text-gray-900 dark:text-white">{company.name}</h3>
+                          <div className="flex items-center gap-2">
+                            <h3 className="text-xl font-bold text-gray-900 dark:text-white">{company.name}</h3>
+                            {platformPreviewEnabled && (company.name === 'Delve') && (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200 border border-blue-200 dark:border-blue-800">
+                                {getPlatformFromUrl(company.trustCenter)}
+                              </span>
+                            )}
+                          </div>
                         </div>
                         <div className="relative dropdown-menu">
                           <button 
