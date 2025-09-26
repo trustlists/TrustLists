@@ -79,7 +79,7 @@ export default function Home({ trustCenters, stats }) {
     };
 
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.platform-panel-container')) {
+      if (!event.target.closest('.platform-panel-container') && !event.target.closest('.platform-filter-button')) {
         setShowPlatformPanel(false);
       }
     };
@@ -361,7 +361,7 @@ Add any other context about the problem here.`);
                           console.log('Filter button clicked! Current panel state:', showPlatformPanel);
                           setShowPlatformPanel(!showPlatformPanel);
                         }}
-                        className={`flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium transition-colors min-w-[140px] justify-between ${
+                        className={`platform-filter-button flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium transition-colors min-w-[140px] justify-between ${
                           showPlatformPanel || platformFilter !== 'all'
                             ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300'
                             : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
@@ -383,7 +383,6 @@ Add any other context about the problem here.`);
               </div>
 
               {/* Platform Filter Panel - Appears Below Search */}
-              {console.log('Debug: platformPreviewEnabled =', platformPreviewEnabled, 'showPlatformPanel =', showPlatformPanel)}
               {platformPreviewEnabled && showPlatformPanel && (
                 <div className="platform-panel-container mb-6">
                   <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
