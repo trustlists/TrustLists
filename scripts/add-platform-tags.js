@@ -17,7 +17,7 @@ function mapPlatformFromHints({ host, cname, urlPath }) {
   // Primary: explicit host patterns
   if (h.includes('safebase.io') || c.includes('safebase.io')) return 'SafeBase';
   if (h.includes('app.conveyor.com') || c.includes('aptible.in') || h.includes('conveyor.com')) return 'Conveyor';
-  if (h.includes('trust.delve.co') || h === 'delve.co') return 'Delve';
+  if (h.includes('delve.co') || h === 'delve.co') return 'Delve';
   if (h.includes('trust.vanta.com') || c.includes('vantatrust.com') || h.includes('vanta.com')) return 'Vanta';
   if (h.includes('trust.drata.com') || c.includes('drata.com')) return 'Drata';
   if (h.includes('trustarc.com') || c.includes('trustarc.com')) return 'TrustArc';

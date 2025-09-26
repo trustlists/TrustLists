@@ -353,6 +353,14 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=128"
     },
     {
+      "name": "Sprinto",
+      "website": "https://sprinto.com/",
+      "trustCenter": "https://trust.sprinto.com/",
+      "description": "Sprinto is your trusted partner in data security. We are unwavering in our commitment to protecting your data and ensuring privacy. Our rigorous security posture is underpinned by Sprinto technology, industry-leading best practices, and adherence to globally-regarded security and privacy frameworks.",
+      "platform": "Sprinto",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=sprinto.com&sz=128"
+    },
+    {
       "name": "Stripe",
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
@@ -421,7 +429,7 @@
       "website": "https://wisprflow.ai/",
       "trustCenter": "https://app.delve.co/wispr-flow",
       "description": "AI-powered voice-to-text technology that enables hands-free writing and dictation with superior accuracy and natural language processing.",
-      "platform": "Other",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=wisprflow.ai&sz=128"
     },
     {
@@ -450,8 +458,8 @@
     }
   ],
   "meta": {
-    "total": 56,
-    "generated": "2025-09-26T21:44:00.747Z",
+    "total": 57,
+    "generated": "2025-09-26T21:49:24.330Z",
     "version": "1.0.0"
   }
 }
