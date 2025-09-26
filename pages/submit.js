@@ -7,7 +7,6 @@ import {
   CheckCircleIcon,
   ExclamationTriangleIcon,
   InformationCircleIcon,
-  BoltIcon,
   CodeBracketIcon
 } from '@heroicons/react/24/outline';
 
@@ -103,8 +102,6 @@ export default function SubmitPage() {
     
     if (method === 'manual') {
       generateCode();
-    } else if (method === 'auto') {
-      handleAutoSubmission();
     } else if (method === 'email') {
       handleEmailSubmission();
     }
@@ -199,75 +196,6 @@ export default {
     }
   };
 
-  const handleAutoSubmission = async () => {
-    setIsSubmitting(true);
-    
-    try {
-      // GitHub Pages doesn't support API routes, so we'll use GitHub Issues as a workaround
-      // Create a GitHub Issue that will trigger our workflow
-      const issueTitle = `Auto-Submit: ${formData.name}`;
-      const issueBody = `**Auto-Submission Request**
-
-**Company Information:**
-- **Name:** ${formData.name}
-- **Website:** ${formData.website}
-- **Trust Center:** ${formData.trustCenter}
-- **Description:** ${formData.description}
-- **Logo URL:** ${formData.iconUrl || 'Not provided'}
-
----
-
-**Instructions for Repository Owner:**
-This is an automated submission. To add this company:
-
-1. Create file: \`constants/trustCenterRegistry/${formData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.js\`
-2. Content:
-\`\`\`javascript
-export default {
-  "name": "${formData.name}",
-  "website": "${formData.website}",
-  "trustCenter": "${formData.trustCenter}",
-  "description": "${formData.description}",
-  "iconUrl": "${formData.iconUrl || ''}"
-};
-\`\`\`
-
-**Auto-generated from TrustList submission form**`;
-
-      // For GitHub Pages, we'll redirect to create an issue with pre-filled content
-      // This avoids the need for tokens in the client-side code
-      const githubIssueUrl = new URL('https://github.com/FelixMichaels/TrustLists/issues/new');
-      githubIssueUrl.searchParams.set('title', issueTitle);
-      githubIssueUrl.searchParams.set('body', issueBody);
-      githubIssueUrl.searchParams.set('labels', 'auto-submission,trust-center,needs-review');
-      
-      // Open GitHub issue creation page in new tab
-      window.open(githubIssueUrl.toString(), '_blank');
-      
-      // Show success message
-      showNotification('🚀 GitHub issue page opened! Please click "Submit new issue" to complete your submission.', 'success');
-      
-      // Reset form and go to success step
-      setFormData({
-        name: '',
-        website: '',
-        trustCenter: '',
-        description: '',
-        iconUrl: ''
-      });
-      setStep(3); // Success step
-      
-      // No need for additional processing since we're redirecting to GitHub
-    } catch (error) {
-      console.error('Auto-submission error:', error);
-      showNotification(`Auto-submission failed: ${error.message}. Switching to manual method.`, 'error');
-      // Fallback to manual method
-      setSubmissionMethod('manual');
-      generateCode();
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const isFormValid = () => {
     return formData.name && 
@@ -522,25 +450,7 @@ export default {
                   {/* Submission Method Choice */}
                   <div className="pt-6 border-t border-gray-200 dark:border-gray-600">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Choose Submission Method</h3>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                      {/* Auto Submission */}
-                      <button
-                        onClick={() => handleSubmissionChoice('auto')}
-                        disabled={!isFormValid() || isSubmitting}
-                        className="group relative p-6 bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-gray-300 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:to-gray-700 disabled:cursor-not-allowed text-white rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl"
-                      >
-                        <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-lg mb-4 mx-auto">
-                          <BoltIcon className="w-6 h-6" />
-                        </div>
-                        <h4 className="text-lg font-semibold mb-2">Auto Submit</h4>
-                        <p className="text-sm text-blue-100">One-click submission! We'll create the PR for you automatically.</p>
-                        {isSubmitting && (
-                          <div className="absolute inset-0 bg-black/20 rounded-xl flex items-center justify-center">
-                            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
-                          </div>
-                        )}
-                      </button>
-
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {/* Email Submission */}
                       <button
                         onClick={() => handleSubmissionChoice('email')}
@@ -574,8 +484,8 @@ export default {
                       <div className="flex items-start space-x-3">
                         <InformationCircleIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                         <div className="text-sm text-blue-800 dark:text-blue-200">
-                          <p className="font-medium mb-1">🆕 New Auto-Submit Feature!</p>
-                          <p>Try our new one-click submission! If it doesn't work, we'll automatically fall back to the manual method.</p>
+                          <p className="font-medium mb-1">📧 Easy Submission Options</p>
+                          <p>Choose Email Submit for instant delivery (no account needed) or Manual Submit to learn the Git workflow.</p>
                         </div>
                       </div>
                     </div>
@@ -701,9 +611,7 @@ export default {
                     </h2>
                     
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                      {submissionMethod === 'auto' 
-                        ? 'A GitHub issue page has been opened with your submission details pre-filled. Please complete the submission by clicking "Submit new issue" on the GitHub page.'
-                        : submissionMethod === 'email'
+                      {submissionMethod === 'email'
                         ? 'Your submission has been sent via email! We\'ll review it and add your trust center within 24-48 hours.'
                         : 'Your submission has been processed successfully!'
                       }
@@ -712,26 +620,7 @@ export default {
                     <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
                       <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-3">What happens next?</h3>
                       <ul className="text-left text-blue-800 dark:text-blue-200 space-y-2 text-sm">
-                        {submissionMethod === 'auto' ? (
-                          <>
-                            <li className="flex items-start space-x-2">
-                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                              <span>Click "Submit new issue" on the GitHub page that opened</span>
-                            </li>
-                            <li className="flex items-start space-x-2">
-                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                              <span>Our team will review your submission (usually within 24-48 hours)</span>
-                            </li>
-                            <li className="flex items-start space-x-2">
-                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                              <span>Once approved, your company will appear on TrustList automatically</span>
-                            </li>
-                            <li className="flex items-start space-x-2">
-                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                              <span>You can track progress via the GitHub issue notifications</span>
-                            </li>
-                          </>
-                        ) : submissionMethod === 'email' ? (
+                        {submissionMethod === 'email' ? (
                           <>
                             <li className="flex items-start space-x-2">
                               <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
