@@ -3,6 +3,6 @@ export default {
   "website": "https://mixpanel.com/",
   "trustCenter": "https://trust.mixpanel.com/",
   "description": "Product analytics platform that helps companies understand user behavior and improve their product experience through data-driven insights.",
-  "platform": "Delve",
+  "platform": "Vanta",
   "iconUrl": "https://www.google.com/s2/favicons?domain=mixpanel.com&sz=128"
 };

@@ -532,7 +532,7 @@ Add any other context about the problem here.`);
                   <div className="grid grid-cols-2 gap-6 mb-6">
                     <div>
                       <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">TrustCenter</div>
-                      <div className="font-semibold text-gray-900 dark:text-white">Active</div>
+                      <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
                     </div>
                     <div>
                       <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Status</div>

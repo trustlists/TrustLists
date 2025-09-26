@@ -39,6 +39,7 @@ import postman from '../constants/trustCenterRegistry/postman.js';
 import ramp from '../constants/trustCenterRegistry/ramp.js';
 import remote from '../constants/trustCenterRegistry/remote.js';
 import rewardful from '../constants/trustCenterRegistry/rewardful.js';
+import ripple from '../constants/trustCenterRegistry/ripple.js';
 import safebase from '../constants/trustCenterRegistry/safebase.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
 import segment from '../constants/trustCenterRegistry/segment.js';
@@ -96,6 +97,7 @@ const trustCenterData = [
   ramp,
   remote,
   rewardful,
+  ripple,
   safebase,
   salesforce,
   segment,

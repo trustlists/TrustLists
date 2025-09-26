@@ -13,7 +13,7 @@
       "website": "https://aws.amazon.com",
       "trustCenter": "https://aws.amazon.com/trust-center",
       "description": "Amazon Web Services (AWS) is Amazon's cloud computing platform that provides on-demand IT services, like servers, storage, and databases, over the internet on a pay-as-you-go basis",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128"
     },
     {
@@ -37,7 +37,7 @@
       "website": "https://chargeflow.io/",
       "trustCenter": "https://trust.chargeflow.io/",
       "description": "Automated chargeback management platform that helps e-commerce businesses fight chargebacks and recover revenue using AI technology.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=chargeflow.io&sz=128"
     },
     {
@@ -61,7 +61,7 @@
       "website": "https://coderabbit.ai/",
       "trustCenter": "https://trust.coderabbit.ai/",
       "description": "CodeRabbit is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=128"
     },
     {
@@ -85,7 +85,7 @@
       "website": "https://cursor.com/",
       "trustCenter": "https://trust.cursor.com/",
       "description": "Cursor AI is a proprietary, AI-native code editor built on top of the open-source codebase.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
     },
     {
@@ -125,7 +125,7 @@
       "website": "https://github.com",
       "trustCenter": "https://github.com/trust-center",
       "description": "World's leading software development platform with enterprise-grade security",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
@@ -141,7 +141,7 @@
       "website": "https://workspace.google.com/",
       "trustCenter": "https://cloud.google.com/security/compliance/compliance-reports-manager",
       "description": "A suite of productivity and collaboration tools including Gmail, Docs, Drive, and Meet for businesses and organizations.",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128"
     },
     {
@@ -149,7 +149,7 @@
       "website": "https://grain.com/",
       "trustCenter": "https://trust.grain.com/",
       "description": "AI-powered meeting recorder and note-taker that automatically captures, transcribes, and summarizes your video calls for better collaboration.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=grain.com&sz=128"
     },
     {
@@ -165,7 +165,7 @@
       "website": "https://hex.tech/",
       "trustCenter": "https://trust.hex.tech/",
       "description": "Collaborative data platform that combines SQL, Python, and no-code tools to help teams explore, analyze, and share data insights.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hex.tech&sz=128"
     },
     {
@@ -181,7 +181,7 @@
       "website": "https://hubspot.com/",
       "trustCenter": "https://trust.hubspot.com/",
       "description": "HubSpot is an AI-powered customer platform offering an all-in-one solution for marketing, sales, and customer service to help businesses find, attract, and grow customer relationships.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
     },
     {
@@ -213,7 +213,7 @@
       "website": "https://linear.app/",
       "trustCenter": "https://trustcenter.linear.app/",
       "description": "Issue tracking and project management tool designed for modern software development teams with a focus on speed and user experience.",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=linear.app&sz=128"
     },
     {
@@ -229,7 +229,7 @@
       "website": "https://www.metabase.com/",
       "trustCenter": "https://trust.metabase.com/",
       "description": "Open-source business intelligence tool that makes it easy for anyone in your company to ask questions and learn from data.",
-      "platform": "Delve",
+      "platform": "Drata",
       "iconUrl": "https://www.google.com/s2/favicons?domain=metabase.com&sz=128"
     },
     {
@@ -237,7 +237,7 @@
       "website": "https://www.microsoft.com/",
       "trustCenter": "https://servicetrust.microsoft.com/",
       "description": "Technology company that develops computer software, consumer electronics, personal computers, and related services including Azure, Office, and Windows.",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
     },
     {
@@ -245,7 +245,7 @@
       "website": "https://mixpanel.com/",
       "trustCenter": "https://trust.mixpanel.com/",
       "description": "Product analytics platform that helps companies understand user behavior and improve their product experience through data-driven insights.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=mixpanel.com&sz=128"
     },
     {
@@ -261,7 +261,7 @@
       "website": "https://www.notion.com/",
       "trustCenter": "https://public-profile.whistic.com/8e45fdd3-e2fe-4742-852b-ac509b13d0d1",
       "description": "All-in-one workspace for notes, tasks, wikis, and databases that helps teams collaborate and organize their work in a connected way.",
-      "platform": "Delve",
+      "platform": "Whistic",
       "iconUrl": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
     },
     {
@@ -269,7 +269,7 @@
       "website": "https://www.okta.com/",
       "trustCenter": "https://trust.okta.com/",
       "description": "Identity and access management platform that provides secure identity solutions for enterprises including single sign-on and multi-factor authentication.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=okta.com&sz=128"
     },
     {
@@ -277,7 +277,7 @@
       "website": "https://parasail.io/",
       "trustCenter": "https://trust.parasail.io/",
       "description": "Customer success platform that helps B2B companies reduce churn and grow revenue by providing insights into customer health and behavior.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=parasail.io&sz=128"
     },
     {
@@ -301,7 +301,7 @@
       "website": "https://remote.com/",
       "trustCenter": "https://trust.remote.com/",
       "description": "Global HR platform that enables companies to hire, manage, and pay remote employees and contractors worldwide while ensuring compliance.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=remote.com&sz=128"
     },
     {
@@ -309,7 +309,7 @@
       "website": "https://www.rewardful.com/",
       "trustCenter": "https://trust.rewardful.com/",
       "description": "Affiliate and referral marketing platform that helps SaaS companies create and manage affiliate programs to drive customer acquisition.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=rewardful.com&sz=128"
     },
     {
@@ -333,7 +333,7 @@
       "website": "https://salesforce.com",
       "trustCenter": "https://trust.salesforce.com",
       "description": "Leading CRM platform with comprehensive trust and compliance programs",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"
     },
     {
@@ -349,7 +349,7 @@
       "website": "https://slack.com/",
       "trustCenter": "https://slack.com/trust",
       "description": "BSlack is a work operating system and collaboration platform that functions as a central hub for team communication, file sharing, and project management.",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=128"
     },
     {
@@ -357,7 +357,7 @@
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
       "description": "Online payment processing platform with comprehensive security and compliance programs",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
     },
     {
@@ -365,7 +365,7 @@
       "website": "https://superhuman.com",
       "trustCenter": "https://trust.superhuman.com",
       "description": "Superhuman is the most productive email app ever made. Collaborate faster and get more done with AI-native email.",
-      "platform": "Delve",
+      "platform": "Drata",
       "iconUrl": "https://www.google.com/s2/favicons?domain=superhuman.com&sz=128"
     },
     {
@@ -381,7 +381,7 @@
       "website": "https://www.typeform.com/",
       "trustCenter": "https://trust.typeform.com/",
       "description": "Online form builder that creates engaging, conversational forms and surveys to collect data and insights from your audience.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=typeform.com&sz=128"
     },
     {
@@ -389,7 +389,7 @@
       "website": "https://vanta.com",
       "trustCenter": "https://trust.vanta.com",
       "description": "Vanta is an automated trust management and compliance platform that helps companies of all sizes simplify, centralize, and automate security and compliance workflows.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=vanta.com&sz=128"
     },
     {
@@ -405,7 +405,7 @@
       "website": "https://vespa.ai/",
       "trustCenter": "https://trust.vespa.ai/",
       "description": "Open-source big data serving engine that enables real-time computation over large datasets for search, recommendation, and AI applications.",
-      "platform": "Delve",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=vespa.ai&sz=128"
     },
     {
@@ -413,7 +413,7 @@
       "website": "https://webflow.com/",
       "trustCenter": "https://trust.webflow.com/",
       "description": "Visual web development platform that enables designers to build responsive websites without coding while generating clean, semantic code.",
-      "platform": "Delve",
+      "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=webflow.com&sz=128"
     },
     {
@@ -421,7 +421,7 @@
       "website": "https://wisprflow.ai/",
       "trustCenter": "https://app.delve.co/wispr-flow",
       "description": "AI-powered voice-to-text technology that enables hands-free writing and dictation with superior accuracy and natural language processing.",
-      "platform": "Delve",
+      "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=wisprflow.ai&sz=128"
     },
     {
@@ -451,7 +451,7 @@
   ],
   "meta": {
     "total": 56,
-    "generated": "2025-09-26T20:17:03.120Z",
+    "generated": "2025-09-26T21:27:08.167Z",
     "version": "1.0.0"
   }
 }
