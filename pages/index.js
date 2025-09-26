@@ -309,8 +309,10 @@ Add any other context about the problem here.`);
             {/* Search Bar */}
             <div className="mb-8">
               <div className="mb-4">
-                <div className="flex gap-4 items-center">
-                  <div className="relative flex-1 max-w-2xl">
+                {/* Search and Filter Container with Smart Responsive Layout */}
+                <div className="flex flex-wrap gap-4 items-start sm:items-center">
+                  {/* Search Bar - Always Full Width on Mobile, Flexible on Desktop */}
+                  <div className="relative w-full sm:flex-1 sm:max-w-2xl">
                     <input
                       type="text"
                       placeholder="Search Companies   Stripe, GitHub, Salesforce..."
@@ -325,11 +327,12 @@ Add any other context about the problem here.`);
                     </div>
                   </div>
                   
+                  {/* Platform Filter - Stacks Below on Mobile, Inline on Larger Screens */}
                   {platformPreviewEnabled && (
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 w-full sm:w-auto sm:flex-shrink-0">
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Platform:</span>
                       <select
-                        className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-3 py-3 text-gray-800 dark:text-gray-100 min-w-[140px]"
+                        className="flex-1 sm:flex-initial text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-3 py-3 text-gray-800 dark:text-gray-100 sm:min-w-[140px]"
                         value={platformFilter}
                         onChange={(e) => setPlatformFilter(e.target.value)}
                       >
