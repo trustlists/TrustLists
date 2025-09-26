@@ -125,21 +125,56 @@ export default function SubmitPage() {
     setIsSubmitting(true);
     
     try {
-      // Call our server-side API route
-      const response = await fetch('/api/submit-auto', {
+      // GitHub Pages doesn't support API routes, so we'll use GitHub Issues as a workaround
+      // Create a GitHub Issue that will trigger our workflow
+      const issueTitle = `Auto-Submit: ${formData.name}`;
+      const issueBody = `**Auto-Submission Request**
+
+**Company Information:**
+- **Name:** ${formData.name}
+- **Website:** ${formData.website}
+- **Trust Center:** ${formData.trustCenter}
+- **Description:** ${formData.description}
+- **Logo URL:** ${formData.iconUrl || 'Not provided'}
+
+---
+
+**Instructions for Repository Owner:**
+This is an automated submission. To add this company:
+
+1. Create file: \`constants/trustCenterRegistry/${formData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.js\`
+2. Content:
+\`\`\`javascript
+export default {
+  "name": "${formData.name}",
+  "website": "${formData.website}",
+  "trustCenter": "${formData.trustCenter}",
+  "description": "${formData.description}",
+  "iconUrl": "${formData.iconUrl || ''}"
+};
+\`\`\`
+
+**Auto-generated from TrustList submission form**`;
+
+      // Use GitHub Issues API directly
+      const response = await fetch('https://api.github.com/repos/FelixMichaels/TrustLists/issues', {
         method: 'POST',
         headers: {
+          'Authorization': `token ${process.env.NEXT_PUBLIC_GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          company: formData
+          title: issueTitle,
+          body: issueBody,
+          labels: ['auto-submission', 'trust-center', 'needs-review']
         })
       });
 
-      const result = await response.json();
-
-      if (response.ok && result.success) {
-        showNotification('🚀 Submission successful! A pull request will be created automatically. Check your email for updates.', 'success');
+      if (response.ok) {
+        const issue = await response.json();
+        showNotification(`🚀 Submission successful! Created issue #${issue.number}. You'll be notified when it's processed.`, 'success');
+        
         // Reset form
         setFormData({
           name: '',
@@ -150,7 +185,8 @@ export default function SubmitPage() {
         });
         setStep(3); // Success step
       } else {
-        throw new Error(result.error || result.message || `HTTP ${response.status}`);
+        const errorData = await response.json();
+        throw new Error(`GitHub API error: ${errorData.message || response.status}`);
       }
     } catch (error) {
       console.error('Auto-submission error:', error);
@@ -580,7 +616,7 @@ export default function SubmitPage() {
                     </h2>
                     
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                      Your trust center submission has been received and a pull request is being created automatically.
+                      Your trust center submission has been received and a GitHub issue has been created for review.
                     </p>
                     
                     <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
@@ -588,7 +624,7 @@ export default function SubmitPage() {
                       <ul className="text-left text-blue-800 dark:text-blue-200 space-y-2 text-sm">
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>A pull request will be created on GitHub automatically</span>
+                          <span>A GitHub issue has been created with your submission details</span>
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
@@ -600,7 +636,7 @@ export default function SubmitPage() {
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>You'll receive email notifications about the status</span>
+                          <span>You can track progress via the GitHub issue notifications</span>
                         </li>
                       </ul>
                     </div>
