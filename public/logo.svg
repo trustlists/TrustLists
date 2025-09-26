@@ -2,10 +2,7 @@
   <!-- Background circle -->
   <circle cx="56" cy="56" r="56" fill="#2563EB"/>
   
-  <!-- Letter T -->
-  <text x="56" y="75" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">T</text>
-  
-  <!-- Trust badge -->
-  <circle cx="85" cy="27" r="12" fill="#10B981"/>
-  <path d="M80 27L83 30L90 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Shield with checkmark -->
+  <path d="M93.33 60.67c0 23.33-16.33 35-35.78 41.75a4.67 4.67 0 0 1-3.11-.04C32.67 95.67 18.67 84 18.67 60.67V28a4.67 4.67 0 0 1 4.67-4.67c9.33 0 21-5.6 29.12-12.71a5.46 5.46 0 0 1 7.11 0C67.72 17.78 79.33 23.33 88.67 23.33a4.67 4.67 0 0 1 4.67 4.67z" fill="white"/>
+  <path d="m42 56 9.33 9.33 18.67-18.67" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
