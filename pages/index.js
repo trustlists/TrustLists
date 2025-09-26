@@ -15,8 +15,12 @@ export default function Home({ trustCenters, stats }) {
   const platformPreviewEnabled = typeof window !== 'undefined' &&
     new URLSearchParams(window.location.search).get('platformPreview') === '1';
 
-  // Map a trust center URL to a hosting platform label
-  const getPlatformFromUrl = (url) => {
+  // Get platform from company data (prefers stored platform field, falls back to URL detection)
+  const getPlatform = (company) => {
+    if (company.platform) return company.platform;
+    
+    // Fallback: Map a trust center URL to a hosting platform label
+    const url = company.trustCenter;
     if (!url) return 'Other';
     try {
       const host = new URL(url).hostname.toLowerCase();
@@ -115,7 +119,7 @@ Add any other context about the problem here.`);
   const allFilteredTrustCenters = useMemo(() => {
     const results = searchTrustCenters(searchQuery);
     if (!platformPreviewEnabled || platformFilter === 'all') return results;
-    return results.filter(c => getPlatformFromUrl(c.trustCenter) === platformFilter);
+    return results.filter(c => getPlatform(c) === platformFilter);
   }, [searchQuery, platformFilter, platformPreviewEnabled]);
 
   const displayedTrustCenters = useMemo(() => {
@@ -380,7 +384,7 @@ Add any other context about the problem here.`);
                             <h3 className="text-xl font-bold text-gray-900 dark:text-white">{company.name}</h3>
                             {platformPreviewEnabled && (company.name === 'Delve') && (
                               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200 border border-blue-200 dark:border-blue-800">
-                                {getPlatformFromUrl(company.trustCenter)}
+                                {getPlatform(company)}
                               </span>
                             )}
                           </div>

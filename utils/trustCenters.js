@@ -45,6 +45,7 @@ import segment from '../constants/trustCenterRegistry/segment.js';
 import slack from '../constants/trustCenterRegistry/slack.js';
 import stripe from '../constants/trustCenterRegistry/stripe.js';
 import superhuman from '../constants/trustCenterRegistry/superhuman.js';
+import temporal from '../constants/trustCenterRegistry/temporal.js';
 import typeform from '../constants/trustCenterRegistry/typeform.js';
 import vanta from '../constants/trustCenterRegistry/vanta.js';
 import vercel from '../constants/trustCenterRegistry/vercel.js';
@@ -101,6 +102,7 @@ const trustCenterData = [
   slack,
   stripe,
   superhuman,
+  temporal,
   typeform,
   vanta,
   vercel,

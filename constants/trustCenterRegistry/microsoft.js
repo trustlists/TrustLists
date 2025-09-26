@@ -3,5 +3,6 @@ export default {
   "website": "https://www.microsoft.com/",
   "trustCenter": "https://servicetrust.microsoft.com/",
   "description": "Technology company that develops computer software, consumer electronics, personal computers, and related services including Azure, Office, and Windows.",
+  "platform": "Delve",
   "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
 };

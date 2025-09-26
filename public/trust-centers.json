@@ -5,6 +5,7 @@
       "website": "https://1password.com/",
       "trustCenter": "https://app.conveyor.com/profile/1password",
       "description": "1Password is an industry-leading digital vault and password manager that helps individuals, families, and businesses securely store, organize, and manage all their sensitive information, including passwords, credit card details, and secure notes.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=1password.com&sz=128"
     },
     {
@@ -12,13 +13,15 @@
       "website": "https://aws.amazon.com",
       "trustCenter": "https://aws.amazon.com/trust-center",
       "description": "Amazon Web Services (AWS) is Amazon's cloud computing platform that provides on-demand IT services, like servers, storage, and databases, over the internet on a pay-as-you-go basis",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128"
     },
     {
       "name": "Betterment",
       "website": "https://betterment.com/",
       "trustCenter": "https://trust.betterment.com/",
-      "description": "Betterment is an internet-based advisory services are designed to assist clients in achieving discrete financial goals.",
+      "description": "Betterment is an advisory services are designed to assist clients in achieving discrete financial goals.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=betterment.com&sz=128"
     },
     {
@@ -26,6 +29,7 @@
       "website": "https://carta.com/",
       "trustCenter": "https://trust.carta.com/",
       "description": "Equity management platform that helps private companies, public companies, and investors manage their cap tables, valuations, and equity plans.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=carta.com&sz=128"
     },
     {
@@ -33,6 +37,7 @@
       "website": "https://chargeflow.io/",
       "trustCenter": "https://trust.chargeflow.io/",
       "description": "Automated chargeback management platform that helps e-commerce businesses fight chargebacks and recover revenue using AI technology.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=chargeflow.io&sz=128"
     },
     {
@@ -40,6 +45,7 @@
       "website": "https://checkr.com/",
       "trustCenter": "https://security.checkr.com/",
       "description": "Checkr is an technology platform for background checks that helps companies and individuals streamline employment screenings and access public records",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=checkr.com&sz=128"
     },
     {
@@ -47,6 +53,7 @@
       "website": "https://cluely.com/",
       "trustCenter": "https://trust.delve.co/cluely",
       "description": "Cluely is an undetectable desktop app that gives you the answers you didn't study for in every meeting and conversation.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=cluely.com&sz=128"
     },
     {
@@ -54,6 +61,7 @@
       "website": "https://coderabbit.ai/",
       "trustCenter": "https://trust.coderabbit.ai/",
       "description": "CodeRabbit is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=128"
     },
     {
@@ -61,6 +69,7 @@
       "website": "https://www.cognition.ai/",
       "trustCenter": "https://trust.cognition.ai/",
       "description": "AI-powered software engineering assistant that can write, debug, and deploy code autonomously to help accelerate software development.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=cognition.ai&sz=128"
     },
     {
@@ -68,6 +77,7 @@
       "website": "https://contentsquare.com/",
       "trustCenter": "https://trust.contentsquare.com/",
       "description": "Digital experience analytics platform that helps businesses understand how and why users interact with their websites and mobile apps.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=contentsquare.com&sz=128"
     },
     {
@@ -75,6 +85,7 @@
       "website": "https://cursor.com/",
       "trustCenter": "https://trust.cursor.com/",
       "description": "Cursor AI is a proprietary, AI-native code editor built on top of the open-source codebase.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128"
     },
     {
@@ -82,6 +93,7 @@
       "website": "https://delve.co/",
       "trustCenter": "https://trust.delve.co/",
       "description": "Delve is in compliance with security best practices, has implemented and is monitoring comprehensive controls, and maintains policies to outline its security procedures.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=delve.co&sz=128"
     },
     {
@@ -89,6 +101,7 @@
       "website": "https://drata.com/",
       "trustCenter": "https://trust.drata.com/",
       "description": "Drata is a security and compliance automation platform that helps companies streamline compliance, manage risk, and build trust.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=drata.com&sz=128"
     },
     {
@@ -96,6 +109,7 @@
       "website": "https://eudia.com/",
       "trustCenter": "https://trust.eudia.com/",
       "description": "Eudia is an legal technology company that provides an augmented intelligence platform and legal services to corporate legal departments",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=eudia.com&sz=128"
     },
     {
@@ -103,6 +117,7 @@
       "website": "https://figma.com/",
       "trustCenter": "https://compliance.figma.com/",
       "description": "Figma is a cloud-based collaborative interface design tool used to create digital products like websites, mobile apps, and other experiences.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
     },
     {
@@ -110,6 +125,7 @@
       "website": "https://github.com",
       "trustCenter": "https://github.com/trust-center",
       "description": "World's leading software development platform with enterprise-grade security",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=128"
     },
     {
@@ -117,6 +133,7 @@
       "website": "https://gitlab.com/",
       "trustCenter": "https://trust.gitlab.com/",
       "description": "GitLab is an AI-powered, unified DevSecOps platform that helps teams manage the entire software development lifecycle, from planning and source code management to automated CI/CD, security testing, and deployment.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=gitlab.com&sz=128"
     },
     {
@@ -124,6 +141,7 @@
       "website": "https://workspace.google.com/",
       "trustCenter": "https://cloud.google.com/security/compliance/compliance-reports-manager",
       "description": "A suite of productivity and collaboration tools including Gmail, Docs, Drive, and Meet for businesses and organizations.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128"
     },
     {
@@ -131,6 +149,7 @@
       "website": "https://grain.com/",
       "trustCenter": "https://trust.grain.com/",
       "description": "AI-powered meeting recorder and note-taker that automatically captures, transcribes, and summarizes your video calls for better collaboration.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=grain.com&sz=128"
     },
     {
@@ -138,6 +157,7 @@
       "website": "https://www.heap.io/",
       "trustCenter": "https://trust.contentsquare.com/?product=heapio",
       "description": "Digital insights platform that automatically captures every user interaction to help product teams build better experiences.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=heap.io&sz=128"
     },
     {
@@ -145,6 +165,7 @@
       "website": "https://hex.tech/",
       "trustCenter": "https://trust.hex.tech/",
       "description": "Collaborative data platform that combines SQL, Python, and no-code tools to help teams explore, analyze, and share data insights.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hex.tech&sz=128"
     },
     {
@@ -152,6 +173,7 @@
       "website": "https://www.hotjar.com/",
       "trustCenter": "https://trust.contentsquare.com/?product=hotjar",
       "description": "Behavior analytics and user feedback service that helps you understand how users interact with your website through heatmaps and recordings.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hotjar.com&sz=128"
     },
     {
@@ -159,6 +181,7 @@
       "website": "https://hubspot.com/",
       "trustCenter": "https://trust.hubspot.com/",
       "description": "HubSpot is an AI-powered customer platform offering an all-in-one solution for marketing, sales, and customer service to help businesses find, attract, and grow customer relationships.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
     },
     {
@@ -166,6 +189,7 @@
       "website": "https://itjones.com",
       "trustCenter": "https://trust.itjones.com",
       "description": "MSP experts providing a variety of IT-related services and technical support to corporate clients.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=itjones.com&sz=128"
     },
     {
@@ -173,6 +197,7 @@
       "website": "https://www.kandji.io",
       "trustCenter": "https://trust.kandji.io",
       "description": "Kandji is a cloud-based Apple device management and security platform designed to centralize and automate the configuration, management, and security of Mac, iPhone, iPad, and Apple TV devices within an organization",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=kandji.io&sz=128"
     },
     {
@@ -180,6 +205,7 @@
       "website": "https://lattice.com/",
       "trustCenter": "https://trustcenter.lattice.com/",
       "description": "People management platform that helps companies build high-performing teams through performance reviews, goal setting, and employee engagement.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=lattice.com&sz=128"
     },
     {
@@ -187,6 +213,7 @@
       "website": "https://linear.app/",
       "trustCenter": "https://trustcenter.linear.app/",
       "description": "Issue tracking and project management tool designed for modern software development teams with a focus on speed and user experience.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=linear.app&sz=128"
     },
     {
@@ -194,6 +221,7 @@
       "website": "https://lovable.dev",
       "trustCenter": "https://trust.delve.co/lovable",
       "description": "Lovable is an AI-powered platform for building full-stack web applications and websites using natural language prompts instead of coding.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=lovable.dev&sz=128"
     },
     {
@@ -201,6 +229,7 @@
       "website": "https://www.metabase.com/",
       "trustCenter": "https://trust.metabase.com/",
       "description": "Open-source business intelligence tool that makes it easy for anyone in your company to ask questions and learn from data.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=metabase.com&sz=128"
     },
     {
@@ -208,6 +237,7 @@
       "website": "https://www.microsoft.com/",
       "trustCenter": "https://servicetrust.microsoft.com/",
       "description": "Technology company that develops computer software, consumer electronics, personal computers, and related services including Azure, Office, and Windows.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128"
     },
     {
@@ -215,6 +245,7 @@
       "website": "https://mixpanel.com/",
       "trustCenter": "https://trust.mixpanel.com/",
       "description": "Product analytics platform that helps companies understand user behavior and improve their product experience through data-driven insights.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=mixpanel.com&sz=128"
     },
     {
@@ -222,6 +253,7 @@
       "website": "https://mongodb.com/",
       "trustCenter": "https://trust.mongodb.com/",
       "description": "Document-oriented NoSQL database platform that provides high performance, high availability, and easy scalability for modern applications.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=mongodb.com&sz=128"
     },
     {
@@ -229,6 +261,7 @@
       "website": "https://www.notion.com/",
       "trustCenter": "https://public-profile.whistic.com/8e45fdd3-e2fe-4742-852b-ac509b13d0d1",
       "description": "All-in-one workspace for notes, tasks, wikis, and databases that helps teams collaborate and organize their work in a connected way.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=notion.com&sz=128"
     },
     {
@@ -236,6 +269,7 @@
       "website": "https://www.okta.com/",
       "trustCenter": "https://trust.okta.com/",
       "description": "Identity and access management platform that provides secure identity solutions for enterprises including single sign-on and multi-factor authentication.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=okta.com&sz=128"
     },
     {
@@ -243,6 +277,7 @@
       "website": "https://parasail.io/",
       "trustCenter": "https://trust.parasail.io/",
       "description": "Customer success platform that helps B2B companies reduce churn and grow revenue by providing insights into customer health and behavior.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=parasail.io&sz=128"
     },
     {
@@ -250,6 +285,7 @@
       "website": "https://postman.com/",
       "trustCenter": "https://security.postman.com/",
       "description": "Postman is an all-in-one API platform that streamlines the entire API lifecycle by providing a comprehensive set of tools for design, testing, and collaboration.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=postman.com&sz=128"
     },
     {
@@ -257,6 +293,7 @@
       "website": "https://ramp.com/",
       "trustCenter": "https://trust.ramp.com/",
       "description": "Corporate card and spend management platform that helps businesses control expenses, automate accounting, and earn rewards on purchases.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=ramp.com&sz=128"
     },
     {
@@ -264,6 +301,7 @@
       "website": "https://remote.com/",
       "trustCenter": "https://trust.remote.com/",
       "description": "Global HR platform that enables companies to hire, manage, and pay remote employees and contractors worldwide while ensuring compliance.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=remote.com&sz=128"
     },
     {
@@ -271,6 +309,7 @@
       "website": "https://www.rewardful.com/",
       "trustCenter": "https://trust.rewardful.com/",
       "description": "Affiliate and referral marketing platform that helps SaaS companies create and manage affiliate programs to drive customer acquisition.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=rewardful.com&sz=128"
     },
     {
@@ -278,6 +317,7 @@
       "website": "https://ripple.com/",
       "trustCenter": "https://security-portal.ripple.com/",
       "description": "Ripple is an enterprise crypto company that enables financial institutions, businesses, governments and developers to drive impact and economic opportunity.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=ripple.com&sz=128"
     },
     {
@@ -285,6 +325,7 @@
       "website": "https://safebase.io/",
       "trustCenter": "https://trust.safebase.io/",
       "description": "SafeBase automates security reviews and transforms how you communicate your security and trust posture. Build customer trust through transparency.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=safebase.io&sz=128"
     },
     {
@@ -292,6 +333,7 @@
       "website": "https://salesforce.com",
       "trustCenter": "https://trust.salesforce.com",
       "description": "Leading CRM platform with comprehensive trust and compliance programs",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"
     },
     {
@@ -299,6 +341,7 @@
       "website": "https://segment.com/",
       "trustCenter": "https://security.segment.com/",
       "description": "Customer data platform that helps companies collect, clean, and control their customer data to create personalized experiences.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=segment.com&sz=128"
     },
     {
@@ -306,6 +349,7 @@
       "website": "https://slack.com/",
       "trustCenter": "https://slack.com/trust",
       "description": "BSlack is a work operating system and collaboration platform that functions as a central hub for team communication, file sharing, and project management.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=128"
     },
     {
@@ -313,6 +357,7 @@
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
       "description": "Online payment processing platform with comprehensive security and compliance programs",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
     },
     {
@@ -320,6 +365,7 @@
       "website": "https://superhuman.com",
       "trustCenter": "https://trust.superhuman.com",
       "description": "Superhuman is the most productive email app ever made. Collaborate faster and get more done with AI-native email.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=superhuman.com&sz=128"
     },
     {
@@ -327,6 +373,7 @@
       "website": "https://temporal.io/",
       "trustCenter": "https://trust.temporal.io/",
       "description": "Temporal.io is an open-source durable execution system that provides a workflow engine to build reliable, scalable distributed applications by managing complex state and coordinating microservices.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=temporal.io&sz=128"
     },
     {
@@ -334,6 +381,7 @@
       "website": "https://www.typeform.com/",
       "trustCenter": "https://trust.typeform.com/",
       "description": "Online form builder that creates engaging, conversational forms and surveys to collect data and insights from your audience.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=typeform.com&sz=128"
     },
     {
@@ -341,6 +389,7 @@
       "website": "https://vanta.com",
       "trustCenter": "https://trust.vanta.com",
       "description": "Vanta is an automated trust management and compliance platform that helps companies of all sizes simplify, centralize, and automate security and compliance workflows.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=vanta.com&sz=128"
     },
     {
@@ -348,6 +397,7 @@
       "website": "https://vercel.com/",
       "trustCenter": "https://security.vercel.com/",
       "description": "Vercel is a cloud platform for frontend developers that simplifies the deployment, hosting, and scaling of modern web applications.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128"
     },
     {
@@ -355,6 +405,7 @@
       "website": "https://vespa.ai/",
       "trustCenter": "https://trust.vespa.ai/",
       "description": "Open-source big data serving engine that enables real-time computation over large datasets for search, recommendation, and AI applications.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=vespa.ai&sz=128"
     },
     {
@@ -362,6 +413,7 @@
       "website": "https://webflow.com/",
       "trustCenter": "https://trust.webflow.com/",
       "description": "Visual web development platform that enables designers to build responsive websites without coding while generating clean, semantic code.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=webflow.com&sz=128"
     },
     {
@@ -369,6 +421,7 @@
       "website": "https://wisprflow.ai/",
       "trustCenter": "https://app.delve.co/wispr-flow",
       "description": "AI-powered voice-to-text technology that enables hands-free writing and dictation with superior accuracy and natural language processing.",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=wisprflow.ai&sz=128"
     },
     {
@@ -376,6 +429,7 @@
       "website": "https://wiz.io/",
       "trustCenter": "https://trust.wiz.io/",
       "description": "Wiz connects to every cloud environment, scans every layer, and covers every aspect of your cloud security.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=wiz.io&sz=128"
     },
     {
@@ -383,6 +437,7 @@
       "website": "https://zapier.com/",
       "trustCenter": "https://trust.zapier.com/",
       "description": "Automation platform that connects different apps and services to automate workflows and eliminate repetitive tasks without coding.",
+      "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128"
     },
     {
@@ -390,12 +445,13 @@
       "website": "https://zoom.com/",
       "trustCenter": "https://trust.zoom.com/",
       "description": "Zoom is a cloud-based video and audio conferencing platform that allows for virtual meetings, remote collaboration, and instant messaging, supporting features like screen sharing, recording, and chat.",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=zoom.com&sz=128"
     }
   ],
   "meta": {
     "total": 56,
-    "generated": "2025-09-26T20:01:28.353Z",
+    "generated": "2025-09-26T20:17:03.120Z",
     "version": "1.0.0"
   }
 }
