@@ -306,47 +306,49 @@ Add any other context about the problem here.`);
           {/* Right Content Area - Scrollable */}
           <div className="flex-1 lg:overflow-y-auto lg:h-screen">
             <div className="p-4 sm:p-6 lg:p-8">
-            {platformPreviewEnabled && (
-              <div className="mb-6 flex items-center gap-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-3 rounded-lg">
-                <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Platform filter (preview):</span>
-                <select
-                  className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-2 py-1 text-gray-800 dark:text-gray-100"
-                  value={platformFilter}
-                  onChange={(e) => setPlatformFilter(e.target.value)}
-                >
-                  <option value="all">All platforms</option>
-                  <option>SafeBase</option>
-                  <option>Conveyor</option>
-                  <option>Delve</option>
-                  <option>Vanta</option>
-                  <option>Drata</option>
-                  <option>TrustArc</option>
-                  <option>OneTrust</option>
-                  <option>Secureframe</option>
-                  <option>Whistic</option>
-                  <option>Contentsquare</option>
-                  <option>Self-hosted</option>
-                  <option>Other</option>
-                </select>
-                <span className="ml-auto text-xs text-blue-700 dark:text-blue-300">Add ?platformPreview=1 to the URL to toggle</span>
-              </div>
-            )}
             {/* Search Bar */}
             <div className="mb-8">
               <div className="mb-4">
-                <div className="relative w-full max-w-2xl">
-                  <input
-                    type="text"
-                    placeholder="Search Companies   Stripe, GitHub, Salesforce..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                        className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
-                  />
-                  <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                    <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                <div className="flex gap-4 items-center">
+                  <div className="relative flex-1 max-w-2xl">
+                    <input
+                      type="text"
+                      placeholder="Search Companies   Stripe, GitHub, Salesforce..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
+                    />
+                    <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                      <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
                   </div>
+                  
+                  {platformPreviewEnabled && (
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Platform:</span>
+                      <select
+                        className="text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-3 py-3 text-gray-800 dark:text-gray-100 min-w-[140px]"
+                        value={platformFilter}
+                        onChange={(e) => setPlatformFilter(e.target.value)}
+                      >
+                        <option value="all">All platforms</option>
+                        <option>SafeBase</option>
+                        <option>Conveyor</option>
+                        <option>Delve</option>
+                        <option>Vanta</option>
+                        <option>Drata</option>
+                        <option>TrustArc</option>
+                        <option>OneTrust</option>
+                        <option>Secureframe</option>
+                        <option>Whistic</option>
+                        <option>Contentsquare</option>
+                        <option>Self-hosted</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  )}
                 </div>
               </div>
               
