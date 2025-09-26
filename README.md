@@ -1,59 +1,50 @@
 # TrustList
 
-A curated directory of company trust centers and compliance documentation. TrustList is a professional tool that helps users easily discover and access security, privacy, and compliance information from trusted organizations.
+A curated directory of company trust centers and compliance documentation. Easily discover and access security, privacy, and compliance information from trusted organizations.
 
-## 🚀 Features
+## 🌐 Live Site
 
-- **🏢 Curated Trust Center Directory**: Browse verified company trust centers with logos and descriptions
-- **🔍 Smart Search**: Find companies by name or description with instant results
-- **🌙 Dark Mode**: Professional dark/light theme toggle with preference persistence
-- **📱 Fixed Sidebar Navigation**: Always-accessible navigation with smooth scrolling content
-- **⚡ Quick Actions**: Visit websites, copy trust center URLs, report issues via GitHub
-- **📋 GitHub Issues Integration**: Professional issue reporting with structured templates
-- **🎨 Professional Notifications**: In-app notifications instead of system popups
-- **🤝 Community-Driven**: Simple PR workflow for adding new companies
-- **📱 Responsive Design**: Perfect experience on desktop and mobile
+**Visit:** [https://trustlists.org](https://trustlists.org)
 
 ## 🏗️ Built With
 
 - [Next.js 14](https://nextjs.org/) - React framework with static site generation
 - [Tailwind CSS](https://tailwindcss.com/) - Modern utility-first CSS framework
 - [GitHub Pages](https://pages.github.com/) - Free static site hosting
-- [Heroicons](https://heroicons.com/) - Professional SVG icons
 
 ## 🤝 Contributing
 
 ### Add a Trust Center
 
-We use a **simplified submission process** to keep TrustList clean and focused. You can either:
+**Simplified submission process** - just 4 fields required:
 
 1. **Use our submission form**: Visit [trustlists.org/submit](https://trustlists.org/submit/) for a guided experience
 2. **Submit directly**: Add a new file to `constants/trustCenterRegistry/` folder
 
-**File Structure** (only 5 fields required):
+**File Structure:**
 ```javascript
 export default {
   "name": "Example Corp",
   "website": "https://example.com",
-  "trustCenter": "https://trust.example.com",
+  "trustCenter": "https://trust.example.com", 
   "description": "Leading technology company with comprehensive security practices",
-  "iconUrl": "https://example.com/logo.png"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=example.com&sz=128"
 };
 ```
 
 **Requirements:**
 - Company name and description
 - Working website and trust center URLs  
-- Direct link to company logo (PNG, JPG, or SVG)
+- Logo automatically generated from website domain
 - File named: `{company-name-lowercase}.js`
 
 ### Report Issues
 
-Found a problem with a company listing? Use the **Report Issue** button on any company card, which will open a structured GitHub Issue with pre-filled templates.
+Found a problem with a company listing? Use the **Report Issue** button on any company card to open a structured GitHub Issue.
 
 ## 📊 API
 
-**Free JSON API** available via GitHub Pages:
+**Free JSON API** available:
 
 ### Endpoints
 
@@ -61,28 +52,36 @@ Found a problem with a company listing? Use the **Report Issue** button on any c
 # All trust centers (live data)
 GET https://trustlists.org/trust-centers.json
 
-# Statistics
+# Statistics  
 GET https://trustlists.org/api/stats
 ```
 
 ### Example Response
 ```json
-[
-  {
-    "name": "Stripe",
-    "website": "https://stripe.com",
-    "trustCenter": "https://stripe.com/privacy-center/legal",
-    "description": "Online payment processing platform with comprehensive security and compliance programs",
-    "iconUrl": "https://stripe.com/img/v3/home/social.png"
+{
+  "data": [
+    {
+      "name": "Stripe",
+      "website": "https://stripe.com",
+      "trustCenter": "https://stripe.com/privacy-center/legal",
+      "description": "Online payment processing platform with comprehensive security and compliance programs",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
+    }
+  ],
+  "meta": {
+    "total": 54,
+    "generated": "2025-01-25T10:30:00.000Z",
+    "version": "1.0.0"
   }
-]
+}
 ```
 
 ### Usage Examples
 ```javascript
 // Fetch all companies
-const companies = await fetch('https://trustlists.org/trust-centers.json')
+const response = await fetch('https://trustlists.org/trust-centers.json')
   .then(res => res.json());
+const companies = response.data;
 
 // Find specific company
 const stripe = companies.find(c => c.name === 'Stripe');
