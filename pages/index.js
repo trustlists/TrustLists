@@ -10,6 +10,7 @@ export default function Home({ trustCenters, stats }) {
   const [notification, setNotification] = useState(null);
   const [displayCount, setDisplayCount] = useState(12); // Show 12 initially
   const [platformFilter, setPlatformFilter] = useState('all');
+  const [showPlatformModal, setShowPlatformModal] = useState(false);
 
   // Preview flag: enable with ?platformPreview=1 (no impact by default)
   const platformPreviewEnabled = typeof window !== 'undefined' &&
@@ -68,6 +69,20 @@ export default function Home({ trustCenters, stats }) {
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
+
+  // Close modal on escape key
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setShowPlatformModal(false);
+      }
+    };
+
+    if (showPlatformModal) {
+      document.addEventListener('keydown', handleEscape);
+      return () => document.removeEventListener('keydown', handleEscape);
+    }
+  }, [showPlatformModal]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -225,6 +240,78 @@ Add any other context about the problem here.`);
           </div>
         )}
 
+        {/* Platform Filter Modal */}
+        {platformPreviewEnabled && showPlatformModal && (
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50"
+            onClick={() => setShowPlatformModal(false)}
+          >
+            <div 
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-md"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Modal Header */}
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Filter by Platform</h3>
+                <button
+                  onClick={() => setShowPlatformModal(false)}
+                  className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Modal Content */}
+              <div className="p-6">
+                <div className="space-y-2">
+                  {[
+                    'all',
+                    'SafeBase',
+                    'Conveyor', 
+                    'Delve',
+                    'Vanta',
+                    'Drata',
+                    'TrustArc',
+                    'OneTrust',
+                    'Secureframe',
+                    'Whistic',
+                    'Contentsquare',
+                    'Self-hosted',
+                    'Other'
+                  ].map((platform) => (
+                    <button
+                      key={platform}
+                      onClick={() => {
+                        setPlatformFilter(platform);
+                        setShowPlatformModal(false);
+                        showNotification(`Filtered by ${platform === 'all' ? 'All platforms' : platform}`, 'info');
+                      }}
+                      className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${
+                        platformFilter === platform
+                          ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
+                          : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-medium">
+                          {platform === 'all' ? 'All platforms' : platform}
+                        </span>
+                        {platformFilter === platform && (
+                          <svg className="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        )}
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
           <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
@@ -327,29 +414,23 @@ Add any other context about the problem here.`);
                     </div>
                   </div>
                   
-                  {/* Platform Filter - Stacks Below on Mobile, Inline on Larger Screens */}
+                  {/* Platform Filter Button - Clean and Simple */}
                   {platformPreviewEnabled && (
                     <div className="flex items-center gap-2 w-full sm:w-auto sm:flex-shrink-0">
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap">Platform:</span>
-                      <select
-                        className="flex-1 sm:flex-initial text-sm bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md px-3 py-3 text-gray-800 dark:text-gray-100 sm:min-w-[140px]"
-                        value={platformFilter}
-                        onChange={(e) => setPlatformFilter(e.target.value)}
+                      <button
+                        onClick={() => setShowPlatformModal(true)}
+                        className="flex items-center gap-2 px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors min-w-[140px] justify-between"
                       >
-                        <option value="all">All platforms</option>
-                        <option>SafeBase</option>
-                        <option>Conveyor</option>
-                        <option>Delve</option>
-                        <option>Vanta</option>
-                        <option>Drata</option>
-                        <option>TrustArc</option>
-                        <option>OneTrust</option>
-                        <option>Secureframe</option>
-                        <option>Whistic</option>
-                        <option>Contentsquare</option>
-                        <option>Self-hosted</option>
-                        <option>Other</option>
-                      </select>
+                        <div className="flex items-center gap-2">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                          </svg>
+                          <span>{platformFilter === 'all' ? 'All platforms' : platformFilter}</span>
+                        </div>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
                     </div>
                   )}
                 </div>
