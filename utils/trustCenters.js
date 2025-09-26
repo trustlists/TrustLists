@@ -2,14 +2,10 @@
 // This file is automatically updated by generate-utils.js
 import _1password from '../constants/trustCenterRegistry/1password.js';
 import amazonaws from '../constants/trustCenterRegistry/amazon_aws.js';
-import atlassian from '../constants/trustCenterRegistry/atlassian.js';
 import betterment from '../constants/trustCenterRegistry/betterment.js';
 import carta from '../constants/trustCenterRegistry/carta.js';
 import chargeflow from '../constants/trustCenterRegistry/chargeflow.js';
-import chartmogul from '../constants/trustCenterRegistry/chartmogul.js';
 import checkr from '../constants/trustCenterRegistry/checkr.js';
-import clockwise from '../constants/trustCenterRegistry/clockwise.js';
-import cloudflare from '../constants/trustCenterRegistry/cloudflare.js';
 import cluely from '../constants/trustCenterRegistry/cluely.js';
 import coderabbit from '../constants/trustCenterRegistry/coderabbit.js';
 import cognition from '../constants/trustCenterRegistry/cognition.js';
@@ -19,7 +15,6 @@ import delve from '../constants/trustCenterRegistry/delve.js';
 import drata from '../constants/trustCenterRegistry/drata.js';
 import eudia from '../constants/trustCenterRegistry/eudia.js';
 import figma from '../constants/trustCenterRegistry/figma.js';
-import ghost from '../constants/trustCenterRegistry/ghost.js';
 import github from '../constants/trustCenterRegistry/github.js';
 import gitlab from '../constants/trustCenterRegistry/gitlab.js';
 import googleworkspace from '../constants/trustCenterRegistry/google-workspace.js';
@@ -28,29 +23,22 @@ import heap from '../constants/trustCenterRegistry/heap.js';
 import hex from '../constants/trustCenterRegistry/hex.js';
 import hotjar from '../constants/trustCenterRegistry/hotjar.js';
 import hubspot from '../constants/trustCenterRegistry/hubspot.js';
-import huggingface from '../constants/trustCenterRegistry/hugging-face.js';
 import jonesit from '../constants/trustCenterRegistry/jones-it.js';
 import kandji from '../constants/trustCenterRegistry/kandji.js';
 import lattice from '../constants/trustCenterRegistry/lattice.js';
 import linear from '../constants/trustCenterRegistry/linear.js';
-import loom from '../constants/trustCenterRegistry/loom.js';
 import lovable from '../constants/trustCenterRegistry/lovable.js';
 import metabase from '../constants/trustCenterRegistry/metabase.js';
 import microsoft from '../constants/trustCenterRegistry/microsoft.js';
 import mixpanel from '../constants/trustCenterRegistry/mixpanel.js';
-import modal from '../constants/trustCenterRegistry/modal.js';
 import mongodb from '../constants/trustCenterRegistry/mongodb.js';
-import motherduck from '../constants/trustCenterRegistry/motherduck.js';
 import notion from '../constants/trustCenterRegistry/notion.js';
 import okta from '../constants/trustCenterRegistry/okta.js';
-import pagerduty from '../constants/trustCenterRegistry/pagerduty.js';
 import parasail from '../constants/trustCenterRegistry/parasail.js';
-import pave from '../constants/trustCenterRegistry/pave.js';
 import postman from '../constants/trustCenterRegistry/postman.js';
 import ramp from '../constants/trustCenterRegistry/ramp.js';
 import remote from '../constants/trustCenterRegistry/remote.js';
 import rewardful from '../constants/trustCenterRegistry/rewardful.js';
-import rippling from '../constants/trustCenterRegistry/rippling.js';
 import safebase from '../constants/trustCenterRegistry/safebase.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
 import segment from '../constants/trustCenterRegistry/segment.js';
@@ -62,7 +50,6 @@ import vanta from '../constants/trustCenterRegistry/vanta.js';
 import vercel from '../constants/trustCenterRegistry/vercel.js';
 import vespa from '../constants/trustCenterRegistry/vespa.js';
 import webflow from '../constants/trustCenterRegistry/webflow.js';
-import weightsbiases from '../constants/trustCenterRegistry/weights-biases.js';
 import wisprflow from '../constants/trustCenterRegistry/wispr-flow.js';
 import wiz from '../constants/trustCenterRegistry/wiz.js';
 import zapier from '../constants/trustCenterRegistry/zapier.js';
@@ -71,14 +58,10 @@ import zoom from '../constants/trustCenterRegistry/zoom.js';
 const trustCenterData = [
   _1password,
   amazonaws,
-  atlassian,
   betterment,
   carta,
   chargeflow,
-  chartmogul,
   checkr,
-  clockwise,
-  cloudflare,
   cluely,
   coderabbit,
   cognition,
@@ -88,7 +71,6 @@ const trustCenterData = [
   drata,
   eudia,
   figma,
-  ghost,
   github,
   gitlab,
   googleworkspace,
@@ -97,29 +79,22 @@ const trustCenterData = [
   hex,
   hotjar,
   hubspot,
-  huggingface,
   jonesit,
   kandji,
   lattice,
   linear,
-  loom,
   lovable,
   metabase,
   microsoft,
   mixpanel,
-  modal,
   mongodb,
-  motherduck,
   notion,
   okta,
-  pagerduty,
   parasail,
-  pave,
   postman,
   ramp,
   remote,
   rewardful,
-  rippling,
   safebase,
   salesforce,
   segment,
@@ -131,7 +106,6 @@ const trustCenterData = [
   vercel,
   vespa,
   webflow,
-  weightsbiases,
   wisprflow,
   wiz,
   zapier,

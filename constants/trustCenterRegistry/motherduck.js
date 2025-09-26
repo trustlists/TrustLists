@@ -1,7 +1,0 @@
-export default {
-  "name": "MotherDuck",
-  "website": "https://motherduck.com/",
-  "trustCenter": "https://motherduck.com/trust-and-security/#Compliance",
-  "description": "Serverless DuckDB-in-the-cloud platform that combines the simplicity of DuckDB with the scalability and collaboration features of the cloud.",
-  "iconUrl": "https://www.google.com/s2/favicons?domain=motherduck.com&sz=128"
-};
