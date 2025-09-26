@@ -57,6 +57,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=128"
     },
     {
+      "name": "Cognition",
+      "website": "https://www.cognition.ai/",
+      "trustCenter": "https://trust.cognition.ai/",
+      "description": "AI-powered software engineering assistant that can write, debug, and deploy code autonomously to help accelerate software development.",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=cognition.ai&sz=128"
+    },
+    {
       "name": "Contentsquare",
       "website": "https://contentsquare.com/",
       "trustCenter": "https://trust.contentsquare.com/",
@@ -76,13 +83,6 @@
       "trustCenter": "https://trust.delve.co/",
       "description": "Delve is in compliance with security best practices, has implemented and is monitoring comprehensive controls, and maintains policies to outline its security procedures.",
       "iconUrl": "https://www.google.com/s2/favicons?domain=delve.co&sz=128"
-    },
-    {
-      "name": "Devin",
-      "website": "https://www.cognition.ai/",
-      "trustCenter": "https://trust.cognition.ai/",
-      "description": "AI-powered software engineering assistant that can write, debug, and deploy code autonomously to help accelerate software development.",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=cognition.ai&sz=128"
     },
     {
       "name": "Drata",
@@ -274,6 +274,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=rewardful.com&sz=128"
     },
     {
+      "name": "Ripple",
+      "website": "https://ripple.com/",
+      "trustCenter": "https://security-portal.ripple.com/",
+      "description": "Ripple is an enterprise crypto company that enables financial institutions, businesses, governments and developers to drive impact and economic opportunity.",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=ripple.com&sz=128"
+    },
+    {
       "name": "Safebase",
       "website": "https://safebase.io/",
       "trustCenter": "https://trust.safebase.io/",
@@ -314,6 +321,13 @@
       "trustCenter": "https://trust.superhuman.com",
       "description": "Superhuman is the most productive email app ever made. Collaborate faster and get more done with AI-native email.",
       "iconUrl": "https://www.google.com/s2/favicons?domain=superhuman.com&sz=128"
+    },
+    {
+      "name": "Temporal",
+      "website": "https://temporal.io/",
+      "trustCenter": "https://trust.temporal.io/",
+      "description": "Temporal.io is an open-source durable execution system that provides a workflow engine to build reliable, scalable distributed applications by managing complex state and coordinating microservices.",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=temporal.io&sz=128"
     },
     {
       "name": "Typeform",
@@ -380,8 +394,8 @@
     }
   ],
   "meta": {
-    "total": 54,
-    "generated": "2025-09-26T05:09:24.736Z",
+    "total": 56,
+    "generated": "2025-09-26T20:01:28.353Z",
     "version": "1.0.0"
   }
 }
