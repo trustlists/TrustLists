@@ -1,57 +1,52 @@
 const fs = require('fs');
 const path = require('path');
 
-// This script generates a JSON file with all trust center data for API consumption
-function generateTrustCentersJSON() {
-  const registryDir = path.join(__dirname, 'constants/trustCenterRegistry');
-  const trustCenters = [];
-
-  try {
-    const files = fs.readdirSync(registryDir);
-    
-    files.forEach(file => {
-      if (file.endsWith('.js')) {
-        try {
-          const filePath = path.join(registryDir, file);
-          delete require.cache[require.resolve(filePath)];
-          const data = require(filePath);
-          const trustCenter = data.default || data;
-          trustCenters.push(trustCenter);
-          console.log(`✅ Loaded ${file}`);
-        } catch (error) {
-          console.error(`❌ Error loading ${file}:`, error.message);
-          throw error;
-        }
-      }
-    });
-
-    // Sort by name
-    trustCenters.sort((a, b) => a.name.localeCompare(b.name));
-
-    // Generate JSON
-    const output = {
-      data: trustCenters,
-      meta: {
-        total: trustCenters.length,
-        generated: new Date().toISOString(),
-        version: '1.0.0'
-      }
-    };
-
-    // Write to public directory
-    const outputPath = path.join(__dirname, 'public/trust-centers.json');
-    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
-    
-    console.log(`✅ Generated trust-centers.json with ${trustCenters.length} companies`);
-  } catch (error) {
-    console.error('❌ Error generating JSON:', error);
-    process.exit(1);
+function generateJSON() {
+  const registryDir = path.join(__dirname, 'constants', 'trustCenterRegistry');
+  const outputPath = path.join(__dirname, 'public', 'trust-centers.json');
+  
+  if (!fs.existsSync(registryDir)) {
+    console.error('Registry directory not found:', registryDir);
+    return;
   }
+
+  const files = fs.readdirSync(registryDir).filter(file => file.endsWith('.js'));
+  const companies = [];
+
+  files.forEach(file => {
+    try {
+      const filePath = path.join(registryDir, file);
+      const content = fs.readFileSync(filePath, 'utf8');
+      
+      // Extract the JSON from the export default statement
+      const jsonMatch = content.match(/export default\s*({[\s\S]*?});?\s*$/);
+      if (jsonMatch) {
+        const company = JSON.parse(jsonMatch[1]);
+        companies.push(company);
+      }
+    } catch (error) {
+      console.error(`❌ Error loading ${file}:`, error.message);
+    }
+  });
+
+  // Sort companies by name
+  companies.sort((a, b) => a.name.localeCompare(b.name));
+
+  const jsonData = {
+    data: companies,
+    meta: {
+      total: companies.length,
+      generated: new Date().toISOString(),
+      version: '1.0.0'
+    }
+  };
+
+  fs.writeFileSync(outputPath, JSON.stringify(jsonData, null, 2));
+  console.log(`✅ Generated public/trust-centers.json with ${companies.length} companies`);
 }
 
-// Run if called directly
 if (require.main === module) {
-  generateTrustCentersJSON();
+  generateJSON();
 }
 
-module.exports = generateTrustCentersJSON;
+module.exports = generateJSON;

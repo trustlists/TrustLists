@@ -1,50 +1,41 @@
 const fs = require('fs');
 const path = require('path');
 
-// This script auto-generates the utils/trustCenters.js file with all imports
-function generateUtilsFile() {
-  const registryDir = path.join(__dirname, 'constants/trustCenterRegistry');
-  const utilsPath = path.join(__dirname, 'utils/trustCenters.js');
+function generateUtils() {
+  const registryDir = path.join(__dirname, 'constants', 'trustCenterRegistry');
+  const utilsPath = path.join(__dirname, 'utils', 'trustCenters.js');
   
-  try {
-    const files = fs.readdirSync(registryDir);
-    const jsFiles = files.filter(file => file.endsWith('.js'));
-    
-    // Generate imports
-    const imports = jsFiles.map(file => {
-      const fileName = file.replace('.js', '');
-      let variableName = fileName.replace(/-/g, ''); // Remove hyphens for variable names
-      
-      // Handle filenames that start with numbers (invalid JS identifiers)
-      if (/^\d/.test(variableName)) {
-        // If starts with number, prefix with underscore
-        variableName = '_' + variableName;
-      }
-      
-      return `import ${variableName} from '../constants/trustCenterRegistry/${file}';`;
-    }).join('\n');
-    
-    // Generate array items
-    const arrayItems = jsFiles.map(file => {
-      const fileName = file.replace('.js', '');
-      let variableName = fileName.replace(/-/g, '');
-      
-      // Handle filenames that start with numbers (invalid JS identifiers)
-      if (/^\d/.test(variableName)) {
-        // If starts with number, prefix with underscore
-        variableName = '_' + variableName;
-      }
-      
-      return `  ${variableName}`;
-    }).join(',\n');
-    
-    // Generate the complete file content
-    const utilsContent = `// Auto-generated imports - DO NOT EDIT MANUALLY
+  if (!fs.existsSync(registryDir)) {
+    console.error('Registry directory not found:', registryDir);
+    return;
+  }
+
+  const files = fs.readdirSync(registryDir).filter(file => file.endsWith('.js'));
+  console.log(`Found ${files.length} company files`);
+
+  // Generate imports with proper variable names
+  const imports = files.map(file => {
+    const baseName = path.basename(file, '.js');
+    // Handle filenames that start with numbers or special chars
+    let varName = baseName.replace(/[^a-zA-Z0-9]/g, '');
+    if (/^\d/.test(varName)) {
+      varName = '_' + varName;
+    }
+    if (varName === '') {
+      varName = 'company' + Math.random().toString(36).substr(2, 5);
+    }
+    return {
+      varName,
+      import: `import ${varName} from '../constants/trustCenterRegistry/${file}';`
+    };
+  }).sort((a, b) => a.varName.localeCompare(b.varName));
+
+  const utilsContent = `// Auto-generated imports - DO NOT EDIT MANUALLY
 // This file is automatically updated by generate-utils.js
-${imports}
+${imports.map(imp => imp.import).join('\n')}
 
 const trustCenterData = [
-${arrayItems}
+  ${imports.map(imp => imp.varName).join(',\n  ')}
 ];
 
 export function getAllTrustCenters() {
@@ -63,7 +54,7 @@ export function searchTrustCenters(query) {
   // Apply search query
   if (query && query.trim()) {
     const searchTerm = query.toLowerCase();
-    trustCenters = trustCenters.filter(tc => 
+    trustCenters = trustCenters.filter(tc =>
       tc.name.toLowerCase().includes(searchTerm) ||
       tc.description.toLowerCase().includes(searchTerm)
     );
@@ -74,26 +65,19 @@ export function searchTrustCenters(query) {
 
 export function getStats() {
   const trustCenters = getAllTrustCenters();
-  
+
   return {
     totalCompanies: trustCenters.length
   };
 }
 `;
 
-    // Write the file
-    fs.writeFileSync(utilsPath, utilsContent);
-    console.log(`✅ Generated utils/trustCenters.js with ${jsFiles.length} companies`);
-    
-  } catch (error) {
-    console.error('❌ Error generating utils file:', error);
-    process.exit(1);
-  }
+  fs.writeFileSync(utilsPath, utilsContent);
+  console.log(`✅ Generated utils/trustCenters.js with ${imports.length} companies`);
 }
 
-// Run if called directly
 if (require.main === module) {
-  generateUtilsFile();
+  generateUtils();
 }
 
-module.exports = generateUtilsFile;
+module.exports = generateUtils;

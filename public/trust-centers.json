@@ -5,474 +5,474 @@
       "website": "https://1password.com/",
       "trustCenter": "https://app.conveyor.com/profile/1password",
       "description": "1Password is an industry-leading digital vault and password manager that helps individuals, families, and businesses securely store, organize, and manage all their sensitive information, including passwords, credit card details, and secure notes.",
-      "iconUrl": "https://media.licdn.com/dms/image/v2/D4E0BAQETtEKm8EaUZA/company-logo_400_400/company-logo_400_400/0/1688384038900/1password_logo?e=2147483647&v=beta&t=X4HwxaThddp98lyiHBg9fUgCzhbJ-8hf28BGnfuB4eI"
+      "iconUrl": "https://logo.clearbit.com/1password.com"
     },
     {
       "name": "Amazon Web Services",
       "website": "https://aws.amazon.com",
       "trustCenter": "https://aws.amazon.com/trust-center",
       "description": "Amazon Web Services (AWS) is Amazon's cloud computing platform that provides on-demand IT services, like servers, storage, and databases, over the internet on a pay-as-you-go basis",
-      "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png"
+      "iconUrl": "https://logo.clearbit.com/aws.amazon.com"
     },
     {
       "name": "Atlassian",
       "website": "https://www.atlassian.com/",
       "trustCenter": "https://www.atlassian.com/trust/compliance/resources/soc2",
       "description": "Software company that develops products for software development, project management, and content management including Jira, Confluence, and Trello.",
-      "iconUrl": "https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon-32x32.png"
+      "iconUrl": "https://logo.clearbit.com/atlassian.com"
     },
     {
       "name": "Betterment",
       "website": "https://betterment.com/",
       "trustCenter": "https://trust.betterment.com/",
       "description": "Betterment is an internet-based advisory services are designed to assist clients in achieving discrete financial goals.",
-      "iconUrl": "https://api.conveyor.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6TWpSaVpUaGtaaTB6TWpVMExUUmhNVEV0T1RWaU1pMW1PVEF6TVRCaVlqVTROVEFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--c3b6135fd1eb931d98d304dae8cc4cabb91c4a6d/betterment.png"
+      "iconUrl": "https://logo.clearbit.com/betterment.com"
     },
     {
       "name": "Carta",
       "website": "https://carta.com/",
       "trustCenter": "https://trust.carta.com/",
       "description": "Equity management platform that helps private companies, public companies, and investors manage their cap tables, valuations, and equity plans.",
-      "iconUrl": "https://carta.com/wp-content/uploads/2023/11/carta-logo.svg"
+      "iconUrl": "https://logo.clearbit.com/carta.com"
     },
     {
       "name": "Chargeflow",
       "website": "https://chargeflow.io/",
       "trustCenter": "https://trust.chargeflow.io/",
       "description": "Automated chargeback management platform that helps e-commerce businesses fight chargebacks and recover revenue using AI technology.",
-      "iconUrl": "https://chargeflow.io/wp-content/uploads/2023/10/chargeflow-logo.svg"
+      "iconUrl": "https://logo.clearbit.com/chargeflow.io"
     },
     {
       "name": "ChartMogul",
       "website": "https://chartmogul.com/",
       "trustCenter": "https://chartmogul.com/security/",
       "description": "Subscription analytics platform that helps SaaS businesses measure, understand, and grow their recurring revenue with comprehensive metrics.",
-      "iconUrl": "https://chartmogul.com/assets/img/chartmogul-logo.svg"
+      "iconUrl": "https://logo.clearbit.com/chartmogul.com"
     },
     {
       "name": "Checkr",
       "website": "https://checkr.com/",
       "trustCenter": "https://security.checkr.com/",
       "description": "Checkr is an technology platform for background checks that helps companies and individuals streamline employment screenings and access public records",
-      "iconUrl": "https://a-us.storyblok.com/f/1017672/2309x542/aafeafa3d6/checkr_logo_wordmark_aqua3.png"
+      "iconUrl": "https://logo.clearbit.com/checkr.com"
     },
     {
       "name": "Clockwise",
       "website": "https://www.getclockwise.com/",
       "trustCenter": "https://www.getclockwise.com/contact/security",
       "description": "AI-powered scheduling tool that automatically finds and protects focus time in your calendar to help you get more deep work done.",
-      "iconUrl": "https://assets.getclockwise.com/logos/clockwise-logo-symbol-color.svg"
+      "iconUrl": "https://logo.clearbit.com/getclockwise.com"
     },
     {
       "name": "Cloudflare",
       "website": "https://www.cloudflare.com/",
       "trustCenter": "https://dash.cloudflare.com/?to=/:account/compliance-docs",
       "description": "Web infrastructure and website security company that provides content delivery network, DDoS mitigation, and internet security services.",
-      "iconUrl": "https://www.cloudflare.com/img/logo-cloudflare-dark.svg"
+      "iconUrl": "https://logo.clearbit.com/cloudflare.com"
     },
     {
       "name": "Cluely",
       "website": "https://cluely.com/",
       "trustCenter": "https://trust.delve.co/cluely",
       "description": "Cluely is an undetectable desktop app that gives you the answers you didn't study for in every meeting and conversation.",
-      "iconUrl": "https://app.ashbyhq.com/api/images/org-theme-wordmark/15ed85ff-f000-4711-9a4d-003d12157b14/00078a31-bcbe-44c6-8d7b-28e8ababdaa2/454b627f-994e-4a7f-9bd2-03050c05c0c9.png"
+      "iconUrl": "https://logo.clearbit.com/cluely.com"
     },
     {
       "name": "Code Rabbit",
       "website": "https://coderabbit.ai/",
       "trustCenter": "https://trust.coderabbit.ai/",
       "description": "CodeRabbit is an AI-powered code reviewer that delivers context-aware feedback on pull requests within minutes, reducing the time and effort needed for manual code reviews.",
-      "iconUrl": "https://trust.coderabbit.ai/viewFile/eyJvcmdQayI6IjU3OWFkY2Y0LWUzMjMtNDcxYy04OTM2LTEwYjBlMWY1YzJjMiIsInZpZXdGaWxlVHlwZSI6Ik9yZ0xvZ28iLCJzM0tleSI6Ik9yZ0xvZ28vNTc5YWRjZjQtZTMyMy00NzFjLTg5MzYtMTBiMGUxZjVjMmMyL2FiMWVlMDUyLWY4MjEtNGU4MS05NmJkLTE0ZDIwMjkxNTc4ZC9BZG9iZSBFeHByZXNzIC0gZmlsZS5wbmciLCJzaWduYXR1cmUiOiI2MGE1MGI2MzYyNjJkYWU4ZmQ1ZjlkMjZjMTc4ZTUxZjc4MjI3ZTUxOGVjNWJjYTkxNTdiNWFhMTZjNWZiZTcwIn0%3D"
+      "iconUrl": "https://logo.clearbit.com/coderabbit.ai"
     },
     {
       "name": "Contentsquare",
       "website": "https://contentsquare.com/",
       "trustCenter": "https://trust.contentsquare.com/",
       "description": "Digital experience analytics platform that helps businesses understand how and why users interact with their websites and mobile apps.",
-      "iconUrl": "https://contentsquare.com/wp-content/uploads/2023/10/CS_Logo_Color.svg"
+      "iconUrl": "https://logo.clearbit.com/contentsquare.com"
     },
     {
       "name": "Cursor",
       "website": "https://cursor.com/",
       "trustCenter": "https://trust.cursor.com/",
       "description": "Cursor AI is a proprietary, AI-native code editor built on top of the open-source codebase.",
-      "iconUrl": "https://trust.cursor.com/doc?s=8oae3i9p56u0y9k26580m4"
+      "iconUrl": "https://logo.clearbit.com/cursor.com"
     },
     {
       "name": "Delve",
       "website": "https://delve.co/",
       "trustCenter": "https://trust.delve.co/",
       "description": "Delve is in compliance with security best practices, has implemented and is monitoring comprehensive controls, and maintains policies to outline its security procedures.",
-      "iconUrl": "https://mma.prnewswire.com/media/2735501/DelveBlackLogo__002_Logo.jpg?p=facebook"
+      "iconUrl": "https://logo.clearbit.com/delve.co"
     },
     {
       "name": "Devin",
       "website": "https://www.cognition.ai/",
       "trustCenter": "https://trust.cognition.ai/",
       "description": "AI-powered software engineering assistant that can write, debug, and deploy code autonomously to help accelerate software development.",
-      "iconUrl": "https://www.cognition.ai/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/cognition.ai"
     },
     {
       "name": "Drata",
       "website": "https://drata.com/",
       "trustCenter": "https://trust.drata.com/",
       "description": "Drata is a security and compliance automation platform that helps companies streamline compliance, manage risk, and build trust.",
-      "iconUrl": "https://drata.com/images/favicon-256x256.png"
+      "iconUrl": "https://logo.clearbit.com/drata.com"
     },
     {
       "name": "Eudia",
       "website": "https://eudia.com/",
       "trustCenter": "https://trust.eudia.com/",
       "description": "Eudia is an legal technology company that provides an augmented intelligence platform and legal services to corporate legal departments",
-      "iconUrl": "https://trust.eudia.com/api/share/12e2a8c9-ab2f-4d0e-bbba-098ca561c1a1/logo.png?version=20"
+      "iconUrl": "https://logo.clearbit.com/eudia.com"
     },
     {
       "name": "Figma",
       "website": "https://figma.com/",
       "trustCenter": "https://compliance.figma.com/",
       "description": "Figma is a cloud-based collaborative interface design tool used to create digital products like websites, mobile apps, and other experiences.",
-      "iconUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format"
+      "iconUrl": "https://logo.clearbit.com/figma.com"
     },
     {
       "name": "Ghost",
       "website": "https://ghost.org/",
       "trustCenter": "https://ghost.org/docs/security/",
       "description": "Modern publishing platform designed for creators and publishers to build and grow their audience with newsletters, memberships, and subscriptions.",
-      "iconUrl": "https://ghost.org/images/logos/ghost-logo-dark.png"
+      "iconUrl": "https://logo.clearbit.com/ghost.org"
     },
     {
       "name": "GitHub",
       "website": "https://github.com",
       "trustCenter": "https://github.com/trust-center",
       "description": "World's leading software development platform with enterprise-grade security",
-      "iconUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+      "iconUrl": "https://logo.clearbit.com/github.com"
     },
     {
       "name": "Gitlab",
       "website": "https://gitlab.com/",
       "trustCenter": "https://trust.gitlab.com/",
       "description": "GitLab is an AI-powered, unified DevSecOps platform that helps teams manage the entire software development lifecycle, from planning and source code management to automated CI/CD, security testing, and deployment.",
-      "iconUrl": "https://trust.gitlab.com/api/share/e3f22038-1c1b-4cd0-8ebe-7e95017bec60/logo.png?version=35"
+      "iconUrl": "https://logo.clearbit.com/gitlab.com"
     },
     {
       "name": "Google Workspace",
       "website": "https://workspace.google.com/",
       "trustCenter": "https://cloud.google.com/security/compliance/compliance-reports-manager",
       "description": "A suite of productivity and collaboration tools including Gmail, Docs, Drive, and Meet for businesses and organizations.",
-      "iconUrl": "https://developers.google.com/workspace/images/workspace-icon.svg"
+      "iconUrl": "https://logo.clearbit.com/workspace.google.com"
     },
     {
       "name": "Grain",
       "website": "https://grain.com/",
       "trustCenter": "https://trust.grain.com/",
       "description": "AI-powered meeting recorder and note-taker that automatically captures, transcribes, and summarizes your video calls for better collaboration.",
-      "iconUrl": "https://grain.com/_next/static/images/grain-logo-full-color-0123456789abcdef.svg"
+      "iconUrl": "https://logo.clearbit.com/grain.com"
     },
     {
       "name": "Heap",
       "website": "https://www.heap.io/",
       "trustCenter": "https://trust.contentsquare.com/?product=heapio",
       "description": "Digital insights platform that automatically captures every user interaction to help product teams build better experiences.",
-      "iconUrl": "https://www.heap.io/static/logos/heap-logo-full-color.svg"
+      "iconUrl": "https://logo.clearbit.com/heap.io"
     },
     {
       "name": "Hex",
       "website": "https://hex.tech/",
       "trustCenter": "https://trust.hex.tech/",
       "description": "Collaborative data platform that combines SQL, Python, and no-code tools to help teams explore, analyze, and share data insights.",
-      "iconUrl": "https://hex.tech/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/hex.tech"
     },
     {
       "name": "Hotjar",
       "website": "https://www.hotjar.com/",
       "trustCenter": "https://trust.contentsquare.com/?product=hotjar",
       "description": "Behavior analytics and user feedback service that helps you understand how users interact with your website through heatmaps and recordings.",
-      "iconUrl": "https://static.hotjar.com/static/gfx/logo-hotjar.svg"
+      "iconUrl": "https://logo.clearbit.com/hotjar.com"
     },
     {
       "name": "Hubspot",
       "website": "https://hubspot.com/",
       "trustCenter": "https://trust.hubspot.com/",
       "description": "HubSpot is an AI-powered customer platform offering an all-in-one solution for marketing, sales, and customer service to help businesses find, attract, and grow customer relationships.",
-      "iconUrl": "https://trust.hubspot.com/api/share/81b68795-ec24-4799-b5eb-a26ed0b05259/logo.png?version=21"
+      "iconUrl": "https://logo.clearbit.com/hubspot.com"
     },
     {
       "name": "Hugging Face",
       "website": "https://huggingface.co/",
       "trustCenter": "https://huggingface.co/docs/hub/security",
       "description": "Open-source platform for machine learning that provides tools, models, and datasets for natural language processing and AI development.",
-      "iconUrl": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+      "iconUrl": "https://logo.clearbit.com/huggingface.co"
     },
     {
       "name": "Jones IT",
       "website": "https://itjones.com",
       "trustCenter": "https://trust.itjones.com",
       "description": "MSP experts providing a variety of IT-related services and technical support to corporate clients.",
-      "iconUrl": "https://media.licdn.com/dms/image/v2/D4D0BAQEp2kxPvIoVpw/company-logo_200_200/B4DZVc8ZcIHIAM-/0/1741021092166/jonesitsf_logo?e=2147483647&v=beta&t=cET56rxxtzrKbMD2uXwWGuITiJRoknZGDtuAsJYFTJM"
+      "iconUrl": "https://logo.clearbit.com/itjones.com"
     },
     {
       "name": "Kandji",
       "website": "https://www.kandji.io",
       "trustCenter": "https://trust.kandji.io",
       "description": "Kandji is a cloud-based Apple device management and security platform designed to centralize and automate the configuration, management, and security of Mac, iPhone, iPad, and Apple TV devices within an organization",
-      "iconUrl": "https://images.credly.com/images/e248567c-552c-4c58-abc7-fb9ef1157f1a/blob.png"
+      "iconUrl": "https://logo.clearbit.com/kandji.io"
     },
     {
       "name": "Lattice",
       "website": "https://lattice.com/",
       "trustCenter": "https://trustcenter.lattice.com/",
       "description": "People management platform that helps companies build high-performing teams through performance reviews, goal setting, and employee engagement.",
-      "iconUrl": "https://lattice.com/wp-content/themes/lattice/assets/img/lattice-logo.svg"
+      "iconUrl": "https://logo.clearbit.com/lattice.com"
     },
     {
       "name": "Linear",
       "website": "https://linear.app/",
       "trustCenter": "https://trustcenter.linear.app/",
       "description": "Issue tracking and project management tool designed for modern software development teams with a focus on speed and user experience.",
-      "iconUrl": "https://linear.app/static/favicons/favicon-96x96.png"
+      "iconUrl": "https://logo.clearbit.com/linear.app"
     },
     {
       "name": "Loom",
       "website": "https://www.loom.com/",
       "trustCenter": "https://www.atlassian.com/trust/compliance/resources/soc2",
       "description": "Video messaging tool that allows you to quickly record and share videos of your screen, camera, or both for async communication.",
-      "iconUrl": "https://cdn.loom.com/assets/logos/loom-logo-purple.svg"
+      "iconUrl": "https://logo.clearbit.com/loom.com"
     },
     {
       "name": "Lovable",
       "website": "https://lovable.dev",
       "trustCenter": "https://trust.delve.co/lovable",
       "description": "Lovable is an AI-powered platform for building full-stack web applications and websites using natural language prompts instead of coding.",
-      "iconUrl": "https://lovable.dev/img/logo/lovable-logo-bg-light.png"
+      "iconUrl": "https://logo.clearbit.com/lovable.dev"
     },
     {
       "name": "Metabase",
       "website": "https://www.metabase.com/",
       "trustCenter": "https://trust.metabase.com/",
       "description": "Open-source business intelligence tool that makes it easy for anyone in your company to ask questions and learn from data.",
-      "iconUrl": "https://www.metabase.com/images/logo.svg"
+      "iconUrl": "https://logo.clearbit.com/metabase.com"
     },
     {
       "name": "Microsoft",
       "website": "https://www.microsoft.com/",
       "trustCenter": "https://servicetrust.microsoft.com/",
       "description": "Technology company that develops computer software, consumer electronics, personal computers, and related services including Azure, Office, and Windows.",
-      "iconUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b"
+      "iconUrl": "https://logo.clearbit.com/microsoft.com"
     },
     {
       "name": "Mixpanel",
       "website": "https://mixpanel.com/",
       "trustCenter": "https://trust.mixpanel.com/",
       "description": "Product analytics platform that helps companies understand user behavior and improve their product experience through data-driven insights.",
-      "iconUrl": "https://mixpanel.com/wp-content/uploads/2021/12/mixpanel-logo-dark.svg"
+      "iconUrl": "https://logo.clearbit.com/mixpanel.com"
     },
     {
       "name": "Modal",
       "website": "https://modal.com/",
       "trustCenter": "https://modal.com/docs/guide/security",
       "description": "Cloud platform for running generative AI models, batch jobs, and distributed computing workloads with simple Python-based deployment.",
-      "iconUrl": "https://modal.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/modal.com"
     },
     {
       "name": "MongoDB",
       "website": "https://mongodb.com/",
       "trustCenter": "https://trust.mongodb.com/",
       "description": "Document-oriented NoSQL database platform that provides high performance, high availability, and easy scalability for modern applications.",
-      "iconUrl": "https://www.mongodb.com/assets/images/global/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/mongodb.com"
     },
     {
       "name": "MotherDuck",
       "website": "https://motherduck.com/",
       "trustCenter": "https://motherduck.com/trust-and-security/#Compliance",
       "description": "Serverless DuckDB-in-the-cloud platform that combines the simplicity of DuckDB with the scalability and collaboration features of the cloud.",
-      "iconUrl": "https://motherduck.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/motherduck.com"
     },
     {
       "name": "Notion",
       "website": "https://www.notion.com/",
       "trustCenter": "https://public-profile.whistic.com/8e45fdd3-e2fe-4742-852b-ac509b13d0d1",
       "description": "All-in-one workspace for notes, tasks, wikis, and databases that helps teams collaborate and organize their work in a connected way.",
-      "iconUrl": "https://www.notion.so/images/logo-ios.png"
+      "iconUrl": "https://logo.clearbit.com/notion.com"
     },
     {
       "name": "Okta",
       "website": "https://www.okta.com/",
       "trustCenter": "https://trust.okta.com/",
       "description": "Identity and access management platform that provides secure identity solutions for enterprises including single sign-on and multi-factor authentication.",
-      "iconUrl": "https://www.okta.com/sites/default/files/Okta_Logo_BrightBlue_Medium-thumbnail.png"
+      "iconUrl": "https://logo.clearbit.com/okta.com"
     },
     {
       "name": "PagerDuty",
       "website": "https://www.pagerduty.com/",
       "trustCenter": "https://www.pagerduty.com/security/",
       "description": "Digital operations management platform that helps teams prevent and resolve business-impacting incidents through intelligent incident response.",
-      "iconUrl": "https://www.pagerduty.com/wp-content/uploads/2023/01/PagerDuty-icon-green.svg"
+      "iconUrl": "https://logo.clearbit.com/pagerduty.com"
     },
     {
       "name": "Parasail",
       "website": "https://parasail.io/",
       "trustCenter": "https://trust.parasail.io/",
       "description": "Customer success platform that helps B2B companies reduce churn and grow revenue by providing insights into customer health and behavior.",
-      "iconUrl": "https://parasail.io/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/parasail.io"
     },
     {
       "name": "Pave",
       "website": "https://www.pave.com/",
       "trustCenter": "https://www.pave.com/security-and-privacy",
       "description": "Compensation management platform that helps companies design, communicate, and manage fair and competitive compensation programs.",
-      "iconUrl": "https://www.pave.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/pave.com"
     },
     {
       "name": "Postman",
       "website": "https://postman.com/",
       "trustCenter": "https://security.postman.com/",
       "description": "Postman is an all-in-one API platform that streamlines the entire API lifecycle by providing a comprehensive set of tools for design, testing, and collaboration.",
-      "iconUrl": "https://security.postman.com/api/share/3299ad14-25cc-4065-acdf-0e01a16a852d/logo.png?version=33"
+      "iconUrl": "https://logo.clearbit.com/postman.com"
     },
     {
       "name": "Ramp",
       "website": "https://ramp.com/",
       "trustCenter": "https://trust.ramp.com/",
       "description": "Corporate card and spend management platform that helps businesses control expenses, automate accounting, and earn rewards on purchases.",
-      "iconUrl": "https://ramp.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/ramp.com"
     },
     {
       "name": "Remote",
       "website": "https://remote.com/",
       "trustCenter": "https://trust.remote.com/",
       "description": "Global HR platform that enables companies to hire, manage, and pay remote employees and contractors worldwide while ensuring compliance.",
-      "iconUrl": "https://remote.com/wp-content/uploads/2023/04/Remote-logomark-color.svg"
+      "iconUrl": "https://logo.clearbit.com/remote.com"
     },
     {
       "name": "Rewardful",
       "website": "https://www.rewardful.com/",
       "trustCenter": "https://trust.rewardful.com/",
       "description": "Affiliate and referral marketing platform that helps SaaS companies create and manage affiliate programs to drive customer acquisition.",
-      "iconUrl": "https://www.rewardful.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/rewardful.com"
     },
     {
       "name": "Rippling",
       "website": "https://www.rippling.com/",
       "trustCenter": "https://www.rippling.com/security",
       "description": "Workforce management platform that combines HR, IT, and Finance functions to help companies manage their employees and systems.",
-      "iconUrl": "https://www.rippling.com/static/rippling-logo.svg"
+      "iconUrl": "https://logo.clearbit.com/rippling.com"
     },
     {
       "name": "Safebase",
       "website": "https://safebase.io/",
       "trustCenter": "https://trust.safebase.io/",
       "description": "SafeBase automates security reviews and transforms how you communicate your security and trust posture. Build customer trust through transparency.",
-      "iconUrl": "https://pbs.twimg.com/profile_images/1371557872039985153/1FOMWpp9_400x400.png"
+      "iconUrl": "https://logo.clearbit.com/safebase.io"
     },
     {
       "name": "Salesforce",
       "website": "https://salesforce.com",
       "trustCenter": "https://trust.salesforce.com",
       "description": "Leading CRM platform with comprehensive trust and compliance programs",
-      "iconUrl": "https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg?w=2048&h=1152"
+      "iconUrl": "https://logo.clearbit.com/salesforce.com"
     },
     {
       "name": "Segment",
       "website": "https://segment.com/",
       "trustCenter": "https://security.segment.com/",
       "description": "Customer data platform that helps companies collect, clean, and control their customer data to create personalized experiences.",
-      "iconUrl": "https://segment.com/docs/images/logos/segment-icon.svg"
+      "iconUrl": "https://logo.clearbit.com/segment.com"
     },
     {
       "name": "Slack",
       "website": "https://slack.com/",
       "trustCenter": "https://slack.com/trust",
       "description": "BSlack is a work operating system and collaboration platform that functions as a central hub for team communication, file sharing, and project management.",
-      "iconUrl": "https://1000logos.net/wp-content/uploads/2021/06/Slack-logo.png"
+      "iconUrl": "https://logo.clearbit.com/slack.com"
     },
     {
       "name": "Stripe",
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
       "description": "Online payment processing platform with comprehensive security and compliance programs",
-      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s"
+      "iconUrl": "https://logo.clearbit.com/stripe.com"
     },
     {
       "name": "Superhuman",
       "website": "https://superhuman.com",
       "trustCenter": "https://trust.superhuman.com",
       "description": "Superhuman is the most productive email app ever made. Collaborate faster and get more done with AI-native email.",
-      "iconUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50G52axTpCjQ9vhdS8epCr7uIQ7nEXgb0OA&s"
+      "iconUrl": "https://logo.clearbit.com/superhuman.com"
     },
     {
       "name": "Typeform",
       "website": "https://www.typeform.com/",
       "trustCenter": "https://trust.typeform.com/",
       "description": "Online form builder that creates engaging, conversational forms and surveys to collect data and insights from your audience.",
-      "iconUrl": "https://images.typeform.com/images/logo-typeform-pink.svg"
+      "iconUrl": "https://logo.clearbit.com/typeform.com"
     },
     {
       "name": "Vanta",
       "website": "https://vanta.com",
       "trustCenter": "https://trust.vanta.com",
       "description": "Vanta is an automated trust management and compliance platform that helps companies of all sizes simplify, centralize, and automate security and compliance workflows.",
-      "iconUrl": "https://cdn.prod.website-files.com/64009032676f24f376f002fc/6418277d5d75a8809671fda3_FTR_Vanta_logo.png"
+      "iconUrl": "https://logo.clearbit.com/vanta.com"
     },
     {
       "name": "Vercel",
       "website": "https://vercel.com/",
       "trustCenter": "https://security.vercel.com/",
       "description": "Vercel is a cloud platform for frontend developers that simplifies the deployment, hosting, and scaling of modern web applications.",
-      "iconUrl": "https://security.vercel.com/api/share/045f15d5-2260-44d8-aa72-de6a8a3dbff8/logo.png?version=128"
+      "iconUrl": "https://logo.clearbit.com/vercel.com"
     },
     {
       "name": "Vespa",
       "website": "https://vespa.ai/",
       "trustCenter": "https://trust.vespa.ai/",
       "description": "Open-source big data serving engine that enables real-time computation over large datasets for search, recommendation, and AI applications.",
-      "iconUrl": "https://vespa.ai/assets/vespa-logo-color.svg"
+      "iconUrl": "https://logo.clearbit.com/vespa.ai"
     },
     {
       "name": "Webflow",
       "website": "https://webflow.com/",
       "trustCenter": "https://trust.webflow.com/",
       "description": "Visual web development platform that enables designers to build responsive websites without coding while generating clean, semantic code.",
-      "iconUrl": "https://webflow.com/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/webflow.com"
     },
     {
       "name": "Weights & Biases",
       "website": "https://wandb.ai/",
       "trustCenter": "https://wandb.ai/site/security/",
       "description": "Machine learning platform for experiment tracking, model versioning, and collaboration to help ML teams build better models faster.",
-      "iconUrl": "https://wandb.ai/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/wandb.ai"
     },
     {
       "name": "Wispr Flow",
       "website": "https://wisprflow.ai/",
       "trustCenter": "https://app.delve.co/wispr-flow",
       "description": "AI-powered voice-to-text technology that enables hands-free writing and dictation with superior accuracy and natural language processing.",
-      "iconUrl": "https://wisprflow.ai/favicon.ico"
+      "iconUrl": "https://logo.clearbit.com/wisprflow.ai"
     },
     {
       "name": "Wiz",
       "website": "https://wiz.io/",
       "trustCenter": "https://trust.wiz.io/",
       "description": "Wiz connects to every cloud environment, scans every layer, and covers every aspect of your cloud security.",
-      "iconUrl": "https://trust.wiz.io/api/share/04eb804b-5a47-43be-a332-d3270cc573e4/logo.png?version=7"
+      "iconUrl": "https://logo.clearbit.com/wiz.io"
     },
     {
       "name": "Zapier",
       "website": "https://zapier.com/",
       "trustCenter": "https://trust.zapier.com/",
       "description": "Automation platform that connects different apps and services to automate workflows and eliminate repetitive tasks without coding.",
-      "iconUrl": "https://cdn.zapier.com/storage/photos/9dd0f13b3b9d30d9de9ad7c5b1d8009d.png"
+      "iconUrl": "https://logo.clearbit.com/zapier.com"
     },
     {
       "name": "Zoom",
       "website": "https://zoom.com/",
       "trustCenter": "https://trust.zoom.com/",
       "description": "Zoom is a cloud-based video and audio conferencing platform that allows for virtual meetings, remote collaboration, and instant messaging, supporting features like screen sharing, recording, and chat.",
-      "iconUrl": "https://trust.zoom.com/api/share/c4db4dfe-8238-405d-bc7f-e4adee68e0a6/logo.png?version=20"
+      "iconUrl": "https://logo.clearbit.com/zoom.com"
     }
   ],
   "meta": {
     "total": 67,
-    "generated": "2025-09-26T04:17:32.146Z",
+    "generated": "2025-09-26T04:41:21.511Z",
     "version": "1.0.0"
   }
 }

@@ -1,0 +1,7 @@
+export default {
+  "name": "Parasail",
+  "website": "https://parasail.io/",
+  "trustCenter": "https://trust.parasail.io/",
+  "description": "Customer success platform that helps B2B companies reduce churn and grow revenue by providing insights into customer health and behavior.",
+  "iconUrl": "https://logo.clearbit.com/parasail.io"
+};

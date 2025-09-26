@@ -1,7 +1,7 @@
 // Auto-generated imports - DO NOT EDIT MANUALLY
 // This file is automatically updated by generate-utils.js
 import _1password from '../constants/trustCenterRegistry/1password.js';
-import amazon_aws from '../constants/trustCenterRegistry/amazon_aws.js';
+import amazonaws from '../constants/trustCenterRegistry/amazon_aws.js';
 import atlassian from '../constants/trustCenterRegistry/atlassian.js';
 import betterment from '../constants/trustCenterRegistry/betterment.js';
 import carta from '../constants/trustCenterRegistry/carta.js';
@@ -70,7 +70,7 @@ import zoom from '../constants/trustCenterRegistry/zoom.js';
 
 const trustCenterData = [
   _1password,
-  amazon_aws,
+  amazonaws,
   atlassian,
   betterment,
   carta,
@@ -154,7 +154,7 @@ export function searchTrustCenters(query) {
   // Apply search query
   if (query && query.trim()) {
     const searchTerm = query.toLowerCase();
-    trustCenters = trustCenters.filter(tc => 
+    trustCenters = trustCenters.filter(tc =>
       tc.name.toLowerCase().includes(searchTerm) ||
       tc.description.toLowerCase().includes(searchTerm)
     );
@@ -165,7 +165,7 @@ export function searchTrustCenters(query) {
 
 export function getStats() {
   const trustCenters = getAllTrustCenters();
-  
+
   return {
     totalCompanies: trustCenters.length
   };
