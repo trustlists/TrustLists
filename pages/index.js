@@ -357,7 +357,10 @@ Add any other context about the problem here.`);
                   {platformPreviewEnabled && (
                     <div className="flex items-center gap-2 w-full sm:w-auto sm:flex-shrink-0">
                       <button
-                        onClick={() => setShowPlatformPanel(!showPlatformPanel)}
+                        onClick={() => {
+                          console.log('Filter button clicked! Current panel state:', showPlatformPanel);
+                          setShowPlatformPanel(!showPlatformPanel);
+                        }}
                         className={`flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium transition-colors min-w-[140px] justify-between ${
                           showPlatformPanel || platformFilter !== 'all'
                             ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300'
@@ -380,6 +383,7 @@ Add any other context about the problem here.`);
               </div>
 
               {/* Platform Filter Panel - Appears Below Search */}
+              {console.log('Debug: platformPreviewEnabled =', platformPreviewEnabled, 'showPlatformPanel =', showPlatformPanel)}
               {platformPreviewEnabled && showPlatformPanel && (
                 <div className="platform-panel-container mb-6">
                   <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
