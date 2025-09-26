@@ -13,14 +13,28 @@ function generateUtilsFile() {
     // Generate imports
     const imports = jsFiles.map(file => {
       const fileName = file.replace('.js', '');
-      const variableName = fileName.replace(/-/g, ''); // Remove hyphens for variable names
+      let variableName = fileName.replace(/-/g, ''); // Remove hyphens for variable names
+      
+      // Handle filenames that start with numbers (invalid JS identifiers)
+      if (/^\d/.test(variableName)) {
+        // If starts with number, prefix with underscore
+        variableName = '_' + variableName;
+      }
+      
       return `import ${variableName} from '../constants/trustCenterRegistry/${file}';`;
     }).join('\n');
     
     // Generate array items
     const arrayItems = jsFiles.map(file => {
       const fileName = file.replace('.js', '');
-      const variableName = fileName.replace(/-/g, '');
+      let variableName = fileName.replace(/-/g, '');
+      
+      // Handle filenames that start with numbers (invalid JS identifiers)
+      if (/^\d/.test(variableName)) {
+        // If starts with number, prefix with underscore
+        variableName = '_' + variableName;
+      }
+      
       return `  ${variableName}`;
     }).join(',\n');
     

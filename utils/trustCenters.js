@@ -1,7 +1,10 @@
 // Auto-generated imports - DO NOT EDIT MANUALLY
 // This file is automatically updated by generate-utils.js
+import _1password from '../constants/trustCenterRegistry/1password.js';
 import amazon_aws from '../constants/trustCenterRegistry/amazon_aws.js';
 import betterment from '../constants/trustCenterRegistry/betterment.js';
+import checkr from '../constants/trustCenterRegistry/checkr.js';
+import cluely from '../constants/trustCenterRegistry/cluely.js';
 import coderabbit from '../constants/trustCenterRegistry/coderabbit.js';
 import cursor from '../constants/trustCenterRegistry/cursor.js';
 import delve from '../constants/trustCenterRegistry/delve.js';
@@ -26,8 +29,11 @@ import wiz from '../constants/trustCenterRegistry/wiz.js';
 import zoom from '../constants/trustCenterRegistry/zoom.js';
 
 const trustCenterData = [
+  _1password,
   amazon_aws,
   betterment,
+  checkr,
+  cluely,
   coderabbit,
   cursor,
   delve,
