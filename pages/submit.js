@@ -105,6 +105,8 @@ export default function SubmitPage() {
       generateCode();
     } else if (method === 'auto') {
       handleAutoSubmission();
+    } else if (method === 'email') {
+      handleEmailSubmission();
     }
   };
 
@@ -119,6 +121,82 @@ export default function SubmitPage() {
 
     setGeneratedCode(code);
     setStep(2);
+  };
+
+  const handleEmailSubmission = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      // Format the submission data for email
+      const emailContent = `
+**New Trust Center Submission**
+
+**Company Information:**
+- **Name:** ${formData.name}
+- **Website:** ${formData.website}
+- **Trust Center:** ${formData.trustCenter}
+- **Description:** ${formData.description}
+- **Logo URL:** ${formData.iconUrl || 'Not provided'}
+
+---
+
+**Ready-to-use code:**
+Create file: \`constants/trustCenterRegistry/${formData.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.js\`
+
+\`\`\`javascript
+export default {
+  "name": "${formData.name}",
+  "website": "${formData.website}",
+  "trustCenter": "${formData.trustCenter}",
+  "description": "${formData.description}",
+  "iconUrl": "${formData.iconUrl || ''}"
+};
+\`\`\`
+
+**Submitted via TrustList Email Form**
+      `.trim();
+
+      // Send via Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // You'll need to get this from web3forms.com
+          name: `TrustList Submission: ${formData.name}`,
+          email: 'noreply@trustlists.org', // From email
+          subject: `New Trust Center Submission: ${formData.name}`,
+          message: emailContent,
+          to: 'your-email@example.com' // Replace with your actual email
+        })
+      });
+
+      if (response.ok) {
+        showNotification('📧 Submission sent successfully! We\'ll review it within 24-48 hours.', 'success');
+        
+        // Reset form
+        setFormData({
+          name: '',
+          website: '',
+          trustCenter: '',
+          description: '',
+          iconUrl: ''
+        });
+        setStep(3); // Success step
+      } else {
+        const errorData = await response.json();
+        throw new Error(`Email service error: ${errorData.message || response.status}`);
+      }
+    } catch (error) {
+      console.error('Email submission error:', error);
+      showNotification(`Email submission failed: ${error.message}. Please try another method.`, 'error');
+      // Fallback to manual method
+      setSubmissionMethod('manual');
+      generateCode();
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleAutoSubmission = async () => {
@@ -444,7 +522,7 @@ export default {
                   {/* Submission Method Choice */}
                   <div className="pt-6 border-t border-gray-200 dark:border-gray-600">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Choose Submission Method</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                       {/* Auto Submission */}
                       <button
                         onClick={() => handleSubmissionChoice('auto')}
@@ -461,6 +539,21 @@ export default {
                             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
                           </div>
                         )}
+                      </button>
+
+                      {/* Email Submission */}
+                      <button
+                        onClick={() => handleSubmissionChoice('email')}
+                        disabled={!isFormValid() || isSubmitting}
+                        className="group p-6 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-300 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:to-gray-700 disabled:cursor-not-allowed text-white rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl"
+                      >
+                        <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-lg mb-4 mx-auto">
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                        <h4 className="text-lg font-semibold mb-2">Email Submit</h4>
+                        <p className="text-sm text-green-100">Send us your submission via email. No GitHub account needed.</p>
                       </button>
 
                       {/* Manual Submission */}
@@ -608,28 +701,67 @@ export default {
                     </h2>
                     
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                      A GitHub issue page has been opened with your submission details pre-filled. Please complete the submission by clicking "Submit new issue" on the GitHub page.
+                      {submissionMethod === 'auto' 
+                        ? 'A GitHub issue page has been opened with your submission details pre-filled. Please complete the submission by clicking "Submit new issue" on the GitHub page.'
+                        : submissionMethod === 'email'
+                        ? 'Your submission has been sent via email! We\'ll review it and add your trust center within 24-48 hours.'
+                        : 'Your submission has been processed successfully!'
+                      }
                     </p>
                     
                     <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6">
                       <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-3">What happens next?</h3>
                       <ul className="text-left text-blue-800 dark:text-blue-200 space-y-2 text-sm">
-                        <li className="flex items-start space-x-2">
-                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>Click "Submit new issue" on the GitHub page that opened</span>
-                        </li>
-                        <li className="flex items-start space-x-2">
-                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>Our team will review your submission (usually within 24-48 hours)</span>
-                        </li>
-                        <li className="flex items-start space-x-2">
-                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>Once approved, your company will appear on TrustList automatically</span>
-                        </li>
-                        <li className="flex items-start space-x-2">
-                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                          <span>You can track progress via the GitHub issue notifications</span>
-                        </li>
+                        {submissionMethod === 'auto' ? (
+                          <>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Click "Submit new issue" on the GitHub page that opened</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Our team will review your submission (usually within 24-48 hours)</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Once approved, your company will appear on TrustList automatically</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>You can track progress via the GitHub issue notifications</span>
+                            </li>
+                          </>
+                        ) : submissionMethod === 'email' ? (
+                          <>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>We've received your submission via email</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Our team will review your submission (usually within 24-48 hours)</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Once approved, your company will appear on TrustList automatically</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>No further action needed from you!</span>
+                            </li>
+                          </>
+                        ) : (
+                          <>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Your submission has been processed</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                              <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                              <span>Thank you for contributing to TrustList!</span>
+                            </li>
+                          </>
+                        )}
                       </ul>
                     </div>
                     
