@@ -6,6 +6,7 @@ on:
     paths:
       - 'constants/trustCenterRegistry/**.js'
       - 'scripts/detect-platform.js'
+  workflow_dispatch: {}
 
 permissions:
   contents: read
