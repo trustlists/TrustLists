@@ -71,6 +71,9 @@ export default function App({ Component, pageProps }) {
             })
           }}
         />
+        
+        {/* Accessibility Widget - SiennaAccessibility */}
+        <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
       </Head>
       <Component {...pageProps} />
     </>
