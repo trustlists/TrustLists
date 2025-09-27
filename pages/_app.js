@@ -74,16 +74,6 @@ export default function App({ Component, pageProps }) {
         
         {/* Accessibility Widget - SiennaAccessibility */}
         <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
-        <style jsx global>{`
-          /* Make accessibility widget icon smaller */
-          .sienna-widget {
-            transform: scale(0.8) !important;
-          }
-          .sienna-widget button {
-            width: 40px !important;
-            height: 40px !important;
-          }
-        `}</style>
       </Head>
       <Component {...pageProps} />
     </>
