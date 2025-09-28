@@ -42,18 +42,90 @@ export default function Home({ trustCenters, stats }) {
     }
   };
 
-  // Get platform logo for SafeBase companies only (preview only)
+  // Get platform logo for partner companies (preview only)
   const getPlatformLogo = (platform) => {
     if (!platformPreviewEnabled) return null;
     
-    // Only show badges for SafeBase companies
-    if (platform !== 'SafeBase') return null;
-    
-    // Return SafeBase logo URL
-    return {
-      name: 'SafeBase',
-      logoUrl: 'https://www.google.com/s2/favicons?domain=safebase.io&sz=32'
+    // Platform configurations - ready to be enabled
+    const platformConfigs = {
+      'SafeBase': {
+        name: 'SafeBase',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=safebase.io&sz=32',
+        website: 'https://safebase.io',
+        enabled: true // Currently active
+      },
+      'Conveyor': {
+        name: 'Conveyor',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=conveyor.com&sz=32',
+        website: 'https://conveyor.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Delve': {
+        name: 'Delve',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=delve.co&sz=32',
+        website: 'https://delve.co',
+        enabled: false // Staged, ready to enable
+      },
+      'Vanta': {
+        name: 'Vanta',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=vanta.com&sz=32',
+        website: 'https://vanta.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Drata': {
+        name: 'Drata',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=drata.com&sz=32',
+        website: 'https://drata.com',
+        enabled: false // Staged, ready to enable
+      },
+      'TrustArc': {
+        name: 'TrustArc',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=trustarc.com&sz=32',
+        website: 'https://trustarc.com',
+        enabled: false // Staged, ready to enable
+      },
+      'OneTrust': {
+        name: 'OneTrust',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=onetrust.com&sz=32',
+        website: 'https://onetrust.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Secureframe': {
+        name: 'Secureframe',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=secureframe.com&sz=32',
+        website: 'https://secureframe.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Whistic': {
+        name: 'Whistic',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=whistic.com&sz=32',
+        website: 'https://whistic.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Contentsquare': {
+        name: 'Contentsquare',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=contentsquare.com&sz=32',
+        website: 'https://contentsquare.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Sprinto': {
+        name: 'Sprinto',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=sprinto.com&sz=32',
+        website: 'https://sprinto.com',
+        enabled: false // Staged, ready to enable
+      },
+      'Anecdotes': {
+        name: 'Anecdotes',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=anecdotes.ai&sz=32',
+        website: 'https://anecdotes.ai',
+        enabled: false // Staged, ready to enable
+      }
     };
+    
+    const config = platformConfigs[platform];
+    if (!config || !config.enabled) return null;
+    
+    return config;
   };
 
   // Load dark mode preference from localStorage
@@ -551,7 +623,7 @@ Add any other context about the problem here.`);
                         
                         return (
                           <a 
-                            href="https://safebase.io"
+                            href={platformLogo.website}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center hover:opacity-80 transition-opacity"
