@@ -530,12 +530,12 @@ Add any other context about the problem here.`);
                   </div>
 
                   {/* Company Info */}
-                  <div className="mb-6">
-                    <div>
-                      <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Built on</div>
-                      <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
-                    </div>
+                <div className="mb-6">
+                  <div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Built with</div>
+                    <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
                   </div>
+                </div>
 
                   {/* Action Button */}
                   <div>
