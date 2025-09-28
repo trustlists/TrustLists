@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { getAllTrustCenters } from '../utils/trustCenters';
 import { 
   PlusIcon, 
   DocumentTextIcon, 
@@ -25,6 +26,7 @@ export default function SubmitPage() {
   const [showCopySuccess, setShowCopySuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [notification, setNotification] = useState(null);
+  const [duplicateCheck, setDuplicateCheck] = useState(null); // { exists: boolean, company: object }
 
   // Load dark mode preference from localStorage
   useEffect(() => {
@@ -41,6 +43,16 @@ export default function SubmitPage() {
       document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  // Check for duplicates when form data changes
+  useEffect(() => {
+    if (formData.name.trim() && formData.website.trim()) {
+      const duplicate = checkForDuplicate(formData.name, formData.website);
+      setDuplicateCheck(duplicate);
+    } else {
+      setDuplicateCheck(null);
+    }
+  }, [formData.name, formData.website]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -73,6 +85,44 @@ export default function SubmitPage() {
       // If URL parsing fails, return the original
       return cleanUrl;
     }
+  };
+
+  // Check for duplicate companies
+  const checkForDuplicate = (companyName, website) => {
+    const allCompanies = getAllTrustCenters();
+    
+    // Check by name (case insensitive)
+    const nameMatch = allCompanies.find(company => 
+      company.name.toLowerCase() === companyName.toLowerCase()
+    );
+    
+    if (nameMatch) {
+      return { exists: true, company: nameMatch, reason: 'name' };
+    }
+    
+    // Check by website domain (extract domain from both URLs)
+    const extractDomain = (url) => {
+      try {
+        const formattedUrl = formatWebsiteUrl(url);
+        return new URL(formattedUrl).hostname.toLowerCase().replace('www.', '');
+      } catch {
+        return '';
+      }
+    };
+    
+    const inputDomain = extractDomain(website);
+    if (inputDomain) {
+      const domainMatch = allCompanies.find(company => {
+        const companyDomain = extractDomain(company.website);
+        return companyDomain && companyDomain === inputDomain;
+      });
+      
+      if (domainMatch) {
+        return { exists: true, company: domainMatch, reason: 'domain' };
+      }
+    }
+    
+    return { exists: false, company: null, reason: null };
   };
 
   // Helper function to extract domain from website URL for logo generation
@@ -454,6 +504,40 @@ export default {
                       placeholder="https://stripe.com"
                     />
                   </div>
+
+                  {/* Duplicate Warning */}
+                  {duplicateCheck && duplicateCheck.exists && (
+                    <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-lg p-4">
+                      <div className="flex items-start">
+                        <ExclamationTriangleIcon className="w-5 h-5 text-yellow-600 dark:text-yellow-400 mt-0.5 mr-3 flex-shrink-0" />
+                        <div className="flex-1">
+                          <h4 className="text-sm font-medium text-yellow-800 dark:text-yellow-200 mb-2">
+                            Company Already Exists
+                          </h4>
+                          <p className="text-sm text-yellow-700 dark:text-yellow-300 mb-3">
+                            {duplicateCheck.reason === 'name' 
+                              ? `A company named "${duplicateCheck.company.name}" is already in our directory.`
+                              : `A company with the website "${duplicateCheck.company.website}" is already in our directory.`
+                            }
+                          </p>
+                          <div className="flex items-center space-x-3">
+                            <a
+                              href={`https://trustlists.org#${duplicateCheck.company.name.toLowerCase().replace(/\s+/g, '-')}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center px-3 py-2 text-sm font-medium text-yellow-800 dark:text-yellow-200 bg-yellow-100 dark:bg-yellow-800/30 border border-yellow-300 dark:border-yellow-700 rounded-md hover:bg-yellow-200 dark:hover:bg-yellow-800/50 transition-colors"
+                            >
+                              <InformationCircleIcon className="w-4 h-4 mr-2" />
+                              View Existing Entry
+                            </a>
+                            <span className="text-xs text-yellow-600 dark:text-yellow-400">
+                              You can still submit if this is a different company
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                   
                   <div>
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
