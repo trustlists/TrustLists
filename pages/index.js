@@ -41,6 +41,29 @@ export default function Home({ trustCenters, stats }) {
     }
   };
 
+  // Get platform logo for partner platforms (preview only)
+  const getPlatformLogo = (platform) => {
+    if (!platformPreviewEnabled) return null;
+    
+    // Only show badges for partner platforms
+    const partnerPlatforms = ['SafeBase', 'Conveyor', 'Delve', 'Vanta', 'Drata'];
+    if (!partnerPlatforms.includes(platform)) return null;
+    
+    // For now, we'll use text-based badges. Later we can add actual logos
+    const platformColors = {
+      'SafeBase': 'bg-green-100 text-green-800 border-green-200 dark:bg-green-900/40 dark:text-green-200 dark:border-green-800',
+      'Conveyor': 'bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/40 dark:text-purple-200 dark:border-purple-800',
+      'Delve': 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/40 dark:text-blue-200 dark:border-blue-800',
+      'Vanta': 'bg-orange-100 text-orange-800 border-orange-200 dark:bg-orange-900/40 dark:text-orange-200 dark:border-orange-800',
+      'Drata': 'bg-red-100 text-red-800 border-red-200 dark:bg-red-900/40 dark:text-red-200 dark:border-red-800'
+    };
+    
+    return {
+      name: platform,
+      colorClass: platformColors[platform] || 'bg-gray-100 text-gray-800 border-gray-200 dark:bg-gray-900/40 dark:text-gray-200 dark:border-gray-800'
+    };
+  };
+
   // Load dark mode preference from localStorage
   useEffect(() => {
     const saved = localStorage.getItem('darkMode');
@@ -467,11 +490,6 @@ Add any other context about the problem here.`);
                           </div>
                           <div className="flex items-center gap-2">
                             <h3 className="text-xl font-bold text-gray-900 dark:text-white">{company.name}</h3>
-                            {platformPreviewEnabled && (company.name === 'Delve') && (
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200 border border-blue-200 dark:border-blue-800">
-                                {getPlatform(company)}
-                              </span>
-                            )}
                           </div>
                         </div>
                         <div className="relative dropdown-menu">
@@ -534,6 +552,22 @@ Add any other context about the problem here.`);
                     <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
                   </div>
                 </div>
+
+                  {/* Platform Badge (Preview Only) */}
+                  {(() => {
+                    const platform = getPlatform(company);
+                    const platformLogo = getPlatformLogo(platform);
+                    
+                    if (!platformLogo) return null;
+                    
+                    return (
+                      <div className="flex justify-end mb-2">
+                        <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${platformLogo.colorClass}`}>
+                          {platformLogo.name}
+                        </span>
+                      </div>
+                    );
+                  })()}
 
                   {/* Action Button */}
                   <div>
