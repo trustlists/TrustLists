@@ -51,13 +51,11 @@ export function getTrustCenterByName(name) {
 export function searchTrustCenters(query) {
   let trustCenters = getAllTrustCenters();
 
-  // Apply search query
+  // Apply search query - only search company names
   if (query && query.trim()) {
     const searchTerm = query.toLowerCase();
     trustCenters = trustCenters.filter(tc =>
-      (tc.name && tc.name.toLowerCase().includes(searchTerm)) ||
-      (tc.website && tc.website.toLowerCase().includes(searchTerm)) ||
-      (tc.trustCenter && tc.trustCenter.toLowerCase().includes(searchTerm))
+      tc.name && tc.name.toLowerCase().includes(searchTerm)
     );
   }
 
