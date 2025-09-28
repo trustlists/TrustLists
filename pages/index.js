@@ -42,25 +42,17 @@ export default function Home({ trustCenters, stats }) {
     }
   };
 
-  // Get platform logo for partner platforms (preview only)
+  // Get platform logo for SafeBase companies only (preview only)
   const getPlatformLogo = (platform) => {
     if (!platformPreviewEnabled) return null;
     
-    // Only show badges for partner platforms
-    const partnerPlatforms = ['SafeBase', 'Conveyor', 'Delve', 'Vanta'];
-    if (!partnerPlatforms.includes(platform)) return null;
+    // Only show badges for SafeBase companies
+    if (platform !== 'SafeBase') return null;
     
-    // For now, we'll use text-based badges. Later we can add actual logos
-    const platformColors = {
-      'SafeBase': 'bg-green-100 text-green-800 border-green-200 dark:bg-green-900/40 dark:text-green-200 dark:border-green-800',
-      'Conveyor': 'bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/40 dark:text-purple-200 dark:border-purple-800',
-      'Delve': 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/40 dark:text-blue-200 dark:border-blue-800',
-      'Vanta': 'bg-orange-100 text-orange-800 border-orange-200 dark:bg-orange-900/40 dark:text-orange-200 dark:border-orange-800'
-    };
-    
+    // Return SafeBase logo URL
     return {
-      name: platform,
-      colorClass: platformColors[platform] || 'bg-gray-100 text-gray-800 border-gray-200 dark:bg-gray-900/40 dark:text-gray-200 dark:border-gray-800'
+      name: 'SafeBase',
+      logoUrl: 'https://www.google.com/s2/favicons?domain=safebase.io&sz=32'
     };
   };
 
@@ -550,7 +542,7 @@ Add any other context about the problem here.`);
                     <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Built with</div>
                     <div className="flex items-center justify-between">
                       <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
-                      {/* Platform Badge (Preview Only) */}
+                      {/* Platform Logo Badge (Preview Only) */}
                       {(() => {
                         const platform = getPlatform(company);
                         const platformLogo = getPlatformLogo(platform);
@@ -558,9 +550,14 @@ Add any other context about the problem here.`);
                         if (!platformLogo) return null;
                         
                         return (
-                          <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${platformLogo.colorClass}`}>
-                            {platformLogo.name}
-                          </span>
+                          <div className="flex items-center">
+                            <img 
+                              src={platformLogo.logoUrl}
+                              alt={`${platformLogo.name} logo`}
+                              className="w-6 h-6 rounded"
+                              title={`Hosted by ${platformLogo.name}`}
+                            />
+                          </div>
                         );
                       })()}
                     </div>
