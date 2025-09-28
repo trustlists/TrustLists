@@ -93,34 +93,6 @@ const stripe = companies.find(c => c.name === 'Stripe');
 - ✅ **CORS enabled** - Use from any website
 - ✅ **Fast** - Served via GitHub's global CDN
 
-## 🚀 Development
-
-```bash
-# Clone the repository
-git clone https://github.com/FelixMichaels/TrustLists.git
-cd TrustLists
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Open http://localhost:3000
-```
-
-### Build and Deploy
-```bash
-# Build for production
-npm run build
-
-# Generate static files for GitHub Pages
-npm run export
-
-# Deploy to GitHub Pages (automatic via GitHub Actions)
-git push origin main
-```
-
 ## 📝 License
 
 This project is licensed under the GPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details.
