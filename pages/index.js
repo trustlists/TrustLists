@@ -12,9 +12,8 @@ export default function Home({ trustCenters, stats }) {
   const [platformFilter, setPlatformFilter] = useState('all');
   const [showPlatformPanel, setShowPlatformPanel] = useState(false);
 
-  // Preview flag: enable with ?platformPreview=1 (no impact by default)
-  const platformPreviewEnabled = typeof window !== 'undefined' &&
-    new URLSearchParams(window.location.search).get('platformPreview') === '1';
+  // Platform filter is now enabled by default for all users
+  const platformPreviewEnabled = true;
 
   // Get platform from company data (prefers stored platform field, falls back to URL detection)
   const getPlatform = (company) => {
