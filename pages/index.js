@@ -550,14 +550,19 @@ Add any other context about the problem here.`);
                         if (!platformLogo) return null;
                         
                         return (
-                          <div className="flex items-center">
+                          <a 
+                            href="https://safebase.io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center hover:opacity-80 transition-opacity"
+                            title={`Visit ${platformLogo.name} website`}
+                          >
                             <img 
                               src={platformLogo.logoUrl}
                               alt={`${platformLogo.name} logo`}
                               className="w-6 h-6 rounded"
-                              title={`Hosted by ${platformLogo.name}`}
                             />
-                          </div>
+                          </a>
                         );
                       })()}
                     </div>
