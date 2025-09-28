@@ -142,8 +142,7 @@ export function searchTrustCenters(query) {
     const searchTerm = query.toLowerCase();
     trustCenters = trustCenters.filter(tc =>
       tc.name.toLowerCase().includes(searchTerm) ||
-      tc.website.toLowerCase().includes(searchTerm) ||
-      tc.trustCenter.toLowerCase().includes(searchTerm)
+      tc.description.toLowerCase().includes(searchTerm)
     );
   }
 
