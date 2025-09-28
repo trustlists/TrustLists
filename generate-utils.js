@@ -55,8 +55,9 @@ export function searchTrustCenters(query) {
   if (query && query.trim()) {
     const searchTerm = query.toLowerCase();
     trustCenters = trustCenters.filter(tc =>
-      tc.name.toLowerCase().includes(searchTerm) ||
-      tc.description.toLowerCase().includes(searchTerm)
+      (tc.name && tc.name.toLowerCase().includes(searchTerm)) ||
+      (tc.website && tc.website.toLowerCase().includes(searchTerm)) ||
+      (tc.trustCenter && tc.trustCenter.toLowerCase().includes(searchTerm))
     );
   }
 
