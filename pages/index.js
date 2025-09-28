@@ -193,7 +193,6 @@ Add any other context about the problem here.`);
                 "item": {
                   "@type": "Organization",
                   "name": company.name,
-                  "description": company.description,
                   "url": company.website,
                   "sameAs": company.trustCenter
                 }

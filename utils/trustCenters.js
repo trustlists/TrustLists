@@ -17,6 +17,7 @@ import eudia from '../constants/trustCenterRegistry/eudia.js';
 import figma from '../constants/trustCenterRegistry/figma.js';
 import github from '../constants/trustCenterRegistry/github.js';
 import gitlab from '../constants/trustCenterRegistry/gitlab.js';
+import glean from '../constants/trustCenterRegistry/glean.js';
 import googleworkspace from '../constants/trustCenterRegistry/google-workspace.js';
 import grain from '../constants/trustCenterRegistry/grain.js';
 import heap from '../constants/trustCenterRegistry/heap.js';
@@ -42,8 +43,10 @@ import rewardful from '../constants/trustCenterRegistry/rewardful.js';
 import ripple from '../constants/trustCenterRegistry/ripple.js';
 import safebase from '../constants/trustCenterRegistry/safebase.js';
 import salesforce from '../constants/trustCenterRegistry/salesforce.js';
+import secureframe from '../constants/trustCenterRegistry/secureframe.js';
 import segment from '../constants/trustCenterRegistry/segment.js';
 import slack from '../constants/trustCenterRegistry/slack.js';
+import sprinto from '../constants/trustCenterRegistry/sprinto.js';
 import stripe from '../constants/trustCenterRegistry/stripe.js';
 import superhuman from '../constants/trustCenterRegistry/superhuman.js';
 import temporal from '../constants/trustCenterRegistry/temporal.js';
@@ -52,6 +55,7 @@ import vanta from '../constants/trustCenterRegistry/vanta.js';
 import vercel from '../constants/trustCenterRegistry/vercel.js';
 import vespa from '../constants/trustCenterRegistry/vespa.js';
 import webflow from '../constants/trustCenterRegistry/webflow.js';
+import wework from '../constants/trustCenterRegistry/wework.js';
 import wisprflow from '../constants/trustCenterRegistry/wispr-flow.js';
 import wiz from '../constants/trustCenterRegistry/wiz.js';
 import zapier from '../constants/trustCenterRegistry/zapier.js';
@@ -75,6 +79,7 @@ const trustCenterData = [
   figma,
   github,
   gitlab,
+  glean,
   googleworkspace,
   grain,
   heap,
@@ -100,8 +105,10 @@ const trustCenterData = [
   ripple,
   safebase,
   salesforce,
+  secureframe,
   segment,
   slack,
+  sprinto,
   stripe,
   superhuman,
   temporal,
@@ -110,6 +117,7 @@ const trustCenterData = [
   vercel,
   vespa,
   webflow,
+  wework,
   wisprflow,
   wiz,
   zapier,

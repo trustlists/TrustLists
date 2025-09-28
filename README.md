@@ -27,13 +27,12 @@ export default {
   "name": "Example Corp",
   "website": "https://example.com",
   "trustCenter": "https://trust.example.com", 
-  "description": "Leading technology company with comprehensive security practices",
   "iconUrl": "https://www.google.com/s2/favicons?domain=example.com&sz=128"
 };
 ```
 
 **Requirements:**
-- Company name and description
+- Company name
 - Working website and trust center URLs  
 - Logo automatically generated from website domain
 - File named: `{company-name-lowercase}.js`
@@ -64,7 +63,6 @@ GET https://trustlists.org/api/stats
       "name": "Stripe",
       "website": "https://stripe.com",
       "trustCenter": "https://stripe.com/privacy-center/legal",
-      "description": "Online payment processing platform with comprehensive security and compliance programs",
       "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
     }
   ],
