@@ -12,8 +12,9 @@ export default function Home({ trustCenters, stats }) {
   const [platformFilter, setPlatformFilter] = useState('all');
   const [showPlatformPanel, setShowPlatformPanel] = useState(false);
 
-  // Platform filter is now enabled by default for all users
-  const platformPreviewEnabled = true;
+  // Preview flag: enable with ?platformPreview=1 (no impact by default)
+  const platformPreviewEnabled = typeof window !== 'undefined' &&
+    new URLSearchParams(window.location.search).get('platformPreview') === '1';
 
   // Get platform from company data (prefers stored platform field, falls back to URL detection)
   const getPlatform = (company) => {
@@ -547,25 +548,24 @@ Add any other context about the problem here.`);
                 <div className="mb-6">
                   <div>
                     <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Built with</div>
-                    <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
+                    <div className="flex items-center justify-between">
+                      <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
+                      {/* Platform Badge (Preview Only) */}
+                      {(() => {
+                        const platform = getPlatform(company);
+                        const platformLogo = getPlatformLogo(platform);
+                        
+                        if (!platformLogo) return null;
+                        
+                        return (
+                          <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${platformLogo.colorClass}`}>
+                            {platformLogo.name}
+                          </span>
+                        );
+                      })()}
+                    </div>
                   </div>
                 </div>
-
-                  {/* Platform Badge (Preview Only) */}
-                  {(() => {
-                    const platform = getPlatform(company);
-                    const platformLogo = getPlatformLogo(platform);
-                    
-                    if (!platformLogo) return null;
-                    
-                    return (
-                      <div className="flex justify-end mb-2">
-                        <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${platformLogo.colorClass}`}>
-                          {platformLogo.name}
-                        </span>
-                      </div>
-                    );
-                  })()}
 
                   {/* Action Button */}
                   <div>
