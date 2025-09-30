@@ -57,43 +57,37 @@ export default function Home({ trustCenters, stats }) {
         name: 'Conveyor',
         logoUrl: 'https://www.google.com/s2/favicons?domain=conveyor.com&sz=32',
         website: 'https://conveyor.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Delve': {
         name: 'Delve',
         logoUrl: 'https://www.google.com/s2/favicons?domain=delve.co&sz=32',
         website: 'https://delve.co',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Vanta': {
         name: 'Vanta',
         logoUrl: 'https://www.google.com/s2/favicons?domain=vanta.com&sz=32',
         website: 'https://vanta.com',
-        enabled: false // Staged, ready to enable
-      },
-      'Drata': {
-        name: 'Drata',
-        logoUrl: 'https://www.google.com/s2/favicons?domain=drata.com&sz=32',
-        website: 'https://drata.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'TrustArc': {
         name: 'TrustArc',
         logoUrl: 'https://www.google.com/s2/favicons?domain=trustarc.com&sz=32',
         website: 'https://trustarc.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'OneTrust': {
         name: 'OneTrust',
         logoUrl: 'https://www.google.com/s2/favicons?domain=onetrust.com&sz=32',
         website: 'https://onetrust.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Secureframe': {
         name: 'Secureframe',
         logoUrl: 'https://www.google.com/s2/favicons?domain=secureframe.com&sz=32',
         website: 'https://secureframe.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Whistic': {
         name: 'Whistic',
@@ -105,13 +99,13 @@ export default function Home({ trustCenters, stats }) {
         name: 'Sprinto',
         logoUrl: 'https://www.google.com/s2/favicons?domain=sprinto.com&sz=32',
         website: 'https://sprinto.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Anecdotes': {
         name: 'Anecdotes',
         logoUrl: 'https://www.google.com/s2/favicons?domain=anecdotes.ai&sz=32',
         website: 'https://anecdotes.ai',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       }
     };
     
