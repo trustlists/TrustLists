@@ -64,18 +64,12 @@ export default function Home({ trustCenters, stats }) {
         name: 'Delve',
         logoUrl: 'https://www.google.com/s2/favicons?domain=delve.co&sz=32',
         website: 'https://delve.co',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Vanta': {
         name: 'Vanta',
         logoUrl: 'https://www.google.com/s2/favicons?domain=vanta.com&sz=32',
         website: 'https://vanta.com',
-        enabled: false // Staged, ready to enable
-      },
-      'Drata': {
-        name: 'Drata',
-        logoUrl: 'https://www.google.com/s2/favicons?domain=drata.com&sz=32',
-        website: 'https://drata.com',
         enabled: false // Staged, ready to enable
       },
       'TrustArc': {
