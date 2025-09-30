@@ -519,19 +519,19 @@ Add any other context about the problem here.`);
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+                          <div className="w-10 h-10 rounded-lg overflow-hidden">
                             {company.iconUrl ? (
                               <img 
                                 src={company.iconUrl} 
                                 alt={`${company.name} logo`}
-                                className="w-8 h-8 object-contain"
+                                className="w-full h-full object-cover"
                                 onError={(e) => {
                                   e.target.style.display = 'none';
                                   e.target.nextSibling.style.display = 'flex';
                                 }}
                               />
                             ) : null}
-                            <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center" style={{display: company.iconUrl ? 'none' : 'flex'}}>
+                            <div className="w-full h-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center" style={{display: company.iconUrl ? 'none' : 'flex'}}>
                               <span className="text-white font-bold">
                                 {company.name.charAt(0)}
                               </span>
