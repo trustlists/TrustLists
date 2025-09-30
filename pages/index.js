@@ -323,9 +323,9 @@ Add any other context about the problem here.`);
         )}
 
 
-        <div className="2xl:flex 2xl:h-screen 2xl:overflow-hidden">
+        <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm 2xl:flex-shrink-0">
+          <div className="lg:w-96 2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -402,7 +402,7 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 2xl:overflow-y-auto 2xl:h-screen max-w-[1600px] 2xl:max-w-[1920px] mx-auto 2xl:mx-0">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-[1600px] 2xl:max-w-[1920px] mx-auto lg:mx-0">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
