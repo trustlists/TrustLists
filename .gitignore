@@ -43,3 +43,7 @@ next-env.d.ts
 logs
 *.log
 .env.local
+
+# Private documentation - NEVER commit to GitHub
+PARTNER_PITCH.md
+API_RATE_LIMITING_GUIDE.md
