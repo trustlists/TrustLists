@@ -351,7 +351,7 @@ Add any other context about the problem here.`);
               <div className="mb-8">
                 <Link 
                   href="/submit" 
-                  className="w-full bg-blue-600 text-white px-6 py-4 rounded-xl hover:bg-blue-700 transition-all duration-200 flex items-center justify-center font-medium text-lg shadow-sm"
+                  className="w-full max-w-md xl:max-w-none mx-auto xl:mx-0 bg-blue-600 text-white px-6 py-4 rounded-xl hover:bg-blue-700 transition-all duration-200 flex items-center justify-center font-medium text-lg shadow-sm"
                 >
                   <span className="mr-2 text-xl">+</span>
                   Add Your Trust Center
