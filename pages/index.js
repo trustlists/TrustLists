@@ -402,7 +402,7 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-screen-2xl mx-auto lg:mx-0">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-screen-2xl 2xl:max-w-none mx-auto lg:mx-0">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
@@ -510,7 +510,7 @@ Add any other context about the problem here.`);
             </div>
 
             {/* Company Grid */}
-            <div className="grid gap-4 sm:gap-6 [grid-template-columns:repeat(auto-fill,minmax(340px,1fr))] 2xl:grid-cols-4">
+            <div className="grid gap-4 sm:gap-6 [grid-template-columns:repeat(auto-fill,minmax(340px,1fr))]">
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
