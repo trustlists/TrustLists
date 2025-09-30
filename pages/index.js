@@ -402,7 +402,7 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-7xl mx-auto">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-7xl mx-auto lg:mx-0">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
