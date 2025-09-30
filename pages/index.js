@@ -325,7 +325,7 @@ Add any other context about the problem here.`);
 
         <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
+          <div className="lg:w-96 2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -402,7 +402,7 @@ Add any other context about the problem here.`);
           </div>
 
           {/* Right Content Area - Scrollable */}
-          <div className="flex-1 lg:overflow-y-auto lg:h-screen">
+          <div className="flex-1 lg:overflow-y-auto lg:h-screen max-w-7xl mx-auto">
             <div className="p-4 sm:p-6 lg:p-8">
             {/* Search Bar */}
             <div className="mb-8">
@@ -510,7 +510,7 @@ Add any other context about the problem here.`);
             </div>
 
             {/* Company Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-4 sm:gap-6">
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
@@ -519,7 +519,7 @@ Add any other context about the problem here.`);
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden bg-white border border-gray-200 dark:border-gray-600">
+                          <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
                             {company.iconUrl ? (
                               <img 
                                 src={company.iconUrl} 
