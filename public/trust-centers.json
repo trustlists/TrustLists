@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "name": "11x",
+      "website": "https://www.11x.ai/",
+      "trustCenter": "https://trust.delve.co/11x",
+      "platform": "Delve",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=11x.ai&sz=128"
+    },
+    {
       "name": "1Password",
       "website": "https://1password.com/",
       "trustCenter": "https://app.conveyor.com/profile/1password",
@@ -436,8 +443,8 @@
     }
   ],
   "meta": {
-    "total": 62,
-    "generated": "2025-09-30T05:13:15.681Z",
+    "total": 63,
+    "generated": "2025-09-30T05:16:38.822Z",
     "version": "1.0.0"
   }
 }
