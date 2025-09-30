@@ -326,10 +326,10 @@ Add any other context about the problem here.`);
         <div className="xl:flex xl:h-screen xl:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
           <div className="xl:w-96 2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm xl:flex-shrink-0">
-            <div className="p-4 sm:p-6 lg:p-8">
+            <div className="p-4 sm:p-6 lg:p-8 text-center xl:text-left flex flex-col items-center xl:items-start">
               {/* Logo and Title */}
               <div className="mb-8">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mb-4 justify-center xl:justify-start">
                   <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-3 overflow-hidden">
                     <img 
                       src="/logo.svg" 
@@ -348,7 +348,7 @@ Add any other context about the problem here.`);
               </div>
 
               {/* Action Buttons */}
-              <div className="mb-8">
+              <div className="mb-8 w-full">
                 <Link 
                   href="/submit" 
                   className="w-full max-w-md xl:max-w-none mx-auto xl:mx-0 bg-blue-600 text-white px-6 py-4 rounded-xl hover:bg-blue-700 transition-all duration-200 flex items-center justify-center font-medium text-lg shadow-sm"
@@ -359,7 +359,7 @@ Add any other context about the problem here.`);
               </div>
 
               {/* Links */}
-              <div className="space-y-4">
+              <div className="flex flex-col space-y-4 items-center xl:items-start w-full">
                 <a 
                   href="https://github.com/FelixMichaels/TrustLists" 
                   target="_blank" 
