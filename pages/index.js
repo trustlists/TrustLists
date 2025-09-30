@@ -34,7 +34,6 @@ export default function Home({ trustCenters, stats }) {
       if (host.includes('onetrust.com')) return 'OneTrust';
       if (host.includes('secureframe.com')) return 'Secureframe';
       if (host.includes('whistic.com')) return 'Whistic';
-      if (host.includes('contentsquare.com')) return 'Contentsquare';
       if (host.startsWith('trust.') || host.includes('.trust.') || host.startsWith('security.') || host.includes('.security.')) return 'Self-hosted';
       return 'Other';
     } catch {
@@ -100,12 +99,6 @@ export default function Home({ trustCenters, stats }) {
         name: 'Whistic',
         logoUrl: 'https://www.google.com/s2/favicons?domain=whistic.com&sz=32',
         website: 'https://whistic.com',
-        enabled: false // Staged, ready to enable
-      },
-      'Contentsquare': {
-        name: 'Contentsquare',
-        logoUrl: 'https://www.google.com/s2/favicons?domain=contentsquare.com&sz=32',
-        website: 'https://contentsquare.com',
         enabled: false // Staged, ready to enable
       },
       'Sprinto': {
@@ -495,7 +488,6 @@ Add any other context about the problem here.`);
                         { id: 'OneTrust', label: 'OneTrust' },
                         { id: 'Secureframe', label: 'Secureframe' },
                         { id: 'Whistic', label: 'Whistic' },
-                        { id: 'Contentsquare', label: 'Contentsquare' },
                         { id: 'Sprinto', label: 'Sprinto' },
                         { id: 'Anecdotes', label: 'Anecdotes' },
                         { id: 'Self-hosted', label: 'Self-hosted' },
