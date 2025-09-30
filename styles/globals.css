@@ -102,3 +102,30 @@ body {
 .trust-gradient {
   background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
+
+/* ------------------------------ */
+/* Container query layout control */
+/* ------------------------------ */
+.layout-container {
+  /* Enable container queries on the main layout wrapper */
+  container-type: inline-size;
+}
+
+/* Default: stack (sidebar on top, content below) */
+.layout-container {
+  display: block;
+}
+
+/* When the container is wide enough to comfortably fit sidebar + at least two cards,
+   switch to side-by-side layout. Threshold approx: sidebar (24–28rem) + 2 * 340px + gaps */
+@container (min-width: 1200px) {
+  .layout-container {
+    display: flex;
+  }
+  .layout-sidebar {
+    flex: 0 0 auto;
+  }
+  .layout-content {
+    flex: 1 1 auto;
+  }
+}
