@@ -22,9 +22,10 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://trustlists.org" />
         <meta property="og:image" content="https://trustlists.org/logo.svg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="112" />
+        <meta property="og:image:height" content="112" />
         <meta property="og:image:alt" content="TrustList - Find Company Trust Centers & Compliance" />
+        <meta property="og:image:type" content="image/svg+xml" />
         <meta property="og:site_name" content="TrustList" />
         <meta property="og:locale" content="en_US" />
         
@@ -34,6 +35,8 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:description" content="A curated list of company trust centers and compliance documentation. Find security, privacy, and compliance information for leading companies." />
         <meta name="twitter:image" content="https://trustlists.org/logo.svg" />
         <meta name="twitter:image:alt" content="TrustList - Find Company Trust Centers & Compliance" />
+        <meta name="twitter:image:width" content="112" />
+        <meta name="twitter:image:height" content="112" />
         <meta name="twitter:site" content="@trustlist" />
         <meta name="twitter:creator" content="@trustlist" />
         
