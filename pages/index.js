@@ -93,7 +93,7 @@ export default function Home({ trustCenters, stats }) {
         name: 'Whistic',
         logoUrl: 'https://www.google.com/s2/favicons?domain=whistic.com&sz=32',
         website: 'https://whistic.com',
-        enabled: false // Staged, ready to enable
+        enabled: true // Staged, ready to enable
       },
       'Sprinto': {
         name: 'Sprinto',
