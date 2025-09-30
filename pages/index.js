@@ -342,7 +342,7 @@ Add any other context about the problem here.`);
                 <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 max-w-3xl mx-auto xl:mx-0 text-center xl:text-left tracking-tight">
                   Helping users connect to trusted companies
                 </h2>
-                    <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed sm:leading-8 max-w-3xl mx-auto xl:mx-0 text-center xl:text-left">
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed sm:leading-7 max-w-3xl mx-auto xl:mx-0 text-center xl:text-left">
                       TrustList is a curated directory of company trust centers and compliance documentation. Easily discover and access security, privacy, and compliance information from trusted organizations.
                     </p>
               </div>
