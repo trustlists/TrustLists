@@ -510,7 +510,7 @@ Add any other context about the problem here.`);
             </div>
 
             {/* Company Grid */}
-            <div className="grid gap-4 sm:gap-6 [grid-template-columns:repeat(auto-fill,minmax(340px,1fr))]">
+            <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 xl:[grid-template-columns:repeat(auto-fill,minmax(340px,1fr))]">
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
