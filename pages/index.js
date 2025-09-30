@@ -413,7 +413,7 @@ Add any other context about the problem here.`);
                   <div className="relative w-full sm:flex-1 sm:max-w-2xl">
                     <input
                       type="text"
-                      placeholder="Search Companies   Stripe, GitHub, Salesforce..."
+                      placeholder="Search Companies"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
