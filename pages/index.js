@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { getAllTrustCenters, searchTrustCenters, getStats } from '../utils/trustCenters';
@@ -11,38 +11,10 @@ export default function Home({ trustCenters, stats }) {
   const [displayCount, setDisplayCount] = useState(12); // Show 12 initially
   const [platformFilter, setPlatformFilter] = useState('all');
   const [showPlatformPanel, setShowPlatformPanel] = useState(false);
-  const [stackSidebarOnTop, setStackSidebarOnTop] = useState(false);
-  const wrapperRef = useRef(null);
-  const gridRef = useRef(null);
 
   // Preview flag: enable with ?platformPreview=1 (no impact by default)
   const platformPreviewEnabled = typeof window !== 'undefined' &&
     new URLSearchParams(window.location.search).get('platformPreview') === '1';
-
-  // Observe grid column count and stack sidebar when columns < 4
-  useEffect(() => {
-    if (!gridRef.current) return;
-    const el = gridRef.current;
-    const computeCols = () => {
-      const style = window.getComputedStyle(el);
-      const template = style.getPropertyValue('grid-template-columns');
-      if (!template) return 0;
-      const cols = template.split(' ').filter(Boolean).length;
-      return cols;
-    };
-    const handle = () => {
-      const cols = computeCols();
-      setStackSidebarOnTop(cols > 0 && cols < 4);
-    };
-    handle();
-    const ro = new ResizeObserver(handle);
-    ro.observe(el);
-    window.addEventListener('resize', handle);
-    return () => {
-      ro.disconnect();
-      window.removeEventListener('resize', handle);
-    };
-  }, []);
 
   // Get platform from company data (prefers stored platform field, falls back to URL detection)
   const getPlatform = (company) => {
@@ -351,7 +323,7 @@ Add any other context about the problem here.`);
         )}
 
 
-        <div ref={wrapperRef} className={`lg:h-screen lg:overflow-hidden ${stackSidebarOnTop ? '' : 'lg:flex'}`}>
+        <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
           <div className="lg:w-96 2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
@@ -538,7 +510,7 @@ Add any other context about the problem here.`);
             </div>
 
             {/* Company Grid */}
-            <div ref={gridRef} className="grid gap-4 sm:gap-6 [grid-template-columns:repeat(auto-fit,minmax(340px,1fr))] 2xl:grid-cols-4">
+            <div className="grid gap-4 sm:gap-6 [grid-template-columns:repeat(auto-fit,minmax(340px,1fr))] 2xl:grid-cols-4">
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
