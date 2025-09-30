@@ -22,6 +22,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=betterment.com&sz=128"
     },
     {
+      "name": "Bland",
+      "website": "https://www.bland.ai/",
+      "trustCenter": "https://trust.delve.co/blandai",
+      "platform": "Delve",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=bland.ai&sz=128"
+    },
+    {
       "name": "Carta",
       "website": "https://carta.com/",
       "trustCenter": "https://trust.carta.com/",
@@ -153,6 +160,12 @@
       "trustCenter": "https://trust.hex.tech/",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hex.tech&sz=128"
+    },
+    {
+      "name": "HockeyStack",
+      "website": "https://www.hockeystack.com/",
+      "trustCenter": "https://trust.delve.co/hockeystack",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=hockeystack.com&sz=128"
     },
     {
       "name": "Hotjar",
@@ -422,8 +435,8 @@
     }
   ],
   "meta": {
-    "total": 60,
-    "generated": "2025-09-28T06:44:37.798Z",
+    "total": 62,
+    "generated": "2025-09-30T05:13:00.714Z",
     "version": "1.0.0"
   }
 }
