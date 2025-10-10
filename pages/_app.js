@@ -8,7 +8,15 @@ export default function App({ Component, pageProps }) {
         <title>TrustList - Company Trust Centers Directory</title>
         <meta name="description" content="A curated list of company trust centers and compliance documentation. Find security, privacy, and compliance information for leading companies." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Favicon and Icons */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Additional favicon sizes */}
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         
         {/* SEO Keywords */}
         <meta name="keywords" content="trust center, compliance, security, privacy, SOC2, ISO27001, GDPR, HIPAA, company security, data protection, security documentation, compliance framework, trust and safety, cybersecurity, data governance" />
