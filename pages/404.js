@@ -21,9 +21,12 @@ export default function Custom404() {
           
           {/* Main Message */}
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Trust us, you are lost
             </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              This page seems to have wandered off into the digital void.
+            </p>
           </div>
           
           {/* Search Icon */}
