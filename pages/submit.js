@@ -263,8 +263,7 @@ export default {
         setFormData({
           name: '',
           website: '',
-          trustCenter: '',
-          description: ''
+          trustCenter: ''
         });
         setStep(3); // Success step
       } else {
@@ -286,8 +285,7 @@ export default {
   const isFormValid = () => {
     return formData.name && 
            formData.website &&
-           formData.trustCenter && 
-           formData.description;
+           formData.trustCenter;
   };
 
   const copyToClipboard = async () => {
@@ -763,8 +761,7 @@ export default {
                           setFormData({
                             name: '',
                             website: '',
-                            trustCenter: '',
-                            description: ''
+                            trustCenter: ''
                           });
                         }}
                         className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
