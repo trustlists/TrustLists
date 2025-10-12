@@ -85,6 +85,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=contentsquare.com&sz=128"
     },
     {
+      "name": "Crossbeam",
+      "website": "https://www.crossbeam.com/",
+      "trustCenter": "https://security.crossbeam.com/",
+      "platform": "SafeBase",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=crossbeam.com&sz=128"
+    },
+    {
       "name": "Cursor",
       "website": "https://cursor.com/",
       "trustCenter": "https://trust.cursor.com/",
@@ -288,6 +295,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=ramp.com&sz=128"
     },
     {
+      "name": "Remi HQ",
+      "website": "https://www.remihq.com/",
+      "trustCenter": "https://trust.delve.co/remi",
+      "platform": "Delve",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=remihq.com&sz=128"
+    },
+    {
       "name": "Remote",
       "website": "https://remote.com/",
       "trustCenter": "https://trust.remote.com/",
@@ -443,8 +457,8 @@
     }
   ],
   "meta": {
-    "total": 63,
-    "generated": "2025-09-30T05:16:38.822Z",
+    "total": 65,
+    "generated": "2025-10-12T17:52:55.731Z",
     "version": "1.0.0"
   }
 }
