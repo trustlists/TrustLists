@@ -97,9 +97,14 @@ export default function App({ Component, pageProps }) {
           }}
         />
         
-        {/* Accessibility Widget - SiennaAccessibility */}
-        <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
       </Head>
+      
+      {/* Accessibility Widget - SiennaAccessibility */}
+      <Script
+        src="https://website-widgets.pages.dev/dist/sienna.min.js"
+        strategy="afterInteractive"
+      />
+      
       {GA_ID && (
         <>
           <Script

@@ -7,6 +7,11 @@ export default function Custom404() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // Center the flashlight on initial load
+    setMousePosition({
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 3 // Slightly above center for better view
+    });
     setIsMounted(true);
     
     const handleMouseMove = (e) => {
