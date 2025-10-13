@@ -1,7 +1,25 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Custom404() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -10,7 +28,17 @@ export default function Custom404() {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center px-4">
+      {/* Dark background layer */}
+      <div className="fixed inset-0 bg-gray-950 z-0"></div>
+      
+      {/* Flashlight effect layer */}
+      <div 
+        className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 flex items-center justify-center px-4 relative z-10"
+        style={{
+          maskImage: isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
+          WebkitMaskImage: isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
+        }}
+      >
         <div className="max-w-md w-full text-center">
           {/* 404 Number */}
           <div className="mb-8">
@@ -29,7 +57,7 @@ export default function Custom404() {
             </p>
           </div>
           
-          {/* Search Icon */}
+          {/* Flashlight Icon */}
           <div className="mb-8">
             <div className="w-24 h-24 mx-auto bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
               <svg 
@@ -42,7 +70,7 @@ export default function Custom404() {
                   strokeLinecap="round" 
                   strokeLinejoin="round" 
                   strokeWidth={2} 
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" 
                 />
               </svg>
             </div>
@@ -70,7 +98,7 @@ export default function Custom404() {
           
           {/* Footer */}
           <div className="mt-12 text-xs text-gray-400 dark:text-gray-500">
-            <p>Lost but not forgotten</p>
+            <p>Lost but not forgotten • Move your cursor to find your way</p>
           </div>
         </div>
       </div>
