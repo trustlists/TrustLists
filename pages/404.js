@@ -5,9 +5,17 @@ import Link from 'next/link';
 export default function Custom404() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMounted, setIsMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Center the flashlight on initial load
+    // Check if mobile device (screen width < 768px)
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    
+    // Center the flashlight on initial load (only matters for desktop)
     setMousePosition({
       x: window.innerWidth / 2,
       y: window.innerHeight / 3 // Slightly above center for better view
@@ -19,9 +27,11 @@ export default function Custom404() {
     };
 
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('resize', checkMobile);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('resize', checkMobile);
     };
   }, []);
 
@@ -33,15 +43,15 @@ export default function Custom404() {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       
-      {/* Dark background layer */}
-      <div className="fixed inset-0 bg-gray-950 z-0"></div>
+      {/* Dark background layer - only on desktop */}
+      {!isMobile && <div className="fixed inset-0 bg-gray-950 z-0"></div>}
       
-      {/* Flashlight effect layer */}
+      {/* Content layer with conditional flashlight effect */}
       <div 
         className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 flex items-center justify-center px-4 relative z-10"
         style={{
-          maskImage: isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
-          WebkitMaskImage: isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
+          maskImage: !isMobile && isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
+          WebkitMaskImage: !isMobile && isMounted ? `radial-gradient(circle 250px at ${mousePosition.x}px ${mousePosition.y}px, black 60%, transparent 100%)` : 'none',
         }}
       >
         <div className="max-w-md w-full text-center">
@@ -103,7 +113,7 @@ export default function Custom404() {
           
           {/* Footer */}
           <div className="mt-12 text-xs text-gray-400 dark:text-gray-500">
-            <p>Lost but not forgotten • Move your cursor to find your way</p>
+            <p>Lost but not forgotten{!isMobile && ' • Move your cursor to find your way'}</p>
           </div>
         </div>
       </div>
