@@ -12,9 +12,8 @@ export default function Home({ trustCenters, stats }) {
   const [platformFilter, setPlatformFilter] = useState('all');
   const [showPlatformPanel, setShowPlatformPanel] = useState(false);
 
-  // Preview flag: enable with ?platformPreview=1 (no impact by default)
-  const platformPreviewEnabled = typeof window !== 'undefined' &&
-    new URLSearchParams(window.location.search).get('platformPreview') === '1';
+  // Platform badges now enabled by default
+  const platformPreviewEnabled = true;
 
   // Get platform from company data (prefers stored platform field, falls back to URL detection)
   const getPlatform = (company) => {
@@ -41,11 +40,11 @@ export default function Home({ trustCenters, stats }) {
     }
   };
 
-  // Get platform logo for partner companies (preview only)
+  // Get platform logo for partner companies
   const getPlatformLogo = (platform) => {
     if (!platformPreviewEnabled) return null;
     
-    // Platform configurations - ready to be enabled
+    // Platform configurations
     const platformConfigs = {
       'SafeBase': {
         name: 'SafeBase',
@@ -601,7 +600,7 @@ Add any other context about the problem here.`);
                     <div className="text-sm text-gray-500 dark:text-gray-400 mb-1">Built with</div>
                     <div className="flex items-center justify-between">
                       <div className="font-semibold text-gray-900 dark:text-white">{getPlatform(company)}</div>
-                      {/* Platform Logo Badge (Preview Only) */}
+                      {/* Platform Logo Badge */}
                       {(() => {
                         const platform = getPlatform(company);
                         const platformLogo = getPlatformLogo(platform);
