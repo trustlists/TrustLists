@@ -27,7 +27,7 @@ export default function Home({ trustCenters, stats }) {
       if (host.includes('safebase.io')) return 'SafeBase';
       if (host.includes('app.conveyor.com') || host.includes('conveyor.com')) return 'Conveyor';
       if (host.includes('delve.co')) return 'Delve';
-      if (host.includes('trust.vanta.com') || host.includes('vanta.com')) return 'Vanta';
+      if (host.includes('trust.vanta.com') || host.includes('vanta.com') || host.includes('vantatrust.com')) return 'Vanta';
       if (host.includes('drata.com')) return 'Drata';
       if (host.includes('trustarc.com')) return 'TrustArc';
       if (host.includes('onetrust.com')) return 'OneTrust';
