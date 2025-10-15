@@ -114,8 +114,8 @@ export default function Home({ trustCenters, stats }) {
       },
       'HyperComply': {
         name: 'HyperComply',
-        logoUrl: 'https://www.google.com/s2/favicons?domain=hypercomply.io&sz=32',
-        website: 'https://hypercomply.io',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=hypercomply.com&sz=32',
+        website: 'https://hypercomply.com',
         enabled: true
       }
     };
