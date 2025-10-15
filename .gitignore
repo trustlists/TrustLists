@@ -47,3 +47,16 @@ logs
 # Private documentation - NEVER commit to GitHub
 PARTNER_PITCH.md
 API_RATE_LIMITING_GUIDE.md
+# Trust Center discovery large artifacts
+scripts/trust-center-discovery/data/yc-companies-raw.json
+scripts/trust-center-discovery/data/yc-companies-full.json
+scripts/trust-center-discovery/data/yc-companies-cache.json
+scripts/trust-center-discovery/data/yc-api-test-results.json
+scripts/trust-center-discovery/data/trust-center-discovery-results.json
+scripts/trust-center-discovery/data/trust-center-discovery-results.with-vendors.json
+scripts/trust-center-discovery/data/trust-center-discovery-results - trust.domains.csv
+scripts/trust-center-discovery/data/platform-summary.json
+scripts/trust-center-discovery/data/last-discovery-run.json
+
+# Node
+node_modules/

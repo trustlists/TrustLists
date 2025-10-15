@@ -43,12 +43,17 @@ function mapPlatformFromHints({ host, cname, urlPath }) {
   if (h.includes('app.conveyor.com') || c.includes('aptible.in') || h.includes('conveyor.com')) return 'Conveyor';
   if (h.includes('trust.delve.co') || h === 'delve.co' || p.startsWith('/')) return 'Delve';
   if (h.includes('trust.vanta.com') || c.includes('vantatrust.com') || h.includes('vanta.com')) return 'Vanta';
-  if (h.includes('trust.drata.com') || h.includes('drata.com')) return 'Drata';
+  // Drata-hosted trust centers should be classified under SafeBase per current policy
+  if (h.includes('trust.drata.com') || h.includes('drata.com')) return 'SafeBase';
   if (h.includes('trustarc.com') || c.includes('trustarc.com')) return 'TrustArc';
   if (h.includes('onetrust.com') || c.includes('onetrust.com')) return 'OneTrust';
   if (h.includes('secureframe.com') || c.includes('secureframe.com')) return 'Secureframe';
   if (h.includes('whistic.com') || c.includes('whistic.com')) return 'Whistic';
-  if (h.includes('contentsquare.com') || c.includes('contentsquare.com')) return 'Contentsquare';
+  // HyperComply (own and hosted): trust.hypercomply.io / proxy.hypercomplytrust.com
+  if (h.includes('hypercomply.io') || h.includes('hypercomplytrust.com') ||
+      c.includes('hypercomply.io') || c.includes('hypercomplytrust.com')) return 'HyperComply';
+  // Oneleet vendor hosting
+  if (h.includes('oneleet.com') || c.includes('oneleet.com')) return 'Oneleet';
 
   // Heuristic: common subdomains
   if (h.startsWith('trust.') || h.includes('.trust.')) return 'Self-hosted';
@@ -94,7 +99,7 @@ async function main() {
   // Markdown summary
   let md = '### Trust Center Hosting Platforms (detected)\n\n';
   md += '| Platform | Count | Examples |\n|---|---:|---|\n';
-  const order = ['SafeBase','Conveyor','Delve','Vanta','Drata','TrustArc','OneTrust','Secureframe','Whistic','Contentsquare','Self-hosted','Other'];
+  const order = ['SafeBase','Conveyor','Delve','Vanta','Drata','TrustArc','OneTrust','Secureframe','Whistic','HyperComply','Oneleet','Self-hosted','Other'];
   for (const key of order) {
     const list = rows.filter(r => r.platform === key);
     if (!list.length) continue;

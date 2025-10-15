@@ -19,12 +19,19 @@ function mapPlatformFromHints({ host, cname, urlPath }) {
   if (h.includes('app.conveyor.com') || c.includes('aptible.in') || h.includes('conveyor.com')) return 'Conveyor';
   if (h.includes('delve.co') || h === 'delve.co') return 'Delve';
   if (h.includes('trust.vanta.com') || c.includes('vantatrust.com') || h.includes('vanta.com')) return 'Vanta';
-  if (h.includes('trust.drata.com') || c.includes('drata.com')) return 'Drata';
+  // Drata-hosted trust centers should be classified under SafeBase per current policy
+  if (h.includes('trust.drata.com') || c.includes('drata.com')) return 'SafeBase';
   if (h.includes('trustarc.com') || c.includes('trustarc.com')) return 'TrustArc';
   if (h.includes('onetrust.com') || c.includes('onetrust.com')) return 'OneTrust';
   if (h.includes('secureframe.com') || c.includes('secureframe.com')) return 'Secureframe';
   if (h.includes('whistic.com') || c.includes('whistic.com')) return 'Whistic';
-  if (h.includes('contentsquare.com') || c.includes('contentsquare.com')) return 'Contentsquare';
+  // HyperComply (own and hosted):
+  // - trust.hypercomply.io (own)
+  // - proxy.hypercomplytrust.com (hosted proxy)
+  if (h.includes('hypercomply.io') || h.includes('hypercomplytrust.com') ||
+      c.includes('hypercomply.io') || c.includes('hypercomplytrust.com')) return 'HyperComply';
+  // Oneleet vendor hosting
+  if (h.includes('oneleet.com') || c.includes('oneleet.com')) return 'Oneleet';
   if (c.includes('cloudfront.net') && (h.startsWith('trust.') || h.includes('.trust.'))) return 'Sprinto';
   if (c.includes('secureframetrust.com')) return 'Secureframe';
   if (c.includes('anecdotes.ai')) return 'Anecdotes';
@@ -50,8 +57,9 @@ async function resolveInfo(host) {
 }
 
 function extractField(content, field) {
-  // Match: "field": "value" or 'field': 'value'
-  const regex = new RegExp(`"${field}"\\s*:\\s*"([^"]+)"`);
+  // Support quoted or unquoted keys, and double-quoted values
+  // Examples: "trustCenter": "..."  OR  trustCenter: "..."
+  const regex = new RegExp(`(?:"${field}"|${field})\\s*:\\s*"([^"]+)"`);
   const m = content.match(regex);
   return m ? m[1] : null;
 }

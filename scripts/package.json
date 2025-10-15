@@ -1,0 +1,13 @@
+{
+  "name": "trust-center-scraper",
+  "version": "1.0.0",
+  "description": "Discover trust centers for companies",
+  "main": "trust-center-scraper.js",
+  "scripts": {
+    "scrape": "node trust-center-scraper.js",
+    "test": "node trust-center-scraper.js"
+  },
+  "keywords": ["trust-center", "scraper", "discovery"],
+  "author": "TrustList",
+  "license": "MIT"
+}
