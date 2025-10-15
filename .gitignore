@@ -58,5 +58,9 @@ scripts/trust-center-discovery/data/trust-center-discovery-results - trust.domai
 scripts/trust-center-discovery/data/platform-summary.json
 scripts/trust-center-discovery/data/last-discovery-run.json
 
+# Generated data files
+public/trust-centers.json
+public/trust-centers.csv
+
 # Node
 node_modules/

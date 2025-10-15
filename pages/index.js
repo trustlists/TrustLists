@@ -105,6 +105,18 @@ export default function Home({ trustCenters, stats }) {
         logoUrl: 'https://www.google.com/s2/favicons?domain=anecdotes.ai&sz=32',
         website: 'https://anecdotes.ai',
         enabled: true // Staged, ready to enable
+      },
+      'Oneleet': {
+        name: 'Oneleet',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=oneleet.com&sz=32',
+        website: 'https://oneleet.com',
+        enabled: true
+      },
+      'HyperComply': {
+        name: 'HyperComply',
+        logoUrl: 'https://www.google.com/s2/favicons?domain=hypercomply.io&sz=32',
+        website: 'https://hypercomply.io',
+        enabled: true
       }
     };
     
