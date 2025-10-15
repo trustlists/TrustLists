@@ -39,7 +39,7 @@
       "name": "Activepieces",
       "website": "https://www.activepieces.com",
       "trustCenter": "https://trust.activepieces.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.activepieces.com&sz=128"
     },
     {
@@ -60,14 +60,7 @@
       "name": "AfterQuery",
       "website": "https://afterquery.com",
       "trustCenter": "https://trust.afterquery.com",
-      "platform": "Self-hosted",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://afterquery.com&sz=128"
-    },
-    {
-      "name": "AfterQuery",
-      "website": "https://afterquery.com",
-      "trustCenter": "https://trust.afterquery.com",
-      "platform": "Self-hosted",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=afterquery.com&sz=128"
     },
     {
@@ -95,7 +88,7 @@
       "name": "Airbyte",
       "website": "https://airbyte.com/",
       "trustCenter": "https://trust.airbyte.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://airbyte.com/&sz=128"
     },
     {
@@ -277,7 +270,7 @@
       "name": "BrainKey",
       "website": "https://www.brainkey.ai/",
       "trustCenter": "https://trust.brainkey.ai",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.brainkey.ai/&sz=128"
     },
     {
@@ -326,7 +319,7 @@
       "name": "CaptivateIQ",
       "website": "https://www.captivateiq.com",
       "trustCenter": "https://trust.captivateiq.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.captivateiq.com&sz=128"
     },
     {
@@ -480,7 +473,7 @@
       "name": "Cocoon",
       "website": "http://cocoon.com",
       "trustCenter": "https://trust.cocoon.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://cocoon.com&sz=128"
     },
     {
@@ -578,7 +571,7 @@
       "name": "Convoy",
       "website": "https://getconvoy.io",
       "trustCenter": "https://trust.getconvoy.io",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://getconvoy.io&sz=128"
     },
     {
@@ -696,8 +689,8 @@
     {
       "name": "Demodesk",
       "website": "https://demodesk.com",
-      "trustCenter": "https://trust.demodesk.com",
-      "platform": "Self-hosted",
+      "trustCenter": "https://security.demodesk.com/",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://demodesk.com&sz=128"
     },
     {
@@ -713,13 +706,6 @@
       "trustCenter": "https://trust.getdexter.co",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getdexter.co/&sz=128"
-    },
-    {
-      "name": "digi",
-      "website": "https://www.digiventures.la/",
-      "trustCenter": "https://trust.digiventures.la",
-      "platform": "Self-hosted",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.digiventures.la/&sz=128"
     },
     {
       "name": "Diligent",
@@ -893,7 +879,7 @@
       "name": "Flaviar",
       "website": "https://flaviar.com",
       "trustCenter": "https://trust.flaviar.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://flaviar.com&sz=128"
     },
     {
@@ -928,7 +914,7 @@
       "name": "Fountain",
       "website": "http://fountain.com",
       "trustCenter": "https://trust.fountain.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://fountain.com&sz=128"
     },
     {
@@ -1061,7 +1047,7 @@
       "name": "Great Question",
       "website": "https://greatquestion.co",
       "trustCenter": "https://trust.greatquestion.co",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://greatquestion.co&sz=128"
     },
     {
@@ -1105,13 +1091,6 @@
       "trustCenter": "https://trust.hadrius.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.hadrius.com&sz=128"
-    },
-    {
-      "name": "Hamming AI",
-      "website": "https://hamming.ai/",
-      "trustCenter": "https://trust.hamming.ai",
-      "platform": "Self-hosted",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://hamming.ai/&sz=128"
     },
     {
       "name": "Handle.com",
@@ -1180,7 +1159,7 @@
       "name": "Heron Data",
       "website": "https://www.herondata.io",
       "trustCenter": "https://trust.herondata.io",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.herondata.io&sz=128"
     },
     {
@@ -1229,7 +1208,7 @@
       "name": "hoop.dev",
       "website": "https://hoop.dev",
       "trustCenter": "https://trust.hoop.dev",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://hoop.dev&sz=128"
     },
     {
@@ -1243,7 +1222,7 @@
       "name": "Hubspot",
       "website": "https://hubspot.com/",
       "trustCenter": "https://trust.hubspot.com/",
-      "platform": "Self-hosted",
+      "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128"
     },
     {
@@ -1467,14 +1446,14 @@
       "name": "Linear",
       "website": "https://linear.app/",
       "trustCenter": "https://trustcenter.linear.app/",
-      "platform": "Other",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=linear.app&sz=128"
     },
     {
       "name": "Linkana",
       "website": "https://www.linkana.com",
       "trustCenter": "https://trust.linkana.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.linkana.com&sz=128"
     },
     {
@@ -1495,7 +1474,7 @@
       "name": "Lucidic AI",
       "website": "https://lucidic.ai",
       "trustCenter": "https://trust.lucidic.ai",
-      "platform": "Self-hosted",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://lucidic.ai&sz=128"
     },
     {
@@ -1565,7 +1544,7 @@
       "name": "Mem0",
       "website": "https://mem0.ai",
       "trustCenter": "https://trust.mem0.ai",
-      "platform": "Self-hosted",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://mem0.ai&sz=128"
     },
     {
@@ -1740,7 +1719,7 @@
       "name": "Notabene",
       "website": "https://notabene.id",
       "trustCenter": "https://trust.notabene.id",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://notabene.id&sz=128"
     },
     {
@@ -1796,7 +1775,7 @@
       "name": "OpenMeter",
       "website": "https://openmeter.io",
       "trustCenter": "https://trust.openmeter.io",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://openmeter.io&sz=128"
     },
     {
@@ -1817,7 +1796,7 @@
       "name": "Origami",
       "website": "https://www.origamiagents.com",
       "trustCenter": "https://trust.origamiagents.com",
-      "platform": "Self-hosted",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.origamiagents.com&sz=128"
     },
     {
@@ -1880,7 +1859,7 @@
       "name": "PeerDB",
       "website": "https://peerdb.io/",
       "trustCenter": "https://trust.peerdb.io",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://peerdb.io/&sz=128"
     },
     {
@@ -2055,7 +2034,7 @@
       "name": "Rally",
       "website": "https://www.getrally.com/",
       "trustCenter": "https://trust.getrally.com",
-      "platform": "Self-hosted",
+      "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getrally.com/&sz=128"
     },
     {
@@ -2090,7 +2069,7 @@
       "name": "Ready",
       "website": "https://ready.net",
       "trustCenter": "https://trust.ready.net",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://ready.net&sz=128"
     },
     {
@@ -2223,7 +2202,7 @@
       "name": "Rutter",
       "website": "https://rutter.com",
       "trustCenter": "https://trust.rutter.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://rutter.com&sz=128"
     },
     {
@@ -2328,7 +2307,7 @@
       "name": "ShipBob",
       "website": "http://shipbob.com",
       "trustCenter": "https://trust.shipbob.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://shipbob.com&sz=128"
     },
     {
@@ -2356,7 +2335,7 @@
       "name": "SimpleLegal",
       "website": "http://simplelegal.com",
       "trustCenter": "https://trust.simplelegal.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://simplelegal.com&sz=128"
     },
     {
@@ -2426,7 +2405,7 @@
       "name": "Speedscale",
       "website": "https://speedscale.com",
       "trustCenter": "https://trust.speedscale.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://speedscale.com&sz=128"
     },
     {
@@ -2538,7 +2517,7 @@
       "name": "TaxGPT",
       "website": "https://www.taxgpt.com",
       "trustCenter": "https://trust.taxgpt.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.taxgpt.com&sz=128"
     },
     {
@@ -2608,7 +2587,7 @@
       "name": "Traceloop",
       "website": "https://www.traceloop.com",
       "trustCenter": "https://trust.traceloop.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.traceloop.com&sz=128"
     },
     {
@@ -2622,7 +2601,7 @@
       "name": "Trébol",
       "website": "https://gotrebol.com/",
       "trustCenter": "https://trust.gotrebol.com",
-      "platform": "Self-hosted",
+      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://gotrebol.com/&sz=128"
     },
     {
@@ -2893,8 +2872,8 @@
     }
   ],
   "meta": {
-    "total": 413,
-    "generated": "2025-10-15T20:00:22.621Z",
+    "total": 410,
+    "generated": "2025-10-15T21:47:37.060Z",
     "version": "1.0.0"
   }
 }
