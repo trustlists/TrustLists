@@ -495,6 +495,8 @@ Add any other context about the problem here.`);
                         { id: 'Whistic', label: 'Whistic' },
                         { id: 'Sprinto', label: 'Sprinto' },
                         { id: 'Anecdotes', label: 'Anecdotes' },
+                        { id: 'Oneleet', label: 'Oneleet' },
+                        { id: 'HyperComply', label: 'HyperComply' },
                         { id: 'Self-hosted', label: 'Self-hosted' },
                         { id: 'Other', label: 'Other' }
                       ].map((platform) => (
