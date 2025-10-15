@@ -1,0 +1,45 @@
+Company,Website,TrustCenterURL,IsTrustCenter,Confirmed,Platform
+CareSwift,https://www.careswift.com/,https://compliance.careswift.com,TRUE,TRUE,Vanta
+Spott,https://spott.io,https://compliance.spott.io,TRUE,TRUE,Delve
+Solidroad,https://solidroad.com,https://security.solidroad.com,TRUE,TRUE,Vanta
+HealthSpark,https://www.joinhealthspark.com,https://compliance.joinhealthspark.com,TRUE,TRUE,Vanta
+ZeroPath,https://zeropath.com,https://zeropath.com/trust-center,TRUE,TRUE,
+ProSights,https://prosights.co/,https://security.prosights.co,TRUE,TRUE,Vanta
+InQuery,https://www.inquery.ai/,https://security.inquery.ai,TRUE,TRUE,Delve
+Kabilah,https://www.kabilah.com,https://security.kabilah.com,TRUE,TRUE,Vanta
+Legora (formerly Leya),https://www.legora.com/,https://security.legora.com,TRUE,TRUE,Vanta
+Hyperbound,https://hyperbound.ai,https://security.hyperbound.ai,TRUE,TRUE,Vanta
+Metal,https://metal.ai/,https://security.metal.ai,TRUE,TRUE,Vanta
+Wallbit,https://wallbit.io,https://security.wallbit.io,TRUE,TRUE,Vanta
+Loula,https://joinloula.com,https://compliance.joinloula.com,TRUE,TRUE,Vanta
+Latent,https://latenthealth.com,https://security.latenthealth.com,TRUE,TRUE,Vanta
+Aragorn AI,https://www.aragorn.ai,https://security.aragorn.ai,TRUE,TRUE,Vanta
+Dojah Inc,https://www.dojah.io,https://dojah.io/trust-center,TRUE,TRUE,
+Complete,https://complete.so,https://security.complete.so,TRUE,TRUE,Vanta
+Mintlify,https://mintlify.com,https://security.mintlify.com,TRUE,TRUE,SafeBase
+Spot Health,https://spotdx.com,https://security.spotdx.com,TRUE,TRUE,Secureframe
+Whalesync,https://www.whalesync.com,https://security.whalesync.com,TRUE,TRUE,Vanta
+Govly,https://www.govly.com/,https://security.govly.com,TRUE,TRUE,Vanta
+Archbee,https://www.archbee.com,https://security.archbee.com,TRUE,TRUE,Vanta
+Reshape Biotech,http://reshapebiotech.com/,https://security.reshapebiotech.com,TRUE,TRUE,Vanta
+Infracost,https://infracost.io,https://security.infracost.io,TRUE,TRUE,Vanta
+Hudu,https://hudu.com,https://compliance.hudu.com,TRUE,TRUE,Vanta
+Popl,https://popl.co/,https://security.popl.co,TRUE,TRUE,Vanta
+Fintoc,https://fintoc.com,https://compliance.fintoc.com,TRUE,TRUE,Vanta
+Draftwise,https://www.draftwise.com/,https://security.draftwise.com,TRUE,TRUE,Vanta
+Supabase,https://supabase.com,https://security.supabase.com,TRUE,TRUE,Vanta
+Laylo,https://laylo.com,https://trustcenter.laylo.com,TRUE,TRUE,Vanta
+SuperTokens,https://supertokens.com,https://security.supertokens.com,TRUE,TRUE,Vanta
+Zip,https://ziphq.com/,https://app.ziphq.com/vendor-profile/verified/7302e692-35ff-4ade-a26a-4c375e73a409,TRUE,TRUE,
+Recall.ai,https://www.recall.ai,https://security.recall.ai,TRUE,TRUE,Vanta
+Upflow,https://upflow.io/en/,https://security.upflow.io/en,TRUE,TRUE,Vanta
+Dashworks,http://www.dashworks.ai,https://security.dashworks.ai,TRUE,TRUE,Vanta
+Paragon,http://useparagon.com,https://security.useparagon.com,TRUE,TRUE,Vanta
+Deepnote,https://www.deepnote.com/,https://security.deepnote.com,TRUE,TRUE,Vanta
+OutRival,https://outrival.com/,https://trust.outrival.com/,TRUE,TRUE,Vanta
+Demodesk,https://demodesk.com,https://security.demodesk.com,TRUE,TRUE,Vanta
+Avo,https://www.avo.app/,https://security.avo.app,TRUE,TRUE,Vanta
+Treasury Prime,https://treasuryprime.com,https://trustcenter.treasuryprime.com,TRUE,TRUE,Vanta
+Expo,https://expo.dev,https://expo.dev/trust,TRUE,TRUE,SafeBase
+Resolve,https://www.resolvebim.com,https://compliance.resolvebim.com,TRUE,TRUE,Vanta
+Matterport,http://matterport.com,https://matterport.com/trust,TRUE,TRUE,
