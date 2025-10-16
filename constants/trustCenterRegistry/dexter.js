@@ -3,5 +3,5 @@ export default {
   "website": "https://www.getdexter.co/",
   "trustCenter": "https://trust.getdexter.co",
   "platform": "Oneleet",
-  "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getdexter.co/&sz=128"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=https://getdexter.co/&sz=128"
 };
