@@ -43,10 +43,10 @@ jobs:
           
           if [ -n "${{ github.event.inputs.files }}" ]; then
             echo "Processing specific files: ${{ github.event.inputs.files }}"
-            node scripts/add-platform-tags.js $DRY_RUN_FLAG ${{ github.event.inputs.files }}
+            node scripts/utilities/add-platform-tags.js $DRY_RUN_FLAG ${{ github.event.inputs.files }}
           else
             echo "Processing all registry files"
-            node scripts/add-platform-tags.js $DRY_RUN_FLAG
+            node scripts/utilities/add-platform-tags.js $DRY_RUN_FLAG
           fi
 
       - name: Regenerate JSON (if not dry run)
