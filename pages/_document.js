@@ -9,9 +9,15 @@ export default function Document() {
           dangerouslySetInnerHTML={{
             __html: `(() => {
   try {
-    const stored = localStorage.getItem('theme');
+    // Support both legacy 'darkMode' ("true"/"false") and new 'theme' ("dark"/"light") keys
+    const storedDarkMode = localStorage.getItem('darkMode');
+    const storedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const isDark = stored ? stored === 'dark' : systemPrefersDark;
+    let isDark;
+    if (storedDarkMode === 'true') isDark = true;
+    else if (storedDarkMode === 'false') isDark = false;
+    else if (storedTheme) isDark = storedTheme === 'dark';
+    else isDark = systemPrefersDark;
     const root = document.documentElement;
     if (isDark) {
       root.classList.add('dark');
