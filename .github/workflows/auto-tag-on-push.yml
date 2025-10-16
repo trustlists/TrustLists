@@ -57,7 +57,7 @@ jobs:
         if: steps.missing-tags.outputs.needs_tagging != ''
         run: |
           echo "Adding platform tags to: ${{ steps.missing-tags.outputs.needs_tagging }}"
-          node scripts/add-platform-tags.js ${{ steps.missing-tags.outputs.needs_tagging }}
+          node scripts/utilities/add-platform-tags.js ${{ steps.missing-tags.outputs.needs_tagging }}
 
       - name: Regenerate JSON
         if: steps.missing-tags.outputs.needs_tagging != ''

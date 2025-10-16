@@ -46,7 +46,7 @@ jobs:
           for file in ${{ steps.changes.outputs.changed_files }}; do
             if [ -f "$file" ]; then
               echo "Processing: $file"
-              node scripts/add-platform-tags.js "$file"
+              node scripts/utilities/add-platform-tags.js "$file"
             fi
           done
 
