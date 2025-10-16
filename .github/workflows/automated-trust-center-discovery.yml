@@ -1,4 +1,4 @@
-name: Weekly Trust Center Discovery
+name: Automated Trust Center Discovery
 
 on:
   schedule:
@@ -108,20 +108,9 @@ jobs:
           
           RUN_TYPE="${{ steps.run-type.outputs.run_type }}"
           if [ "$RUN_TYPE" == "monthly_full" ]; then
-            COMMIT_MSG="Monthly full refresh: Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
-
-- Monthly full refresh of all YC companies
-- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores
-- All entries verified via CNAME lookup to known trust center hosts
-- Catches companies that added trust centers since last month
-- Ready for review and merge"
+            COMMIT_MSG="Monthly full refresh: Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers"$'\n\n'"- Monthly full refresh of all YC companies"$'\n'"- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores"$'\n'"- All entries verified via CNAME lookup to known trust center hosts"$'\n'"- Catches companies that added trust centers since last month"$'\n'"- Ready for review and merge"
           else
-            COMMIT_MSG="Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
-
-- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores
-- All entries verified via CNAME lookup to known trust center hosts
-- Generated from weekly YC company discovery run
-- Ready for review and merge"
+            COMMIT_MSG="Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers"$'\n\n'"- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores"$'\n'"- All entries verified via CNAME lookup to known trust center hosts"$'\n'"- Generated from weekly YC company discovery run"$'\n'"- Ready for review and merge"
           fi
           
           git commit -m "$COMMIT_MSG"
