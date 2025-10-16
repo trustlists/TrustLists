@@ -369,13 +369,6 @@
       "website": "https://casco.com",
       "trustCenter": "https://trust.casco.com",
       "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://casco.com&sz=128"
-    },
-    {
-      "name": "Casco",
-      "website": "https://casco.com",
-      "trustCenter": "https://trust.casco.com",
-      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=casco.com&sz=128"
     },
     {
@@ -548,13 +541,6 @@
     },
     {
       "name": "Conduit",
-      "website": "http://helloconduit.com",
-      "trustCenter": "https://trust.helloconduit.com",
-      "platform": "Oneleet",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=http://helloconduit.com&sz=128"
-    },
-    {
-      "name": "Conduit",
       "website": "https://conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator",
       "trustCenter": "https://trust.conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator",
       "platform": "Oneleet",
@@ -636,13 +622,6 @@
       "trustCenter": "https://trust.ctgt.ai",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.ctgt.ai/&sz=128"
-    },
-    {
-      "name": "cubic",
-      "website": "https://cubic.dev/",
-      "trustCenter": "https://trust.cubic.dev",
-      "platform": "Oneleet",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cubic.dev/&sz=128"
     },
     {
       "name": "cubic",
@@ -1028,13 +1007,6 @@
       "trustCenter": "https://trust.geckorobotics.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.geckorobotics.com&sz=128"
-    },
-    {
-      "name": "GhostEye",
-      "website": "https://ghosteye.ai",
-      "trustCenter": "https://trust.ghosteye.ai",
-      "platform": "Oneleet",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://ghosteye.ai&sz=128"
     },
     {
       "name": "GhostEye",
@@ -1531,13 +1503,6 @@
       "website": "https://uselark.ai/",
       "trustCenter": "https://trust.uselark.ai",
       "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://uselark.ai/&sz=128"
-    },
-    {
-      "name": "Lark",
-      "website": "https://uselark.ai/",
-      "trustCenter": "https://trust.uselark.ai",
-      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=uselark.ai&sz=128"
     },
     {
@@ -1630,13 +1595,6 @@
       "trustCenter": "https://trust.lucidic.ai",
       "platform": "Delve",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://lucidic.ai&sz=128"
-    },
-    {
-      "name": "Lyra",
-      "website": "https://lyra.so/",
-      "trustCenter": "https://trust.lyra.so",
-      "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://lyra.so/&sz=128"
     },
     {
       "name": "Lyra",
@@ -1958,13 +1916,6 @@
       "website": "https://opennote.com",
       "trustCenter": "https://trust.opennote.com",
       "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://opennote.com&sz=128"
-    },
-    {
-      "name": "Opennote",
-      "website": "https://opennote.com",
-      "trustCenter": "https://trust.opennote.com",
-      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=opennote.com&sz=128"
     },
     {
@@ -1989,13 +1940,6 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=outrival.com&sz=128"
     },
     {
-      "name": "OutRival, Inc.",
-      "website": "https://outrival.com/",
-      "trustCenter": "https://trust.outrival.com",
-      "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://outrival.com/&sz=128"
-    },
-    {
       "name": "Paragon",
       "website": "http://useparagon.com",
       "trustCenter": "https://security.useparagon.com",
@@ -2015,13 +1959,6 @@
       "trustCenter": "https://trust.parley.so",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://parley.so&sz=128"
-    },
-    {
-      "name": "Parsewise",
-      "website": "https://parsewise.ai",
-      "trustCenter": "https://trust.parsewise.ai",
-      "platform": "Oneleet",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://parsewise.ai&sz=128"
     },
     {
       "name": "Parsewise",
@@ -2371,13 +2308,6 @@
       "website": "https://rimba.ai",
       "trustCenter": "https://trust.rimba.ai",
       "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://rimba.ai&sz=128"
-    },
-    {
-      "name": "Rimba",
-      "website": "https://rimba.ai",
-      "trustCenter": "https://trust.rimba.ai",
-      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=rimba.ai&sz=128"
     },
     {
@@ -2603,13 +2533,6 @@
       "trustCenter": "https://trust.snapdocs.com",
       "platform": "Conveyor",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://snapdocs.com&sz=128"
-    },
-    {
-      "name": "Socratix AI",
-      "website": "https://getsocratix.ai",
-      "trustCenter": "https://trust.getsocratix.ai",
-      "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getsocratix.ai&sz=128"
     },
     {
       "name": "Socratix AI",
@@ -2945,13 +2868,6 @@
       "website": "https://www.veritusagent.ai",
       "trustCenter": "https://trust.veritusagent.ai",
       "platform": "Vanta",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.veritusagent.ai&sz=128"
-    },
-    {
-      "name": "Veritus Agent",
-      "website": "https://www.veritusagent.ai",
-      "trustCenter": "https://trust.veritusagent.ai",
-      "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=veritusagent.ai&sz=128"
     },
     {
@@ -3173,8 +3089,8 @@
     }
   ],
   "meta": {
-    "total": 453,
-    "generated": "2025-10-15T23:59:06.861Z",
+    "total": 441,
+    "generated": "2025-10-16T03:47:51.979Z",
     "version": "1.0.0"
   }
 }
