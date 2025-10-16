@@ -733,7 +733,7 @@
       "website": "https://www.getdexter.co/",
       "trustCenter": "https://trust.getdexter.co",
       "platform": "Oneleet",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getdexter.co/&sz=128"
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getdexter.co/&sz=128"
     },
     {
       "name": "Diligent",
@@ -3090,7 +3090,7 @@
   ],
   "meta": {
     "total": 441,
-    "generated": "2025-10-16T03:47:51.979Z",
+    "generated": "2025-10-16T05:08:20.222Z",
     "version": "1.0.0"
   }
 }
