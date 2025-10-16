@@ -39,8 +39,45 @@ const trustCenterData = [
 ];
 
 export function getAllTrustCenters() {
-  // Sort by name
-  return trustCenterData.sort((a, b) => a.name.localeCompare(b.name));
+  // Priority companies that should appear first (vendor-hosted only)
+  const priorityCompanies = [
+    '1Password',    // Conveyor - Password manager leader
+    'Figma',         // Conveyor - Design tool leader  
+    'MongoDB',       // Conveyor - Database leader
+    'Notion',        // Whistic - Productivity leader
+    'Postman',       // SafeBase - API tool leader
+    'Vercel',        // SafeBase - Deployment platform leader
+    'Zapier',        // Conveyor - Automation leader
+    'Betterment',    // Conveyor - Fintech
+    'Carta',         // Conveyor - Equity management
+    'Checkr',        // SafeBase - Background checks
+    'Hubspot',       // SafeBase - CRM
+    'Linear'         // Vanta - Project management
+  ];
+  
+  // Sort with priority companies first, then alphabetical
+  return trustCenterData.sort((a, b) => {
+    const aIsPriority = priorityCompanies.includes(a.name);
+    const bIsPriority = priorityCompanies.includes(b.name);
+    
+    // If both are priority, sort by priority order
+    if (aIsPriority && bIsPriority) {
+      return priorityCompanies.indexOf(a.name) - priorityCompanies.indexOf(b.name);
+    }
+    
+    // If only a is priority, a comes first
+    if (aIsPriority && !bIsPriority) {
+      return -1;
+    }
+    
+    // If only b is priority, b comes first
+    if (!aIsPriority && bIsPriority) {
+      return 1;
+    }
+    
+    // If neither is priority, sort alphabetically
+    return a.name.localeCompare(b.name);
+  });
 }
 
 export function getTrustCenterByName(name) {
