@@ -292,6 +292,52 @@ function makeRequest(url) {
   });
 }
 
+// Known trust center hosting platforms
+const KNOWN_TRUST_CENTER_HOSTS = [
+  'trust.vanta.com',
+  'vantatrust.com', 
+  'trust.delve.co',
+  'trust.drata.com',
+  'trust.safebase.io',
+  'trust.secureframe.com',
+  'trust.oneleet.com',
+  'proxy.hypercomplytrust.com',
+  'trust.trustarc.com',
+  'trust.onetrust.com',
+  'trust.whistic.com',
+  'trust.conveyor.com'
+];
+
+// Calculate confidence score based on CNAME and domain patterns
+function calculateConfidence(url, cname, keywordMatches) {
+  let confidence = 0;
+  
+  // CNAME to known trust center host = +80 points (very high confidence)
+  if (cname) {
+    const cnameLower = cname.toLowerCase();
+    const isKnownHost = KNOWN_TRUST_CENTER_HOSTS.some(host => 
+      cnameLower.includes(host.toLowerCase())
+    );
+    
+    if (isKnownHost) {
+      confidence += 80;
+      console.log(`  🎯 CNAME points to known trust center host: ${cname} (+80 confidence)`);
+    }
+  }
+  
+  // Domain pattern bonuses
+  const urlLower = url.toLowerCase();
+  if (urlLower.includes('trust.')) confidence += 15;
+  if (urlLower.includes('trustcenter.')) confidence += 10;
+  if (urlLower.includes('security.')) confidence += 5;
+  if (urlLower.includes('compliance.')) confidence += 5;
+  
+  // Keyword bonus (max 10 points)
+  confidence += Math.min(keywordMatches.length * 2, 10);
+  
+  return Math.min(confidence, 100);
+}
+
 // Check if content looks like a trust center
 function isTrustCenterContent(content) {
   const lowerContent = content.toLowerCase();
@@ -300,6 +346,21 @@ function isTrustCenterContent(content) {
   );
   
   return keywordMatches.length >= 3;
+}
+
+// Perform DNS lookup for CNAME resolution
+async function getCnameInfo(url) {
+  try {
+    const urlObj = new URL(url);
+    const hostname = urlObj.hostname;
+    
+    const { resolveCname } = require('dns').promises;
+    const cnames = await resolveCname(hostname);
+    
+    return cnames && cnames.length > 0 ? cnames[0] : null;
+  } catch (error) {
+    return null;
+  }
 }
 
 // Test a single company
@@ -322,11 +383,17 @@ async function testCompany(company) {
           response.content.toLowerCase().includes(keyword.toLowerCase())
         );
         
+        // Get CNAME information for confidence scoring
+        const cname = await getCnameInfo(url);
+        const confidence = calculateConfidence(url, cname, keywordMatches);
+        
         results.push({
           url,
           status: response.status,
           isTrustCenter,
           keywordMatches,
+          cname,
+          confidence,
           companyName: company.name,
           companyWebsite: company.website,
           domain: domain,
@@ -335,8 +402,14 @@ async function testCompany(company) {
           ycIndustry: company.industries?.[0] || ''
         });
         
-        if (isTrustCenter) {
-          console.log(`  ✅ Found potential trust center: ${url}`);
+        // Enhanced logging with confidence scores
+        if (confidence >= 95) {
+          console.log(`  🎯 HIGH CONFIDENCE (${confidence}%): ${url}`);
+          if (cname) console.log(`     CNAME: ${cname}`);
+        } else if (confidence >= 80) {
+          console.log(`  ✅ Found potential trust center (${confidence}%): ${url}`);
+        } else if (isTrustCenter) {
+          console.log(`  ⚠️  URL exists but low confidence (${confidence}%): ${url}`);
         } else {
           console.log(`  ⚠️  URL exists but doesn't look like trust center: ${url}`);
         }
@@ -437,19 +510,45 @@ function generateReports(allResults, totalTested) {
   const companiesWithTrustCenters = allResults.filter(result => result.trustCenters.length > 0);
   const highConfidence = companiesWithTrustCenters
     .flatMap(result => result.trustCenters)
-    .filter(tc => tc.isTrustCenter);
+    .filter(tc => tc.confidence >= 95);
+  const mediumConfidence = companiesWithTrustCenters
+    .flatMap(result => result.trustCenters)
+    .filter(tc => tc.confidence >= 80 && tc.confidence < 95);
+  const lowConfidence = companiesWithTrustCenters
+    .flatMap(result => result.trustCenters)
+    .filter(tc => tc.confidence < 80);
   
   console.log(`\n✅ Companies with potential trust centers: ${companiesWithTrustCenters.length}/${totalTested}`);
-  console.log(`🎯 High confidence trust centers: ${highConfidence.length}`);
+  console.log(`🎯 HIGH CONFIDENCE (95%+): ${highConfidence.length} - Ready for auto-PR`);
+  console.log(`✅ Medium confidence (80-94%): ${mediumConfidence.length} - Manual review`);
+  console.log(`⚠️  Low confidence (<80%): ${lowConfidence.length} - Skip`);
   
-  // Detailed results
-  companiesWithTrustCenters.forEach(result => {
-    console.log(`\n🏢 ${result.company} (${result.batch})`);
-    result.trustCenters.forEach(tc => {
-      console.log(`   ${tc.isTrustCenter ? '✅' : '⚠️'} ${tc.url}`);
-      console.log(`      Keywords: ${tc.keywordMatches.join(', ')}`);
+  // Detailed results by confidence level
+  if (highConfidence.length > 0) {
+    console.log('\n🎯 HIGH CONFIDENCE TRUST CENTERS (Auto-PR Candidates):');
+    console.log('====================================================');
+    highConfidence.forEach(tc => {
+      console.log(`🏢 ${tc.companyName} (${tc.ycBatch})`);
+      console.log(`   URL: ${tc.url}`);
+      console.log(`   Confidence: ${tc.confidence}%`);
+      if (tc.cname) console.log(`   CNAME: ${tc.cname}`);
+      console.log(`   Keywords: ${tc.keywordMatches.join(', ')}`);
+      console.log('');
     });
-  });
+  }
+  
+  if (mediumConfidence.length > 0) {
+    console.log('\n✅ MEDIUM CONFIDENCE TRUST CENTERS (Manual Review):');
+    console.log('=================================================');
+    mediumConfidence.forEach(tc => {
+      console.log(`🏢 ${tc.companyName} (${tc.ycBatch})`);
+      console.log(`   URL: ${tc.url}`);
+      console.log(`   Confidence: ${tc.confidence}%`);
+      if (tc.cname) console.log(`   CNAME: ${tc.cname}`);
+      console.log(`   Keywords: ${tc.keywordMatches.join(', ')}`);
+      console.log('');
+    });
+  }
   
   // Save comprehensive results
   const reportData = {
@@ -457,23 +556,26 @@ function generateReports(allResults, totalTested) {
     totalCompaniesTested: totalTested,
     companiesWithTrustCenters: companiesWithTrustCenters.length,
     highConfidenceTrustCenters: highConfidence.length,
+    mediumConfidenceTrustCenters: mediumConfidence.length,
+    lowConfidenceTrustCenters: lowConfidence.length,
     results: allResults
   };
   
   fs.writeFileSync('trust-center-discovery-results.json', JSON.stringify(reportData, null, 2));
   console.log('\n💾 Detailed results saved to: trust-center-discovery-results.json');
   
-  // Generate CSV
+  // Generate CSV with confidence scores
   const csvData = [];
-  csvData.push('Company,Website,Batch,Status,Industry,TrustCenterURL,IsTrustCenter,Keywords');
+  csvData.push('Company,Website,Batch,Status,Industry,TrustCenterURL,Confidence,CNAME,Keywords');
   
   allResults.forEach(result => {
     if (result.trustCenters.length === 0) {
-      csvData.push(`${result.company},${result.website},${result.batch},${result.status},${result.industry},N/A,No trust centers found,N/A`);
+      csvData.push(`${result.company},${result.website},${result.batch},${result.status},${result.industry},N/A,No trust centers found,N/A,N/A`);
     } else {
       result.trustCenters.forEach(tc => {
         const keywords = tc.keywordMatches.join('; ');
-        csvData.push(`${result.company},${result.website},${result.batch},${result.status},${result.industry},${tc.url},${tc.isTrustCenter},${keywords}`);
+        const cname = tc.cname || 'N/A';
+        csvData.push(`${result.company},${result.website},${result.batch},${result.status},${result.industry},${tc.url},${tc.confidence}%,${cname},${keywords}`);
       });
     }
   });
@@ -491,8 +593,8 @@ function generateCopyPasteFormats(highConfidence) {
   console.log('============================');
   
   if (highConfidence.length > 0) {
-    console.log('\n🎯 HIGH CONFIDENCE TRUST CENTERS (Ready to add):');
-    console.log('================================================');
+    console.log('\n🎯 HIGH CONFIDENCE TRUST CENTERS (Auto-PR Ready):');
+    console.log('===============================================');
     
     // JavaScript object format
     console.log('\n📝 JavaScript Object Format:');
@@ -503,27 +605,36 @@ function generateCopyPasteFormats(highConfidence) {
   trustCenter: "${tc.url}",
   iconUrl: "https://www.google.com/s2/favicons?domain=${tc.domain}&sz=128"
 };`);
+      console.log(`// Confidence: ${tc.confidence}% | CNAME: ${tc.cname || 'N/A'} | Keywords: ${tc.keywordMatches.join(', ')}`);
       console.log('');
     });
     
-    // Save ready-to-add data
+    // Save ready-to-add data with enhanced metadata
     const copyPasteData = {
       highConfidence: highConfidence.map(tc => ({
         companyName: tc.companyName,
         website: tc.companyWebsite,
         trustCenter: tc.url,
         iconUrl: `https://www.google.com/s2/favicons?domain=${tc.domain}&sz=128`,
+        confidence: tc.confidence,
+        cname: tc.cname,
         keywords: tc.keywordMatches,
         domain: tc.domain,
         ycBatch: tc.ycBatch,
         ycStatus: tc.ycStatus,
-        ycIndustry: tc.ycIndustry
+        ycIndustry: tc.ycIndustry,
+        autoPRReady: true
       })),
-      generatedAt: new Date().toISOString()
+      generatedAt: new Date().toISOString(),
+      totalHighConfidence: highConfidence.length,
+      autoPRThreshold: 95
     };
     
     fs.writeFileSync('trust-centers-ready-to-add.json', JSON.stringify(copyPasteData, null, 2));
     console.log('\n💾 Ready-to-add data saved to: trust-centers-ready-to-add.json');
+    console.log(`🎯 ${highConfidence.length} companies ready for automatic PR creation!`);
+  } else {
+    console.log('\n⚠️  No high confidence trust centers found this run.');
   }
   
   console.log('\n🎉 Incremental discovery complete! Check the generated files for results.');

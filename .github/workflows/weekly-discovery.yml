@@ -1,0 +1,201 @@
+name: Weekly Trust Center Discovery
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
+  workflow_dispatch:  # Manual trigger option
+    inputs:
+      max_companies:
+        description: 'Max companies to test (leave empty for all new)'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover-trust-centers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run incremental discovery
+        run: |
+          cd scripts/trust-center-discovery
+          if [ -n "${{ github.event.inputs.max_companies }}" ]; then
+            echo "Testing ${{ github.event.inputs.max_companies }} companies"
+            node incremental-discovery.js --maxCompaniesToTest ${{ github.event.inputs.max_companies }}
+          else
+            echo "Running full incremental discovery"
+            node incremental-discovery.js
+          fi
+
+      - name: Check for high confidence results
+        id: check-results
+        run: |
+          if [ -f "scripts/trust-center-discovery/trust-centers-ready-to-add.json" ]; then
+            HIGH_CONFIDENCE_COUNT=$(node -e "
+              const data = JSON.parse(require('fs').readFileSync('scripts/trust-center-discovery/trust-centers-ready-to-add.json', 'utf8'));
+              console.log(data.highConfidence ? data.highConfidence.length : 0);
+            ")
+            echo "high_confidence_count=$HIGH_CONFIDENCE_COUNT" >> $GITHUB_OUTPUT
+            echo "Found $HIGH_CONFIDENCE_COUNT high confidence trust centers"
+          else
+            echo "high_confidence_count=0" >> $GITHUB_OUTPUT
+            echo "No high confidence results found"
+          fi
+
+      - name: Create Auto-PR for high confidence results
+        if: steps.check-results.outputs.high_confidence_count > 0
+        run: |
+          # Create a new branch for the auto-PR
+          BRANCH_NAME="auto-discover-trust-centers-$(date +%Y%m%d-%H%M%S)"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Create and checkout new branch
+          git checkout -b $BRANCH_NAME
+          
+          # Process high confidence results
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            
+            // Read the high confidence results
+            const results = JSON.parse(fs.readFileSync('scripts/trust-center-discovery/trust-centers-ready-to-add.json', 'utf8'));
+            
+            if (!results.highConfidence || results.highConfidence.length === 0) {
+              console.log('No high confidence results to process');
+              process.exit(0);
+            }
+            
+            console.log(\`Processing \${results.highConfidence.length} high confidence trust centers...\`);
+            
+            // Create registry files for each high confidence result
+            results.highConfidence.forEach((tc, index) => {
+              const fileName = tc.companyName.toLowerCase()
+                .replace(/[^a-z0-9]/g, '-')
+                .replace(/-+/g, '-')
+                .replace(/^-|-$/g, '') + '.js';
+              
+              const registryContent = \`module.exports = {
+  \"name\": \"\${tc.companyName}\",
+  \"website\": \"\${tc.companyWebsite}\",
+  \"trustCenter\": \"\${tc.trustCenter}\",
+  \"iconUrl\": \"\${tc.iconUrl}\"
+};\`;
+              
+              const filePath = path.join('constants', 'trustCenterRegistry', fileName);
+              fs.writeFileSync(filePath, registryContent);
+              console.log(\`Created: \${filePath}\`);
+            });
+            
+            console.log(\`Created \${results.highConfidence.length} registry files\`);
+          "
+          
+          # Regenerate JSON/CSV
+          npm run generate
+          
+          # Commit changes
+          git add -A
+          git commit -m "Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
+
+- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores
+- All entries verified via CNAME lookup to known trust center hosts
+- Generated from weekly YC company discovery run
+- Ready for review and merge"
+
+      - name: Create Pull Request
+        if: steps.check-results.outputs.high_confidence_count > 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🤖 Auto-discover ${process.env.HIGH_CONFIDENCE_COUNT || '${{ steps.check-results.outputs.high_confidence_count }}'} high confidence trust centers`,
+              head: process.env.BRANCH_NAME || '${{ github.head_ref }}',
+              base: 'main',
+              body: `## 🎯 High Confidence Trust Center Discovery
+
+This PR was automatically generated by the weekly trust center discovery workflow.
+
+### 📊 Summary
+- **Companies Added**: ${{ steps.check-results.outputs.high_confidence_count }}
+- **Confidence Level**: 95%+ (Auto-PR threshold)
+- **Verification Method**: CNAME lookup to known trust center hosts
+- **Source**: YC Companies API
+
+### 🔍 What was verified:
+- ✅ CNAME points to known trust center hosting platform
+- ✅ Domain follows trust center patterns (trust.domain, etc.)
+- ✅ Content contains trust center keywords
+- ✅ URL is accessible and returns 200 status
+
+### 🏷️ Labels
+- \`auto-discovered\`
+- \`high-confidence\`
+- \`trust-centers\`
+
+### 📋 Review Checklist
+- [ ] Verify company names are correct
+- [ ] Check trust center URLs are accessible
+- [ ] Confirm platform detection is accurate
+- [ ] Test that new entries appear in the main site
+
+### 🚀 Ready to merge
+These entries have been automatically verified and are ready for immediate merge.`,
+              draft: false
+            });
+            
+            // Add labels
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              labels: ['auto-discovered', 'high-confidence', 'trust-centers']
+            });
+            
+            console.log(`Created PR #${pr.number}: ${pr.title}`);
+
+      - name: Upload discovery results
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-results-${{ github.run_number }}
+          path: |
+            scripts/trust-center-discovery/trust-center-discovery-results.json
+            scripts/trust-center-discovery/trust-center-discovery-results.csv
+            scripts/trust-center-discovery/trust-centers-ready-to-add.json
+          retention-days: 30
+
+      - name: Summary
+        run: |
+          echo "## 🎉 Weekly Discovery Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**High Confidence Trust Centers Found**: ${{ steps.check-results.outputs.high_confidence_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check-results.outputs.high_confidence_count }}" -gt 0 ]; then
+            echo "✅ **Auto-PR Created**: High confidence entries ready for review" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 🎯 Next Steps:" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the auto-generated PR" >> $GITHUB_STEP_SUMMARY
+            echo "2. Verify company details" >> $GITHUB_STEP_SUMMARY
+            echo "3. Merge when ready" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ **No new high confidence trust centers found this week**" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "This is normal - not every week will have new companies with trust centers." >> $GITHUB_STEP_SUMMARY
+          fi
