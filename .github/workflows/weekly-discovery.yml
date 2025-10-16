@@ -2,7 +2,8 @@ name: Weekly Trust Center Discovery
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'      # Every Monday at 9 AM UTC (weekly incremental)
+    - cron: '0 9 1 * *'      # First Monday of month at 9 AM UTC (monthly full refresh)
   workflow_dispatch:  # Manual trigger option
     inputs:
       max_companies:
@@ -10,6 +11,11 @@ on:
         required: false
         type: string
         default: ''
+      full_refresh:
+        description: 'Force full refresh (test all companies)'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,14 +38,37 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run incremental discovery
+      - name: Determine run type
+        id: run-type
+        run: |
+          # Check if this is the first Monday of the month (monthly full refresh)
+          CURRENT_DAY=$(date +%d)
+          if [ "$CURRENT_DAY" -le 7 ]; then
+            echo "run_type=monthly_full" >> $GITHUB_OUTPUT
+            echo "🔄 Monthly full refresh detected (1st Monday of month)"
+          else
+            echo "run_type=weekly_incremental" >> $GITHUB_OUTPUT
+            echo "📅 Weekly incremental run detected"
+          fi
+          
+          # Override with manual input if provided
+          if [ "${{ github.event.inputs.full_refresh }}" == "true" ]; then
+            echo "run_type=manual_full" >> $GITHUB_OUTPUT
+            echo "🔧 Manual full refresh requested"
+          fi
+
+      - name: Run discovery
         run: |
           cd scripts/trust-center-discovery
-          if [ -n "${{ github.event.inputs.max_companies }}" ]; then
-            echo "Testing ${{ github.event.inputs.max_companies }} companies"
+          
+          if [ "${{ steps.run-type.outputs.run_type }}" == "monthly_full" ] || [ "${{ steps.run-type.outputs.run_type }}" == "manual_full" ]; then
+            echo "🚀 Running FULL REFRESH (testing all companies)"
+            node incremental-discovery.js --full-refresh
+          elif [ -n "${{ github.event.inputs.max_companies }}" ]; then
+            echo "🧪 Testing ${{ github.event.inputs.max_companies }} companies (manual limit)"
             node incremental-discovery.js --maxCompaniesToTest ${{ github.event.inputs.max_companies }}
           else
-            echo "Running full incremental discovery"
+            echo "📈 Running INCREMENTAL discovery (new companies only)"
             node incremental-discovery.js
           fi
 
@@ -111,33 +140,83 @@ jobs:
           
           # Commit changes
           git add -A
-          git commit -m "Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
+          
+          RUN_TYPE="${{ steps.run-type.outputs.run_type }}"
+          if [ "$RUN_TYPE" == "monthly_full" ]; then
+            COMMIT_MSG="Monthly full refresh: Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
+
+- Monthly full refresh of all YC companies
+- Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores
+- All entries verified via CNAME lookup to known trust center hosts
+- Catches companies that added trust centers since last month
+- Ready for review and merge"
+          else
+            COMMIT_MSG="Auto-discover ${{ steps.check-results.outputs.high_confidence_count }} high confidence trust centers
 
 - Added ${{ steps.check-results.outputs.high_confidence_count }} companies with 95%+ confidence scores
 - All entries verified via CNAME lookup to known trust center hosts
 - Generated from weekly YC company discovery run
 - Ready for review and merge"
+          fi
+          
+          git commit -m "$COMMIT_MSG"
 
       - name: Create Pull Request
         if: steps.check-results.outputs.high_confidence_count > 0
         uses: actions/github-script@v7
         with:
           script: |
-            const { data: pr } = await github.rest.pulls.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `🤖 Auto-discover ${process.env.HIGH_CONFIDENCE_COUNT || '${{ steps.check-results.outputs.high_confidence_count }}'} high confidence trust centers`,
-              head: process.env.BRANCH_NAME || '${{ github.head_ref }}',
-              base: 'main',
-              body: `## 🎯 High Confidence Trust Center Discovery
+            const runType = '${{ steps.run-type.outputs.run_type }}';
+            const count = process.env.HIGH_CONFIDENCE_COUNT || '${{ steps.check-results.outputs.high_confidence_count }}';
+            
+            let title, body;
+            
+            if (runType === 'monthly_full') {
+              title = `🔄 Monthly Full Refresh: ${count} high confidence trust centers`;
+              body = `## 🔄 Monthly Full Refresh - Trust Center Discovery
+
+This PR was automatically generated by the **monthly full refresh** workflow.
+
+### 📊 Summary
+- **Companies Added**: ${count}
+- **Confidence Level**: 95%+ (Auto-PR threshold)
+- **Verification Method**: CNAME lookup to known trust center hosts
+- **Source**: YC Companies API (Full Refresh)
+- **Run Type**: Monthly comprehensive scan
+
+### 🔍 What was verified:
+- ✅ CNAME points to known trust center hosting platform
+- ✅ Domain follows trust center patterns (trust.domain, etc.)
+- ✅ Content contains trust center keywords
+- ✅ URL is accessible and returns 200 status
+- ✅ **Catches companies that added trust centers since last month**
+
+### 🏷️ Labels
+- \`auto-discovered\`
+- \`high-confidence\`
+- \`trust-centers\`
+- \`monthly-refresh\`
+
+### 📋 Review Checklist
+- [ ] Verify company names are correct
+- [ ] Check trust center URLs are accessible
+- [ ] Confirm platform detection is accurate
+- [ ] Test that new entries appear in the main site
+
+### 🚀 Ready to merge
+These entries have been automatically verified and are ready for immediate merge.`;
+            } else {
+              title = `🤖 Weekly Discovery: ${count} high confidence trust centers`;
+              body = `## 🎯 Weekly Trust Center Discovery
 
 This PR was automatically generated by the weekly trust center discovery workflow.
 
 ### 📊 Summary
-- **Companies Added**: ${{ steps.check-results.outputs.high_confidence_count }}
+- **Companies Added**: ${count}
 - **Confidence Level**: 95%+ (Auto-PR threshold)
 - **Verification Method**: CNAME lookup to known trust center hosts
-- **Source**: YC Companies API
+- **Source**: YC Companies API (New companies only)
+- **Run Type**: Weekly incremental scan
 
 ### 🔍 What was verified:
 - ✅ CNAME points to known trust center hosting platform
@@ -157,16 +236,30 @@ This PR was automatically generated by the weekly trust center discovery workflo
 - [ ] Test that new entries appear in the main site
 
 ### 🚀 Ready to merge
-These entries have been automatically verified and are ready for immediate merge.`,
+These entries have been automatically verified and are ready for immediate merge.`;
+            }
+            
+            const { data: pr } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              head: process.env.BRANCH_NAME || '${{ github.head_ref }}',
+              base: 'main',
+              body: body,
               draft: false
             });
             
             // Add labels
+            const labels = ['auto-discovered', 'high-confidence', 'trust-centers'];
+            if (runType === 'monthly_full') {
+              labels.push('monthly-refresh');
+            }
+            
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
-              labels: ['auto-discovered', 'high-confidence', 'trust-centers']
+              labels: labels
             });
             
             console.log(`Created PR #${pr.number}: ${pr.title}`);
@@ -183,11 +276,27 @@ These entries have been automatically verified and are ready for immediate merge
 
       - name: Summary
         run: |
-          echo "## 🎉 Weekly Discovery Complete" >> $GITHUB_STEP_SUMMARY
+          RUN_TYPE="${{ steps.run-type.outputs.run_type }}"
+          COUNT="${{ steps.check-results.outputs.high_confidence_count }}"
+          
+          echo "## 🎉 Trust Center Discovery Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**High Confidence Trust Centers Found**: ${{ steps.check-results.outputs.high_confidence_count }}" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "$RUN_TYPE" == "monthly_full" ]; then
+            echo "**🔄 Monthly Full Refresh Results**" >> $GITHUB_STEP_SUMMARY
+            echo "- **High Confidence Trust Centers Found**: $COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "- **Run Type**: Monthly comprehensive scan of all YC companies" >> $GITHUB_STEP_SUMMARY
+            echo "- **Purpose**: Catches companies that added trust centers since last month" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**📅 Weekly Incremental Results**" >> $GITHUB_STEP_SUMMARY
+            echo "- **High Confidence Trust Centers Found**: $COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "- **Run Type**: Weekly incremental scan of new YC companies" >> $GITHUB_STEP_SUMMARY
+            echo "- **Purpose**: Discovers new companies with trust centers" >> $GITHUB_STEP_SUMMARY
+          fi
+          
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.check-results.outputs.high_confidence_count }}" -gt 0 ]; then
+          
+          if [ "$COUNT" -gt 0 ]; then
             echo "✅ **Auto-PR Created**: High confidence entries ready for review" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "### 🎯 Next Steps:" >> $GITHUB_STEP_SUMMARY
@@ -195,7 +304,11 @@ These entries have been automatically verified and are ready for immediate merge
             echo "2. Verify company details" >> $GITHUB_STEP_SUMMARY
             echo "3. Merge when ready" >> $GITHUB_STEP_SUMMARY
           else
-            echo "ℹ️ **No new high confidence trust centers found this week**" >> $GITHUB_STEP_SUMMARY
+            echo "ℹ️ **No new high confidence trust centers found this run**" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "This is normal - not every week will have new companies with trust centers." >> $GITHUB_STEP_SUMMARY
+            if [ "$RUN_TYPE" == "monthly_full" ]; then
+              echo "This means no existing YC companies added trust centers this month." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "This is normal - not every week will have new companies with trust centers." >> $GITHUB_STEP_SUMMARY
+            fi
           fi
