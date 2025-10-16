@@ -1,9 +1,9 @@
 import { useState, useMemo, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { getAllTrustCenters, searchTrustCenters, getStats } from '../utils/trustCenters';
+import { getAllTrustCenters, searchTrustCenters, getStats, getPlatformCounts } from '../utils/trustCenters';
 
-export default function Home({ trustCenters, stats }) {
+export default function Home({ trustCenters, stats, platformCounts }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [darkMode, setDarkMode] = useState(false);
   const [openMenuId, setOpenMenuId] = useState(null);
@@ -483,36 +483,37 @@ Add any other context about the problem here.`);
                     
                     {/* Platform Pills/Tags */}
                     <div className="flex flex-wrap gap-2">
-                      {[
-                        { id: 'all', label: 'All platforms' },
-                        { id: 'SafeBase', label: 'SafeBase' },
-                        { id: 'Conveyor', label: 'Conveyor' }, 
-                        { id: 'Delve', label: 'Delve' },
-                        { id: 'Vanta', label: 'Vanta' },
-                        { id: 'TrustArc', label: 'TrustArc' },
-                        { id: 'OneTrust', label: 'OneTrust' },
-                        { id: 'Secureframe', label: 'Secureframe' },
-                        { id: 'Whistic', label: 'Whistic' },
-                        { id: 'Sprinto', label: 'Sprinto' },
-                        { id: 'Anecdotes', label: 'Anecdotes' },
-                        { id: 'Oneleet', label: 'Oneleet' },
-                        { id: 'HyperComply', label: 'HyperComply' },
-                        { id: 'Self-hosted', label: 'Self-hosted' },
-                        { id: 'Other', label: 'Other' }
-                      ].map((platform) => (
+                      {/* All platforms button */}
+                      <button
+                        key="all"
+                        onClick={() => {
+                          setPlatformFilter('all');
+                          setShowPlatformPanel(false);
+                        }}
+                        className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                          platformFilter === 'all'
+                            ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
+                        }`}
+                      >
+                        All platforms ({stats.totalCompanies})
+                      </button>
+                      
+                      {/* Dynamic platform buttons sorted by count */}
+                      {platformCounts.map(({ platform, count }) => (
                         <button
-                          key={platform.id}
+                          key={platform}
                           onClick={() => {
-                            setPlatformFilter(platform.id);
+                            setPlatformFilter(platform);
                             setShowPlatformPanel(false);
                           }}
                           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                            platformFilter === platform.id
+                            platformFilter === platform
                               ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
                               : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
                           }`}
                         >
-                          {platform.label}
+                          {platform} ({count})
                         </button>
                       ))}
                     </div>
@@ -699,11 +700,13 @@ Add any other context about the problem here.`);
 export async function getStaticProps() {
   const trustCenters = getAllTrustCenters();
   const stats = getStats();
+  const platformCounts = getPlatformCounts();
 
   return {
     props: {
       trustCenters,
       stats,
+      platformCounts,
     },
   };
 }

@@ -106,6 +106,50 @@ export function getStats() {
     totalCompanies: trustCenters.length
   };
 }
+
+export function getPlatformCounts() {
+  const trustCenters = getAllTrustCenters();
+  
+  // Get platform from company data (same logic as in index.js)
+  const getPlatform = (company) => {
+    if (company.platform) return company.platform;
+    
+    const url = company.trustCenter;
+    if (!url) return 'Other';
+    try {
+      const host = new URL(url).hostname.toLowerCase();
+      if (host.includes('safebase.io')) return 'SafeBase';
+      if (host.includes('app.conveyor.com') || host.includes('conveyor.com')) return 'Conveyor';
+      if (host.includes('delve.co')) return 'Delve';
+      if (host.includes('trust.vanta.com') || host.includes('vanta.com') || host.includes('vantatrust.com')) return 'Vanta';
+      if (host.includes('drata.com')) return 'Drata';
+      if (host.includes('trustarc.com')) return 'TrustArc';
+      if (host.includes('onetrust.com')) return 'OneTrust';
+      if (host.includes('secureframe.com')) return 'Secureframe';
+      if (host.includes('whistic.com')) return 'Whistic';
+      if (host.includes('oneleet.com')) return 'Oneleet';
+      if (host.includes('hypercomply.io') || host.includes('hypercomplytrust.com')) return 'HyperComply';
+      if (host.startsWith('trust.') || host.includes('.trust.') || host.startsWith('security.') || host.includes('.security.')) return 'Self-hosted';
+      return 'Other';
+    } catch {
+      return 'Other';
+    }
+  };
+
+  // Count companies by platform
+  const counts = {};
+  trustCenters.forEach(company => {
+    const platform = getPlatform(company);
+    counts[platform] = (counts[platform] || 0) + 1;
+  });
+
+  // Convert to array and sort by count (highest first)
+  const platformCounts = Object.entries(counts)
+    .map(([platform, count]) => ({ platform, count }))
+    .sort((a, b) => b.count - a.count);
+
+  return platformCounts;
+}
 `;
 
   fs.writeFileSync(utilsPath, utilsContent);
