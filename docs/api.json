@@ -16,6 +16,7 @@
       "get": {
         "summary": "Get trust centers",
         "description": "Retrieve all trust centers or search by company name",
+        "operationId": "getTrustCenters",
         "parameters": [
           {
             "name": "search",
@@ -68,6 +69,7 @@
       "get": {
         "summary": "Get statistics",
         "description": "Get aggregated statistics about the trust center directory",
+        "operationId": "getStats",
         "responses": {
           "200": {
             "description": "Successful response",

@@ -31,7 +31,18 @@
           },
           {
             "group": "API Reference",
-            "openapi": "api.json"
+            "pages": [
+              {
+                "page": "Get trust centers",
+                "openapi": "api.json",
+                "operationId": "getTrustCenters"
+              },
+              {
+                "page": "Get statistics", 
+                "openapi": "api.json",
+                "operationId": "getStats"
+              }
+            ]
           },
           {
             "group": "Contributing",
