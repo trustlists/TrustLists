@@ -32,6 +32,9 @@ module.exports = {
           700: '#047857',
           800: '#065f46',
           900: '#064e3b',
+        },
+        docs: {
+          card: '#15171a',
         }
       },
       fontFamily: {

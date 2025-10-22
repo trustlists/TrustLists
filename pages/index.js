@@ -447,7 +447,7 @@ Add any other context about the problem here.`);
                         className={`platform-filter-button flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium min-w-[140px] justify-between ${
                           showPlatformPanel || platformFilter !== 'all'
                             ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300'
-                            : 'bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                            : 'bg-white dark:bg-docs-card border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                       >
                         <div className="flex items-center gap-2">
@@ -468,7 +468,7 @@ Add any other context about the problem here.`);
               {/* Platform Filter Panel - Appears Below Search */}
               {platformPreviewEnabled && showPlatformPanel && (
                 <div className="platform-panel-container mb-6">
-                  <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
+                  <div className="bg-white dark:bg-docs-card border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
                     <div className="flex items-center justify-between mb-3">
                       <h4 className="text-sm font-medium text-gray-900 dark:text-white">Filter by Platform</h4>
                       <button
@@ -528,7 +528,7 @@ Add any other context about the problem here.`);
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
-                  className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
+                  className="bg-white dark:bg-docs-card rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
                 >
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
