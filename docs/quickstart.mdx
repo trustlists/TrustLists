@@ -7,6 +7,10 @@ description: 'Get started with TrustLists API in minutes'
 
 TrustLists provides a simple REST API to access trust center data programmatically.
 
+<Warning>
+**Important:** This is a static API served by GitHub Pages. Query parameters do not filter results server-side. All filtering must be implemented client-side.
+</Warning>
+
 ### Base URL
 
 ```
@@ -16,7 +20,7 @@ https://trustlists.org/api
 ### Authentication
 
 <Note>
-No authentication required for public endpoints. All API calls are rate-limited to 100 requests per hour per IP address.
+No authentication required for public endpoints. This is a static API with no server-side rate limiting.
 </Note>
 
 ## Basic Usage
@@ -137,6 +141,43 @@ vanta_companies = [tc for tc in data['data'] if tc['platform'] == 'Vanta']
 print(f"Found {len(vanta_companies)} Vanta-hosted trust centers")
 for tc in vanta_companies:
     print(f"{tc['name']}: {tc['trustCenter']}")
+```
+</CodeGroup>
+
+### Client-Side Filtering
+
+Since this is a static API, implement filtering in your application:
+
+<CodeGroup>
+```javascript JavaScript
+// Fetch all trust centers
+const response = await fetch('https://trustlists.org/api/trust-centers.json');
+const data = await response.json();
+
+// Filter by company name
+const searchTerm = 'stripe';
+const filtered = data.data.filter(company => 
+  company.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
+console.log(`Found ${filtered.length} companies matching "${searchTerm}"`);
+```
+
+```python Python
+import requests
+
+# Fetch all trust centers
+response = requests.get('https://trustlists.org/api/trust-centers.json')
+data = response.json()
+
+# Filter by company name
+search_term = 'stripe'
+filtered = [
+    company for company in data['data'] 
+    if search_term.lower() in company['name'].lower()
+]
+
+print(f"Found {len(filtered)} companies matching '{search_term}'")
 ```
 </CodeGroup>
 

@@ -1,44 +1,107 @@
 ---
 title: 'Get trust centers'
-description: 'Retrieve all trust centers or search by company name'
+description: 'Retrieve all trust centers with optional client-side filtering'
 openapi: 'GET /api/trust-centers.json'
 ---
 
 ## Overview
 
-Retrieve all trust centers or search by company name.
+Retrieve all trust centers from the directory. This endpoint returns the complete dataset of 441+ companies.
+
+<Warning>
+**Important:** This is a static API endpoint. The `search` parameter is for documentation purposes only and does not filter results server-side. All companies are returned regardless of the search parameter.
+</Warning>
 
 <ParamField query="search" type="string">
-  Search query to filter trust centers by name (optional)
+  Search query for client-side filtering (optional) - see examples below
 </ParamField>
 
-## Interactive Testing
+## Client-Side Filtering
 
-Use the playground below to test this endpoint directly in your browser.
+Since this is a static API, implement filtering in your application:
 
-<RequestExample>
+<CodeGroup>
+```javascript JavaScript
+// Fetch all trust centers
+const response = await fetch('https://trustlists.org/api/trust-centers.json');
+const data = await response.json();
+
+// Filter by company name
+const searchTerm = 'stripe';
+const filtered = data.data.filter(company => 
+  company.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+
+console.log(`Found ${filtered.length} companies matching "${searchTerm}"`);
+console.log(filtered);
+```
+
+```python Python
+import requests
+import json
+
+# Fetch all trust centers
+response = requests.get('https://trustlists.org/api/trust-centers.json')
+data = response.json()
+
+# Filter by company name
+search_term = 'stripe'
+filtered = [
+    company for company in data['data'] 
+    if search_term.lower() in company['name'].lower()
+]
+
+print(f"Found {len(filtered)} companies matching '{search_term}'")
+print(json.dumps(filtered, indent=2))
+```
+
 ```bash cURL
-curl "https://trustlists.org/api/trust-centers?search=stripe"
+# Get all trust centers (no server-side filtering)
+curl "https://trustlists.org/api/trust-centers.json"
 ```
-</RequestExample>
+</CodeGroup>
 
-<ResponseExample>
-```json Success
-{
-  "data": [
-    {
-      "name": "Stripe",
-      "website": "https://stripe.com",
-      "trustCenter": "https://stripe.com/privacy-center/legal",
-      "platform": "Other",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
-    }
-  ],
-  "meta": {
-    "total": 441,
-    "generated": "2024-01-15T10:30:00Z",
-    "version": "1.0.0"
-  }
-}
+## Advanced Filtering Examples
+
+<CodeGroup>
+```javascript JavaScript
+// Filter by platform
+const conveyorCompanies = data.data.filter(company => 
+  company.platform === 'Conveyor'
+);
+
+// Filter by multiple criteria
+const enterpriseCompanies = data.data.filter(company => 
+  ['Stripe', 'MongoDB', 'Figma', 'Notion'].includes(company.name)
+);
+
+// Search across multiple fields
+const searchTerm = 'security';
+const results = data.data.filter(company => 
+  company.name.toLowerCase().includes(searchTerm) ||
+  company.platform.toLowerCase().includes(searchTerm)
+);
 ```
-</ResponseExample>
+
+```python Python
+# Filter by platform
+conveyor_companies = [
+    company for company in data['data'] 
+    if company['platform'] == 'Conveyor'
+]
+
+# Filter by multiple criteria
+enterprise_companies = [
+    company for company in data['data'] 
+    if company['name'] in ['Stripe', 'MongoDB', 'Figma', 'Notion']
+]
+
+# Search across multiple fields
+search_term = 'security'
+results = [
+    company for company in data['data'] 
+    if search_term.lower() in company['name'].lower() or 
+       search_term.lower() in company['platform'].lower()
+]
+```
+</CodeGroup>

@@ -21,7 +21,7 @@
           {
             "name": "search",
             "in": "query",
-            "description": "Search query to filter trust centers by name",
+            "description": "Search query for client-side filtering (optional) - note: this is a static API, filtering must be implemented client-side",
             "required": false,
             "schema": {
               "type": "string"
