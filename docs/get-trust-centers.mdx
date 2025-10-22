@@ -12,3 +12,34 @@ Retrieve all trust centers or search by company name.
 <ParamField query="search" type="string">
   Search query to filter trust centers by name (optional)
 </ParamField>
+
+## Interactive Testing
+
+Use the playground below to test this endpoint directly in your browser.
+
+<RequestExample>
+```bash cURL
+curl "https://trustlists.org/api/trust-centers?search=stripe"
+```
+</RequestExample>
+
+<ResponseExample>
+```json Success
+{
+  "data": [
+    {
+      "name": "Stripe",
+      "website": "https://stripe.com",
+      "trustCenter": "https://stripe.com/privacy-center/legal",
+      "platform": "Other",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
+    }
+  ],
+  "meta": {
+    "total": 441,
+    "generated": "2024-01-15T10:30:00Z",
+    "version": "1.0.0"
+  }
+}
+```
+</ResponseExample>

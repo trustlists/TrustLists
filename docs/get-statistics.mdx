@@ -8,3 +8,22 @@ operationId: 'getStats'
 ## Overview
 
 Get aggregated statistics about the trust center directory.
+
+## Interactive Testing
+
+Use the playground below to test this endpoint directly in your browser.
+
+<RequestExample>
+```bash cURL
+curl "https://trustlists.org/api/stats"
+```
+</RequestExample>
+
+<ResponseExample>
+```json Success
+{
+  "totalCompanies": 441,
+  "generated": "2024-01-15T10:30:00Z"
+}
+```
+</ResponseExample>
