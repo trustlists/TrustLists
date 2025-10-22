@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "TrustLists",
   "colors": {
-    "primary": "#0D9488",
-    "light": "#14B8A6",
-    "dark": "#0F766E"
+    "primary": "#2563eb",
+    "light": "#3b82f6",
+    "dark": "#1d4ed8"
   },
   "favicon": "favicon.svg",
   "navigation": {
