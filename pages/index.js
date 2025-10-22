@@ -490,7 +490,7 @@ Add any other context about the problem here.`);
                           setPlatformFilter('all');
                           setShowPlatformPanel(false);
                         }}
-                        className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                        className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                           platformFilter === 'all'
                             ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
@@ -507,7 +507,7 @@ Add any other context about the problem here.`);
                             setPlatformFilter(platform);
                             setShowPlatformPanel(false);
                           }}
-                          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                          className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                             platformFilter === platform
                               ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
                               : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
@@ -528,7 +528,7 @@ Add any other context about the problem here.`);
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
-                  className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-all duration-200"
+                  className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
                 >
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
