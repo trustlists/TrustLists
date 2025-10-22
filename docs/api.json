@@ -3,11 +3,7 @@
   "info": {
     "title": "TrustLists API",
     "description": "API for accessing company trust center data",
-    "version": "1.0.0",
-    "contact": {
-      "name": "TrustLists Support",
-      "email": "support@trustlists.org"
-    }
+    "version": "1.0.0"
   },
   "servers": [
     {
@@ -20,7 +16,6 @@
       "get": {
         "summary": "Get trust centers",
         "description": "Retrieve all trust centers or search by company name",
-        "operationId": "getTrustCenters",
         "parameters": [
           {
             "name": "search",
@@ -28,8 +23,7 @@
             "description": "Search query to filter trust centers by name",
             "required": false,
             "schema": {
-              "type": "string",
-              "example": "stripe"
+              "type": "string"
             }
           }
         ],
@@ -46,81 +40,21 @@
                       "items": {
                         "type": "object",
                         "properties": {
-                          "name": {
-                            "type": "string",
-                            "description": "Company name"
-                          },
-                          "website": {
-                            "type": "string",
-                            "description": "Company website URL"
-                          },
-                          "trustCenter": {
-                            "type": "string",
-                            "description": "Trust center URL"
-                          },
-                          "platform": {
-                            "type": "string",
-                            "description": "Hosting platform",
-                            "enum": ["SafeBase", "Conveyor", "Vanta", "TrustArc", "OneTrust", "Secureframe", "Whistic", "HyperComply", "Oneleet", "Self-hosted", "Other"]
-                          },
-                          "iconUrl": {
-                            "type": "string",
-                            "description": "Company favicon URL"
-                          }
+                          "name": {"type": "string"},
+                          "website": {"type": "string"},
+                          "trustCenter": {"type": "string"},
+                          "platform": {"type": "string"},
+                          "iconUrl": {"type": "string"}
                         }
                       }
                     },
                     "meta": {
                       "type": "object",
                       "properties": {
-                        "total": {
-                          "type": "integer",
-                          "description": "Total number of trust centers"
-                        },
-                        "generated": {
-                          "type": "string",
-                          "format": "date-time",
-                          "description": "Response generation timestamp"
-                        },
-                        "version": {
-                          "type": "string",
-                          "description": "API version"
-                        }
+                        "total": {"type": "integer"},
+                        "generated": {"type": "string"},
+                        "version": {"type": "string"}
                       }
-                    }
-                  }
-                },
-                "example": {
-                  "data": [
-                    {
-                      "name": "Stripe",
-                      "website": "https://stripe.com",
-                      "trustCenter": "https://stripe.com/privacy-center/legal",
-                      "platform": "Other",
-                      "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
-                    }
-                  ],
-                  "meta": {
-                    "total": 441,
-                    "generated": "2024-01-15T10:30:00Z",
-                    "version": "1.0.0"
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal server error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "error": {
-                      "type": "string"
-                    },
-                    "message": {
-                      "type": "string"
                     }
                   }
                 }
@@ -134,7 +68,6 @@
       "get": {
         "summary": "Get statistics",
         "description": "Get aggregated statistics about the trust center directory",
-        "operationId": "getStats",
         "responses": {
           "200": {
             "description": "Successful response",
@@ -143,37 +76,8 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "totalCompanies": {
-                      "type": "integer",
-                      "description": "Total number of companies in directory"
-                    },
-                    "generated": {
-                      "type": "string",
-                      "format": "date-time",
-                      "description": "Response generation timestamp"
-                    }
-                  }
-                },
-                "example": {
-                  "totalCompanies": 441,
-                  "generated": "2024-01-15T10:30:00Z"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal server error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "error": {
-                      "type": "string"
-                    },
-                    "message": {
-                      "type": "string"
-                    }
+                    "totalCompanies": {"type": "integer"},
+                    "generated": {"type": "string"}
                   }
                 }
               }

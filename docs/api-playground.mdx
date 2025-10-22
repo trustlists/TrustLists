@@ -1,18 +1,11 @@
 ---
 title: 'API Playground'
 description: 'Test TrustLists API endpoints interactively'
-api: 'api.json'
 ---
 
-## Try the API
+## Interactive API Testing
 
-Use the interactive playground below to test TrustLists API endpoints directly in your browser.
-
-<Note>
-No authentication required - all endpoints are publicly accessible.
-</Note>
-
-## Available Endpoints
+Test TrustLists API endpoints directly in your browser. No authentication required!
 
 ### GET /trust-centers
 
@@ -21,10 +14,88 @@ Retrieve all trust centers or search by company name.
 **Query Parameters:**
 - `search` (optional): Search query to filter trust centers by name
 
+<RequestExample>
+```bash cURL
+curl "https://trustlists.org/api/trust-centers?search=stripe"
+```
+</RequestExample>
+
+<ResponseExample>
+```json Success
+{
+  "data": [
+    {
+      "name": "Stripe",
+      "website": "https://stripe.com",
+      "trustCenter": "https://stripe.com/privacy-center/legal",
+      "platform": "Other",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
+    }
+  ],
+  "meta": {
+    "total": 441,
+    "generated": "2024-01-15T10:30:00Z",
+    "version": "1.0.0"
+  }
+}
+```
+</ResponseExample>
+
 ### GET /stats
 
 Get statistics about the trust center directory.
 
-<Tip>
-The interactive playground will appear automatically once Mintlify processes the OpenAPI specification. You'll be able to test endpoints, see live responses, and copy working code examples.
-</Tip>
+<RequestExample>
+```bash cURL
+curl "https://trustlists.org/api/stats"
+```
+</RequestExample>
+
+<ResponseExample>
+```json Success
+{
+  "totalCompanies": 441,
+  "generated": "2024-01-15T10:30:00Z"
+}
+```
+</ResponseExample>
+
+## Try It Yourself
+
+<CodeGroup>
+```javascript JavaScript
+// Get all trust centers
+const response = await fetch('https://trustlists.org/api/trust-centers');
+const data = await response.json();
+
+console.log(`Found ${data.meta.total} trust centers`);
+data.data.forEach(tc => {
+  console.log(`${tc.name}: ${tc.trustCenter}`);
+});
+```
+
+```python Python
+import requests
+
+# Search for specific companies
+response = requests.get('https://trustlists.org/api/trust-centers', 
+                       params={'search': 'stripe'})
+data = response.json()
+
+print(f"Found {len(data['data'])} matching trust centers")
+for tc in data['data']:
+    print(f"{tc['name']}: {tc['trustCenter']}")
+```
+
+```bash cURL
+# Get statistics
+curl "https://trustlists.org/api/stats"
+
+# Search for companies
+curl "https://trustlists.org/api/trust-centers?search=vanta"
+```
+</CodeGroup>
+
+<Note>
+The interactive playground feature requires Mintlify to process the OpenAPI specification. If you don't see "Try it" buttons, the playground may still be loading or there might be a configuration issue.
+</Note>
