@@ -60,8 +60,8 @@ scripts/trust-center-discovery/data/platform-summary.json
 scripts/trust-center-discovery/data/last-discovery-run.json
 
 # Generated data files
-public/trust-centers.json
-public/trust-centers.csv
+# public/trust-centers.json - Now needed for API endpoints
+# public/trust-centers.csv - Now needed for API endpoints
 
 # Node
 node_modules/

@@ -8,7 +8,7 @@
   "servers": [
     {
       "url": "https://trustlists.org/api",
-      "description": "Production server"
+      "description": "Production server (static files)"
     }
   ],
   "paths": {

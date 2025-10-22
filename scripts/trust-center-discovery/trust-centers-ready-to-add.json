@@ -1,0 +1,4783 @@
+{
+  "highConfidence": [
+    {
+      "companyName": "Veritus Agent",
+      "website": "https://www.veritusagent.ai",
+      "trustCenter": "https://trust.veritusagent.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.veritusagent.ai&sz=128",
+      "confidence": 100,
+      "cname": "687e93a4d2a07b6b7bc13c5a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.veritusagent.ai",
+      "ycBatch": "S25",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Opennote",
+      "website": "https://opennote.com",
+      "trustCenter": "https://trust.opennote.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://opennote.com&sz=128",
+      "confidence": 100,
+      "cname": "67fcc1669b557325a88987ad.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://opennote.com",
+      "ycBatch": "S25",
+      "ycStatus": "Active",
+      "ycIndustry": "Education",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Socratix AI",
+      "website": "https://getsocratix.ai",
+      "trustCenter": "https://trust.getsocratix.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getsocratix.ai&sz=128",
+      "confidence": 100,
+      "cname": "686d649e48010ba6e6547880.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://getsocratix.ai",
+      "ycBatch": "S25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "GhostEye",
+      "website": "https://ghosteye.ai",
+      "trustCenter": "https://trust.ghosteye.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://ghosteye.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://ghosteye.ai",
+      "ycBatch": "S25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Lark",
+      "website": "https://uselark.ai/",
+      "trustCenter": "https://trust.uselark.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://uselark.ai/&sz=128",
+      "confidence": 100,
+      "cname": "688cc96233ef8690e4a379ef.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://uselark.ai/",
+      "ycBatch": "S25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Rimba",
+      "website": "https://rimba.ai",
+      "trustCenter": "https://trust.rimba.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://rimba.ai&sz=128",
+      "confidence": 100,
+      "cname": "67f8cc9a77bbb5b4962e8217.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://rimba.ai",
+      "ycBatch": "X25",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Lyra",
+      "website": "https://lyra.so/",
+      "trustCenter": "https://trust.lyra.so",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://lyra.so/&sz=128",
+      "confidence": 100,
+      "cname": "682b866181a1b7428a3561eb.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://lyra.so/",
+      "ycBatch": "X25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Casco",
+      "website": "https://casco.com",
+      "trustCenter": "https://trust.casco.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://casco.com&sz=128",
+      "confidence": 100,
+      "cname": "67d20add58fc28d92e035544.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://casco.com",
+      "ycBatch": "X25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Parsewise",
+      "website": "https://parsewise.ai",
+      "trustCenter": "https://trust.parsewise.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://parsewise.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://parsewise.ai",
+      "ycBatch": "X25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "cubic",
+      "website": "https://cubic.dev/",
+      "trustCenter": "https://trust.cubic.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cubic.dev/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://cubic.dev/",
+      "ycBatch": "X25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Cuckoo Labs",
+      "website": "https://www.cuckoo.so/",
+      "trustCenter": "https://trust.cuckoo.so",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.cuckoo.so/&sz=128",
+      "confidence": 100,
+      "cname": "67e1c66ae345f1f5051ba6ad.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.cuckoo.so/",
+      "ycBatch": "W25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Osmosis",
+      "website": "https://osmosis.ai/",
+      "trustCenter": "https://trust.osmosis.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://osmosis.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://osmosis.ai/",
+      "ycBatch": "W25",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "HumanLayer",
+      "website": "https://humanlayer.dev",
+      "trustCenter": "https://trust.humanlayer.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://humanlayer.dev&sz=128",
+      "confidence": 100,
+      "cname": "678779c5c8ba5c28eede16c2.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://humanlayer.dev",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "SRE.ai",
+      "website": "https://sre.ai",
+      "trustCenter": "https://trust.sre.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://sre.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://sre.ai",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Ryvn",
+      "website": "https://ryvn.ai",
+      "trustCenter": "https://trust.ryvn.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://ryvn.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://ryvn.ai",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Edgedive",
+      "website": "https://edgedive.com",
+      "trustCenter": "https://trust.edgedive.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://edgedive.com&sz=128",
+      "confidence": 100,
+      "cname": "688b92d499f5cb01031b003a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://edgedive.com",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Fresco",
+      "website": "https://fresco-ai.com/",
+      "trustCenter": "https://trust.fresco-ai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://fresco-ai.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://fresco-ai.com/",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "Real Estate and Construction",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Dexter",
+      "website": "https://www.getdexter.co/",
+      "trustCenter": "https://trust.getdexter.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getdexter.co/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.getdexter.co/",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "CTGT",
+      "website": "https://www.ctgt.ai/",
+      "trustCenter": "https://trust.ctgt.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.ctgt.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.ctgt.ai/",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "RevisionDojo",
+      "website": "https://revisiondojo.com",
+      "trustCenter": "https://trust.revisiondojo.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://revisiondojo.com&sz=128",
+      "confidence": 100,
+      "cname": "67078a252d1a3c1d6b0a58a3.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://revisiondojo.com",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "Education",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Rulebase",
+      "website": "https://rulebase.co",
+      "trustCenter": "https://trust.rulebase.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://rulebase.co&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://rulebase.co",
+      "ycBatch": "F24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Affil.ai",
+      "website": "https://affil.ai/",
+      "trustCenter": "https://trust.affil.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://affil.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://affil.ai/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hey Revia",
+      "website": "https://heyrevia.ai",
+      "trustCenter": "https://trust.heyrevia.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://heyrevia.ai&sz=128",
+      "confidence": 100,
+      "cname": "656d8af9ea18d7882cc92c9e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://heyrevia.ai",
+      "ycBatch": "S24",
+      "ycStatus": "Acquired",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Pharos",
+      "website": "https://pharos.health/",
+      "trustCenter": "https://trust.pharos.health",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://pharos.health/&sz=128",
+      "confidence": 100,
+      "cname": "66c4f01578231843aec21576.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://pharos.health/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Elayne",
+      "website": "https://www.elayne.com/",
+      "trustCenter": "https://trust.elayne.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.elayne.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.elayne.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Remo",
+      "website": "https://getremo.ai",
+      "trustCenter": "https://trust.getremo.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getremo.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://getremo.ai",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Blast",
+      "website": "https://withblast.com",
+      "trustCenter": "https://trust.withblast.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://withblast.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://withblast.com",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Simple AI",
+      "website": "https://www.usesimple.ai",
+      "trustCenter": "https://trust.usesimple.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.usesimple.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.usesimple.ai",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Parley",
+      "website": "https://parley.so",
+      "trustCenter": "https://trust.parley.so",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://parley.so&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://parley.so",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Intryc",
+      "website": "https://intryc.com",
+      "trustCenter": "https://trust.intryc.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://intryc.com&sz=128",
+      "confidence": 100,
+      "cname": "65a4ea09b4c7501f89b504a4.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://intryc.com",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Pax",
+      "website": "https://paxai.com/",
+      "trustCenter": "https://trust.paxai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://paxai.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://paxai.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Dimely",
+      "website": "https://dimely.com/",
+      "trustCenter": "https://trust.dimely.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://dimely.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://dimely.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Planbase",
+      "website": "https://www.joinplanbase.com/",
+      "trustCenter": "https://trust.joinplanbase.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.joinplanbase.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.joinplanbase.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Conveo",
+      "website": "https://conveo.ai/",
+      "trustCenter": "https://trust.conveo.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://conveo.ai/&sz=128",
+      "confidence": 100,
+      "cname": "667e86cb0e94d8120d1ccb03.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://conveo.ai/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Kastle",
+      "website": "https://kastle.ai/",
+      "trustCenter": "https://trust.kastle.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://kastle.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://kastle.ai/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Benchify",
+      "website": "https://www.benchify.com",
+      "trustCenter": "https://trust.benchify.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.benchify.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.benchify.com",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Fazeshift",
+      "website": "https://www.fazeshift.com/",
+      "trustCenter": "https://trust.fazeshift.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.fazeshift.com/&sz=128",
+      "confidence": 100,
+      "cname": "67102ef6358d6b58eefdc1c9.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.fazeshift.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Substrate",
+      "website": "https://www.substrate.cc/",
+      "trustCenter": "https://trust.substrate.cc",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.substrate.cc/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.substrate.cc/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Pulse",
+      "website": "https://www.runpulse.com/",
+      "trustCenter": "https://trust.runpulse.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.runpulse.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.runpulse.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Cloudglue",
+      "website": "https://cloudglue.dev",
+      "trustCenter": "https://trust.cloudglue.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cloudglue.dev&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://cloudglue.dev",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Wordware",
+      "website": "https://wordware.ai/",
+      "trustCenter": "https://trust.wordware.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://wordware.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://wordware.ai/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Maitai",
+      "website": "https://trymaitai.ai",
+      "trustCenter": "https://trust.trymaitai.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://trymaitai.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://trymaitai.ai",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "ClaimSorted",
+      "website": "https://claimsorted.com",
+      "trustCenter": "https://trust.claimsorted.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://claimsorted.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://claimsorted.com",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Abel Police",
+      "website": "http://abelpolice.com",
+      "trustCenter": "https://trust.abelpolice.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://abelpolice.com&sz=128",
+      "confidence": 100,
+      "cname": "6851b424517ac2da8debbd56.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "http://abelpolice.com",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "Government",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Tower",
+      "website": "https://withtower.com",
+      "trustCenter": "https://trust.withtower.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://withtower.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://withtower.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Healia",
+      "website": "https://www.healiahealth.com/",
+      "trustCenter": "https://trust.healiahealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.healiahealth.com/&sz=128",
+      "confidence": 100,
+      "cname": "6841d62815c5e7f081f9a31c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.healiahealth.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "TrueClaim",
+      "website": "https://www.trytrueclaim.com",
+      "trustCenter": "https://trust.trytrueclaim.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.trytrueclaim.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.trytrueclaim.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Penciled",
+      "website": "https://penciled.com",
+      "trustCenter": "https://trust.penciled.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://penciled.com&sz=128",
+      "confidence": 100,
+      "cname": "65ba82a9443767d624e604df.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://penciled.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Datacurve",
+      "website": "https://datacurve.ai/",
+      "trustCenter": "https://trust.datacurve.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://datacurve.ai/&sz=128",
+      "confidence": 100,
+      "cname": "67d4a8b2c1a75ee6435ce8d9.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "security practices"
+      ],
+      "domain": "https://datacurve.ai/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Veles",
+      "website": "http://www.getveles.com",
+      "trustCenter": "https://trust.getveles.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.getveles.com&sz=128",
+      "confidence": 100,
+      "cname": "65e116b4d9723f97a3be141f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "security practices"
+      ],
+      "domain": "http://www.getveles.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Retell AI",
+      "website": "https://retellai.com",
+      "trustCenter": "https://trust.retellai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://retellai.com&sz=128",
+      "confidence": 100,
+      "cname": "65c6c5701ae6e1c4b66df2bf.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://retellai.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Spark",
+      "website": "https://www.sparkhq.ai",
+      "trustCenter": "https://trust.sparkhq.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.sparkhq.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.sparkhq.ai",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hatchet",
+      "website": "https://hatchet.run",
+      "trustCenter": "https://trust.hatchet.run",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://hatchet.run&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://hatchet.run",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Zep AI",
+      "website": "https://www.getzep.com/",
+      "trustCenter": "https://trust.getzep.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getzep.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.getzep.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Sample",
+      "website": "https://samplehc.com",
+      "trustCenter": "https://trust.samplehc.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://samplehc.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://samplehc.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Artos",
+      "website": "https://www.artosai.com/",
+      "trustCenter": "https://trust.artosai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.artosai.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.artosai.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Model ML",
+      "website": "https://www.modelml.com/",
+      "trustCenter": "https://trust.modelml.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.modelml.com/&sz=128",
+      "confidence": 100,
+      "cname": "685d60ae1fc4aba3bce78a4d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.modelml.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Raindrop",
+      "website": "https://www.raindrop.ai",
+      "trustCenter": "https://trust.raindrop.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.raindrop.ai&sz=128",
+      "confidence": 100,
+      "cname": "661cdf05eff48d8955c109a0.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.raindrop.ai",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Chunkr",
+      "website": "https://chunkr.ai/",
+      "trustCenter": "https://trust.chunkr.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://chunkr.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://chunkr.ai/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Centauri AI",
+      "website": "https://centauri-ai.tech",
+      "trustCenter": "https://trust.centauri-ai.tech",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://centauri-ai.tech&sz=128",
+      "confidence": 100,
+      "cname": "66303ad75360cc947a2885be.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://centauri-ai.tech",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Voicepanel",
+      "website": "https://voicepanel.com",
+      "trustCenter": "https://trust.voicepanel.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://voicepanel.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://voicepanel.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Abel",
+      "website": "https://www.tryabel.com",
+      "trustCenter": "https://trust.tryabel.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.tryabel.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.tryabel.com",
+      "ycBatch": "W24",
+      "ycStatus": "Inactive",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Conduit",
+      "website": "https://conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator",
+      "trustCenter": "https://trust.conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://conduit.ai/?utm_source=referral&utm_medium=organic&utm_campaign=ycombinator",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Toma",
+      "website": "http://www.toma.com/",
+      "trustCenter": "https://trust.toma.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.toma.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://www.toma.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Centralize",
+      "website": "https://www.usecentralize.com/",
+      "trustCenter": "https://trust.usecentralize.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.usecentralize.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.usecentralize.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "phospho",
+      "website": "https://phospho.ai",
+      "trustCenter": "https://trust.phospho.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://phospho.ai&sz=128",
+      "confidence": 100,
+      "cname": "654e8b04734955947e003f1a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://phospho.ai",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Tamarind Bio",
+      "website": "https://www.tamarind.bio",
+      "trustCenter": "https://trust.tamarind.bio",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.tamarind.bio&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.tamarind.bio",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Clarion",
+      "website": "https://clarionhealth.com",
+      "trustCenter": "https://trust.clarionhealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://clarionhealth.com&sz=128",
+      "confidence": 100,
+      "cname": "66c9087078231843aef160cd.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://clarionhealth.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "PromptArmor",
+      "website": "https://promptarmor.com/",
+      "trustCenter": "https://trust.promptarmor.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://promptarmor.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://promptarmor.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "CloudCruise",
+      "website": "https://cloudcruise.com",
+      "trustCenter": "https://trust.cloudcruise.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cloudcruise.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://cloudcruise.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Topo",
+      "website": "https://www.topo.io/",
+      "trustCenter": "https://trust.topo.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.topo.io/&sz=128",
+      "confidence": 100,
+      "cname": "63a089843be401fb60317453.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.topo.io/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "PointOne",
+      "website": "https://pointone.com/",
+      "trustCenter": "https://trust.pointone.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://pointone.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://pointone.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Buster",
+      "website": "http://buster.so",
+      "trustCenter": "https://trust.buster.so",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://buster.so&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://buster.so",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Poka Labs",
+      "website": "https://www.pokalabs.com/",
+      "trustCenter": "https://trust.pokalabs.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.pokalabs.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.pokalabs.com/",
+      "ycBatch": "S24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Maihem",
+      "website": "https://www.maihem.com",
+      "trustCenter": "https://trust.maihem.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.maihem.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.maihem.com",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gumloop",
+      "website": "https://www.gumloop.com/",
+      "trustCenter": "https://trust.gumloop.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.gumloop.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.gumloop.com/",
+      "ycBatch": "W24",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Autotab",
+      "website": "https://autotab.com",
+      "trustCenter": "https://trust.autotab.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://autotab.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://autotab.com",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "AiSDR",
+      "website": "https://aisdr.com/",
+      "trustCenter": "https://trust.aisdr.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://aisdr.com/&sz=128",
+      "confidence": 100,
+      "cname": "66f5b420b4ef31ac7c0c8166.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://aisdr.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Affinity",
+      "website": "https://itsaffinity.com",
+      "trustCenter": "https://trust.itsaffinity.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://itsaffinity.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://itsaffinity.com",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Strada",
+      "website": "https://www.getstrada.com/",
+      "trustCenter": "https://trust.getstrada.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getstrada.com/&sz=128",
+      "confidence": 100,
+      "cname": "64d1394c6491f66d23526859.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.getstrada.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "HappyRobot",
+      "website": "https://happyrobot.ai",
+      "trustCenter": "https://trust.happyrobot.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://happyrobot.ai&sz=128",
+      "confidence": 100,
+      "cname": "65574dfa734955947e08f884.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://happyrobot.ai",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Langdock",
+      "website": "https://langdock.com",
+      "trustCenter": "https://trust.langdock.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://langdock.com&sz=128",
+      "confidence": 100,
+      "cname": "64b5a40bbea256dab20d16b8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://langdock.com",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Guac",
+      "website": "https://www.guac-ai.com/",
+      "trustCenter": "https://trust.guac-ai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.guac-ai.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.guac-ai.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Aglide",
+      "website": "https://aglide.com",
+      "trustCenter": "https://trust.aglide.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://aglide.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://aglide.com",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "MediSearch",
+      "website": "https://medisearch.io",
+      "trustCenter": "https://trust.medisearch.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://medisearch.io&sz=128",
+      "confidence": 100,
+      "cname": "68111fcae6f29eeb7fc7196c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://medisearch.io",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Skyvern",
+      "website": "https://www.skyvern.com/",
+      "trustCenter": "https://trust.skyvern.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.skyvern.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.skyvern.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "MICSI",
+      "website": "https://www.micsi.co/",
+      "trustCenter": "https://trust.micsi.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.micsi.co/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.micsi.co/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Docsum",
+      "website": "https://www.docsum.ai/",
+      "trustCenter": "https://trust.docsum.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.docsum.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.docsum.ai/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Alguna",
+      "website": "https://alguna.io",
+      "trustCenter": "https://trust.alguna.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://alguna.io&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://alguna.io",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Mandel AI",
+      "website": "https://www.mandel.ai/",
+      "trustCenter": "https://trust.mandel.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.mandel.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.mandel.ai/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Contour",
+      "website": "https://trycontour.com",
+      "trustCenter": "https://trust.trycontour.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://trycontour.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://trycontour.com",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Atla",
+      "website": "https://www.atla-ai.com/",
+      "trustCenter": "https://trust.atla-ai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.atla-ai.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.atla-ai.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Diligent",
+      "website": "https://godiligent.ai",
+      "trustCenter": "https://trust.godiligent.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://godiligent.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://godiligent.ai",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Artie",
+      "website": "https://www.artie.com/",
+      "trustCenter": "https://trust.artie.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.artie.com/&sz=128",
+      "confidence": 100,
+      "cname": "648a2c7cb79e25ca063c778c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.artie.com/",
+      "ycBatch": "S23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Warp",
+      "website": "https://www.joinwarp.com/",
+      "trustCenter": "https://trust.joinwarp.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.joinwarp.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.joinwarp.com/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Koala Ops",
+      "website": "https://koalaops.com/",
+      "trustCenter": "https://trust.koalaops.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://koalaops.com/&sz=128",
+      "confidence": 100,
+      "cname": "65c8c5899031fb0f7083fd78.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://koalaops.com/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vector",
+      "website": "https://vector.co",
+      "trustCenter": "https://trust.vector.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://vector.co&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://vector.co",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Edge",
+      "website": "https://withedge.com",
+      "trustCenter": "https://trust.withedge.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://withedge.com&sz=128",
+      "confidence": 100,
+      "cname": "6557c821734955947eabe98a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://withedge.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Conduit",
+      "website": "http://helloconduit.com",
+      "trustCenter": "https://trust.helloconduit.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://helloconduit.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://helloconduit.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hindsight",
+      "website": "https://www.usehindsight.com/",
+      "trustCenter": "https://trust.usehindsight.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.usehindsight.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.usehindsight.com/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Invopop",
+      "website": "https://www.invopop.com/",
+      "trustCenter": "https://trust.invopop.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.invopop.com/&sz=128",
+      "confidence": 100,
+      "cname": "641e5252a330118d4fd54457.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.invopop.com/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Pylon",
+      "website": "https://usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile",
+      "trustCenter": "https://trust.usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile&sz=128",
+      "confidence": 100,
+      "cname": "638bca1dd19d6f53e64aa498.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "nunu.ai",
+      "website": "https://nunu.ai",
+      "trustCenter": "https://trust.nunu.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://nunu.ai&sz=128",
+      "confidence": 100,
+      "cname": "6793adf63130cefaf4aa36da.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://nunu.ai",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Consumer",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vitalize",
+      "website": "https://vitalize.care",
+      "trustCenter": "https://trust.vitalize.care",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://vitalize.care&sz=128",
+      "confidence": 100,
+      "cname": "668309c5bb4f7b57d3f8cd29.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://vitalize.care",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hadrius",
+      "website": "https://www.hadrius.com",
+      "trustCenter": "https://trust.hadrius.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.hadrius.com&sz=128",
+      "confidence": 100,
+      "cname": "65572174734955947ee9b75f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "certification",
+        "audit"
+      ],
+      "domain": "https://www.hadrius.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Helicone",
+      "website": "https://www.helicone.ai/",
+      "trustCenter": "https://trust.helicone.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.helicone.ai/&sz=128",
+      "confidence": 100,
+      "cname": "654de6b7734955947e1d7bfc.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.helicone.ai/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "IcePanel",
+      "website": "https://icepanel.io",
+      "trustCenter": "https://trust.icepanel.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://icepanel.io&sz=128",
+      "confidence": 100,
+      "cname": "629101d072eb9d1f261c0845.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://icepanel.io",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Propexo",
+      "website": "https://propexo.com",
+      "trustCenter": "https://trust.propexo.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://propexo.com&sz=128",
+      "confidence": 100,
+      "cname": "64093e54a330118d4f3ab305.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://propexo.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Relace",
+      "website": "https://relace.ai",
+      "trustCenter": "https://trust.relace.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://relace.ai&sz=128",
+      "confidence": 100,
+      "cname": "67e2ee6fce65f875b1d573ec.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://relace.ai",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Flower",
+      "website": "https://flower.ai",
+      "trustCenter": "https://trust.flower.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://flower.ai&sz=128",
+      "confidence": 100,
+      "cname": "672b89d59124cbcf63ea9f00.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://flower.ai",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "JustPaid",
+      "website": "https://www.justpaid.ai",
+      "trustCenter": "https://trust.justpaid.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.justpaid.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.justpaid.ai",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Mercoa",
+      "website": "http://mercoa.com",
+      "trustCenter": "https://trust.mercoa.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://mercoa.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://mercoa.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Nango",
+      "website": "https://nango.dev",
+      "trustCenter": "https://trust.nango.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://nango.dev&sz=128",
+      "confidence": 100,
+      "cname": "64b92757bea256dab250bd55.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://nango.dev",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Versori",
+      "website": "https://www.versori.com/",
+      "trustCenter": "https://trust.versori.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.versori.com/&sz=128",
+      "confidence": 100,
+      "cname": "6536445e0932c9e2cd1ebc49.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.versori.com/",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Miracle",
+      "website": "http://www.miracleml.com",
+      "trustCenter": "https://trust.miracleml.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.miracleml.com&sz=128",
+      "confidence": 100,
+      "cname": "64dbfe796491f66d23d581c7.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "http://www.miracleml.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Infisical",
+      "website": "https://infisical.com",
+      "trustCenter": "https://trust.infisical.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://infisical.com&sz=128",
+      "confidence": 100,
+      "cname": "643d35f4a0c2c071a7fe4a94.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://infisical.com",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Axle",
+      "website": "https://axle.insure",
+      "trustCenter": "https://trust.axle.insure",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://axle.insure&sz=128",
+      "confidence": 100,
+      "cname": "6387a0e2d19d6f53e60b443e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://axle.insure",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Wondercraft",
+      "website": "https://wondercraft.ai/",
+      "trustCenter": "https://trust.wondercraft.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://wondercraft.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://wondercraft.ai/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Firecrawl",
+      "website": "https://www.firecrawl.dev",
+      "trustCenter": "https://trust.firecrawl.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.firecrawl.dev&sz=128",
+      "confidence": 100,
+      "cname": "6439dbb6a0c2c071a752c861.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.firecrawl.dev",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Invofox",
+      "website": "https://invofox.com",
+      "trustCenter": "https://trust.invofox.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://invofox.com&sz=128",
+      "confidence": 100,
+      "cname": "64ae889ab79e25ca06b0d125.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://invofox.com",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Findly",
+      "website": "https://www.findly.ai/join",
+      "trustCenter": "https://trust.findly.ai/join",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.findly.ai/join&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.findly.ai/join",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Relate",
+      "website": "https://www.relate.so/",
+      "trustCenter": "https://trust.relate.so",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.relate.so/&sz=128",
+      "confidence": 100,
+      "cname": "6568e26f2acf3ab572acd12c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.relate.so/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Lamin",
+      "website": "https://lamin.ai",
+      "trustCenter": "https://trust.lamin.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://lamin.ai&sz=128",
+      "confidence": 100,
+      "cname": "6672d03d0e94d8120d3b9619.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://lamin.ai",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Anchor",
+      "website": "https://getanchor.co/",
+      "trustCenter": "https://trust.getanchor.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getanchor.co/&sz=128",
+      "confidence": 100,
+      "cname": "635fd841e0bf35c448f8f83d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://getanchor.co/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "AviaryAI",
+      "website": "http://www.helloaviary.ai",
+      "trustCenter": "https://trust.helloaviary.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.helloaviary.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://www.helloaviary.ai",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "AlphaWatch AI",
+      "website": "https://alphawatch.ai",
+      "trustCenter": "https://trust.alphawatch.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://alphawatch.ai&sz=128",
+      "confidence": 100,
+      "cname": "64ef8d078dfab7d4e47ff1fc.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://alphawatch.ai",
+      "ycBatch": "W23",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Neosync",
+      "website": "https://neosync.dev",
+      "trustCenter": "https://trust.neosync.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://neosync.dev&sz=128",
+      "confidence": 100,
+      "cname": "63ee7635b6fde6e7c9de1c64.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://neosync.dev",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Provision",
+      "website": "https://useprovision.com",
+      "trustCenter": "https://trust.useprovision.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://useprovision.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://useprovision.com",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Windmill",
+      "website": "https://windmill.dev",
+      "trustCenter": "https://trust.windmill.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://windmill.dev&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://windmill.dev",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Disclo",
+      "website": "http://www.disclo.com",
+      "trustCenter": "https://trust.disclo.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.disclo.com&sz=128",
+      "confidence": 100,
+      "cname": "61846e9780fb2e4c5508f9c1.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.disclo.com",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Chariot",
+      "website": "https://givechariot.com/",
+      "trustCenter": "https://trust.givechariot.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://givechariot.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://givechariot.com/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Stackup",
+      "website": "https://www.stackup.fi",
+      "trustCenter": "https://trust.stackup.fi",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.stackup.fi&sz=128",
+      "confidence": 100,
+      "cname": "65d2a7d63e2c0ef88ce60106.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.stackup.fi",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Ciro",
+      "website": "https://www.ciro.io/",
+      "trustCenter": "https://trust.ciro.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.ciro.io/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.ciro.io/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Julius",
+      "website": "https://julius.ai",
+      "trustCenter": "https://trust.julius.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://julius.ai&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://julius.ai",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Layerup",
+      "website": "https://www.uselayerup.com/",
+      "trustCenter": "https://trust.uselayerup.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.uselayerup.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.uselayerup.com/",
+      "ycBatch": "S22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Reality Defender",
+      "website": "http://www.realitydefender.com",
+      "trustCenter": "https://trust.realitydefender.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.realitydefender.com&sz=128",
+      "confidence": 100,
+      "cname": "638a8ee0d19d6f53e610bacb.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.realitydefender.com",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Seis",
+      "website": "https://www.seis.com",
+      "trustCenter": "https://trust.seis.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.seis.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.seis.com",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Rally UXR",
+      "website": "https://www.rallyuxr.com/",
+      "trustCenter": "https://trust.rallyuxr.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.rallyuxr.com/&sz=128",
+      "confidence": 100,
+      "cname": "61c34362a8b196130390b041.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.rallyuxr.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Float Health",
+      "website": "https://floathealth.com/",
+      "trustCenter": "https://trust.floathealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://floathealth.com/&sz=128",
+      "confidence": 100,
+      "cname": "65831b3dea18d7882cbfb3ca.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://floathealth.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Broccoli AI",
+      "website": "https://www.broccoli.com/",
+      "trustCenter": "https://trust.broccoli.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.broccoli.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.broccoli.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Velt",
+      "website": "https://velt.dev",
+      "trustCenter": "https://trust.velt.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://velt.dev&sz=128",
+      "confidence": 100,
+      "cname": "64bb2826bea256dab26532e5.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2",
+        "HIPAA",
+        "audit"
+      ],
+      "domain": "https://velt.dev",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Flagright",
+      "website": "https://flagright.com",
+      "trustCenter": "https://trust.flagright.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://flagright.com&sz=128",
+      "confidence": 100,
+      "cname": "61bbbe23a8b1961303a2bc7f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://flagright.com",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Firezone",
+      "website": "https://www.firezone.dev",
+      "trustCenter": "https://trust.firezone.dev",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.firezone.dev&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.firezone.dev",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Lenk",
+      "website": "https://getlenk.com/",
+      "trustCenter": "https://trust.getlenk.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getlenk.com/&sz=128",
+      "confidence": 100,
+      "cname": "63ab4a403be401fb60459246.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://getlenk.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Complif",
+      "website": "https://complif.com",
+      "trustCenter": "https://trust.complif.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://complif.com&sz=128",
+      "confidence": 100,
+      "cname": "63d83ad9b6fde6e7c9a140ad.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://complif.com",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Happl",
+      "website": "https://happl.com/",
+      "trustCenter": "https://trust.happl.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://happl.com/&sz=128",
+      "confidence": 100,
+      "cname": "63d283e0585fe39682a4fcd6.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://happl.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Invert",
+      "website": "http://www.invertbio.com/",
+      "trustCenter": "https://trust.invertbio.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.invertbio.com/&sz=128",
+      "confidence": 100,
+      "cname": "63456609e0bf35c448dafcda.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.invertbio.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Nest Genomics",
+      "website": "https://nestgenomics.com",
+      "trustCenter": "https://trust.nestgenomics.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://nestgenomics.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://nestgenomics.com",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Perl Street",
+      "website": "https://perlstreet.com/",
+      "trustCenter": "https://trust.perlstreet.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://perlstreet.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://perlstreet.com/",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "GrowthBook",
+      "website": "https://www.growthbook.io",
+      "trustCenter": "https://trust.growthbook.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.growthbook.io&sz=128",
+      "confidence": 100,
+      "cname": "630fdb73d6bce29eb107df7f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.growthbook.io",
+      "ycBatch": "W22",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Toku",
+      "website": "https://trytoku.com/",
+      "trustCenter": "https://trust.trytoku.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://trytoku.com/&sz=128",
+      "confidence": 100,
+      "cname": "62619b9ca41825ecf792b538.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://trytoku.com/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Nash",
+      "website": "https://www.usenash.com/",
+      "trustCenter": "https://trust.usenash.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.usenash.com/&sz=128",
+      "confidence": 100,
+      "cname": "63729c5ae0bf35c448e2e84c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.usenash.com/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Synder",
+      "website": "https://synder.com",
+      "trustCenter": "https://trust.synder.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://synder.com&sz=128",
+      "confidence": 100,
+      "cname": "612d049b85dbc71bb84ba94c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://synder.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Café",
+      "website": "https://at.cafe",
+      "trustCenter": "https://trust.at.cafe",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://at.cafe&sz=128",
+      "confidence": 100,
+      "cname": "613b2e7185dbc71bb87009e2.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2"
+      ],
+      "domain": "https://at.cafe",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Storylane",
+      "website": "https://www.storylane.io/",
+      "trustCenter": "https://trust.storylane.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.storylane.io/&sz=128",
+      "confidence": 100,
+      "cname": "62d6fc331d4d716d609b89bc.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.storylane.io/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Waterplan",
+      "website": "http://waterplan.com",
+      "trustCenter": "https://trust.waterplan.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://waterplan.com&sz=128",
+      "confidence": 100,
+      "cname": "63e27791b6fde6e7c90d0290.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://waterplan.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Tenyks",
+      "website": "http://tenyks.ai/",
+      "trustCenter": "https://trust.tenyks.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://tenyks.ai/&sz=128",
+      "confidence": 100,
+      "cname": "6593c672a1cb837ccc4c027e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://tenyks.ai/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Coast",
+      "website": "https://trycoast.com",
+      "trustCenter": "https://trust.trycoast.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://trycoast.com&sz=128",
+      "confidence": 100,
+      "cname": "6451b8d5f2e7f0df0bb9358d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://trycoast.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Akute Health",
+      "website": "https://www.akutehealth.com",
+      "trustCenter": "https://trust.akutehealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.akutehealth.com&sz=128",
+      "confidence": 100,
+      "cname": "630d2916d6bce29eb151c44c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.akutehealth.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "CoLoop",
+      "website": "https://coloop.ai/",
+      "trustCenter": "https://trust.coloop.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://coloop.ai/&sz=128",
+      "confidence": 100,
+      "cname": "6556537c734955947e10f67c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://coloop.ai/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Formance",
+      "website": "https://formance.com",
+      "trustCenter": "https://trust.formance.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://formance.com&sz=128",
+      "confidence": 100,
+      "cname": "61700d5d1157254bd6f004b7.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://formance.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Cero",
+      "website": "https://cero.ai",
+      "trustCenter": "https://trust.cero.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cero.ai&sz=128",
+      "confidence": 100,
+      "cname": "66aa8b4a17f6ad4ce86878db.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "ISO 27001"
+      ],
+      "domain": "https://cero.ai",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "DailyBot",
+      "website": "https://www.dailybot.com/",
+      "trustCenter": "https://trust.dailybot.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.dailybot.com/&sz=128",
+      "confidence": 100,
+      "cname": "61a663723d7c181b0ce4959b.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "audit",
+        "data security"
+      ],
+      "domain": "https://www.dailybot.com/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Keeper",
+      "website": "https://www.keeper.app",
+      "trustCenter": "https://trust.keeper.app",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.keeper.app&sz=128",
+      "confidence": 100,
+      "cname": "613bf91f85dbc71bb85d9a3d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.keeper.app",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Archbee",
+      "website": "https://www.archbee.com",
+      "trustCenter": "https://security.archbee.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.archbee.com&sz=128",
+      "confidence": 95,
+      "cname": "6297750772eb9d1f26fbcc70.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2",
+        "GDPR"
+      ],
+      "domain": "https://www.archbee.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Carbonfact",
+      "website": "http://www.carbonfact.com",
+      "trustCenter": "https://trust.carbonfact.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.carbonfact.com&sz=128",
+      "confidence": 100,
+      "cname": "65eb6871a28d5cb3f12ee323.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "http://www.carbonfact.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Legion Health",
+      "website": "https://legionhealth.com",
+      "trustCenter": "https://trust.legionhealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://legionhealth.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://legionhealth.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Epsilon3",
+      "website": "https://www.epsilon3.io/",
+      "trustCenter": "https://trust.epsilon3.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.epsilon3.io/&sz=128",
+      "confidence": 100,
+      "cname": "60f17bd7a387b9f34a7aaa18.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.epsilon3.io/",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Openlayer",
+      "website": "https://openlayer.com",
+      "trustCenter": "https://trust.openlayer.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://openlayer.com&sz=128",
+      "confidence": 100,
+      "cname": "621d71811a9cca65dfafe047.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://openlayer.com",
+      "ycBatch": "S21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Navattic",
+      "website": "https://www.navattic.com/",
+      "trustCenter": "https://trust.navattic.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.navattic.com/&sz=128",
+      "confidence": 100,
+      "cname": "60b7e15b7ef8ea6b14b7200a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.navattic.com/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gigs",
+      "website": "https://gigs.com",
+      "trustCenter": "https://trust.gigs.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://gigs.com&sz=128",
+      "confidence": 100,
+      "cname": "65c11f1f9031fb0f705b8a90.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://gigs.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Spline",
+      "website": "http://spline.design/",
+      "trustCenter": "https://trust.spline.design",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://spline.design/&sz=128",
+      "confidence": 100,
+      "cname": "64c837906491f66d23a96661.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://spline.design/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "FlutterFlow",
+      "website": "https://flutterflow.io",
+      "trustCenter": "https://trust.flutterflow.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://flutterflow.io&sz=128",
+      "confidence": 100,
+      "cname": "643f0230a0c2c071a7c0a3f7.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://flutterflow.io",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Chatwoot",
+      "website": "https://www.chatwoot.com",
+      "trustCenter": "https://trust.chatwoot.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.chatwoot.com&sz=128",
+      "confidence": 100,
+      "cname": "63051aab4fe82dcd27118d62.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.chatwoot.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Feroot Security",
+      "website": "https://www.feroot.com",
+      "trustCenter": "https://trust.feroot.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.feroot.com&sz=128",
+      "confidence": 100,
+      "cname": "61eec7d94df7adeada9d0bb1.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.feroot.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Tint",
+      "website": "http://www.tint.ai",
+      "trustCenter": "https://trust.tint.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.tint.ai&sz=128",
+      "confidence": 100,
+      "cname": "6554ff6a734955947edcb94f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.tint.ai",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Tractian",
+      "website": "https://tractian.com",
+      "trustCenter": "https://trust.tractian.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://tractian.com&sz=128",
+      "confidence": 100,
+      "cname": "633c39d5372ed4d85bdb311d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://tractian.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "R2",
+      "website": "https://r2.co/",
+      "trustCenter": "https://trust.r2.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://r2.co/&sz=128",
+      "confidence": 100,
+      "cname": "633203f2372ed4d85be33697.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://r2.co/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Rinsed",
+      "website": "https://www.rinsed.com",
+      "trustCenter": "https://trust.rinsed.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.rinsed.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.rinsed.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "BrioHR",
+      "website": "https://briohr.com/",
+      "trustCenter": "https://trust.briohr.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://briohr.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://briohr.com/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Fathom",
+      "website": "https://fathom.video",
+      "trustCenter": "https://trust.fathom.video",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://fathom.video&sz=128",
+      "confidence": 100,
+      "cname": "5f5aa34001a5941af280514a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://fathom.video",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Promoted.ai",
+      "website": "http://www.promoted.ai",
+      "trustCenter": "https://trust.promoted.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.promoted.ai&sz=128",
+      "confidence": 100,
+      "cname": "5ff89dec3f7abda78653ed92.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.promoted.ai",
+      "ycBatch": "W21",
+      "ycStatus": "Acquired",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gradia Health",
+      "website": "https://www.gradia.com/",
+      "trustCenter": "https://trust.gradia.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.gradia.com/&sz=128",
+      "confidence": 100,
+      "cname": "686d8eccb2f36a5e9f07a280.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data protection"
+      ],
+      "domain": "https://www.gradia.com/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Encord",
+      "website": "https://encord.com",
+      "trustCenter": "https://trust.encord.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://encord.com&sz=128",
+      "confidence": 100,
+      "cname": "67b2fbb50da4843366282de3.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://encord.com",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "ModernLoop",
+      "website": "http://modernloop.io",
+      "trustCenter": "https://trust.modernloop.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://modernloop.io&sz=128",
+      "confidence": 100,
+      "cname": "6014f49ec91023ce78656b85.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://modernloop.io",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "SigNoz",
+      "website": "https://signoz.io",
+      "trustCenter": "https://trust.signoz.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://signoz.io&sz=128",
+      "confidence": 100,
+      "cname": "64d20b0e6491f66d2326043f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://signoz.io",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Humaans",
+      "website": "https://humaans.io",
+      "trustCenter": "https://trust.humaans.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://humaans.io&sz=128",
+      "confidence": 100,
+      "cname": "6127aeee85dbc71bb8591881.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://humaans.io",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Abacum",
+      "website": "https://www.abacum.ai/",
+      "trustCenter": "https://trust.abacum.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.abacum.ai/&sz=128",
+      "confidence": 100,
+      "cname": "66aabd0217f6ad4ce86fc6fc.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.abacum.ai/",
+      "ycBatch": "W21",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gather",
+      "website": "https://www.gather.town/",
+      "trustCenter": "https://trust.gather.town",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.gather.town/&sz=128",
+      "confidence": 100,
+      "cname": "5fd16be1a228f6b6f770a61e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.gather.town/",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "Consumer",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Zuddl",
+      "website": "http://www.zuddl.com",
+      "trustCenter": "https://trust.zuddl.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.zuddl.com&sz=128",
+      "confidence": 100,
+      "cname": "6087225e8041cfc516949137.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.zuddl.com",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Laylo",
+      "website": "https://laylo.com",
+      "trustCenter": "https://trustcenter.laylo.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://laylo.com&sz=128",
+      "confidence": 96,
+      "cname": "626b1a51a41825ecf77472a6.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://laylo.com",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Minimum",
+      "website": "https://minimum.com",
+      "trustCenter": "https://trust.minimum.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://minimum.com&sz=128",
+      "confidence": 100,
+      "cname": "6282a5b03142d7785bb3c14c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://minimum.com",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vitable Health",
+      "website": "https://vitablehealth.com",
+      "trustCenter": "https://trust.vitablehealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://vitablehealth.com&sz=128",
+      "confidence": 100,
+      "cname": "665a3b7e3a3cc20954e604e4.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://vitablehealth.com",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Atomic",
+      "website": "https://www.atomicvest.com/",
+      "trustCenter": "https://trust.atomicvest.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.atomicvest.com/&sz=128",
+      "confidence": 100,
+      "cname": "60a82c947ef8ea6b14c4e031.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.atomicvest.com/",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Seal",
+      "website": "https://seal.run",
+      "trustCenter": "https://trust.seal.run",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://seal.run&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://seal.run",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Humanloop",
+      "website": "https://humanloop.com",
+      "trustCenter": "https://trust.humanloop.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://humanloop.com&sz=128",
+      "confidence": 100,
+      "cname": "63caae47585fe396828041cc.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "certification"
+      ],
+      "domain": "https://humanloop.com",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hypotenuse AI",
+      "website": "https://hypotenuse.ai/",
+      "trustCenter": "https://trust.hypotenuse.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://hypotenuse.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://hypotenuse.ai/",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Charityvest",
+      "website": "https://www.charityvest.org",
+      "trustCenter": "https://trust.charityvest.org",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.charityvest.org&sz=128",
+      "confidence": 100,
+      "cname": "630fe857d6bce29eb1811374.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.charityvest.org",
+      "ycBatch": "S20",
+      "ycStatus": "Acquired",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Belvo",
+      "website": "https://belvo.com",
+      "trustCenter": "https://trust.belvo.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://belvo.com&sz=128",
+      "confidence": 100,
+      "cname": "602eaf07a181ea14b1f39401.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://belvo.com",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Raycast",
+      "website": "https://raycast.com",
+      "trustCenter": "https://trust.raycast.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://raycast.com&sz=128",
+      "confidence": 100,
+      "cname": "677b9c5d67b67d72b56cbc0c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://raycast.com",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "DeepSource",
+      "website": "https://deepsource.com/",
+      "trustCenter": "https://trust.deepsource.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://deepsource.com/&sz=128",
+      "confidence": 100,
+      "cname": "5f128b9ee5c71eb76187339e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://deepsource.com/",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Riot",
+      "website": "https://tryriot.com/",
+      "trustCenter": "https://trust.tryriot.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://tryriot.com/&sz=128",
+      "confidence": 100,
+      "cname": "62bc668bcdcf38605b4c516d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://tryriot.com/",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Photoroom",
+      "website": "https://photoroom.com/",
+      "trustCenter": "https://trust.photoroom.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://photoroom.com/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://photoroom.com/",
+      "ycBatch": "S20",
+      "ycStatus": "Active",
+      "ycIndustry": "Consumer",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Cortex",
+      "website": "https://cortex.io/",
+      "trustCenter": "https://trust.cortex.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://cortex.io/&sz=128",
+      "confidence": 100,
+      "cname": "606f967094954914f81f484a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://cortex.io/",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "SINAI",
+      "website": "http://www.sinai.com",
+      "trustCenter": "https://trust.sinai.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.sinai.com&sz=128",
+      "confidence": 100,
+      "cname": "61b7eb31a8b1961303f26295.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "http://www.sinai.com",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Segmed",
+      "website": "https://segmed.ai",
+      "trustCenter": "https://trust.segmed.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://segmed.ai&sz=128",
+      "confidence": 100,
+      "cname": "60b004a17ef8ea6b149bc5a8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "https://segmed.ai",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Karat Financial",
+      "website": "http://trykarat.com",
+      "trustCenter": "https://trust.trykarat.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://trykarat.com&sz=128",
+      "confidence": 100,
+      "cname": "677d9aa603d5ba164346f707.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://trykarat.com",
+      "ycBatch": "W20",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Taskade",
+      "website": "https://www.taskade.com",
+      "trustCenter": "https://trust.taskade.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.taskade.com&sz=128",
+      "confidence": 100,
+      "cname": "67c2343be4708bdee47c5129.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.taskade.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Curri",
+      "website": "http://www.curri.com",
+      "trustCenter": "https://trust.curri.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.curri.com&sz=128",
+      "confidence": 100,
+      "cname": "620a73141a9cca65df9eebb1.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.curri.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "Real Estate and Construction",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "zeroheight",
+      "website": "https://zeroheight.com",
+      "trustCenter": "https://trust.zeroheight.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://zeroheight.com&sz=128",
+      "confidence": 100,
+      "cname": "623a156bb2942148a6952be1.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2",
+        "ISO 27001"
+      ],
+      "domain": "https://zeroheight.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hightouch",
+      "website": "https://hightouch.com/",
+      "trustCenter": "https://trust.hightouch.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://hightouch.com/&sz=128",
+      "confidence": 100,
+      "cname": "600b65f62ba533aea92d902d.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://hightouch.com/",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "CoLab",
+      "website": "http://colabsoftware.com",
+      "trustCenter": "https://trust.colabsoftware.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://colabsoftware.com&sz=128",
+      "confidence": 100,
+      "cname": "65c101861ae6e1c4b6521125.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://colabsoftware.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Mindset Health",
+      "website": "https://www.mindsethealth.com",
+      "trustCenter": "https://trust.mindsethealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.mindsethealth.com&sz=128",
+      "confidence": 100,
+      "cname": "658b644f4807912dd68508b7.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.mindsethealth.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Embrace",
+      "website": "https://embrace.io",
+      "trustCenter": "https://trust.embrace.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://embrace.io&sz=128",
+      "confidence": 100,
+      "cname": "67631fb38ce3058cc35ff8ed.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://embrace.io",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Narrator",
+      "website": "https://www.narratordata.com/",
+      "trustCenter": "https://trust.narratordata.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.narratordata.com/&sz=128",
+      "confidence": 100,
+      "cname": "604009ac96bef488c364ab0b.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.narratordata.com/",
+      "ycBatch": "S19",
+      "ycStatus": "Inactive",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Zeal",
+      "website": "https://www.zeal.com",
+      "trustCenter": "https://trust.zeal.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.zeal.com&sz=128",
+      "confidence": 100,
+      "cname": "5e73a2560ff5eb7ba928f95a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.zeal.com",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vouch",
+      "website": "http://vouch.us",
+      "trustCenter": "https://trust.vouch.us",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://vouch.us&sz=128",
+      "confidence": 100,
+      "cname": "66969c4a865ac57314a5a960.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://vouch.us",
+      "ycBatch": "S19",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "OutRival, Inc.",
+      "website": "https://outrival.com/",
+      "trustCenter": "https://trust.outrival.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://outrival.com/&sz=128",
+      "confidence": 100,
+      "cname": "64e4cd298dfab7d4e4dbf03c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://outrival.com/",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Glide",
+      "website": "https://www.glideapps.com",
+      "trustCenter": "https://trust.glideapps.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.glideapps.com&sz=128",
+      "confidence": 100,
+      "cname": "6093c92c8041cfc516f8fa76.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.glideapps.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "AmpUp",
+      "website": "https://ampup.io",
+      "trustCenter": "https://trust.ampup.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://ampup.io&sz=128",
+      "confidence": 100,
+      "cname": "611eb15885dbc71bb85e3e21.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://ampup.io",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "Consumer",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Alpaca",
+      "website": "https://alpaca.markets/",
+      "trustCenter": "https://trust.alpaca.markets",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://alpaca.markets/&sz=128",
+      "confidence": 100,
+      "cname": "604165d496bef488c30043cf.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://alpaca.markets/",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Dagger",
+      "website": "https://dagger.io",
+      "trustCenter": "https://trust.dagger.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://dagger.io&sz=128",
+      "confidence": 100,
+      "cname": "64e4d7058dfab7d4e419c31f.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://dagger.io",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Doppler",
+      "website": "https://doppler.com",
+      "trustCenter": "https://trust.doppler.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://doppler.com&sz=128",
+      "confidence": 100,
+      "cname": "5f3abef1bb4be9f99ca424fb.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "security practices"
+      ],
+      "domain": "https://doppler.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Handle.com",
+      "website": "https://www.handle.com",
+      "trustCenter": "https://trust.handle.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.handle.com&sz=128",
+      "confidence": 100,
+      "cname": "63cecae3585fe39682f3b2bd.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.handle.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "Real Estate and Construction",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Bunkerhill Health",
+      "website": "http://bunkerhillhealth.com",
+      "trustCenter": "https://trust.bunkerhillhealth.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://bunkerhillhealth.com&sz=128",
+      "confidence": 100,
+      "cname": "62716eeea41825ecf7eb3628.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://bunkerhillhealth.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Sapling.ai",
+      "website": "https://sapling.ai",
+      "trustCenter": "https://trust.sapling.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://sapling.ai&sz=128",
+      "confidence": 100,
+      "cname": "60218905a181ea14b1fb5fa2.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://sapling.ai",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "GoLinks",
+      "website": "https://www.golinks.io",
+      "trustCenter": "https://trust.golinks.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.golinks.io&sz=128",
+      "confidence": 100,
+      "cname": "6345fcfbe0bf35c448db2669.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.golinks.io",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Middesk",
+      "website": "http://www.middesk.com",
+      "trustCenter": "https://trust.middesk.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.middesk.com&sz=128",
+      "confidence": 100,
+      "cname": "5d76ac04af1c674e4e9b65cd.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.middesk.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hatch",
+      "website": "http://usehatch.ai",
+      "trustCenter": "https://trust.usehatch.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://usehatch.ai&sz=128",
+      "confidence": 100,
+      "cname": "66900d3c59091c1ee91d2956.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://usehatch.ai",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Convex",
+      "website": "https://www.convex.com",
+      "trustCenter": "https://trust.convex.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.convex.com&sz=128",
+      "confidence": 100,
+      "cname": "5f516a423a6f4bbae8687ff8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.convex.com",
+      "ycBatch": "W19",
+      "ycStatus": "Acquired",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Convictional",
+      "website": "https://convictional.com",
+      "trustCenter": "https://trust.convictional.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://convictional.com&sz=128",
+      "confidence": 100,
+      "cname": "5f178b9de5c71eb761f785a8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://convictional.com",
+      "ycBatch": "W19",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "MentalHappy",
+      "website": "http://www.MentalHappy.com",
+      "trustCenter": "https://trust.MentalHappy.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.MentalHappy.com&sz=128",
+      "confidence": 100,
+      "cname": "66e190644617356976b27d30.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.MentalHappy.com",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Mytos",
+      "website": "https://www.mytos.bio",
+      "trustCenter": "https://trust.mytos.bio",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.mytos.bio&sz=128",
+      "confidence": 100,
+      "cname": "6602a4c86cccf5f0002135eb.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.mytos.bio",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Quickchat AI",
+      "website": "https://quickchat.ai/",
+      "trustCenter": "https://trust.quickchat.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://quickchat.ai/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://quickchat.ai/",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Duffel",
+      "website": "https://duffel.com/",
+      "trustCenter": "https://trust.duffel.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://duffel.com/&sz=128",
+      "confidence": 100,
+      "cname": "620538bfab953e9fcfe839d8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://duffel.com/",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Anima App",
+      "website": "https://www.animaapp.com",
+      "trustCenter": "https://trust.animaapp.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.animaapp.com&sz=128",
+      "confidence": 100,
+      "cname": "669fd2c0865ac573149df1c3.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.animaapp.com",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vimcal",
+      "website": "http://www.vimcal.com",
+      "trustCenter": "https://trust.vimcal.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.vimcal.com&sz=128",
+      "confidence": 95,
+      "cname": "proxy.hypercomplytrust.com",
+      "keywords": [],
+      "domain": "http://www.vimcal.com",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Inscribe",
+      "website": "https://www.inscribe.ai/",
+      "trustCenter": "https://trust.inscribe.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.inscribe.ai/&sz=128",
+      "confidence": 100,
+      "cname": "5bd0a570f5ea8a08d7a53474.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.inscribe.ai/",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Modern Treasury",
+      "website": "http://www.moderntreasury.com/",
+      "trustCenter": "https://trust.moderntreasury.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.moderntreasury.com/&sz=128",
+      "confidence": 100,
+      "cname": "5b9aecddf5ea8a08d76ccea1.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://www.moderntreasury.com/",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Klarity",
+      "website": "http://klarity.ai",
+      "trustCenter": "https://trust.klarity.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://klarity.ai&sz=128",
+      "confidence": 100,
+      "cname": "605e00b012cb6fe1881317c5.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://klarity.ai",
+      "ycBatch": "S18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Veriff",
+      "website": "https://veriff.com/",
+      "trustCenter": "https://trust.veriff.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://veriff.com/&sz=128",
+      "confidence": 100,
+      "cname": "63a46a873be401fb60cbb0ff.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://veriff.com/",
+      "ycBatch": "W18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Observe.AI",
+      "website": "https://observe.ai",
+      "trustCenter": "https://trust.observe.ai",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://observe.ai&sz=128",
+      "confidence": 95,
+      "cname": "proxy.hypercomplytrust.com",
+      "keywords": [],
+      "domain": "https://observe.ai",
+      "ycBatch": "W18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Treasury Prime",
+      "website": "https://treasuryprime.com",
+      "trustCenter": "https://trustcenter.treasuryprime.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://treasuryprime.com&sz=128",
+      "confidence": 96,
+      "cname": "5a6b7b6c5133f16056a310ed.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://treasuryprime.com",
+      "ycBatch": "W18",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Simetrik",
+      "website": "https://simetrik.com",
+      "trustCenter": "https://trust.simetrik.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://simetrik.com&sz=128",
+      "confidence": 100,
+      "cname": "667b5a6ebb4f7b57d3197659.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://simetrik.com",
+      "ycBatch": "W18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Worklytics",
+      "website": "https://www.worklytics.co",
+      "trustCenter": "https://trust.worklytics.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.worklytics.co&sz=128",
+      "confidence": 100,
+      "cname": "5d35fec00a606c1d1e5334ad.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.worklytics.co",
+      "ycBatch": "W18",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Just Appraised",
+      "website": "https://www.justappraised.com",
+      "trustCenter": "https://trust.justappraised.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.justappraised.com&sz=128",
+      "confidence": 100,
+      "cname": "6217cf161a9cca65dfd073cb.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.justappraised.com",
+      "ycBatch": "S17",
+      "ycStatus": "Active",
+      "ycIndustry": "Government",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Rabbet",
+      "website": "http://rabbet.com",
+      "trustCenter": "https://trust.rabbet.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://rabbet.com&sz=128",
+      "confidence": 100,
+      "cname": "5f8ef7305a59785a54ae666a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://rabbet.com",
+      "ycBatch": "S17",
+      "ycStatus": "Active",
+      "ycIndustry": "Real Estate and Construction",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Prelim",
+      "website": "https://prelim.com/",
+      "trustCenter": "https://trust.prelim.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://prelim.com/&sz=128",
+      "confidence": 100,
+      "cname": "632a45d3372ed4d85be5ed68.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://prelim.com/",
+      "ycBatch": "S17",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "UpCodes",
+      "website": "https://up.codes/",
+      "trustCenter": "https://trust.up.codes",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://up.codes/&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://up.codes/",
+      "ycBatch": "S17",
+      "ycStatus": "Active",
+      "ycIndustry": "Real Estate and Construction",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Jerry",
+      "website": "https://getjerry.com",
+      "trustCenter": "https://trust.getjerry.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://getjerry.com&sz=128",
+      "confidence": 100,
+      "cname": "608b03e38041cfc516961f48.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://getjerry.com",
+      "ycBatch": "S17",
+      "ycStatus": "Active",
+      "ycIndustry": "Fintech",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Humi",
+      "website": "http://www.humi.ca",
+      "trustCenter": "https://trust.humi.ca",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.humi.ca&sz=128",
+      "confidence": 100,
+      "cname": "63728df5e0bf35c44847fb55.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "data security"
+      ],
+      "domain": "http://www.humi.ca",
+      "ycBatch": "W17",
+      "ycStatus": "Acquired",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Voiceops",
+      "website": "https://voiceops.com",
+      "trustCenter": "https://trust.voiceops.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://voiceops.com&sz=128",
+      "confidence": 100,
+      "cname": "6351d949e0bf35c448435b5c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://voiceops.com",
+      "ycBatch": "W17",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Vetcove",
+      "website": "https://www.vetcove.com",
+      "trustCenter": "https://trust.vetcove.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.vetcove.com&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "https://www.vetcove.com",
+      "ycBatch": "S16",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gecko Robotics",
+      "website": "https://www.geckorobotics.com",
+      "trustCenter": "https://trust.geckorobotics.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.geckorobotics.com&sz=128",
+      "confidence": 100,
+      "cname": "669562b3865ac573140b78ba.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.geckorobotics.com",
+      "ycBatch": "W16",
+      "ycStatus": "Active",
+      "ycIndustry": "Industrials",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Castle",
+      "website": "https://castle.io",
+      "trustCenter": "https://trust.castle.io",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://castle.io&sz=128",
+      "confidence": 100,
+      "cname": "612fb18485dbc71bb8773bad.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://castle.io",
+      "ycBatch": "W16",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Daily",
+      "website": "https://daily.co",
+      "trustCenter": "https://trust.daily.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://daily.co&sz=128",
+      "confidence": 100,
+      "cname": "5f494afbbb4be9f99c4141c5.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://daily.co",
+      "ycBatch": "W16",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Go1",
+      "website": "https://go1.com",
+      "trustCenter": "https://trust.go1.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://go1.com&sz=128",
+      "confidence": 100,
+      "cname": "615b773d1157254bd6031bd8.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://go1.com",
+      "ycBatch": "S15",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "PartnerStack",
+      "website": "https://partnerstack.com",
+      "trustCenter": "https://trust.partnerstack.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://partnerstack.com&sz=128",
+      "confidence": 100,
+      "cname": "65f1f4d9f2693ee6e2e57ae4.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://partnerstack.com",
+      "ycBatch": "S15",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Teleport",
+      "website": "https://goteleport.com",
+      "trustCenter": "https://trust.goteleport.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://goteleport.com&sz=128",
+      "confidence": 100,
+      "cname": "664da6b53a3cc20954258069.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2",
+        "ISO 27001",
+        "HIPAA",
+        "audit"
+      ],
+      "domain": "https://goteleport.com",
+      "ycBatch": "S15",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "NimbleRx",
+      "website": "http://nimblerx.com",
+      "trustCenter": "https://trust.nimblerx.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://nimblerx.com&sz=128",
+      "confidence": 100,
+      "cname": "635ae03ae0bf35c448f108e4.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://nimblerx.com",
+      "ycBatch": "W15",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "ReadMe",
+      "website": "http://readme.com",
+      "trustCenter": "https://trust.readme.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://readme.com&sz=128",
+      "confidence": 100,
+      "cname": "5d647e00af1c674e4eaf5d1e.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://readme.com",
+      "ycBatch": "W15",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Qventus",
+      "website": "http://qventus.com",
+      "trustCenter": "https://trust.qventus.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://qventus.com&sz=128",
+      "confidence": 100,
+      "cname": "6780486b7d502d812d745963.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://qventus.com",
+      "ycBatch": "W15",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Front",
+      "website": "https://front.com",
+      "trustCenter": "https://trust.front.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://front.com&sz=128",
+      "confidence": 100,
+      "cname": "673f6c3d6b990cb0fb75a106.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://front.com",
+      "ycBatch": "S14",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Hive",
+      "website": "http://www.hive.co",
+      "trustCenter": "https://trust.hive.co",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.hive.co&sz=128",
+      "confidence": 97,
+      "cname": "trust.oneleet.com",
+      "keywords": [
+        "trust center"
+      ],
+      "domain": "http://www.hive.co",
+      "ycBatch": "S14",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Permutive",
+      "website": "https://permutive.com",
+      "trustCenter": "https://trust.permutive.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://permutive.com&sz=128",
+      "confidence": 100,
+      "cname": "60d979b8a387b9f34a920c2c.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://permutive.com",
+      "ycBatch": "S14",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "SketchDeck",
+      "website": "https://sketchdeck.com",
+      "trustCenter": "https://trust.sketchdeck.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://sketchdeck.com&sz=128",
+      "confidence": 100,
+      "cname": "61c2780da8b1961303f83ab5.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://sketchdeck.com",
+      "ycBatch": "W14",
+      "ycStatus": "Acquired",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "DevCycle",
+      "website": "http://devcycle.com",
+      "trustCenter": "https://trust.devcycle.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://devcycle.com&sz=128",
+      "confidence": 100,
+      "cname": "625458fba41825ecf71f16f0.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://devcycle.com",
+      "ycBatch": "W14",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Lob",
+      "website": "http://lob.com",
+      "trustCenter": "https://trust.lob.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://lob.com&sz=128",
+      "confidence": 100,
+      "cname": "66995e76865ac5731414dbb7.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "http://lob.com",
+      "ycBatch": "S13",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "EasyPost",
+      "website": "http://easypost.com",
+      "trustCenter": "https://trust.easypost.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=http://easypost.com&sz=128",
+      "confidence": 100,
+      "cname": "6454109df2e7f0df0bbe21a9.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "SOC 2",
+        "audit"
+      ],
+      "domain": "http://easypost.com",
+      "ycBatch": "S13",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Submittable",
+      "website": "https://www.submittable.com/",
+      "trustCenter": "https://trust.submittable.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.submittable.com/&sz=128",
+      "confidence": 100,
+      "cname": "63d069a3585fe3968285c273.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance",
+        "certification",
+        "data security"
+      ],
+      "domain": "https://www.submittable.com/",
+      "ycBatch": "S12",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "DemandSphere",
+      "website": "https://www.demandsphere.com/",
+      "trustCenter": "https://trust.demandsphere.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.demandsphere.com/&sz=128",
+      "confidence": 100,
+      "cname": "66d6110f46173569763d11d5.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.demandsphere.com/",
+      "ycBatch": "S10",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "AgileMD",
+      "website": "https://agilemd.com",
+      "trustCenter": "https://trust.agilemd.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://agilemd.com&sz=128",
+      "confidence": 100,
+      "cname": "5f05b636e6fee8e7e504f93a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://agilemd.com",
+      "ycBatch": "S11",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Quartzy",
+      "website": "https://www.quartzy.com",
+      "trustCenter": "https://trust.quartzy.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.quartzy.com&sz=128",
+      "confidence": 100,
+      "cname": "623a0ed3b2942148a692be5a.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://www.quartzy.com",
+      "ycBatch": "S11",
+      "ycStatus": "Active",
+      "ycIndustry": "Healthcare",
+      "autoPRReady": true
+    },
+    {
+      "companyName": "Gusto",
+      "website": "https://gusto.com",
+      "trustCenter": "https://trust.gusto.com",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=https://gusto.com&sz=128",
+      "confidence": 100,
+      "cname": "623bbc72b2942148a665bff3.cname.vantatrust.com",
+      "keywords": [
+        "trust center",
+        "security",
+        "compliance"
+      ],
+      "domain": "https://gusto.com",
+      "ycBatch": "W12",
+      "ycStatus": "Active",
+      "ycIndustry": "B2B",
+      "autoPRReady": true
+    }
+  ],
+  "generatedAt": "2025-10-16T17:44:43.162Z",
+  "totalHighConfidence": 274,
+  "autoPRThreshold": 95
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "TrustLists",
+  "theme": "mint",
+  "logo": {
+    "dark": "/logo.svg",
+    "light": "/logo.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0D9488",
+    "light": "#14B8A6",
+    "dark": "#0F766E",
+    "anchors": {
+      "from": "#0D9488",
+      "to": "#14B8A6"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@trustlists.org"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "View Trust Centers",
+    "url": "https://trustlists.org"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/FelixMichaels/TrustLists"
+    },
+    {
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://trustlists.org"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/endpoints",
+        "api-reference/trust-centers",
+        "api-reference/stats"
+      ]
+    },
+    {
+      "group": "Contributing",
+      "pages": [
+        "contributing/guidelines",
+        "contributing/adding-trust-centers"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/FelixMichaels/TrustLists",
+    "linkedin": "https://linkedin.com/company/trustlists"
+  }
+}
