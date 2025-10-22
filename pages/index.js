@@ -305,7 +305,7 @@ Add any other context about the problem here.`);
         />
       </Head>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="min-h-screen bg-gray-50 dark:bg-slate-800">
         {/* In-App Notification */}
         {notification && (
           <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out ${
@@ -336,7 +336,7 @@ Add any other context about the problem here.`);
 
         <div className="xl:flex xl:h-screen xl:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="xl:w-96 2xl:w-[28rem] bg-white dark:bg-gray-800 shadow-sm xl:flex-shrink-0">
+          <div className="xl:w-96 2xl:w-[28rem] bg-white dark:bg-slate-700 shadow-sm xl:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8 text-center xl:text-left flex flex-col items-center xl:items-start">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -427,7 +427,7 @@ Add any other context about the problem here.`);
                       placeholder="Search Companies"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
+                      className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-slate-600 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
                     />
                     <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                       <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -447,7 +447,7 @@ Add any other context about the problem here.`);
                         className={`platform-filter-button flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium min-w-[140px] justify-between ${
                           showPlatformPanel || platformFilter !== 'all'
                             ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300'
-                            : 'bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                            : 'bg-white dark:bg-slate-700 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-600'
                         }`}
                       >
                         <div className="flex items-center gap-2">
@@ -468,7 +468,7 @@ Add any other context about the problem here.`);
               {/* Platform Filter Panel - Appears Below Search */}
               {platformPreviewEnabled && showPlatformPanel && (
                 <div className="platform-panel-container mb-6">
-                  <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
+                  <div className="bg-white dark:bg-slate-700 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-4">
                     <div className="flex items-center justify-between mb-3">
                       <h4 className="text-sm font-medium text-gray-900 dark:text-white">Filter by Platform</h4>
                       <button
@@ -493,7 +493,7 @@ Add any other context about the problem here.`);
                         className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                           platformFilter === 'all'
                             ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
+                            : 'bg-gray-100 dark:bg-slate-600 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-500 border border-transparent'
                         }`}
                       >
                         All platforms ({stats.totalCompanies})
@@ -510,7 +510,7 @@ Add any other context about the problem here.`);
                           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                             platformFilter === platform
                               ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
-                              : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
+                              : 'bg-gray-100 dark:bg-slate-600 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-500 border border-transparent'
                           }`}
                         >
                           {platform} ({count})
@@ -528,7 +528,7 @@ Add any other context about the problem here.`);
               {displayedTrustCenters.map((company, index) => (
                 <div
                   key={company.name + index}
-                  className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
+                  className="bg-white dark:bg-slate-700 rounded-xl border border-gray-200 dark:border-gray-700 p-4 sm:p-6 hover:shadow-lg transition-shadow duration-200"
                 >
                       {/* Company Header */}
                       <div className="flex items-center justify-between mb-6">
@@ -567,7 +567,7 @@ Add any other context about the problem here.`);
                           </button>
                           
                           {openMenuId === company.name + index && (
-                            <div className="absolute right-0 top-8 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
+                            <div className="absolute right-0 top-8 w-48 bg-white dark:bg-slate-600 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
                               <button
                                 onClick={() => {
                                   window.open(company.website, '_blank');
@@ -668,7 +668,7 @@ Add any other context about the problem here.`);
                     </button>
                     <button
                       onClick={showAll}
-                      className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors font-medium"
+                      className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-slate-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-500 transition-colors font-medium"
                     >
                       Show All ({allFilteredTrustCenters.length})
                     </button>
