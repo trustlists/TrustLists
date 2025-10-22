@@ -12,6 +12,9 @@
     "baseUrl": "https://trustlists.org/api",
     "auth": {
       "method": "none"
+    },
+    "playground": {
+      "display": "interactive"
     }
   },
   "navigation": {
@@ -28,13 +31,7 @@
           },
           {
             "group": "API Reference",
-            "pages": [
-              "api-playground",
-              "api-reference",
-              "api-reference/endpoints",
-              "api-reference/trust-centers",
-              "api-reference/stats"
-            ]
+            "openapi": "api.json"
           },
           {
             "group": "Contributing",
