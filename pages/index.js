@@ -305,7 +305,7 @@ Add any other context about the problem here.`);
         />
       </Head>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      <div className="min-h-screen bg-gray-50 dark:bg-docs-card">
         {/* In-App Notification */}
         {notification && (
           <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out ${
