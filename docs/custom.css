@@ -1,20 +1,20 @@
-/* Custom CSS to match main site button roundness */
+/* Custom CSS to match main site button roundness exactly */
 
-/* Override Mintlify's default button roundness */
+/* Override Mintlify's default button roundness to match main site */
 .mintlify-button,
 [data-mintlify-button],
 button[type="button"] {
-  border-radius: 0.5rem !important; /* rounded-lg */
+  border-radius: 0.75rem !important; /* rounded-xl - exact match to main site */
 }
 
 /* Specifically target the primary button */
 .mintlify-button-primary,
 [data-mintlify-button="primary"] {
-  border-radius: 0.5rem !important; /* rounded-lg */
+  border-radius: 0.75rem !important; /* rounded-xl - exact match to main site */
 }
 
 /* Target navbar buttons */
 .navbar button,
 .navbar .mintlify-button {
-  border-radius: 0.5rem !important; /* rounded-lg */
+  border-radius: 0.75rem !important; /* rounded-xl - exact match to main site */
 }
