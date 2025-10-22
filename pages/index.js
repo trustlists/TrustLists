@@ -336,7 +336,7 @@ Add any other context about the problem here.`);
 
         <div className="xl:flex xl:h-screen xl:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="xl:w-96 2xl:w-[28rem] bg-white dark:bg-gray-900 shadow-sm xl:flex-shrink-0">
+          <div className="xl:w-96 2xl:w-[28rem] bg-white dark:bg-docs-card shadow-sm xl:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8 text-center xl:text-left flex flex-col items-center xl:items-start">
               {/* Logo and Title */}
               <div className="mb-8">
