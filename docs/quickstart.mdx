@@ -32,23 +32,27 @@ curl "https://trustlists.org/api/trust-centers"
 <ResponseExample>
 ```json Success
 {
-  "trustCenters": [
+  "data": [
     {
       "name": "1Password",
-      "url": "https://trust.1password.com",
-      "platform": "Self-hosted",
-      "description": "Password manager security and compliance information"
+      "website": "https://1password.com/",
+      "trustCenter": "https://app.conveyor.com/profile/1password",
+      "platform": "Conveyor",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=1password.com&sz=128"
     },
     {
       "name": "MongoDB",
-      "url": "https://www.mongodb.com/trust-center",
+      "website": "https://mongodb.com/",
+      "trustCenter": "https://trust.mongodb.com/",
       "platform": "Self-hosted",
-      "description": "Database platform security and compliance"
+      "iconUrl": "https://www.google.com/s2/favicons?domain=mongodb.com&sz=128"
     }
   ],
-  "total": 348,
-  "limit": 50,
-  "offset": 0
+  "meta": {
+    "total": 348,
+    "generated": "2024-01-15T10:30:00Z",
+    "version": "1.0.0"
+  }
 }
 ```
 </ResponseExample>
@@ -58,9 +62,9 @@ curl "https://trustlists.org/api/trust-centers"
 const response = await fetch('https://trustlists.org/api/trust-centers');
 const data = await response.json();
 
-console.log(`Found ${data.total} trust centers`);
-data.trustCenters.forEach(tc => {
-  console.log(`${tc.name}: ${tc.url}`);
+console.log(`Found ${data.meta.total} trust centers`);
+data.data.forEach(tc => {
+  console.log(`${tc.name}: ${tc.trustCenter}`);
 });
 ```
 
@@ -70,56 +74,54 @@ import requests
 response = requests.get('https://trustlists.org/api/trust-centers')
 data = response.json()
 
-print(f"Found {data['total']} trust centers")
-for tc in data['trustCenters']:
-    print(f"{tc['name']}: {tc['url']}")
+print(f"Found {data['meta']['total']} trust centers")
+for tc in data['data']:
+    print(f"{tc['name']}: {tc['trustCenter']}")
 ```
 </CodeGroup>
 
-### Get Trust Centers by Platform
+### Filter Trust Centers by Search
 
 <Tip>
-TrustLists automatically detects hosting platforms using CNAME resolution and URL patterns. Common platforms include Vanta, Drata, Secureframe, Oneleet, and HyperComply.
+TrustLists automatically detects hosting platforms using CNAME resolution and URL patterns. Common platforms include SafeBase, Conveyor, Vanta, and Self-hosted.
 </Tip>
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/trust-centers?platform=Vanta"
+curl "https://trustlists.org/api/trust-centers?search=vanta"
 ```
 </RequestExample>
 
 <ResponseExample>
 ```json Success
 {
-  "trustCenters": [
+  "data": [
     {
-      "name": "Company A",
-      "url": "https://compliance.company-a.com",
+      "name": "Linear",
+      "website": "https://linear.app/",
+      "trustCenter": "https://trustcenter.linear.app/",
       "platform": "Vanta",
-      "description": "Security compliance platform"
-    },
-    {
-      "name": "Company B", 
-      "url": "https://trust.company-b.com",
-      "platform": "Vanta",
-      "description": "Enterprise security platform"
+      "iconUrl": "https://www.google.com/s2/favicons?domain=linear.app&sz=128"
     }
   ],
-  "total": 45,
-  "limit": 50,
-  "offset": 0
+  "meta": {
+    "total": 1,
+    "generated": "2024-01-15T10:30:00Z",
+    "version": "1.0.0"
+  }
 }
 ```
 </ResponseExample>
 
 <CodeGroup>
 ```javascript JavaScript
-const response = await fetch('https://trustlists.org/api/trust-centers?platform=Vanta');
+const response = await fetch('https://trustlists.org/api/trust-centers?search=vanta');
 const data = await response.json();
 
-console.log(`Found ${data.total} Vanta-hosted trust centers`);
-data.trustCenters.forEach(tc => {
-  console.log(`${tc.name}: ${tc.url}`);
+const vantaCompanies = data.data.filter(tc => tc.platform === 'Vanta');
+console.log(`Found ${vantaCompanies.length} Vanta-hosted trust centers`);
+vantaCompanies.forEach(tc => {
+  console.log(`${tc.name}: ${tc.trustCenter}`);
 });
 ```
 
@@ -127,12 +129,14 @@ data.trustCenters.forEach(tc => {
 import requests
 
 response = requests.get('https://trustlists.org/api/trust-centers', 
-                       params={'platform': 'Vanta'})
+                       params={'search': 'vanta'})
 data = response.json()
 
-print(f"Found {data['total']} Vanta-hosted trust centers")
-for tc in data['trustCenters']:
-    print(f"{tc['name']}: {tc['url']}")
+# Filter by platform after getting results
+vanta_companies = [tc for tc in data['data'] if tc['platform'] == 'Vanta']
+print(f"Found {len(vanta_companies)} Vanta-hosted trust centers")
+for tc in vanta_companies:
+    print(f"{tc['name']}: {tc['trustCenter']}")
 ```
 </CodeGroup>
 

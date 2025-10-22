@@ -22,36 +22,38 @@ https://trustlists.org/api
 Retrieve all trust centers or filter by platform.
 
 **Parameters:**
-- `platform` (optional): Filter by hosting platform (e.g., "Vanta", "Drata", "Secureframe")
-- `limit` (optional): Number of results to return (default: 50, max: 100)
-- `offset` (optional): Number of results to skip (default: 0)
+- `search` (optional): Search query to filter trust centers by name
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/trust-centers?platform=Vanta&limit=10"
+curl "https://trustlists.org/api/trust-centers?search=stripe"
 ```
 </RequestExample>
 
 <ResponseExample>
 ```json Success
 {
-  "trustCenters": [
+  "data": [
     {
       "name": "1Password",
-      "url": "https://trust.1password.com",
-      "platform": "Self-hosted",
-      "description": "Password manager security and compliance information"
+      "website": "https://1password.com/",
+      "trustCenter": "https://app.conveyor.com/profile/1password",
+      "platform": "Conveyor",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=1password.com&sz=128"
     },
     {
       "name": "Figma",
-      "url": "https://www.figma.com/security/",
-      "platform": "Self-hosted",
-      "description": "Design tool security and compliance"
+      "website": "https://figma.com/",
+      "trustCenter": "https://compliance.figma.com/",
+      "platform": "Conveyor",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=figma.com&sz=128"
     }
   ],
-  "total": 348,
-  "limit": 10,
-  "offset": 0
+  "meta": {
+    "total": 348,
+    "generated": "2024-01-15T10:30:00Z",
+    "version": "1.0.0"
+  }
 }
 ```
 </ResponseExample>
@@ -75,35 +77,21 @@ curl "https://trustlists.org/api/stats"
 <ResponseExample>
 ```json Success
 {
-  "totalTrustCenters": 348,
-  "platforms": {
-    "Vanta": 45,
-    "Drata": 32,
-    "Secureframe": 28,
-    "Oneleet": 15,
-    "HyperComply": 12,
-    "Self-hosted": 156,
-    "Other": 60
-  },
-  "lastUpdated": "2024-01-15T10:30:00Z",
-  "discoveryStats": {
-    "lastDiscoveryRun": "2024-01-15T09:00:00Z",
-    "newThisWeek": 8,
-    "highConfidencePending": 3
-  }
+  "totalCompanies": 348,
+  "generated": "2024-01-15T10:30:00Z"
 }
 ```
 </ResponseExample>
 
 <Info>
-The `discoveryStats` field shows automated discovery metrics, including new trust centers found this week and high-confidence entries pending review.
+The stats endpoint provides basic directory statistics. Platform-specific counts are available through the main trust-centers endpoint.
 </Info>
 
 </ExpandableCard>
 
 ## Rate Limits
 
-- **Free tier**: 100 requests per hour
+- **No explicit rate limits** - API is designed for reasonable usage
 - **No authentication required** for public endpoints
 
 ## Error Handling
@@ -113,11 +101,10 @@ All endpoints return standard HTTP status codes:
 - `200` - Success
 - `400` - Bad Request
 - `404` - Not Found
-- `429` - Rate Limit Exceeded
 - `500` - Internal Server Error
 
 <Warning>
-Rate limits are enforced per IP address. If you exceed 100 requests per hour, you'll receive a 429 status code.
+API endpoints are designed for reasonable usage. Excessive requests may be throttled by the hosting provider.
 </Warning>
 
 ### Error Response Examples
@@ -125,16 +112,8 @@ Rate limits are enforced per IP address. If you exceed 100 requests per hour, yo
 <CodeGroup>
 ```json Bad Request (400)
 {
-  "error": "Invalid platform parameter",
-  "message": "Platform must be one of: Vanta, Drata, Secureframe, Oneleet, HyperComply, Self-hosted, Other"
-}
-```
-
-```json Rate Limit Exceeded (429)
-{
-  "error": "Rate limit exceeded",
-  "message": "You have exceeded the rate limit of 100 requests per hour. Please try again later.",
-  "retryAfter": 3600
+  "error": "Invalid search parameter",
+  "message": "Search query must be a valid string"
 }
 ```
 
@@ -142,6 +121,13 @@ Rate limits are enforced per IP address. If you exceed 100 requests per hour, yo
 {
   "error": "Not found",
   "message": "No trust centers found for the specified criteria"
+}
+```
+
+```json Internal Server Error (500)
+{
+  "error": "Internal server error",
+  "message": "Failed to fetch trust centers"
 }
 ```
 </CodeGroup>
