@@ -7,12 +7,12 @@
   },
   "servers": [
     {
-      "url": "https://trustlists.org/api",
+      "url": "https://trustlists.org",
       "description": "Production server (static files)"
     }
   ],
   "paths": {
-    "/trust-centers": {
+    "/api/trust-centers.json": {
       "get": {
         "summary": "Get trust centers",
         "description": "Retrieve all trust centers or search by company name",
@@ -65,7 +65,7 @@
         }
       }
     },
-    "/stats": {
+    "/api/stats.json": {
       "get": {
         "summary": "Get statistics",
         "description": "Get aggregated statistics about the trust center directory",
