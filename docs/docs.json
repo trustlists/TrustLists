@@ -8,6 +8,12 @@
     "dark": "#1d4ed8"
   },
   "favicon": "favicon.svg",
+  "api": {
+    "baseUrl": "https://trustlists.org/api",
+    "auth": {
+      "method": "none"
+    }
+  },
   "navigation": {
     "tabs": [
       {
@@ -23,6 +29,7 @@
           {
             "group": "API Reference",
             "pages": [
+              "api-reference",
               "api-reference/endpoints",
               "api-reference/trust-centers",
               "api-reference/stats"

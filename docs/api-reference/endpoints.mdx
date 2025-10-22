@@ -1,6 +1,7 @@
 ---
 title: 'API Endpoints'
 description: 'Complete API reference for TrustLists'
+api: '/trust-centers'
 ---
 
 ## Overview
@@ -19,7 +20,7 @@ https://trustlists.org/api
 
 <ExpandableCard title="GET /trust-centers" icon="database">
 
-Retrieve all trust centers or filter by platform.
+Retrieve all trust centers or filter by search query.
 
 **Parameters:**
 - `search` (optional): Search query to filter trust centers by name
@@ -59,10 +60,12 @@ curl "https://trustlists.org/api/trust-centers?search=stripe"
 </ResponseExample>
 
 <Tip>
-Use the `platform` parameter to filter by hosting platform. TrustLists automatically detects platforms like Vanta, Drata, and Secureframe.
+Use the `search` parameter to filter by company name. TrustLists automatically detects hosting platforms like SafeBase, Conveyor, and Vanta.
 </Tip>
 
 </ExpandableCard>
+
+### Stats
 
 <ExpandableCard title="GET /stats" icon="chart">
 
