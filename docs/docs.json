@@ -34,30 +34,53 @@
       "url": "https://trustlists.org"
     }
   ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart"
-      ]
-    },
-    {
-      "group": "API Reference", 
-      "pages": [
-        "api-reference/endpoints",
-        "api-reference/trust-centers",
-        "api-reference/stats"
-      ]
-    },
-    {
-      "group": "Contributing",
-      "pages": [
-        "contributing/guidelines",
-        "contributing/adding-trust-centers"
-      ]
-    }
-  ],
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          {
+            "name": "Introduction",
+            "path": "/introduction"
+          },
+          {
+            "name": "Quickstart",
+            "path": "/quickstart"
+          }
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          {
+            "name": "Endpoints",
+            "path": "/api-reference/endpoints"
+          },
+          {
+            "name": "Trust Centers",
+            "path": "/api-reference/trust-centers"
+          },
+          {
+            "name": "Stats",
+            "path": "/api-reference/stats"
+          }
+        ]
+      },
+      {
+        "group": "Contributing",
+        "pages": [
+          {
+            "name": "Guidelines",
+            "path": "/contributing/guidelines"
+          },
+          {
+            "name": "Adding Trust Centers",
+            "path": "/contributing/adding-trust-centers"
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "github": "https://github.com/FelixMichaels/TrustLists",
     "linkedin": "https://linkedin.com/company/trustlists"
