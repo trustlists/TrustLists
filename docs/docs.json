@@ -31,7 +31,9 @@
           },
           {
             "group": "API Reference",
-            "openapi": "api.json"
+            "pages": [
+              "api-reference"
+            ]
           },
           {
             "group": "Contributing",

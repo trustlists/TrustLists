@@ -1,112 +1,13 @@
 ---
 title: 'API Reference'
 description: 'Interactive API documentation for TrustLists'
-api: 'api.json'
+openapi: 'api.json'
 ---
 
-## Interactive API Playground
+## TrustLists API
 
-Test TrustLists API endpoints directly in your browser. No authentication required!
-
-<ApiEndpoint name="GET /trust-centers" description="Retrieve all trust centers or search by company name" path="/trust-centers" method="get">
-  <ParamField query="search" type="string">
-    Search query to filter trust centers by name (optional)
-  </ParamField>
-</ApiEndpoint>
-
-<ApiEndpoint name="GET /stats" description="Get statistics about the trust center directory" path="/stats" method="get">
-</ApiEndpoint>
-
-## Response Examples
-
-### Trust Centers Response
-
-<ResponseField name="data" type="array">
-  Array of trust center objects
-  
-  <ResponseField name="name" type="string">
-    Company name
-  </ResponseField>
-  
-  <ResponseField name="website" type="string">
-    Company website URL
-  </ResponseField>
-  
-  <ResponseField name="trustCenter" type="string">
-    Trust center URL
-  </ResponseField>
-  
-  <ResponseField name="platform" type="string">
-    Hosting platform (SafeBase, Conveyor, Vanta, etc.)
-  </ResponseField>
-  
-  <ResponseField name="iconUrl" type="string">
-    Company favicon URL
-  </ResponseField>
-</ResponseField>
-
-<ResponseField name="meta" type="object">
-  Response metadata
-  
-  <ResponseField name="total" type="integer">
-    Total number of trust centers
-  </ResponseField>
-  
-  <ResponseField name="generated" type="string">
-    Response generation timestamp
-  </ResponseField>
-  
-  <ResponseField name="version" type="string">
-    API version
-  </ResponseField>
-</ResponseField>
-
-### Stats Response
-
-<ResponseField name="totalCompanies" type="integer">
-  Total number of companies in directory
-</ResponseField>
-
-<ResponseField name="generated" type="string">
-  Response generation timestamp
-</ResponseField>
-
-## Usage Examples
-
-<CodeGroup>
-```javascript JavaScript
-// Get all trust centers
-const response = await fetch('https://trustlists.org/api/trust-centers');
-const data = await response.json();
-
-console.log(`Found ${data.meta.total} trust centers`);
-data.data.forEach(tc => {
-  console.log(`${tc.name}: ${tc.trustCenter}`);
-});
-```
-
-```python Python
-import requests
-
-# Search for specific companies
-response = requests.get('https://trustlists.org/api/trust-centers', 
-                       params={'search': 'stripe'})
-data = response.json()
-
-print(f"Found {len(data['data'])} matching trust centers")
-for tc in data['data']:
-    print(f"{tc['name']}: {tc['trustCenter']}")
-```
-
-```bash cURL
-# Get statistics
-curl "https://trustlists.org/api/stats"
-
-# Search for companies
-curl "https://trustlists.org/api/trust-centers?search=vanta"
-```
-</CodeGroup>
+Access company trust center data through our RESTful API. All endpoints are publicly accessible with no authentication required.
 
 <Tip>
-Use the interactive playground above to test API calls directly in your browser. No setup required!
+Use the interactive playground below to test API endpoints directly in your browser.
 </Tip>
