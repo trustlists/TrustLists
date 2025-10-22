@@ -23,11 +23,12 @@ Look for the company's trust center page. Common patterns include:
 Create a new file in `constants/trustCenterRegistry/` following this format:
 
 ```javascript
-module.exports = {
-  name: "Company Name",
-  url: "https://company.com/security",
-  description: "Brief description of the company and their trust center",
-  // Platform will be auto-detected
+export default {
+  "name": "Company Name",
+  "website": "https://company.com/",
+  "trustCenter": "https://company.com/security",
+  "platform": "Self-hosted", // Will be auto-detected if omitted
+  "iconUrl": "https://www.google.com/s2/favicons?domain=company.com&sz=128"
 };
 ```
 
@@ -57,13 +58,15 @@ When you add a trust center, the platform will be automatically detected based o
 
 ### Required Information
 - ✅ Company name
+- ✅ Company website URL
 - ✅ Trust center URL
-- ✅ Brief description
+- ✅ Favicon URL (auto-generated)
 
 ### URL Requirements
-- ✅ Must be publicly accessible
+- ✅ Trust center must be publicly accessible
 - ✅ Must contain security/compliance information
 - ✅ Must be the primary trust center (not a sub-page)
+- ✅ Company website should be the main domain
 
 ### What to Avoid
 - ❌ Login-required pages
@@ -76,18 +79,22 @@ When you add a trust center, the platform will be automatically detected based o
 <CodeGroup>
 
 ```javascript Good Example
-module.exports = {
-  name: "Stripe",
-  url: "https://stripe.com/docs/security",
-  description: "Payment processing platform security and compliance information"
+export default {
+  "name": "Stripe",
+  "website": "https://stripe.com",
+  "trustCenter": "https://stripe.com/docs/security",
+  "platform": "Other",
+  "iconUrl": "https://www.google.com/s2/favicons?domain=stripe.com&sz=128"
 };
 ```
 
 ```javascript Another Good Example  
-module.exports = {
-  name: "Linear",
-  url: "https://linear.app/security",
-  description: "Issue tracking and project management tool security practices"
+export default {
+  "name": "Linear",
+  "website": "https://linear.app/",
+  "trustCenter": "https://linear.app/security",
+  "platform": "Self-hosted",
+  "iconUrl": "https://www.google.com/s2/favicons?domain=linear.app&sz=128"
 };
 ```
 
