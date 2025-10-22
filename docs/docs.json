@@ -39,18 +39,7 @@
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/FelixMichaels/TrustLists",
-          "icon": "github"
-        },
-        {
-          "anchor": "Website",
-          "href": "https://trustlists.org",
-          "icon": "globe"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
