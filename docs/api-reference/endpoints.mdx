@@ -64,7 +64,7 @@ curl "https://trustlists.org/api/trust-centers.json"
 </ResponseExample>
 
 <Tip>
-Use the `search` parameter to filter by company name. TrustLists automatically detects hosting platforms like SafeBase, Conveyor, and Vanta.
+TrustLists automatically detects hosting platforms like SafeBase, Conveyor, and Vanta using CNAME resolution and URL pattern analysis.
 </Tip>
 
 </ExpandableCard>
@@ -77,7 +77,7 @@ Get statistics about the trust center directory.
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/stats"
+curl "https://trustlists.org/api/stats.json"
 ```
 </RequestExample>
 
