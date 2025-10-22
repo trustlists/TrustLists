@@ -34,30 +34,48 @@ Trust centers are crucial for:
     icon="database"
     href="/api-reference/trust-centers"
   >
-    Browse hundreds of company trust centers
+    Browse 348+ company trust centers from leading platforms like Vanta, Drata, and Secureframe
   </Card>
   <Card
     title="Platform Detection"
     icon="search"
     href="/api-reference/endpoints"
   >
-    Automatically detect hosting platforms
+    Automatically detect hosting platforms using CNAME resolution and URL pattern analysis
   </Card>
   <Card
     title="API Access"
     icon="code"
     href="/api-reference"
   >
-    Programmatic access to trust center data
+    RESTful API with 100 requests/hour rate limit - no authentication required
   </Card>
   <Card
-    title="Open Source"
-    icon="github"
-    href="https://github.com/FelixMichaels/TrustLists"
+    title="Automated Discovery"
+    icon="robot"
+    href="/contributing/adding-trust-centers"
   >
-    Contribute and improve the directory
+    Weekly automated discovery of new trust centers from YC companies with confidence scoring
   </Card>
 </CardGroup>
+
+## Platform Detection
+
+TrustLists automatically detects hosting platforms using advanced techniques:
+
+<CardGroup cols={2}>
+<Card title="CNAME Resolution" icon="search">
+  Resolves CNAME records to identify platforms (e.g., `cname.vantatrust.com` → Vanta)
+</Card>
+
+<Card title="URL Pattern Analysis" icon="link">
+  Analyzes URL structures like `company.drata.com` to detect Drata-hosted trust centers
+</Card>
+</CardGroup>
+
+<Info>
+Our automated discovery runs weekly to find new trust centers from YC companies, with high-confidence findings automatically added via pull requests.
+</Info>
 
 ## Getting Started
 

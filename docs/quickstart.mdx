@@ -5,7 +5,7 @@ description: 'Get started with TrustLists API in minutes'
 
 ## API Access
 
-TrustLists provides a simple REST API to access trust center data.
+TrustLists provides a simple REST API to access trust center data programmatically.
 
 ### Base URL
 
@@ -15,22 +15,53 @@ https://trustlists.org/api
 
 ### Authentication
 
-No authentication required for public endpoints.
+<Note>
+No authentication required for public endpoints. All API calls are rate-limited to 100 requests per hour per IP address.
+</Note>
 
 ## Basic Usage
 
 ### Get All Trust Centers
 
-<CodeGroup>
-
+<RequestExample>
 ```bash cURL
 curl "https://trustlists.org/api/trust-centers"
 ```
+</RequestExample>
 
+<ResponseExample>
+```json Success
+{
+  "trustCenters": [
+    {
+      "name": "1Password",
+      "url": "https://trust.1password.com",
+      "platform": "Self-hosted",
+      "description": "Password manager security and compliance information"
+    },
+    {
+      "name": "MongoDB",
+      "url": "https://www.mongodb.com/trust-center",
+      "platform": "Self-hosted",
+      "description": "Database platform security and compliance"
+    }
+  ],
+  "total": 348,
+  "limit": 50,
+  "offset": 0
+}
+```
+</ResponseExample>
+
+<CodeGroup>
 ```javascript JavaScript
 const response = await fetch('https://trustlists.org/api/trust-centers');
 const data = await response.json();
-console.log(data);
+
+console.log(`Found ${data.total} trust centers`);
+data.trustCenters.forEach(tc => {
+  console.log(`${tc.name}: ${tc.url}`);
+});
 ```
 
 ```python Python
@@ -38,33 +69,71 @@ import requests
 
 response = requests.get('https://trustlists.org/api/trust-centers')
 data = response.json()
-print(data)
-```
 
+print(f"Found {data['total']} trust centers")
+for tc in data['trustCenters']:
+    print(f"{tc['name']}: {tc['url']}")
+```
 </CodeGroup>
 
 ### Get Trust Centers by Platform
 
-<CodeGroup>
+<Tip>
+TrustLists automatically detects hosting platforms using CNAME resolution and URL patterns. Common platforms include Vanta, Drata, Secureframe, Oneleet, and HyperComply.
+</Tip>
 
+<RequestExample>
 ```bash cURL
 curl "https://trustlists.org/api/trust-centers?platform=Vanta"
 ```
+</RequestExample>
 
+<ResponseExample>
+```json Success
+{
+  "trustCenters": [
+    {
+      "name": "Company A",
+      "url": "https://compliance.company-a.com",
+      "platform": "Vanta",
+      "description": "Security compliance platform"
+    },
+    {
+      "name": "Company B", 
+      "url": "https://trust.company-b.com",
+      "platform": "Vanta",
+      "description": "Enterprise security platform"
+    }
+  ],
+  "total": 45,
+  "limit": 50,
+  "offset": 0
+}
+```
+</ResponseExample>
+
+<CodeGroup>
 ```javascript JavaScript
 const response = await fetch('https://trustlists.org/api/trust-centers?platform=Vanta');
 const data = await response.json();
-console.log(data);
+
+console.log(`Found ${data.total} Vanta-hosted trust centers`);
+data.trustCenters.forEach(tc => {
+  console.log(`${tc.name}: ${tc.url}`);
+});
 ```
 
 ```python Python
 import requests
 
-response = requests.get('https://trustlists.org/api/trust-centers?platform=Vanta')
+response = requests.get('https://trustlists.org/api/trust-centers', 
+                       params={'platform': 'Vanta'})
 data = response.json()
-print(data)
-```
 
+print(f"Found {data['total']} Vanta-hosted trust centers")
+for tc in data['trustCenters']:
+    print(f"{tc['name']}: {tc['url']}")
+```
 </CodeGroup>
 
 ## Next Steps
