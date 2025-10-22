@@ -31,7 +31,10 @@
           },
           {
             "group": "API Reference",
-            "openapi": "api.json"
+            "pages": [
+              "get-trust-centers",
+              "get-statistics"
+            ]
           },
           {
             "group": "Contributing",
