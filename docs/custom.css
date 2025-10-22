@@ -1,0 +1,20 @@
+/* Custom CSS to match main site button roundness */
+
+/* Override Mintlify's default button roundness */
+.mintlify-button,
+[data-mintlify-button],
+button[type="button"] {
+  border-radius: 0.5rem !important; /* rounded-lg */
+}
+
+/* Specifically target the primary button */
+.mintlify-button-primary,
+[data-mintlify-button="primary"] {
+  border-radius: 0.5rem !important; /* rounded-lg */
+}
+
+/* Target navbar buttons */
+.navbar button,
+.navbar .mintlify-button {
+  border-radius: 0.5rem !important; /* rounded-lg */
+}

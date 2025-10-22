@@ -8,6 +8,7 @@
     "dark": "#1d4ed8"
   },
   "favicon": "favicon.svg",
+  "css": "custom.css",
   "api": {
     "baseUrl": "https://trustlists.org/api",
     "auth": {
