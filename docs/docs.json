@@ -53,7 +53,8 @@
   },
   "logo": {
     "light": "logo.svg",
-    "dark": "logo.svg"
+    "dark": "logo.svg",
+    "href": "https://trustlists.org"
   },
   "navbar": {
     "links": [
