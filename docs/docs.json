@@ -10,11 +10,7 @@
   "colors": {
     "primary": "#0D9488",
     "light": "#14B8A6",
-    "dark": "#0F766E",
-    "anchors": {
-      "from": "#0D9488",
-      "to": "#14B8A6"
-    }
+    "dark": "#0F766E"
   },
   "topbarLinks": [
     {
@@ -26,12 +22,6 @@
     "name": "View Trust Centers",
     "url": "https://trustlists.org"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "GitHub",
@@ -44,30 +34,21 @@
       "url": "https://trustlists.org"
     }
   ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/endpoints",
-        "api-reference/trust-centers",
-        "api-reference/stats"
-      ]
-    },
-    {
-      "group": "Contributing",
-      "pages": [
-        "contributing/guidelines",
-        "contributing/adding-trust-centers"
-      ]
-    }
-  ],
+  "navigation": {
+    "Get Started": [
+      "introduction",
+      "quickstart"
+    ],
+    "API Reference": [
+      "api-reference/endpoints",
+      "api-reference/trust-centers",
+      "api-reference/stats"
+    ],
+    "Contributing": [
+      "contributing/guidelines",
+      "contributing/adding-trust-centers"
+    ]
+  },
   "footerSocials": {
     "github": "https://github.com/FelixMichaels/TrustLists",
     "linkedin": "https://linkedin.com/company/trustlists"
