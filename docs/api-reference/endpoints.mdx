@@ -24,14 +24,14 @@ https://trustlists.org/api
 
 <ExpandableCard title="GET /trust-centers" icon="database">
 
-Retrieve all trust centers or filter by search query.
+Retrieve all trust centers from the directory.
 
 **Parameters:**
-- `search` (optional): Search query to filter trust centers by name
+- None (returns all trust centers)
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/trust-centers?search=stripe"
+curl "https://trustlists.org/api/trust-centers.json"
 ```
 </RequestExample>
 

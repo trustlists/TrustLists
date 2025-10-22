@@ -15,19 +15,8 @@
     "/api/trust-centers.json": {
       "get": {
         "summary": "Get trust centers",
-        "description": "Retrieve all trust centers or search by company name",
+        "description": "Retrieve all trust centers from the directory",
         "operationId": "getTrustCenters",
-        "parameters": [
-          {
-            "name": "search",
-            "in": "query",
-            "description": "Search query for client-side filtering (optional) - note: this is a static API, filtering must be implemented client-side",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Successful response",

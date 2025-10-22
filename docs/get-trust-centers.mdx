@@ -1,6 +1,6 @@
 ---
 title: 'Get trust centers'
-description: 'Retrieve all trust centers with optional client-side filtering'
+description: 'Retrieve all trust centers from the directory'
 openapi: 'GET /api/trust-centers.json'
 ---
 
@@ -9,12 +9,8 @@ openapi: 'GET /api/trust-centers.json'
 Retrieve all trust centers from the directory. This endpoint returns the complete dataset of 441+ companies.
 
 <Warning>
-**Important:** This is a static API endpoint. The `search` parameter is for documentation purposes only and does not filter results server-side. All companies are returned regardless of the search parameter.
+**Important:** This is a static API endpoint. All companies are returned regardless of any parameters. For filtering, implement client-side search in your application using the examples below.
 </Warning>
-
-<ParamField query="search" type="string">
-  Search query for client-side filtering (optional) - see examples below
-</ParamField>
 
 ## Client-Side Filtering
 
