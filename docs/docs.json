@@ -34,21 +34,30 @@
       "url": "https://trustlists.org"
     }
   ],
-  "navigation": {
-    "Get Started": [
-      "introduction",
-      "quickstart"
-    ],
-    "API Reference": [
-      "api-reference/endpoints",
-      "api-reference/trust-centers",
-      "api-reference/stats"
-    ],
-    "Contributing": [
-      "contributing/guidelines",
-      "contributing/adding-trust-centers"
-    ]
-  },
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "API Reference", 
+      "pages": [
+        "api-reference/endpoints",
+        "api-reference/trust-centers",
+        "api-reference/stats"
+      ]
+    },
+    {
+      "group": "Contributing",
+      "pages": [
+        "contributing/guidelines",
+        "contributing/adding-trust-centers"
+      ]
+    }
+  ],
   "footerSocials": {
     "github": "https://github.com/FelixMichaels/TrustLists",
     "linkedin": "https://linkedin.com/company/trustlists"
