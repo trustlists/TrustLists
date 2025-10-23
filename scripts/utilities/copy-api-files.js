@@ -9,20 +9,26 @@ if (!fs.existsSync(distApiDir)) {
   fs.mkdirSync(distApiDir, { recursive: true });
 }
 
-// Copy API files from public/api to dist/api
-const publicApiDir = path.join(__dirname, '../../public/api');
-const apiFiles = ['trust-centers.json', 'stats.json'];
+// Copy trust-centers.json from public/ to dist/api/
+const trustCentersSource = path.join(__dirname, '../../public/trust-centers.json');
+const trustCentersDest = path.join(distApiDir, 'trust-centers.json');
 
-apiFiles.forEach(file => {
-  const sourcePath = path.join(publicApiDir, file);
-  const destPath = path.join(distApiDir, file);
-  
-  if (fs.existsSync(sourcePath)) {
-    fs.copyFileSync(sourcePath, destPath);
-    console.log(`✅ Copied ${file} to dist/api/`);
-  } else {
-    console.warn(`⚠️  Warning: ${file} not found in public/api/`);
-  }
-});
+if (fs.existsSync(trustCentersSource)) {
+  fs.copyFileSync(trustCentersSource, trustCentersDest);
+  console.log('✅ Copied trust-centers.json to dist/api/');
+} else {
+  console.warn('⚠️  Warning: trust-centers.json not found in public/');
+}
 
-console.log('🎯 API files copied to dist/api/');
+// Generate stats.json
+const trustCentersData = JSON.parse(fs.readFileSync(trustCentersSource, 'utf8'));
+const stats = {
+  totalCompanies: trustCentersData.data.length,
+  generated: new Date().toISOString()
+};
+
+const statsDest = path.join(distApiDir, 'stats.json');
+fs.writeFileSync(statsDest, JSON.stringify(stats, null, 2));
+console.log('✅ Generated stats.json in dist/api/');
+
+console.log('🎯 API files ready in dist/api/');
