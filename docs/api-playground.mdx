@@ -16,7 +16,7 @@ Retrieve all trust centers or search by company name.
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/trust-centers.json?search=stripe"
+curl "https://trustlists.org/api/trust-centers?search=stripe"
 ```
 </RequestExample>
 
@@ -47,7 +47,7 @@ Get statistics about the trust center directory.
 
 <RequestExample>
 ```bash cURL
-curl "https://trustlists.org/api/stats.json"
+curl "https://trustlists.org/api/stats"
 ```
 </RequestExample>
 
@@ -65,7 +65,7 @@ curl "https://trustlists.org/api/stats.json"
 <CodeGroup>
 ```javascript JavaScript
 // Get all trust centers
-const response = await fetch('https://trustlists.org/api/trust-centers.json');
+const response = await fetch('https://trustlists.org/api/trust-centers');
 const data = await response.json();
 
 console.log(`Found ${data.meta.total} trust centers`);
@@ -78,7 +78,7 @@ data.data.forEach(tc => {
 import requests
 
 # Search for specific companies
-response = requests.get('https://trustlists.org/api/trust-centers.json', 
+response = requests.get('https://trustlists.org/api/trust-centers', 
                        params={'search': 'stripe'})
 data = response.json()
 
@@ -89,10 +89,10 @@ for tc in data['data']:
 
 ```bash cURL
 # Get statistics
-curl "https://trustlists.org/api/stats.json"
+curl "https://trustlists.org/api/stats"
 
 # Search for companies
-curl "https://trustlists.org/api/trust-centers.json?search=vanta"
+curl "https://trustlists.org/api/trust-centers?search=vanta"
 ```
 </CodeGroup>
 

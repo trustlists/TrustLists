@@ -383,17 +383,6 @@ Add any other context about the problem here.`);
                   View Code
                 </a>
                 <a 
-                  href="https://trustlists.org/trust-centers.json" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-lg"
-                >
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  API
-                </a>
-                <a 
                   href="https://docs.trustlists.org" 
                   target="_blank" 
                   rel="noopener noreferrer" 
@@ -438,7 +427,7 @@ Add any other context about the problem here.`);
                       placeholder="Search Companies"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-docs-card text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
+                      className="w-full pl-4 pr-12 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-sm placeholder-gray-500 dark:placeholder-gray-400"
                     />
                     <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                       <svg className="h-5 w-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -458,7 +447,7 @@ Add any other context about the problem here.`);
                         className={`platform-filter-button flex items-center gap-2 px-4 py-3 border rounded-lg text-sm font-medium min-w-[140px] justify-between ${
                           showPlatformPanel || platformFilter !== 'all'
                             ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300'
-                            : 'bg-white dark:bg-docs-card border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-docs-card'
+                            : 'bg-white dark:bg-docs-card border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                         }`}
                       >
                         <div className="flex items-center gap-2">
@@ -504,7 +493,7 @@ Add any other context about the problem here.`);
                         className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                           platformFilter === 'all'
                             ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
-                            : 'bg-gray-100 dark:bg-docs-card text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-docs-card border border-transparent'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
                         }`}
                       >
                         All platforms ({stats.totalCompanies})
@@ -521,7 +510,7 @@ Add any other context about the problem here.`);
                           className={`px-3 py-1.5 rounded-full text-xs font-medium transition-transform ${
                             platformFilter === platform
                               ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-900 dark:text-blue-100 border border-blue-200 dark:border-blue-800'
-                              : 'bg-gray-100 dark:bg-docs-card text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-docs-card border border-transparent'
+                              : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 border border-transparent'
                           }`}
                         >
                           {platform} ({count})
@@ -578,7 +567,7 @@ Add any other context about the problem here.`);
                           </button>
                           
                           {openMenuId === company.name + index && (
-                            <div className="absolute right-0 top-8 w-48 bg-white dark:bg-docs-card rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
+                            <div className="absolute right-0 top-8 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
                               <button
                                 onClick={() => {
                                   window.open(company.website, '_blank');
@@ -679,7 +668,7 @@ Add any other context about the problem here.`);
                     </button>
                     <button
                       onClick={showAll}
-                      className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-docs-card text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-docs-card transition-colors font-medium"
+                      className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors font-medium"
                     >
                       Show All ({allFilteredTrustCenters.length})
                     </button>

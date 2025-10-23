@@ -389,7 +389,6 @@ import taxgpt from '../constants/trustCenterRegistry/taxgpt.js';
 import teleport from '../constants/trustCenterRegistry/teleport.js';
 import temporal from '../constants/trustCenterRegistry/temporal.js';
 import tenyks from '../constants/trustCenterRegistry/tenyks.js';
-import tidio from '../constants/trustCenterRegistry/tidio.js';
 import tigereye from '../constants/trustCenterRegistry/tigereye.js';
 import tint from '../constants/trustCenterRegistry/tint.js';
 import toku from '../constants/trustCenterRegistry/toku.js';
@@ -833,7 +832,6 @@ const trustCenterData = [
   teleport,
   temporal,
   tenyks,
-  tidio,
   tigereye,
   tint,
   toku,
