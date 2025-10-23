@@ -554,7 +554,7 @@ export default {
                       <button
                         onClick={() => handleSubmissionChoice('email')}
                         disabled={!isFormValid() || isSubmitting}
-                        className="group p-6 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-300 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:to-gray-700 disabled:cursor-not-allowed text-white rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl"
+                        className="group p-6 bg-gradient-to-br from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-gray-300 disabled:to-gray-400 dark:disabled:from-gray-600 dark:disabled:to-gray-700 disabled:cursor-not-allowed text-white rounded-xl transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl"
                       >
                         <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-lg mb-4 mx-auto">
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -562,7 +562,7 @@ export default {
                           </svg>
                         </div>
                         <h4 className="text-lg font-semibold mb-2">Email Submit</h4>
-                        <p className="text-sm text-green-100">Send us your submission via email. No GitHub account needed.</p>
+                        <p className="text-sm text-blue-100">Send us your submission via email. No GitHub account needed.</p>
                       </button>
 
                       {/* Manual Submission */}
