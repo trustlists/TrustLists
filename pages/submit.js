@@ -368,13 +368,9 @@ export default {
                   </div>
                   <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
                 </div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
                   Submit a Trust Center
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Help the community by adding your company's trust center to our curated directory. 
-                  We review all submissions to ensure quality and accuracy.
-                </p>
               </div>
 
               {/* Action Buttons */}
