@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node generate-utils.js && node generate-json.js && next build",
+    "build": "node generate-utils.js && node generate-json.js && next build && node scripts/utilities/copy-api-files.js",
     "start": "next start",
     "lint": "next lint",
     "export": "npm run build && touch dist/.nojekyll",
