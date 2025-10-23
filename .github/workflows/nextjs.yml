@@ -77,12 +77,14 @@ jobs:
         run: node generate-utils.js && node generate-json.js
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Copy API files to dist
+        run: node scripts/utilities/copy-api-files.js
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch ./dist/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./dist
 
   # Deployment job
   deploy:
