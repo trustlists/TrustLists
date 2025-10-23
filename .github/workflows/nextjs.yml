@@ -77,6 +77,8 @@ jobs:
         run: node generate-utils.js && node generate-json.js && node scripts/generate-static-api.js
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Verify API files exist
+        run: ls -la ./out/api/ || echo "API directory not found in out/"
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Upload artifact
