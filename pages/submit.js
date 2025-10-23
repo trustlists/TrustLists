@@ -321,7 +321,7 @@ export default {
         <meta name="robots" content="noindex, follow" />
       </Head>
 
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+      <div className="min-h-screen bg-gray-50 dark:bg-docs-card">
         {/* Notification System */}
         {(showCopySuccess || notification) && (
           <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out max-w-md ${
@@ -354,7 +354,7 @@ export default {
 
         <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="lg:w-96 bg-white dark:bg-gray-800 shadow-sm lg:flex-shrink-0">
+          <div className="lg:w-96 bg-white dark:bg-docs-card shadow-sm lg:flex-shrink-0">
             <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
@@ -467,7 +467,7 @@ export default {
 
             {step === 1 ? (
               <div className="flex justify-center">
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 max-w-2xl w-full">
+                <div className="bg-white dark:bg-docs-card rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8 max-w-2xl w-full">
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Company Information</h2>
                 
                 <div className="space-y-6">
@@ -596,7 +596,7 @@ export default {
               <div className="flex justify-center">
                 <div className="space-y-8 max-w-4xl w-full">
                 {/* Generated Code */}
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                <div className="bg-white dark:bg-docs-card rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Generated Code</h2>
                     <button
@@ -613,7 +613,7 @@ export default {
                 </div>
 
                 {/* Instructions */}
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                <div className="bg-white dark:bg-docs-card rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
                     <DocumentTextIcon className="w-8 h-8 mr-3 text-blue-600" />
                     Submission Instructions
@@ -700,7 +700,7 @@ export default {
               // Step 3: Success (Auto-submission)
               <div className="flex justify-center">
                 <div className="max-w-2xl w-full text-center">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
+                  <div className="bg-white dark:bg-docs-card rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
                     <div className="w-20 h-20 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircleIcon className="w-12 h-12 text-green-600 dark:text-green-400" />
                     </div>
