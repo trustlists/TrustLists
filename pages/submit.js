@@ -354,7 +354,7 @@ export default {
 
         <div className="lg:flex lg:h-screen lg:overflow-hidden">
           {/* Left Sidebar - Fixed on desktop, stacked on mobile */}
-          <div className="lg:w-96 bg-white dark:bg-docs-card shadow-sm lg:flex-shrink-0">
+          <div className="lg:w-96 bg-white dark:bg-docs-card shadow-sm lg:flex-shrink-0 lg:border-r lg:border-gray-200 dark:lg:border-gray-700">
             <div className="p-4 sm:p-6 lg:p-8">
               {/* Logo and Title */}
               <div className="mb-8">
