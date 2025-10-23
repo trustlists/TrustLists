@@ -1,0 +1,54 @@
+{
+  "totalCompanies": 442,
+  "platformCounts": [
+    {
+      "platform": "Vanta",
+      "count": 249
+    },
+    {
+      "platform": "Oneleet",
+      "count": 89
+    },
+    {
+      "platform": "SafeBase",
+      "count": 37
+    },
+    {
+      "platform": "Self-hosted",
+      "count": 16
+    },
+    {
+      "platform": "Delve",
+      "count": 15
+    },
+    {
+      "platform": "Conveyor",
+      "count": 12
+    },
+    {
+      "platform": "Secureframe",
+      "count": 10
+    },
+    {
+      "platform": "Other",
+      "count": 6
+    },
+    {
+      "platform": "Sprinto",
+      "count": 3
+    },
+    {
+      "platform": "Whistic",
+      "count": 2
+    },
+    {
+      "platform": "HyperComply",
+      "count": 2
+    },
+    {
+      "platform": "Anecdotes",
+      "count": 1
+    }
+  ],
+  "generated": "2025-10-23T06:04:27.383Z"
+}

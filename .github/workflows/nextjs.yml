@@ -74,7 +74,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Generate utils and trust center data
-        run: node generate-utils.js && node generate-json.js
+        run: node generate-utils.js && node generate-json.js && node scripts/generate-static-api.js
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Add .nojekyll file
