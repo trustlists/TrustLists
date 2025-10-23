@@ -14,22 +14,6 @@ A comprehensive directory of company trust centers and compliance documentation.
 - **RESTful API** with no authentication required
 - **Platform detection** using CNAME resolution
 
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/FelixMichaels/TrustLists.git
-cd TrustLists
-
-# Install dependencies
-npm install
-
-# Run locally
-npm run dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000) to see the site.
-
 ## 🤝 Contributing
 
 See our [contributing guide](https://docs.trustlists.org/contributing/guidelines) for detailed instructions on:
@@ -53,13 +37,6 @@ export default {
   "iconUrl": "https://www.google.com/s2/favicons?domain=example.com&sz=128"
 };
 ```
-
-## 🏗️ Tech Stack
-
-- **[Next.js 14](https://nextjs.org/)** - React framework with static site generation
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[GitHub Pages](https://pages.github.com/)** - Static site hosting
-- **[Mintlify](https://mintlify.com/)** - Documentation platform
 
 ## 📝 License
 
