@@ -368,9 +368,13 @@ export default {
                   </div>
                   <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
                 </div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
                   Submit a Trust Center
                 </h2>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Help the community by adding your company's trust center to our directory. 
+                  We review all submissions to ensure quality and accuracy.
+                </p>
               </div>
 
               {/* Action Buttons */}
@@ -433,11 +437,7 @@ export default {
             {/* Header */}
             <div className="text-center mb-8">
               <PlusIcon className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">Submit a Trust Center</h1>
-              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Help the community by adding your company's trust center to our directory. 
-                We review all submissions to ensure quality and accuracy.
-              </p>
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">Submit a Trust Center</h1>
             </div>
 
             {/* Progress Steps */}
