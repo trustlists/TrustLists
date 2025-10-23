@@ -9,7 +9,6 @@
     "start": "next start",
     "lint": "next lint",
     "export": "npm run build && touch dist/.nojekyll",
-    "deploy": "npm run export && touch dist/.nojekyll && git add dist/ && git commit -m \"Deploy\" && git subtree push --prefix dist origin gh-pages",
     "generate": "node generate-json.js"
   },
   "dependencies": {
