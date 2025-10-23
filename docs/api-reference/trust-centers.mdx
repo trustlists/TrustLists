@@ -50,7 +50,7 @@ GET /api/trust-centers?search=stripe
 ```
 
 ```bash Example Request
-curl "https://trustlists.org/api/trust-centers?search=stripe"
+curl "https://trustlists.org/api/trust-centers.json?search=stripe"
 ```
 
 </CodeGroup>
@@ -76,7 +76,7 @@ Common platform values include:
 
 ```javascript JavaScript
 // Get all trust centers and filter by platform
-const response = await fetch('https://trustlists.org/api/trust-centers');
+const response = await fetch('https://trustlists.org/api/trust-centers.json');
 const data = await response.json();
 
 const vantaCompanies = data.data.filter(tc => tc.platform === 'Vanta');
@@ -90,7 +90,7 @@ vantaCompanies.forEach(tc => {
 import requests
 
 # Get all trust centers
-response = requests.get('https://trustlists.org/api/trust-centers')
+response = requests.get('https://trustlists.org/api/trust-centers.json')
 data = response.json()
 
 # Filter by platform
