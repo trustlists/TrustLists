@@ -325,8 +325,8 @@ export default {
         {/* Notification System */}
         {(showCopySuccess || notification) && (
           <div className={`fixed top-4 right-4 z-50 px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2 transform transition-all duration-300 ease-in-out max-w-md ${
-            showCopySuccess ? 'bg-green-500 text-white' :
-            notification?.type === 'success' ? 'bg-green-500 text-white' :
+            showCopySuccess ? 'bg-blue-600 text-white' :
+            notification?.type === 'success' ? 'bg-blue-600 text-white' :
             notification?.type === 'info' ? 'bg-blue-500 text-white' :
             notification?.type === 'error' ? 'bg-red-500 text-white' :
             'bg-gray-500 text-white'
@@ -668,10 +668,8 @@ export default {
                       <h3 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Submission Guidelines</h3>
                       <ul className="text-blue-800 dark:text-blue-200 space-y-1 text-sm">
                         <li>• Ensure all URLs are publicly accessible</li>
-                        <li>• Only submit companies you represent or have permission to add</li>
                         <li>• Provide accurate and up-to-date information</li>
                         <li>• Follow the naming conventions for consistency</li>
-                        <li>• Keep it simple - only 4 fields required</li>
                       </ul>
                     </div>
                   </div>
@@ -701,8 +699,8 @@ export default {
               <div className="flex justify-center">
                 <div className="max-w-2xl w-full text-center">
                   <div className="bg-white dark:bg-docs-card rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-8">
-                    <div className="w-20 h-20 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <CheckCircleIcon className="w-12 h-12 text-green-600 dark:text-green-400" />
+                    <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <CheckCircleIcon className="w-12 h-12 text-blue-600 dark:text-blue-400" />
                     </div>
                     
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
