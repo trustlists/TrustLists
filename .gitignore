@@ -65,3 +65,6 @@ scripts/trust-center-discovery/data/last-discovery-run.json
 
 # Node
 node_modules/
+
+# Temporary files
+temp/

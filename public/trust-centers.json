@@ -113,6 +113,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://alguna.io&sz=128"
     },
     {
+      "name": "Allstacks",
+      "website": "allstacks.com",
+      "trustCenter": "https://trust.allstacks.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/allstacks.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Alpaca",
       "website": "https://alpaca.markets/",
       "trustCenter": "https://trust.alpaca.markets",
@@ -127,11 +134,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://alphawatch.ai&sz=128"
     },
     {
+      "name": "altvia",
+      "website": "altvia.com",
+      "trustCenter": "https://trust.altvia.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/altvia.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Amazon Web Services",
       "website": "https://aws.amazon.com",
       "trustCenter": "https://aws.amazon.com/trust-center",
       "platform": "Other",
       "iconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128"
+    },
+    {
+      "name": "Ambassador",
+      "website": "getambassador.com",
+      "trustCenter": "https://trust.getambassador.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/getambassador.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "AmpUp",
@@ -167,6 +188,13 @@
       "trustCenter": "https://security.aragorn.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=aragorn.ai&sz=128"
+    },
+    {
+      "name": "Arbol",
+      "website": "growarbol.com",
+      "trustCenter": "https://trust.growarbol.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/growarbol.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Archbee",
@@ -239,11 +267,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=avo.app&sz=128"
     },
     {
+      "name": "Aware Health",
+      "website": "awarehealth.io",
+      "trustCenter": "https://trust.awarehealth.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/awarehealth.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Axle",
       "website": "https://axle.insure",
       "trustCenter": "https://trust.axle.insure",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://axle.insure&sz=128"
+    },
+    {
+      "name": "backstitch",
+      "website": "backstitch.io",
+      "trustCenter": "https://trust.backstitch.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/backstitch.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Belvo",
@@ -288,11 +330,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://withblast.com&sz=128"
     },
     {
+      "name": "Bluecore",
+      "website": "bluecore.com",
+      "trustCenter": "https://trust.bluecore.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/bluecore.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "BrainKey",
       "website": "https://www.brainkey.ai/",
       "trustCenter": "https://trust.brainkey.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.brainkey.ai/&sz=128"
+    },
+    {
+      "name": "Branching Minds",
+      "website": "branchingminds.com",
+      "trustCenter": "https://trust.branchingminds.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/branchingminds.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "BrioHR",
@@ -323,6 +379,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://buster.so&sz=128"
     },
     {
+      "name": "Cabinet",
+      "website": "joincabinet.com",
+      "trustCenter": "https://trust.joincabinet.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/joincabinet.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Café",
       "website": "https://at.cafe",
       "trustCenter": "https://trust.at.cafe",
@@ -349,6 +412,13 @@
       "trustCenter": "https://trust.carbonfact.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.carbonfact.com&sz=128"
+    },
+    {
+      "name": "Careerflow",
+      "website": "careerflow.ai",
+      "trustCenter": "https://trust.careerflow.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/careerflow.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "CareSwift",
@@ -398,6 +468,13 @@
       "trustCenter": "https://trust.cero.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://cero.ai&sz=128"
+    },
+    {
+      "name": "Chainalysis",
+      "website": "chainalysis.com",
+      "trustCenter": "https://trust.chainalysis.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/chainalysis.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Chargeflow",
@@ -463,6 +540,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://clarionhealth.com&sz=128"
     },
     {
+      "name": "Cledara",
+      "website": "cledara.com",
+      "trustCenter": "https://trust.cledara.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/cledara.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "CloudCruise",
       "website": "https://cloudcruise.com",
       "trustCenter": "https://trust.cloudcruise.com",
@@ -475,6 +559,13 @@
       "trustCenter": "https://trust.cloudglue.dev",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://cloudglue.dev&sz=128"
+    },
+    {
+      "name": "Cloverleaf AI",
+      "website": "cloverleaf.ai",
+      "trustCenter": "https://trust.cloverleaf.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/cloverleaf.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Cluely",
@@ -568,11 +659,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://trycontour.com&sz=128"
     },
     {
+      "name": "ContractPower",
+      "website": "contractpower.ai",
+      "trustCenter": "https://trust.contractpower.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/contractpower.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Conveo",
       "website": "https://conveo.ai/",
       "trustCenter": "https://trust.conveo.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://conveo.ai/&sz=128"
+    },
+    {
+      "name": "ConvertFlow",
+      "website": "convertflow.com",
+      "trustCenter": "https://trust.convertflow.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/convertflow.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Convex",
@@ -638,6 +743,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.cuckoo.so/&sz=128"
     },
     {
+      "name": "Curiflow",
+      "website": "curiflow.com",
+      "trustCenter": "https://trust.curiflow.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/curiflow.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Curri",
       "website": "http://www.curri.com",
       "trustCenter": "https://trust.curri.com",
@@ -680,11 +792,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=dashworks.ai&sz=128"
     },
     {
+      "name": "DataCamp",
+      "website": "datacamp.com",
+      "trustCenter": "https://trust.datacamp.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/datacamp.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Datacurve",
       "website": "https://datacurve.ai/",
       "trustCenter": "https://trust.datacurve.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://datacurve.ai/&sz=128"
+    },
+    {
+      "name": "Deep 6 AI",
+      "website": "deep6.ai",
+      "trustCenter": "https://trust.deep6.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/deep6.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Deepnote",
@@ -699,6 +825,13 @@
       "trustCenter": "https://trust.deepsource.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://deepsource.com/&sz=128"
+    },
+    {
+      "name": "Degreed",
+      "website": "degreed.com",
+      "trustCenter": "https://trust.degreed.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/degreed.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Delve",
@@ -755,6 +888,20 @@
       "trustCenter": "https://trust.disclo.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.disclo.com&sz=128"
+    },
+    {
+      "name": "DNSFilter",
+      "website": "dnsfilter.com",
+      "trustCenter": "https://trust.dnsfilter.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/dnsfilter.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "DocStation",
+      "website": "docstation.co",
+      "trustCenter": "https://trust.docstation.co",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/docstation.co?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Docsum",
@@ -855,6 +1002,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.epsilon3.io/&sz=128"
     },
     {
+      "name": "Eskuad",
+      "website": "eskuad.com",
+      "trustCenter": "https://trust.eskuad.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/eskuad.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Eudia",
       "website": "https://eudia.com/",
       "trustCenter": "https://trust.eudia.com/",
@@ -862,11 +1016,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=eudia.com&sz=128"
     },
     {
+      "name": "ExactRx",
+      "website": "exactrx.ai",
+      "trustCenter": "https://trust.exactrx.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/exactrx.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Expo",
       "website": "https://expo.dev",
       "trustCenter": "https://expo.dev/trust",
       "platform": "SafeBase",
       "iconUrl": "https://www.google.com/s2/favicons?domain=expo.dev&sz=128"
+    },
+    {
+      "name": "Ezra AI Labs",
+      "website": "https://ezraailabs.tech",
+      "trustCenter": "https://trust.ezraailabs.tech",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/ezraailabs.tech?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Fathom",
@@ -944,6 +1112,13 @@
       "trustCenter": "https://trust.floathealth.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://floathealth.com/&sz=128"
+    },
+    {
+      "name": "FLORA",
+      "website": "https://florafauna.ai",
+      "trustCenter": "https://trust.florafauna.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/florafauna.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Flower",
@@ -1079,6 +1254,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=workspace.google.com&sz=128"
     },
     {
+      "name": "Gorgias",
+      "website": "gorgias.com",
+      "trustCenter": "https://trust.gorgias.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/gorgias.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Govly",
       "website": "https://www.govly.com/",
       "trustCenter": "https://security.govly.com",
@@ -1142,11 +1324,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://gusto.com&sz=128"
     },
     {
+      "name": "HackMD",
+      "website": "hackmd.io",
+      "trustCenter": "https://trust.hackmd.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/hackmd.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Hadrius",
       "website": "https://www.hadrius.com",
       "trustCenter": "https://trust.hadrius.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.hadrius.com&sz=128"
+    },
+    {
+      "name": "Halsted AI",
+      "website": "halstedhealth.ai",
+      "trustCenter": "https://trust.halstedhealth.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/halstedhealth.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Handle.com",
@@ -1191,6 +1387,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.healiahealth.com/&sz=128"
     },
     {
+      "name": "Healthie",
+      "website": "gethealthie.com",
+      "trustCenter": "https://trust.gethealthie.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/gethealthie.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "HealthSherpa",
       "website": "https://healthsherpa.com",
       "trustCenter": "https://trust.healthsherpa.com",
@@ -1219,6 +1422,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.helicone.ai/&sz=128"
     },
     {
+      "name": "Help Scout",
+      "website": "helpscout.com",
+      "trustCenter": "https://trust.helpscout.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/helpscout.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Heron Data",
       "website": "https://www.herondata.io",
       "trustCenter": "https://trust.herondata.io",
@@ -1240,6 +1450,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://heyrevia.ai&sz=128"
     },
     {
+      "name": "HeyOpal",
+      "website": "heyopal.com",
+      "trustCenter": "https://trust.heyopal.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/heyopal.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Hightouch",
       "website": "https://hightouch.com/",
       "trustCenter": "https://trust.hightouch.com",
@@ -1252,6 +1469,13 @@
       "trustCenter": "https://trust.usehindsight.com",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.usehindsight.com/&sz=128"
+    },
+    {
+      "name": "Hireguide",
+      "website": "hireguide.com",
+      "trustCenter": "https://trust.hireguide.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/hireguide.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Hive",
@@ -1401,6 +1625,12 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.invopop.com/&sz=128"
     },
     {
+      "name": "iru",
+      "website": "https://www.iru.com/",
+      "trustCenter": "https://trust.iru.com/",
+      "iconUrl": "https://www.google.com/s2/favicons?domain=iru.com&sz=128"
+    },
+    {
       "name": "Jerry",
       "website": "https://getjerry.com",
       "trustCenter": "https://trust.getjerry.com",
@@ -1443,6 +1673,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=kabilah.com&sz=128"
     },
     {
+      "name": "Kadence",
+      "website": "kadence.co",
+      "trustCenter": "https://trust.kadence.co",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/kadence.co?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Kandji",
       "website": "https://www.kandji.io",
       "trustCenter": "https://trust.kandji.io",
@@ -1455,6 +1692,13 @@
       "trustCenter": "https://trust.trykarat.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://trykarat.com&sz=128"
+    },
+    {
+      "name": "Kard",
+      "website": "getkard.com",
+      "trustCenter": "https://trust.getkard.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/getkard.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Kastle",
@@ -1471,6 +1715,20 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.keeper.app&sz=128"
     },
     {
+      "name": "Kilsar",
+      "website": "kilsar.com",
+      "trustCenter": "https://trust.kilsar.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/kilsar.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Kintsugi",
+      "website": "kintsugihealth.com",
+      "trustCenter": "https://trust.kintsugihealth.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/kintsugihealth.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Klarity",
       "website": "http://klarity.ai",
       "trustCenter": "https://trust.klarity.ai",
@@ -1483,6 +1741,13 @@
       "trustCenter": "https://trust.koalaops.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://koalaops.com/&sz=128"
+    },
+    {
+      "name": "korzo",
+      "website": "korzo.com",
+      "trustCenter": "https://trust.korzo.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/korzo.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Lamin",
@@ -1534,6 +1799,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=laylo.com&sz=128"
     },
     {
+      "name": "Lazarus",
+      "website": "lazarusai.com",
+      "trustCenter": "https://trust.lazarusai.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/lazarusai.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Legion Health",
       "website": "https://legionhealth.com",
       "trustCenter": "https://trust.legionhealth.com",
@@ -1569,11 +1841,32 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.linkana.com&sz=128"
     },
     {
+      "name": "Linker Finance",
+      "website": "linkerfinance.com",
+      "trustCenter": "https://trust.linkerfinance.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/linkerfinance.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Lob",
       "website": "http://lob.com",
       "trustCenter": "https://trust.lob.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://lob.com&sz=128"
+    },
+    {
+      "name": "Localize",
+      "website": "localizejs.com",
+      "trustCenter": "https://trust.localizejs.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/localizejs.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "LogicGate",
+      "website": "logicgate.com",
+      "trustCenter": "https://trust.logicgate.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/logicgate.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Loula",
@@ -1716,6 +2009,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.middesk.com&sz=128"
     },
     {
+      "name": "Milk Moovement",
+      "website": "milkmoovement.com",
+      "trustCenter": "https://trust.milkmoovement.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/milkmoovement.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Mindset Health",
       "website": "https://www.mindsethealth.com",
       "trustCenter": "https://trust.mindsethealth.com",
@@ -1849,6 +2149,20 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://nimblerx.com&sz=128"
     },
     {
+      "name": "Nixtla",
+      "website": "nixtla.io",
+      "trustCenter": "https://trust.nixtla.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/nixtla.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Nossa Data",
+      "website": "nossadata.com",
+      "trustCenter": "https://trust.nossadata.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/nossadata.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Notabene",
       "website": "https://notabene.id",
       "trustCenter": "https://trust.notabene.id",
@@ -1868,6 +2182,13 @@
       "trustCenter": "https://trust.novacredit.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.novacredit.com/&sz=128"
+    },
+    {
+      "name": "Novo",
+      "website": "novo.co",
+      "trustCenter": "https://trust.novo.co",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/novo.co?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "nunu.ai",
@@ -1933,11 +2254,32 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://osmosis.ai/&sz=128"
     },
     {
+      "name": "Our Leg Up",
+      "website": "ourlegup.com",
+      "trustCenter": "https://trust.ourlegup.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/ourlegup.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "OutRival",
       "website": "https://outrival.com/",
       "trustCenter": "https://trust.outrival.com/",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=outrival.com&sz=128"
+    },
+    {
+      "name": "Ovida",
+      "website": "ovida.io",
+      "trustCenter": "https://trust.ovida.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/ovida.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Own Up",
+      "website": "ownup.com",
+      "trustCenter": "https://trust.ownup.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/ownup.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Paragon",
@@ -2059,6 +2401,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=popl.co&sz=128"
     },
     {
+      "name": "PortF",
+      "website": "portf.io",
+      "trustCenter": "https://trust.portf.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/portf.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Postman",
       "website": "https://postman.com/",
       "trustCenter": "https://security.postman.com/",
@@ -2127,6 +2476,20 @@
       "trustCenter": "https://trust.usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://usepylon.com/?utm_source=bookface&utm_medium=referral&utm_campaign=pylon-profile&sz=128"
+    },
+    {
+      "name": "Qovery",
+      "website": "qovery.com",
+      "trustCenter": "https://trust.qovery.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/qovery.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Qualifi",
+      "website": "qualifi.hr",
+      "trustCenter": "https://trust.qualifi.hr",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/qualifi.hr?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Quartzy",
@@ -2225,6 +2588,13 @@
       "trustCenter": "https://security.recall.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=recall.ai&sz=128"
+    },
+    {
+      "name": "Reelist",
+      "website": "reelist.com",
+      "trustCenter": "https://trust.reelist.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/reelist.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Relace",
@@ -2353,6 +2723,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://rulebase.co&sz=128"
     },
     {
+      "name": "Runbear",
+      "website": "plugbear.io",
+      "trustCenter": "https://trust.plugbear.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/plugbear.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Rutter",
       "website": "https://rutter.com",
       "trustCenter": "https://trust.rutter.com",
@@ -2379,6 +2756,13 @@
       "trustCenter": "https://trust.salesforce.com",
       "platform": "Self-hosted",
       "iconUrl": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128"
+    },
+    {
+      "name": "SalesLoft",
+      "website": "salesloft.com",
+      "trustCenter": "https://trust.salesloft.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/salesloft.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Sample",
@@ -2500,6 +2884,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.sinai.com&sz=128"
     },
     {
+      "name": "SkenarioLabs",
+      "website": "skenariolabs.com",
+      "trustCenter": "https://trust.skenariolabs.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/skenariolabs.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "SketchDeck",
       "website": "https://sketchdeck.com",
       "trustCenter": "https://trust.sketchdeck.com",
@@ -2605,6 +2996,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.stackup.fi&sz=128"
     },
     {
+      "name": "Staq",
+      "website": "staq.io",
+      "trustCenter": "https://trust.staq.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/staq.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Storylane",
       "website": "https://www.storylane.io/",
       "trustCenter": "https://trust.storylane.io",
@@ -2617,6 +3015,13 @@
       "trustCenter": "https://trust.getstrada.com",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.getstrada.com/&sz=128"
+    },
+    {
+      "name": "Stream",
+      "website": "getstream.io",
+      "trustCenter": "https://trust.getstream.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/getstream.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Stripe",
@@ -2710,6 +3115,13 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://goteleport.com&sz=128"
     },
     {
+      "name": "telnyx",
+      "website": "telnyx.com",
+      "trustCenter": "https://trust.telnyx.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/telnyx.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Temporal",
       "website": "https://temporal.io/",
       "trustCenter": "https://trust.temporal.io/",
@@ -2722,6 +3134,13 @@
       "trustCenter": "https://trust.tenyks.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://tenyks.ai/&sz=128"
+    },
+    {
+      "name": "Testlio",
+      "website": "testlio.com",
+      "trustCenter": "https://trust.testlio.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/testlio.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Tidio",
@@ -2738,11 +3157,25 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://tigereye.com/&sz=128"
     },
     {
+      "name": "TiLT",
+      "website": "hellotilt.com",
+      "trustCenter": "https://trust.hellotilt.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/hellotilt.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Tint",
       "website": "http://www.tint.ai",
       "trustCenter": "https://trust.tint.ai",
       "platform": "Vanta",
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://www.tint.ai&sz=128"
+    },
+    {
+      "name": "Tive",
+      "website": "tive.com",
+      "trustCenter": "https://trust.tive.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/tive.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Toku",
@@ -2813,6 +3246,20 @@
       "trustCenter": "https://trust.trytrueclaim.com",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.trytrueclaim.com&sz=128"
+    },
+    {
+      "name": "Trust & Will",
+      "website": "trustandwill.com",
+      "trustCenter": "https://trust.trustandwill.com",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/trustandwill.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Twelve Labs",
+      "website": "twelvelabs.io",
+      "trustCenter": "https://trust.twelvelabs.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/twelvelabs.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Typeform",
@@ -2948,6 +3395,20 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=http://vouch.us&sz=128"
     },
     {
+      "name": "Voyc",
+      "website": "voyc.ai",
+      "trustCenter": "https://trust.voyc.ai",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/voyc.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
+      "name": "Wagmo",
+      "website": "wagmo.io",
+      "trustCenter": "https://trust.wagmo.io",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/wagmo.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+    },
+    {
       "name": "Wallbit",
       "website": "https://wallbit.io",
       "trustCenter": "https://security.wallbit.io",
@@ -2995,6 +3456,13 @@
       "trustCenter": "https://trust.windmill.dev",
       "platform": "Oneleet",
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://windmill.dev&sz=128"
+    },
+    {
+      "name": "Wiseair",
+      "website": "wiseair.vision",
+      "trustCenter": "https://trust.wiseair.vision",
+      "platform": "Vanta",
+      "iconUrl": "https://img.logo.dev/wiseair.vision?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Wispr Flow",
@@ -3096,8 +3564,8 @@
     }
   ],
   "meta": {
-    "total": 442,
-    "generated": "2025-10-23T06:10:56.379Z",
+    "total": 509,
+    "generated": "2025-10-28T02:17:17.063Z",
     "version": "1.0.0"
   }
 }

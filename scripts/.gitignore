@@ -1,0 +1,26 @@
+# Logs
+*.log
+
+# Temporary files
+*-temp.json
+*-temp.csv
+
+# Test scripts
+test-*.js
+verify-*.js
+check-*.js
+
+# Debug/raw data
+*-raw.json
+*-partial.json
+
+# Intermediate results (keep only final)
+*-verified.json
+*-high-confidence.json
+*-manual-review.csv
+
+# Large CSVs (keep only essential ones)
+# Uncomment specific files you want to keep:
+# !techstars-auto-pr-candidates.csv
+# !a16z-auto-pr-candidates.csv
+

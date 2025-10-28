@@ -1,0 +1,596 @@
+[
+  {
+    "name": "Chainalysis",
+    "website": "chainalysis.com",
+    "trustCenter": "https://trust.chainalysis.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Chainalysis helps government agencies, cryptocurrency businesses, and financial institutions engage confidently with cryptocurrency.",
+    "cname": "chainalysis.portals.safebase.io"
+  },
+  {
+    "name": "SalesLoft",
+    "website": "salesloft.com",
+    "trustCenter": "https://trust.salesloft.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Salesloft helps thousands of the world's most successful selling teams drive more revenue with the Modern Revenue Workspace(tm).",
+    "cname": "salesloft.securitypal.com"
+  },
+  {
+    "name": "Degreed",
+    "website": "degreed.com",
+    "trustCenter": "https://trust.degreed.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Degreed is the upskilling platform that connects learning, talent development and internal mobility opportunities in one place.",
+    "cname": "degreed.secureframetrust.com"
+  },
+  {
+    "name": "Novo",
+    "website": "novo.co",
+    "trustCenter": "https://trust.novo.co",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Novo is a fintech that offers a banking platform to meet the needs of small businesses for free business checking and faster money movement.",
+    "cname": "665e1815968d0ea9ead1d8ae.cname.vantatrust.com"
+  },
+  {
+    "name": "Bluecore",
+    "website": "bluecore.com",
+    "trustCenter": "https://trust.bluecore.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Relevant trigger emails for Ecommerce",
+    "cname": "bluecore.portals.safebase.io"
+  },
+  {
+    "name": "Kadence",
+    "website": "kadence.co",
+    "trustCenter": "https://trust.kadence.co",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "SaaS, B2B SaaS, Future of Work",
+    "cname": "trust.cname.drata.com"
+  },
+  {
+    "name": "Gorgias",
+    "website": "gorgias.com",
+    "trustCenter": "https://trust.gorgias.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Manage all your customer support in one place with Gorgias.",
+    "cname": "5f29cfc5bab5ecd5ac2ff59a.cname.vantatrust.com"
+  },
+  {
+    "name": "Tive",
+    "website": "tive.com",
+    "trustCenter": "https://trust.tive.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Sensor driven supply chain optimization.",
+    "cname": "600f0769c91023ce784ec739.cname.vantatrust.com"
+  },
+  {
+    "name": "LogicGate",
+    "website": "logicgate.com",
+    "trustCenter": "https://trust.logicgate.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Empowering businesses to transform disorganized risk and compliance processes into enterprise-grade applications, without writing a single line of code.",
+    "cname": "elb-conveyor-106592.aptible.in"
+  },
+  {
+    "name": "Trust & Will",
+    "website": "trustandwill.com",
+    "trustCenter": "https://trust.trustandwill.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "The easy, fast, and secure way to set up your estate plan online",
+    "cname": "trust.cname.drata.com"
+  },
+  {
+    "name": "DNSFilter",
+    "website": "dnsfilter.com",
+    "trustCenter": "https://trust.dnsfilter.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "DNSFilter provides industry-leading DNS threat protection and content filtering.",
+    "cname": "6487240db79e25ca06328eec.cname.vantatrust.com"
+  },
+  {
+    "name": "Own Up",
+    "website": "ownup.com",
+    "trustCenter": "https://trust.ownup.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Own Up is a technology company that exists to make sure every American gets a fair deal on their mortgage.",
+    "cname": "66098e1256ebe8ef9fc2f005.cname.vantatrust.com"
+  },
+  {
+    "name": "Healthie",
+    "website": "gethealthie.com",
+    "trustCenter": "https://trust.gethealthie.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Healthie is a web and mobile platform for dietitians and nutritionists to manage their practice.",
+    "cname": "610aa839dc46cb701bd86a37.cname.vantatrust.com"
+  },
+  {
+    "name": "DataCamp",
+    "website": "datacamp.com",
+    "trustCenter": "https://trust.datacamp.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Learn data analysis, interactively",
+    "cname": "6740bc226b990cb0fbe8d1ea.cname.vantatrust.com"
+  },
+  {
+    "name": "Twelve Labs",
+    "website": "twelvelabs.io",
+    "trustCenter": "https://trust.twelvelabs.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "CTRL + F for contexts within videos.",
+    "cname": "626c3a10a41825ecf7464853.cname.vantatrust.com"
+  },
+  {
+    "name": "Stream",
+    "website": "getstream.io",
+    "trustCenter": "https://trust.getstream.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "API for building activity feeds and chat",
+    "cname": "68370183d6155181083db513.cname.vantatrust.com"
+  },
+  {
+    "name": "Testlio",
+    "website": "testlio.com",
+    "trustCenter": "https://trust.testlio.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Testlio is an expert community of verified mobile testers with a platform that seamlessly integrates into your team's development process.",
+    "cname": "67acdca81db01d3141ac12c3.cname.vantatrust.com"
+  },
+  {
+    "name": "Help Scout",
+    "website": "helpscout.com",
+    "trustCenter": "https://trust.helpscout.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Help Scout makes customer support tools that keep customers happy as you grow.",
+    "cname": "elb-conveyor-103912.aptible.in"
+  },
+  {
+    "name": "telnyx",
+    "website": "telnyx.com",
+    "trustCenter": "https://trust.telnyx.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Telnyx provides developers access to real-time voice and SMS capabilities via communication API.",
+    "cname": "trust.cname.drata.com"
+  },
+  {
+    "name": "Kard",
+    "website": "getkard.com",
+    "trustCenter": "https://trust.getkard.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Kard is a two-sided loyalty program that helps consumers earn more rewards while helping card issuers offset their loyalty costs.",
+    "cname": "6658c5623a3cc20954429bda.cname.vantatrust.com"
+  },
+  {
+    "name": "Kintsugi",
+    "website": "kintsugihealth.com",
+    "trustCenter": "https://trust.kintsugihealth.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Kintsugi detects signs of clinical depression and anxiety using machine learning and voice biomarkers.",
+    "cname": "601cd4d1a181ea14b1d29040.cname.vantatrust.com"
+  },
+  {
+    "name": "Milk Moovement",
+    "website": "milkmoovement.com",
+    "trustCenter": "https://trust.milkmoovement.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Milk Moovement is transforming the traditional dairy supply chain by bringing all stakeholders onto its collaborative, cloud-based software.",
+    "cname": "trust.cname.drata.com"
+  },
+  {
+    "name": "Cledara",
+    "website": "cledara.com",
+    "trustCenter": "https://trust.cledara.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Purchasing and analytics platform for startups",
+    "cname": "61af76a73d7c181b0c78cab1.cname.vantatrust.com"
+  },
+  {
+    "name": "TiLT",
+    "website": "hellotilt.com",
+    "trustCenter": "https://trust.hellotilt.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "TiLT is reimagining Leave Management.",
+    "cname": "63c0469b3be401fb606b806a.cname.vantatrust.com"
+  },
+  {
+    "name": "Branching Minds",
+    "website": "branchingminds.com",
+    "trustCenter": "https://trust.branchingminds.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "path for every learner",
+    "cname": "branchingminds.portals.safebase.io"
+  },
+  {
+    "name": "Wagmo",
+    "website": "wagmo.io",
+    "trustCenter": "https://trust.wagmo.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Wagmo is a doggy wellness plan.",
+    "cname": "626ae4dfa41825ecf7bae69b.cname.vantatrust.com"
+  },
+  {
+    "name": "Allstacks",
+    "website": "allstacks.com",
+    "trustCenter": "https://trust.allstacks.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Allstacks quantifies productivity of your software engineering, delivering engineering managers visibility into team performance.",
+    "cname": "5da65de6af1c674e4e7c4dfe.cname.vantatrust.com"
+  },
+  {
+    "name": "Qovery",
+    "website": "qovery.com",
+    "trustCenter": "https://trust.qovery.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Qovery is the first Container as a Service (CaaS) platform that allows anyone to develop and deploy an application in just a few minutes.",
+    "cname": "61e08a6d471122853d8c7c65.cname.vantatrust.com"
+  },
+  {
+    "name": "Hireguide",
+    "website": "hireguide.com",
+    "trustCenter": "https://trust.hireguide.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Plan and transcribe structured interviews with ease so you can hire the right person faster, fairer, and with certainty.",
+    "cname": "hireguide.portals.safebase.io"
+  },
+  {
+    "name": "Aware Health",
+    "website": "awarehealth.io",
+    "trustCenter": "https://trust.awarehealth.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Aware Health diagnoses/treats joint pain without imaging or surgery.",
+    "cname": "676630a08ce3058cc34b73e2.cname.vantatrust.com"
+  },
+  {
+    "name": "Deep 6 AI",
+    "website": "deep6.ai",
+    "trustCenter": "https://trust.deep6.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Deep 6 AI applies artificial intelligence and natural language processing to medical records to find more patients for clinical trials exponentially faster.",
+    "cname": "652d66597b09953d8782247c.cname.vantatrust.com"
+  },
+  {
+    "name": "SkenarioLabs",
+    "website": "skenariolabs.com",
+    "trustCenter": "https://trust.skenariolabs.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "We predict the value and risks in properties using data and AI. On both residential and commercial real-estate.",
+    "cname": "627d1e1fa41825ecf7e750a5.cname.vantatrust.com"
+  },
+  {
+    "name": "DocStation",
+    "website": "docstation.co",
+    "trustCenter": "https://trust.docstation.co",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "DocStation is a clinical platform (EHR) for pharmacists.",
+    "cname": "612fb28e85dbc71bb8964d69.cname.vantatrust.com"
+  },
+  {
+    "name": "HackMD",
+    "website": "hackmd.io",
+    "trustCenter": "https://trust.hackmd.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "HackMD helps developers write better documents and build active communities with open collaboration.",
+    "cname": "66a3f5b717f6ad4ce8ecb1c9.cname.vantatrust.com"
+  },
+  {
+    "name": "Ambassador",
+    "website": "getambassador.com",
+    "trustCenter": "https://trust.getambassador.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Referral, Partner and Affiliate Tracking and Management.",
+    "cname": "62dea8991d4d716d605549af.cname.vantatrust.com"
+  },
+  {
+    "name": "Nixtla",
+    "website": "nixtla.io",
+    "trustCenter": "https://trust.nixtla.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "State of the Art Forecasting Software.",
+    "cname": "trust.oneleet.com"
+  },
+  {
+    "name": "backstitch",
+    "website": "backstitch.io",
+    "trustCenter": "https://trust.backstitch.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Hubspot for HR",
+    "cname": "6336136f372ed4d85b6bed7f.cname.vantatrust.com"
+  },
+  {
+    "name": "Qualifi",
+    "website": "qualifi.hr",
+    "trustCenter": "https://trust.qualifi.hr",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Qualifi empowers the fastest phone interviews in the world! We've helped small teams up to Fortune 500 companies complete 1000s of interviews with Qualifi.",
+    "cname": "61ae8c6b3d7c181b0c333ecc.cname.vantatrust.com"
+  },
+  {
+    "name": "altvia",
+    "website": "altvia.com",
+    "trustCenter": "https://trust.altvia.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Solutions for alternative asset managers",
+    "cname": "proxy.hypercomplytrust.com"
+  },
+  {
+    "name": "Kilsar",
+    "website": "kilsar.com",
+    "trustCenter": "https://trust.kilsar.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Kilsar provides a suite of software and hardware solutions that enable real-time intelligence, multi-channel communication, augmented reality (AR), and digital tooling capabilities for teams and workforces.",
+    "cname": "kilsar.secureframetrust.com"
+  },
+  {
+    "name": "Voyc",
+    "website": "voyc.ai",
+    "trustCenter": "https://trust.voyc.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "AI software to monitor & improve call centre quality assurance & agent performance.",
+    "cname": "voyc.portals.safebase.io"
+  },
+  {
+    "name": "PortF",
+    "website": "portf.io",
+    "trustCenter": "https://trust.portf.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "PortF is a platform serves investors, debt providers, and SMEs.",
+    "cname": "64dcf2ed6491f66d23a2e867.cname.vantatrust.com"
+  },
+  {
+    "name": "Linker Finance",
+    "website": "linkerfinance.com",
+    "trustCenter": "https://trust.linkerfinance.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Linker Finance is a cost-effective turnkey solution and low-code platform that enables brands to launch their custom FinTech app in weeks.",
+    "cname": "650999a18dfab7d4e4c86119.cname.vantatrust.com"
+  },
+  {
+    "name": "Cabinet",
+    "website": "joincabinet.com",
+    "trustCenter": "https://trust.joincabinet.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Cabinet is the hub where executive assistants can access, share and discover insider information they can't find anywhere else.",
+    "cname": "cabinet.secureframetrust.com"
+  },
+  {
+    "name": "Cloverleaf AI",
+    "website": "cloverleaf.ai",
+    "trustCenter": "https://trust.cloverleaf.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Cloverleaf AI delivers actionable insights from government meetings, empowering our customers to make the right decisions faster and cheaper.",
+    "cname": "68809767da9ce31a7ad9c785.cname.vantatrust.com"
+  },
+  {
+    "name": "Reelist",
+    "website": "reelist.com",
+    "trustCenter": "https://trust.reelist.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Reelist replaces written job descriptions with engaging video job posts on the social media platforms where job seekers already are, making hiring cheaper and quicker.",
+    "cname": "66fe9950b4ef31ac7c9518bb.cname.vantatrust.com"
+  },
+  {
+    "name": "Wiseair",
+    "website": "wiseair.vision",
+    "trustCenter": "https://trust.wiseair.vision",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "At Wiseair, we are enabling data-driven policy-making for sustainable cities and communities. Our product today is a solution to tackle air pollution in cities.",
+    "cname": "66ab41adbefad478d61d0b4c.cname.vantatrust.com"
+  },
+  {
+    "name": "Nossa Data",
+    "website": "nossadata.com",
+    "trustCenter": "https://trust.nossadata.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Empowering companies to manage and plan their Environmental, Social, and Governance (ESG) needs.",
+    "cname": "67ea4d2419b3aca72f6edf48.cname.vantatrust.com"
+  },
+  {
+    "name": "ConvertFlow",
+    "website": "convertflow.com",
+    "trustCenter": "https://trust.convertflow.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Build funnels like a pro for any site",
+    "cname": "67c0bea2e87e71597b8fdc50.cname.vantatrust.com"
+  },
+  {
+    "name": "Ovida",
+    "website": "ovida.io",
+    "trustCenter": "https://trust.ovida.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Ovida is an AI-driven communication skills platform that helps people master critical workplace conversations through personalized feedback and skill development. By combining advanced AI analysis with expert-designed learning journeys, we enable organizations to develop their people's communication and leadership capabilities at scale - focusing on the human interactions that will remain essential in the AI era, while delivering results at a fraction of traditional training cost and time.",
+    "cname": "trust.oneleet.com"
+  },
+  {
+    "name": "Our Leg Up",
+    "website": "ourlegup.com",
+    "trustCenter": "https://trust.ourlegup.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Put your home equity to work and generate an additional income without any cash outlay.",
+    "cname": "our-leg-up.secureframetrust.com"
+  },
+  {
+    "name": "Careerflow",
+    "website": "careerflow.ai",
+    "trustCenter": "https://trust.careerflow.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Utilizes AI to help customers land their dream jobs.",
+    "cname": "6647db0f3a3cc209542e54c0.cname.vantatrust.com"
+  },
+  {
+    "name": "Lazarus",
+    "website": "lazarusai.com",
+    "trustCenter": "https://trust.lazarusai.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Lazarus uses historical patient data and deep learning to help predict the early onset of cancer, improving physician outcomes.",
+    "cname": "trust.cname.drata.com"
+  },
+  {
+    "name": "Halsted AI",
+    "website": "halstedhealth.ai",
+    "trustCenter": "https://trust.halstedhealth.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Halsted AI helps medical liability insurers and health systems reduce malpractice risk and improve surgical performance by providing an AI-powered platform that analyzes surgical videos and delivers targeted feedback to minimize errors and claims.",
+    "cname": "68938290d6b75af9fb210054.cname.vantatrust.com"
+  },
+  {
+    "name": "Curiflow",
+    "website": "curiflow.com",
+    "trustCenter": "https://trust.curiflow.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "HIPAA compliant Zapier-like platform for healthcare enterprises",
+    "cname": "66f5b507b4ef31ac7c2d6f7f.cname.vantatrust.com"
+  },
+  {
+    "name": "HeyOpal",
+    "website": "heyopal.com",
+    "trustCenter": "https://trust.heyopal.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "We connect the dots in mental healthcare by unifying its landscape around the client. We give clients agency to inform their treatment, and support clinicians to deliver high-quality, scalable care by making communication more effective. We help progress continue between sessions using clinician-driven conversational AI interventions to promote higher engagement, retention, and ultimately better, faster treatment outcomes.",
+    "cname": "65554d8a734955947ec631f0.cname.vantatrust.com"
+  },
+  {
+    "name": "Eskuad",
+    "website": "eskuad.com",
+    "trustCenter": "https://trust.eskuad.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "A mobile-first data platform that empowers field workers, by providing a user-friendly interface and seamless offline operability.",
+    "cname": "646bc0a3533993cf215e5299.cname.vantatrust.com"
+  },
+  {
+    "name": "ExactRx",
+    "website": "exactrx.ai",
+    "trustCenter": "https://trust.exactrx.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "ExactRx is a healthcare technology company that creates AI-native, intelligent care environments to increase care capacity and recapture revenue for surgical centers.",
+    "cname": "celeste-health.secureframetrust.com"
+  },
+  {
+    "name": "Localize",
+    "website": "localizejs.com",
+    "trustCenter": "https://trust.localizejs.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Translate a website with one line of code",
+    "cname": "6025932ea181ea14b1c2192b.cname.vantatrust.com"
+  },
+  {
+    "name": "Arbol",
+    "website": "growarbol.com",
+    "trustCenter": "https://trust.growarbol.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Arbol helps low income students stay in school and graduate through financial and community support.",
+    "cname": "trust.oneleet.com"
+  },
+  {
+    "name": "Runbear",
+    "website": "plugbear.io",
+    "trustCenter": "https://trust.plugbear.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "For companies that have difficulties integrating their own LLM Apps into work processes, we provide no-/low-code software to integrate the LLM Apps into daily work tools, such as Slack or HubSpot.",
+    "cname": "659d93054807912dd6054bfd.cname.vantatrust.com"
+  },
+  {
+    "name": "korzo",
+    "website": "korzo.com",
+    "trustCenter": "https://trust.korzo.com",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "For modern generations that want to build and grow their wealth like the 1%, we offer a 24/7 personalized AI Wealth Advisor",
+    "cname": "6752398e766c9d36b55119c1.cname.vantatrust.com"
+  },
+  {
+    "name": "ContractPower",
+    "website": "contractpower.ai",
+    "trustCenter": "https://trust.contractpower.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "A vertical specific contract management platform that reduces liability while decreasing reading time by 80%. ",
+    "cname": "contractpower-inc.secureframetrust.com"
+  },
+  {
+    "name": "Staq",
+    "website": "staq.io",
+    "trustCenter": "https://trust.staq.io",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Staq is a backend-as-a-service for games. We make it simple to monetize and optimize free to play games on mobile, web and consoles.",
+    "cname": "66bdccb25a6858063f7c4444.cname.vantatrust.com"
+  },
+  {
+    "name": "Ezra AI Labs",
+    "website": "https://ezraailabs.tech",
+    "trustCenter": "https://trust.ezraailabs.tech",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "Recruiting today is drowning in noise: AI-written resumes, scripted interviews, and candidates openly cheating with ChatGPT. Ezra was built by recruiters, for recruiters, on two years of R&D in Voice AI to restore the signals that matter—nuance, authenticity, and fairness. We help you find the needles in the haystack at scale, so you stop wasting time on noise and start connecting with the right candidates.\r\n\r\nSee an interview here: https://drive.google.com/file/d/19O3JPaQocTGwEYxZaMiXANQ6fLqi4_R5/view\r\n\r\nTry an interview here: https://app.ezraailabs.tech/interviewFromLinkInvitation/63bc2564-d40f-4335-8234-128e1fac3b28",
+    "cname": "67c17d2539bdd9f45b8793fa.cname.vantatrust.com"
+  },
+  {
+    "name": "FLORA",
+    "website": "https://florafauna.ai",
+    "trustCenter": "https://trust.florafauna.ai",
+    "platform": "Vanta",
+    "detectionMethod": "CNAME",
+    "description": "FLORA is Cursor for creatives: the first agentic creative tool that lets you automate your entire creative workflow. FLORA brings the best text, image, and video AI models onto one infinite canvas, letting you concept faster, generate variations instantly, collaborate in real-time, and share generative workflows with clients. \r\n\r\nFLORA is already used by the best visual design agencies in the world such as Pentagram and Franklyn. We're backed by a16z Games, Menlo Ventures, Long Journey Ventures, and angels from Pika, Midjourney, Stability, and Facebook AI Research Lab.",
+    "cname": "florafauna.securitypal.com"
+  }
+]
