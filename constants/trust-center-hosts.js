@@ -65,6 +65,9 @@ module.exports = {
     'securitypal.com',
     'trust.securitypal.com',
     
+    // Iru (self-hosted at iru.com/trust-center)
+    'iru.com',
+    
     // Sprinto (uses CloudFront)
     // Note: Detected by cloudfront.net CNAME + trust subdomain pattern
   ],
@@ -104,6 +107,8 @@ module.exports = {
     'whistic.com': 'Whistic',
     
     'securitypal.com': 'SecurityPal',
+    
+    'iru.com': 'Iru',
   },
   
   // Confidence scoring

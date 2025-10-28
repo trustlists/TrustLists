@@ -25,7 +25,8 @@ const PLATFORM_INDICATORS = {
   'TrustArc': ['trust.trustarc.com', 'trustarc.com/trust'],
   'OneTrust': ['trust.onetrust.com', 'onetrust.com/trust'],
   'Whistic': ['app.whistic.com', 'whistic.com/trust'],
-  'SecurityPal': ['securitypalhq.com', 'securitypal.com/trust']
+  'SecurityPal': ['securitypalhq.com', 'securitypal.com/trust'],
+  'Iru': ['iru.com/trust-center', 'iru.com/compliance']
 };
 
 /**
