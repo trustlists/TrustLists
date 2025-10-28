@@ -20,21 +20,21 @@ TrustLists is an open-source project that welcomes contributions from the commun
   <Card
     title="Fix Platform Detection"
     icon="search"
-    href="https://github.com/trustlists/TrustLists/issues"
+    href="https://github.com/FelixMichaels/TrustLists/issues"
   >
     Improve platform detection accuracy
   </Card>
   <Card
     title="Report Issues"
     icon="bug"
-    href="https://github.com/trustlists/TrustLists/issues"
+    href="https://github.com/FelixMichaels/TrustLists/issues"
   >
     Report bugs or suggest improvements
   </Card>
   <Card
     title="Improve Documentation"
     icon="book"
-    href="https://github.com/trustlists/TrustLists"
+    href="https://github.com/FelixMichaels/TrustLists"
   >
     Help improve our documentation
   </Card>

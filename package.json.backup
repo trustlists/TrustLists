@@ -45,7 +45,7 @@
   "homepage": "https://trustlists.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trustlists/TrustLists.git"
+    "url": "https://github.com/FelixMichaels/TrustLists.git"
   },
   "license": "Apache-2.0"
 }
