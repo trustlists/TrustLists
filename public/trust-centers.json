@@ -1625,10 +1625,11 @@
       "iconUrl": "https://www.google.com/s2/favicons?domain=https://www.invopop.com/&sz=128"
     },
     {
-      "name": "iru",
+      "name": "Iru",
       "website": "https://www.iru.com/",
       "trustCenter": "https://trust.iru.com/",
-      "iconUrl": "https://www.google.com/s2/favicons?domain=iru.com&sz=128"
+      "platform": "Iru",
+      "iconUrl": "https://img.logo.dev/iru.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
     },
     {
       "name": "Jerry",
@@ -3565,7 +3566,7 @@
   ],
   "meta": {
     "total": 509,
-    "generated": "2025-10-28T02:17:17.063Z",
+    "generated": "2025-10-28T03:06:20.570Z",
     "version": "1.0.0"
   }
 }

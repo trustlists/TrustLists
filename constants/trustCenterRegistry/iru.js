@@ -1,6 +1,7 @@
 export default {
-  "name": "iru",
+  "name": "Iru",
   "website": "https://www.iru.com/",
   "trustCenter": "https://trust.iru.com/",
-  "iconUrl": "https://www.google.com/s2/favicons?domain=iru.com&sz=128"
+  "platform": "Iru",
+  "iconUrl": "https://img.logo.dev/iru.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
 };
