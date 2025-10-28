@@ -33,6 +33,7 @@ export default function Home({ trustCenters, stats, platformCounts }) {
       if (host.includes('onetrust.com')) return 'OneTrust';
       if (host.includes('secureframe.com')) return 'Secureframe';
       if (host.includes('whistic.com')) return 'Whistic';
+      if (host.includes('iru.com')) return 'Iru';
       if (host.startsWith('trust.') || host.includes('.trust.') || host.startsWith('security.') || host.includes('.security.')) return 'Self-hosted';
       return 'Other';
     } catch {
@@ -116,6 +117,12 @@ export default function Home({ trustCenters, stats, platformCounts }) {
         name: 'HyperComply',
         logoUrl: 'https://www.google.com/s2/favicons?domain=hypercomply.com&sz=32',
         website: 'https://hypercomply.com',
+        enabled: true
+      },
+      'Iru': {
+        name: 'Iru',
+        logoUrl: 'https://www.iru.com/favicon.ico',
+        website: 'https://www.iru.com',
         enabled: true
       }
     };
