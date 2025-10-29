@@ -369,11 +369,11 @@ export default {
                   <Link href="/" className="text-3xl font-bold text-gray-900 dark:text-white hover:text-blue-600">TrustList</Link>
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
-                  Submit a Trust Center
+                  Add your Trust Center
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Help the community by adding your company's trust center to our directory. 
-                  We review all submissions to ensure quality and accuracy.
+                  Showcase your company's commitment to security and transparency by joining our trusted directory.
+                  Gain visibility and build trust with potential customers.
                 </p>
               </div>
 
@@ -579,8 +579,8 @@ export default {
                       <div className="flex items-start space-x-3">
                         <InformationCircleIcon className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                         <div className="text-sm text-blue-800 dark:text-blue-200">
-                          <p className="font-medium mb-1">📧 Easy Submission Options</p>
-                          <p>Choose Email Submit for instant delivery (no account needed) or Manual Submit to learn the Git workflow.</p>
+                          <p className="font-medium mb-1">📧 Submit via Email or Web Link</p>
+                          <p>Select Email Submit for instant delivery (no account required) or Manual Submit to learn the Git workflow.</p>
                         </div>
                       </div>
                     </div>
