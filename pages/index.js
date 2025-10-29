@@ -358,10 +358,10 @@ Add any other context about the problem here.`);
                   <h1 className="text-3xl font-bold text-gray-900 dark:text-white">TrustList</h1>
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 max-w-3xl mx-auto xl:mx-0 text-center xl:text-left tracking-tight">
-                  Helping users connect to trusted companies
+                  Connect to trusted companies effortlessly
                 </h2>
                     <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed sm:leading-7 max-w-3xl mx-auto xl:mx-0 text-center xl:text-left">
-                      TrustList is a curated directory of company trust centers and compliance documentation. Easily discover and access security, privacy, and compliance information from trusted organizations.
+                      TrustList is your gateway to the trust centers of leading companies. Access compliance documentation effortlessly and ensure the highest standards of security, privacy, and compliance.
                     </p>
               </div>
 
@@ -371,7 +371,7 @@ Add any other context about the problem here.`);
                   href="/submit" 
                   className="w-full max-w-md xl:max-w-none mx-auto xl:mx-0 bg-blue-600 text-white px-6 py-4 rounded-xl hover:bg-blue-700 transition-all duration-200 flex items-center justify-center font-medium text-lg shadow-sm"
                 >
-                  <span className="mr-2 text-xl">+</span>
+                  <span className="mr-2 text-xl"></span>
                   Add Your Trust Center
                 </Link>
               </div>
@@ -413,7 +413,7 @@ Add any other context about the problem here.`);
                       <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
                     </svg>
                   )}
-                  Toggle Theme
+                  Switch Theme
                 </button>
               </div>
             </div>
@@ -671,13 +671,13 @@ Add any other context about the problem here.`);
                       onClick={showMore}
                       className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
                     >
-                      Show {Math.min(12, allFilteredTrustCenters.length - displayCount)} More Companies
+                      Load {Math.min(12, allFilteredTrustCenters.length - displayCount)} More
                     </button>
                     <button
                       onClick={showAll}
                       className="w-full sm:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors font-medium"
                     >
-                      Show All ({allFilteredTrustCenters.length})
+                      Show All
                     </button>
                   </div>
                 )}
