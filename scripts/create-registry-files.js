@@ -29,7 +29,7 @@ function createRegistryFile(company) {
   "website": "${company.website}",
   "trustCenter": "${company.trustCenter}",
   "platform": "${company.platform}",
-  "iconUrl": "https://img.logo.dev/${company.website.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]}?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=${company.website.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]}&sz=128"
 };
 `;
   
