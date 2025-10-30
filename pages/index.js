@@ -15,6 +15,19 @@ export default function Home({ trustCenters, stats, platformCounts }) {
   // Platform badges now enabled by default
   const platformPreviewEnabled = true;
 
+  // Normalize URLs to ensure absolute links
+  const getAbsoluteUrl = (url) => {
+    if (!url) return '';
+    try {
+      // If it already parses as a valid absolute URL, return as-is
+      const parsed = new URL(url);
+      return parsed.href;
+    } catch {
+      // Prepend https:// if protocol missing
+      return `https://${url.replace(/^\/*/, '')}`;
+    }
+  };
+
   // Get platform from company data (prefers stored platform field, falls back to URL detection)
   const getPlatform = (company) => {
     if (company.platform) return company.platform;
@@ -285,7 +298,7 @@ Add any other context about the problem here.`);
                 "item": {
                   "@type": "Organization",
                   "name": company.name,
-                  "url": company.website,
+                  "url": getAbsoluteUrl(company.website),
                   "sameAs": company.trustCenter
                 }
               }))
@@ -577,7 +590,7 @@ Add any other context about the problem here.`);
                             <div className="absolute right-0 top-8 w-48 bg-white dark:bg-gray-700 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600 py-2 z-10">
                               <button
                                 onClick={() => {
-                                  window.open(company.website, '_blank');
+                                  window.open(getAbsoluteUrl(company.website), '_blank');
                                   setOpenMenuId(null);
                                 }}
                                 className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 flex items-center"
