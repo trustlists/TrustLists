@@ -3,5 +3,5 @@ export default {
   "website": "https://ezraailabs.tech",
   "trustCenter": "https://trust.ezraailabs.tech",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/ezraailabs.tech?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=ezraailabs.tech&sz=128"
 };

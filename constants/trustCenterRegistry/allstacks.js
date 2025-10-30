@@ -3,5 +3,5 @@ export default {
   "website": "allstacks.com",
   "trustCenter": "https://trust.allstacks.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/allstacks.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=allstacks.com&sz=128"
 };

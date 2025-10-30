@@ -3,5 +3,5 @@ export default {
   "website": "voyc.ai",
   "trustCenter": "https://trust.voyc.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/voyc.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=voyc.ai&sz=128"
 };

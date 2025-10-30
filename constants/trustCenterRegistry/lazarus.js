@@ -3,5 +3,5 @@ export default {
   "website": "lazarusai.com",
   "trustCenter": "https://trust.lazarusai.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/lazarusai.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=lazarusai.com&sz=128"
 };

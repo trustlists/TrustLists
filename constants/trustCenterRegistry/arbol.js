@@ -3,5 +3,5 @@ export default {
   "website": "growarbol.com",
   "trustCenter": "https://trust.growarbol.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/growarbol.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=growarbol.com&sz=128"
 };

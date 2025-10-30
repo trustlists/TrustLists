@@ -3,5 +3,5 @@ export default {
   "website": "exactrx.ai",
   "trustCenter": "https://trust.exactrx.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/exactrx.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=exactrx.ai&sz=128"
 };

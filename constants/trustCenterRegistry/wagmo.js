@@ -3,5 +3,5 @@ export default {
   "website": "wagmo.io",
   "trustCenter": "https://trust.wagmo.io",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/wagmo.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=wagmo.io&sz=128"
 };

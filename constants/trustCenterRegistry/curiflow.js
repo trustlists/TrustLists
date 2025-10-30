@@ -3,5 +3,5 @@ export default {
   "website": "curiflow.com",
   "trustCenter": "https://trust.curiflow.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/curiflow.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=curiflow.com&sz=128"
 };

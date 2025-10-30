@@ -3,5 +3,5 @@ export default {
   "website": "contractpower.ai",
   "trustCenter": "https://trust.contractpower.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/contractpower.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=contractpower.ai&sz=128"
 };

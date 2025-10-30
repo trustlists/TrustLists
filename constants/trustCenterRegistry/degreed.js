@@ -3,5 +3,5 @@ export default {
   "website": "degreed.com",
   "trustCenter": "https://trust.degreed.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/degreed.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=degreed.com&sz=128"
 };

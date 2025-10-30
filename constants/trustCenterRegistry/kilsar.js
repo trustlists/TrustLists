@@ -3,5 +3,5 @@ export default {
   "website": "kilsar.com",
   "trustCenter": "https://trust.kilsar.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/kilsar.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=kilsar.com&sz=128"
 };

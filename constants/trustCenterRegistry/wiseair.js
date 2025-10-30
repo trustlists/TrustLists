@@ -3,5 +3,5 @@ export default {
   "website": "wiseair.vision",
   "trustCenter": "https://trust.wiseair.vision",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/wiseair.vision?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=wiseair.vision&sz=128"
 };

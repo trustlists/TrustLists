@@ -3,5 +3,5 @@ export default {
   "website": "backstitch.io",
   "trustCenter": "https://trust.backstitch.io",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/backstitch.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=backstitch.io&sz=128"
 };

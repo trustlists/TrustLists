@@ -3,5 +3,5 @@ export default {
   "website": "halstedhealth.ai",
   "trustCenter": "https://trust.halstedhealth.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/halstedhealth.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=halstedhealth.ai&sz=128"
 };

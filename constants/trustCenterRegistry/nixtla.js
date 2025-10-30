@@ -3,5 +3,5 @@ export default {
   "website": "nixtla.io",
   "trustCenter": "https://trust.nixtla.io",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/nixtla.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=nixtla.io&sz=128"
 };

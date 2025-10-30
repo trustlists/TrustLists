@@ -3,5 +3,5 @@ export default {
   "website": "awarehealth.io",
   "trustCenter": "https://trust.awarehealth.io",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/awarehealth.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=awarehealth.io&sz=128"
 };

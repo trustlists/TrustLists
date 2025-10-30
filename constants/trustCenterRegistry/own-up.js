@@ -3,5 +3,5 @@ export default {
   "website": "ownup.com",
   "trustCenter": "https://trust.ownup.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/ownup.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=ownup.com&sz=128"
 };

@@ -3,5 +3,5 @@ export default {
   "website": "nossadata.com",
   "trustCenter": "https://trust.nossadata.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/nossadata.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=nossadata.com&sz=128"
 };

@@ -3,5 +3,5 @@ export default {
   "website": "cloverleaf.ai",
   "trustCenter": "https://trust.cloverleaf.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/cloverleaf.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=cloverleaf.ai&sz=128"
 };

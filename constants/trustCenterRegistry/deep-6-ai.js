@@ -3,5 +3,5 @@ export default {
   "website": "deep6.ai",
   "trustCenter": "https://trust.deep6.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/deep6.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=deep6.ai&sz=128"
 };

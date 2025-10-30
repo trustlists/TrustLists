@@ -3,5 +3,5 @@ export default {
   "website": "kintsugihealth.com",
   "trustCenter": "https://trust.kintsugihealth.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/kintsugihealth.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=kintsugihealth.com&sz=128"
 };

@@ -3,5 +3,5 @@ export default {
   "website": "kadence.co",
   "trustCenter": "https://trust.kadence.co",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/kadence.co?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=kadence.co&sz=128"
 };

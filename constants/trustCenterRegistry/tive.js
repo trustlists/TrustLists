@@ -3,5 +3,5 @@ export default {
   "website": "tive.com",
   "trustCenter": "https://trust.tive.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/tive.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=tive.com&sz=128"
 };

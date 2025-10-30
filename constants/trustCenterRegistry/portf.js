@@ -3,5 +3,5 @@ export default {
   "website": "portf.io",
   "trustCenter": "https://trust.portf.io",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/portf.io?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=portf.io&sz=128"
 };

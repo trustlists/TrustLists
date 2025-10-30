@@ -3,5 +3,5 @@ export default {
   "website": "testlio.com",
   "trustCenter": "https://trust.testlio.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/testlio.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=testlio.com&sz=128"
 };

@@ -3,5 +3,5 @@ export default {
   "website": "https://florafauna.ai",
   "trustCenter": "https://trust.florafauna.ai",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/florafauna.ai?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=florafauna.ai&sz=128"
 };

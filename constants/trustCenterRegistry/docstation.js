@@ -3,5 +3,5 @@ export default {
   "website": "docstation.co",
   "trustCenter": "https://trust.docstation.co",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/docstation.co?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=docstation.co&sz=128"
 };

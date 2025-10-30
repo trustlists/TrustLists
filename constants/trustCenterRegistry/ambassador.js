@@ -3,5 +3,5 @@ export default {
   "website": "getambassador.com",
   "trustCenter": "https://trust.getambassador.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/getambassador.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=getambassador.com&sz=128"
 };

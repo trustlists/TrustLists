@@ -3,5 +3,5 @@ export default {
   "website": "cledara.com",
   "trustCenter": "https://trust.cledara.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/cledara.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=cledara.com&sz=128"
 };

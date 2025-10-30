@@ -3,5 +3,5 @@ export default {
   "website": "trustandwill.com",
   "trustCenter": "https://trust.trustandwill.com",
   "platform": "Vanta",
-  "iconUrl": "https://img.logo.dev/trustandwill.com?token=pk_X-1ZBzhHScuPdjGlT-1rrQ"
+  "iconUrl": "https://www.google.com/s2/favicons?domain=trustandwill.com&sz=128"
 };
